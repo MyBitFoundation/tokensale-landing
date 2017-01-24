@@ -1,0 +1,98 @@
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.fl_l {
+  float: left;
+}
+.fl_r {
+  float: right;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a img {
+  border: none;
+  vertical-align: middle;
+}
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+.clear {
+  clear: both;
+  line-height: 0;
+  height: 0;
+  display: block;
+}
+.text_r {
+  text-align: right;
+}
+.text_c {
+  text-align: center;
+}
+.text_l {
+  text-align: left;
+}
+.ov {
+  overflow: hidden;
+}
+.block {
+  display: block;
+}
+.in_bl {
+  display: inline-block !important;
+}
+.inline {
+  display: inline-block;
+}
+.hidden {
+  visibility: hidden;
+}
+.none {
+  display: none;
+}
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  font-size: .4em;
+  line-height: 1;
+}
+sup {
+  bottom: 1.4ex;
+}
+sub {
+  top: .5ex;
+}
+.va_t {
+  vertical-align: top;
+}
+.va_m {
+  vertical-align: middle;
+}
+.va_b {
+  vertical-align: bottom;
+}
+.va_middle_out {
+  position: relative;
+  line-height: 0;
+  font-size: 0;
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+.fade.in {
+  opacity: 1;
+}

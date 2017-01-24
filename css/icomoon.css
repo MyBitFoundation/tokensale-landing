@@ -1,0 +1,114 @@
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../fonts/icomoon.eot?vagv0o');
+	src:  url('../fonts/icomoon.eot?vagv0o#iefix') format('embedded-opentype'),
+	url('../fonts/icomoon.ttf?vagv0o') format('truetype'),
+	url('../fonts/icomoon.woff?vagv0o') format('woff'),
+	url('../fonts/icomoon.svg?vagv0o#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-RegisterAssets:before {
+	content: "\e919";
+}
+.icon-arrow:before {
+	content: "\e91c";
+}
+.icon-TraceLineage:before {
+	content: "\e911";
+}
+.icon-TransferOwnership:before {
+	content: "\e912";
+}
+.icon-user:before {
+	content: "\e913";
+}
+.icon-VerifyAuthenticity:before {
+	content: "\e914";
+}
+.icon-video:before {
+	content: "\e915";
+}
+.icon-InsuranceClaims:before {
+	content: "\e916";
+}
+.icon-RatingSystem:before {
+	content: "\e917";
+}
+.icon-ReduceRisk:before {
+	content: "\e918";
+}
+.icon-SecureAssets:before {
+	content: "\e91a";
+}
+.icon-SmartTrusts:before {
+	content: "\e91b";
+}
+.icon-add:before {
+	content: "\e900";
+}
+.icon-arrow_full:before {
+	content: "\e901";
+}
+.icon-check:before {
+	content: "\e902";
+}
+.icon-close:before {
+	content: "\e903";
+}
+.icon-contacts:before {
+	content: "\e904";
+}
+.icon-export:before {
+	content: "\e905";
+}
+.icon-list:before {
+	content: "\e906";
+}
+.icon-overview:before {
+	content: "\e907";
+}
+.icon-receive:before {
+	content: "\e908";
+}
+.icon-search:before {
+	content: "\e909";
+}
+.icon-send:before {
+	content: "\e90a";
+}
+.icon-sent:before {
+	content: "\e90b";
+}
+.icon-show:before {
+	content: "\e90c";
+}
+.icon-time1:before {
+	content: "\e90d";
+}
+.icon-time2:before {
+	content: "\e90e";
+}
+.icon-time3:before {
+	content: "\e90f";
+}
+.icon-transactions:before {
+	content: "\e910";
+}
+

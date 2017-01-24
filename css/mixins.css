@@ -1,0 +1,14 @@
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.fl_l {
+  float: left;
+}
+.fl_r {
+  float: right;
+}
