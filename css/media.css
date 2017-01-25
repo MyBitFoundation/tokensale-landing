@@ -1,0 +1,496 @@
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.fl_l {
+  float: left;
+}
+.fl_r {
+  float: right;
+}
+@media (max-width: 1300px) {
+  html {
+    font-size: 13px;
+  }
+  .h1 {
+    font-size: 47px;
+  }
+  .h2 {
+    font-size: 32px;
+  }
+  .logo-txt {
+    max-width: 230px;
+  }
+  .form__subs {
+    max-width: 585px;
+  }
+  .form__title {
+    font-size: 16px;
+  }
+  .form-contact {
+    margin-top: 122px;
+  }
+  .form-contact .btn {
+    min-width: 180px;
+  }
+  input,
+  .input {
+    height: 48px;
+    line-height: 47px;
+  }
+  label {
+    top: 12px;
+  }
+  .btn {
+    height: 48px;
+    line-height: 48px;
+  }
+  .btn-rounded {
+    min-width: 210px;
+  }
+  .btn-default {
+    min-width: 220px;
+  }
+  .btn-form {
+    font-size: 16px;
+    min-width: 145px;
+  }
+  .header {
+    height: 90px;
+    line-height: 90px;
+  }
+  .header__wrap {
+    height: 90px;
+  }
+  .dropdown__wrap {
+    height: 52px;
+  }
+  .intro__logo {
+    text-align: center;
+  }
+  .section__whitepaper {
+    font-size: 18px;
+    background: none;
+  }
+  .section__contact {
+    padding: 56px 0;
+  }
+  .feature__item {
+    font-size: 14px;
+  }
+  .feature__title {
+    font-size: 20px;
+  }
+  .tabs__desc {
+    font-size: 14px;
+  }
+  .tabs__pane img {
+    max-width: 235px;
+  }
+  .tabs__title {
+    margin-top: 0;
+  }
+  .tabs-nav__link {
+    padding: 46px 30px 30px;
+  }
+  .team-info__wrap {
+    font-size: 14px;
+  }
+  .team-info__wrap i {
+    font-size: 25px;
+  }
+  .team-info__in {
+    padding: 8% 0 0 10%;
+    max-width: 95%;
+  }
+  .team-info__name {
+    font-size: 20px;
+  }
+  .team-info__post {
+    margin-bottom: 20px;
+  }
+  .subscribe__wrap {
+    max-width: 540px;
+    margin: 40px auto 58px;
+  }
+  .subscribe__desc {
+    margin-bottom: 38px;
+  }
+  .contact__logo {
+    width: 40px;
+  }
+  .contact__title {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+  .contact__desc {
+    font-size: 22px;
+    max-width: 280px;
+  }
+  .textarea {
+    height: 160px;
+  }
+  .textarea-scrollbar {
+    height: 160px;
+  }
+}
+@media (max-width: 992px) {
+  .logo-txt {
+    max-width: 170px;
+  }
+  .intro__logo {
+    margin-bottom: 90px;
+  }
+  .intro__desc {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+  .nav__wrap {
+    position: fixed;
+    top: 89px;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    background: #262627;
+    z-index: 2;
+    text-align: center;
+    padding: 0 15px 30px;
+    overflow: auto;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .nav__wrap.open {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav__list {
+    display: block;
+  }
+  .nav__list + .btn {
+    margin: 0;
+  }
+  .nav__item {
+    display: block;
+    line-height: 1.25;
+    margin-bottom: 25px;
+  }
+  .nav__item + li {
+    margin-left: 0;
+  }
+  .nav__link {
+    display: inline-block;
+  }
+  .nav__link:hover {
+    background: transparent;
+  }
+  .nav__link:active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.16);
+  }
+  .intro__logo {
+    text-align: left;
+  }
+  .settings__wrap {
+    top: 56px;
+  }
+  .dropdown__current {
+    min-width: 100px;
+  }
+  .h2 {
+    font-size: 32px;
+  }
+  .header__btnMenu {
+    display: block;
+  }
+  .team__more {
+    padding: 10px;
+    width: 230px;
+  }
+  .team__name {
+    font-size: 14px;
+  }
+  .team__post {
+    font-size: 12px;
+  }
+  .team-info__in {
+    padding-left: 7%;
+    max-width: 100%;
+  }
+  .team-info__wrap {
+    font-size: 12px;
+  }
+  .team-info__wrap i {
+    font-size: 17px;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .team-info__name {
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 6px;
+  }
+  .team-info__post {
+    margin-bottom: 12px;
+  }
+  .team-info__desc {
+    height: 65%;
+  }
+  .form-contact {
+    max-width: 400px;
+    margin: 45px auto 0;
+  }
+  .contact__info {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact__desc {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .team__item:hover .team__more {
+    display: none;
+  }
+  .team__item:hover .team-info__wrap {
+    opacity: 1;
+    visibility: visible;
+  }
+  .team__item:hover .team-info__head {
+    top: 0;
+  }
+  .team__item:hover .team-info__desc {
+    top: 0;
+  }
+  .team-info__head {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    transition-delay: 0.10s;
+  }
+  .team-info__desc {
+    top: 30px;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    transition-delay: 0.15s;
+  }
+}
+@media (max-width: 767px) {
+  .settings__wrap {
+    display: none;
+  }
+  .logo-txt {
+    max-width: 115px;
+  }
+  .dropdown__wrap {
+    height: 48px;
+  }
+  .dropdown__current {
+    min-width: 95px;
+  }
+  .dropdown__link {
+    padding: 11px 25px;
+  }
+  label {
+    font-size: 13px;
+  }
+  .h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .h2 {
+    font-size: 24px;
+    line-height: 1;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .intro__logo {
+    margin: 20px 0 50px;
+  }
+  .intro__desc {
+    font-size: 13px;
+    margin-bottom: 26px;
+  }
+  .header {
+    height: 50px;
+    line-height: 50px;
+  }
+  .header__wrap {
+    height: 50px;
+  }
+  .header__logo {
+    width: 15px;
+  }
+  .header__btnMenu {
+    right: 12px;
+  }
+  .header__mob {
+    display: block;
+  }
+  .form__title {
+    font-size: 12px;
+  }
+  .form__subs {
+    margin-bottom: 30px;
+  }
+  .form__remark {
+    text-align: center;
+    margin: 8px 0 0 0;
+  }
+  .form-contact {
+    margin-top: 38px;
+  }
+  .input__extend {
+    overflow: inherit;
+    padding-bottom: 63px;
+  }
+  .btn {
+    display: block;
+  }
+  .btn-form {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+    border-radius: 6px;
+    top: 63px;
+  }
+  .nav__wrap {
+    top: 50px;
+  }
+  .section__intro {
+    height: auto;
+    min-height: 100%;
+  }
+  .section__whitepaper {
+    padding: 30px 0 47px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .section__whitepaper .btn-rounded {
+    margin-top: 35px;
+  }
+  .section__use {
+    padding: 28px 0 0;
+  }
+  .section__contact {
+    padding: 28px 0 10px;
+  }
+  .tabs__wrap {
+    margin: 0;
+  }
+  .tabs__img {
+    display: none;
+  }
+  .tabs__pane {
+    margin: 0;
+  }
+  .tabs__cont {
+    margin: 0 -15px;
+  }
+  .tabs__desc {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 35px;
+  }
+  .tabs__title {
+    margin-bottom: 12px;
+  }
+  .tabs-nav__list {
+    text-align: center;
+    text-align-last: inherit;
+    margin-bottom: 32px;
+  }
+  .tabs-nav__item {
+    width: 33.33%;
+    font-size: 12px;
+    text-align-last: inherit;
+  }
+  .tabs-nav__link {
+    padding: 10px;
+    text-align: center;
+  }
+  .tabs-nav__link i {
+    display: inline-block;
+    margin: 5px 0;
+  }
+  .tabs-nav__title {
+    display: block;
+    line-height: 1.25;
+  }
+  .team__item {
+    width: 50%;
+    overflow: hidden;
+  }
+  .team__item.hover .team-info__wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 0;
+    overflow: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+  .team__item.hover .team-info__wrap .icon-user {
+    font-size: 33px;
+    display: block;
+    margin-bottom: 17px;
+  }
+  .team__more {
+    display: none;
+  }
+  .team-info__in {
+    margin: 0;
+    padding: 50px 30px 50px 35px;
+    height: auto;
+  }
+  .team-info__head {
+    top: 0;
+  }
+  .team-info__name {
+    font-size: 24px;
+    margin: 0;
+  }
+  .team-info__post {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .team-info__desc {
+    font-size: 16px;
+    height: auto;
+  }
+  .subscribe__wrap {
+    margin: 28px auto 43px;
+    padding: 0 15px;
+  }
+  .subscribe__desc {
+    font-size: 13px;
+    margin-bottom: 23px;
+  }
+  .contact__logo {
+    display: none;
+  }
+  .contact__title {
+    font-size: 23px;
+    margin-bottom: 8px;
+  }
+  .contact__desc {
+    font-size: 12px;
+  }
+  .textarea {
+    height: 80px;
+  }
+  .textarea-scrolbar {
+    height: 80px;
+  }
+}

@@ -18,42 +18,53 @@
     <link rel="stylesheet" href="css/style.css"/>
 
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/action.js"></script>
 </head>
 <body>
+<div class="overlay"></div>
 <div class="wrapper">
     <div class="section__intro">
-        <div class="settings__wrap">
-            <div class="container">
-                <div class="lang__wrap">
-                    <div class="dropdown__wrap">
-                        <a href="" class="dropdown__current dropdown__link">en <i class="icon-arrow"></i></a>
-                        <div class="dropdown__in">
-                            <ul class="dropdown__list">
-                                <li class="dropdown__item">
-                                    <a href="" class="dropdown__link">en</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="" class="dropdown__link">ru</a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a href="" class="dropdown__link">de</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="header header__mob">
+            <a href="" class="header__btnMenu hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </a>
+            <nav class="nav__wrap">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#whitepaper" class="nav__link btn_scroll">Whitepaper</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#how_it_works" class="nav__link btn_scroll"> How It Works</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#use_cases" class="nav__link btn_scroll">Use cases</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#team" class="nav__link btn_scroll">Team</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link btn_scroll">Contact us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="javascript:;" class="btn_registration nav__login">Sign up</a>
+                    </li>
+                </ul>
+                <a href="javascript:;" class="btn_login btn btn-bordered">Log In</a>
+            </nav>
         </div>
         <div class="intro__wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-md-4 col-md-offset-0 col-sm-offset-1">
                         <div class="intro__logo">
                             <img src="images/logo_txt.png" alt="" class="logo-txt"/>
                         </div>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-lg-8 col-md-7 col-md-offset-0 col-sm-offset-1">
                         <div class="intro__info">
                             <h1 class="h1">Decentralized Asset Management</h1>
                             <span class="intro__desc">Unlocking the internet of value.</span>
@@ -69,7 +80,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <a href="" class="btn btn-rounded"><span>Watch Video</span> <i class="icon-video"></i></a>
+                            <a href="https://vimeo.com/191182539" target="_blank" class="btn btn-rounded"><span>Watch Video</span> <i class="icon-video"></i></a>
                         </div>
                     </div>
                 </div>
@@ -77,36 +88,46 @@
         </div>
     </div>
 
-    <header class="header">
-        <div class="container">
-            <a href="" class="header__logo"><img src="images/logo.png" alt="my bit"/></a>
-            <nav class="nav__wrap">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Whitepaper</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link"> How It Works</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Use cases</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Team</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Contact us</a>
-                    </li>
-                </ul>
-                <a href="" class="btn btn-bordered">Log In</a>
-            </nav>
+    <header class="header__wrap">
+        <div class="header">
+            <div class="container">
+                <a href="" class="header__logo"><img src="images/logo.png" alt="my bit"/></a>
+                <a href="" class="header__btnMenu hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </a>
+                <nav class="nav__wrap">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#whitepaper" class="nav__link btn_scroll">Whitepaper</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#how_it_works" class="nav__link btn_scroll"> How It Works</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#use_cases" class="nav__link btn_scroll">Use cases</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#team" class="nav__link btn_scroll">Team</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link btn_scroll">Contact us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="javascript:;" class="btn_registration nav__login">Sign up</a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="btn_login btn btn-bordered">Log In</a>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <div class="section__whitepaper">
+    <div id="whitepaper" class="section__whitepaper">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-sm-9 col-sm-offset-1 col-lg-8 col-lg-offset-2">
                     <h2 class="h2">Free and Secure Flowing of Money and Assets.</h2>
                     <p>
                         In an increasingly digital age it is imperative that money and assets can flow freely and securely on a global scale transcending borders. <strong>This streamlines business functions creating unparalleled efficiencies.</strong>
@@ -117,83 +138,101 @@
                     <p>
                         The next piece of the puzzle is <strong>enabling the same for the transfer of assets</strong>.  With the combination of communication, money, and assets flowing freely on a global scale it unlocks further potential of the internet and fundamentally changes economics as we know it.
                     </p>
-                    <a href="" class="btn btn-rounded">Watch Whitepaper</a>
+                    <a href="/docs/MyBit_Whitepaper_v0.7.pdf" target="_blank" class="btn btn-rounded">Watch Whitepaper</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="section__features">
-        <div class="container">
-            <h2 class="h2">Adding an Ownership Layer to the Internet</h2>
-            <p class="desc">
-                MyBit revolutionizes asset management by enabling the secure administration of ownership via a decentralized, golden source ledger.
-            </p>
-            <p class="desc">
-                It effectively removes single point of failure risk, reliance on third-party escrow agents, and much of the friction in traditional systems.
-            </p>
-            <div class="feature__wrap">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="feature__item">
-                            <i class="icon-RegisterAssets feature__icon"></i>
-                            <span class="feature__title">Register Assets</span>
-                            <p class="feature__desc">
-                                Link any phsyical or digital asset with your Unique Blockchain Identifier (UBI) to embed proof of ownership into the immutable Blockchain in perpetuity.
-                            </p>
-                        </div>
+    <div class="section__featuresWrap">
+        <div id="how_it_works" class="section__features" data-parallax-speed="0.75">
+            <div class="container">
+                <div class="scroll-section">
+                    <div class="scroll-section__in">
+                        <h2 class="h2">Adding an Ownership Layer to the Internet</h2>
+                        <p class="desc">
+                            MyBit revolutionizes asset management by enabling the secure administration of ownership via a decentralized, golden source ledger.
+                        </p>
+                        <p class="desc">
+                            It effectively removes single point of failure risk, reliance on third-party escrow agents, and much of the friction in traditional systems.
+                        </p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="feature__item">
-                            <i class="icon-TransferOwnership feature__icon"></i>
-                            <span class="feature__title">Transfer Ownership</span>
-                            <p class="feature__desc">
-                                Easily buy, sell, or transfer ownership of any asset without the counterparty risk associated with escrow agents and brokers in traditional transactions.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature__item">
-                            <i class="icon-VerifyAuthenticity feature__icon"></i>
-                            <span class="feature__title">Verify Authenticity</span>
-                            <p class="feature__desc">
-                                Verify the authenticity of an asset in seconds by querying details via MyBit to avoid relying on third-party verification services that are costly and inefficient.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature__item">
-                            <i class="icon-SecureAssets feature__icon"></i>
-                            <span class="feature__title">Secure Assets</span>
-                            <p class="feature__desc">
-                                Govern assets with computer code that is guaranteed to execute exactly as programmed thus reducing overhead costs associated with asset management.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature__item">
-                            <i class="icon-TraceLineage feature__icon"></i>
-                            <span class="feature__title">Trace Lineage</span>
-                            <p class="feature__desc">
-                                Easily access production and ownership history in a transparent, linear view which eliminates data gaps in asset history to further secure transactional commerce.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature__item">
-                            <i class="icon-ReduceRisk feature__icon"></i>
-                            <span class="feature__title">Reduce Risk</span>
-                            <p class="feature__desc">
-                                Greatly reduce the risk of securing assets and conducting business by removing the need for third-parties and intermediaries to govern, secure, and facilitate transactions.
-                            </p>
+                </div>
+                <div class="scroll-section">
+                    <div class="scroll-section__in">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="feature__item">
+                                    <i class="icon-RegisterAssets feature__icon"></i>
+                                    <span class="feature__title">Register Assets</span>
+                                    <p class="feature__desc">
+                                        Link any phsyical or digital asset with your Unique Blockchain Identifier (UBI) to embed proof of ownership into the immutable Blockchain in perpetuity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature__item">
+                                    <i class="icon-TransferOwnership feature__icon"></i>
+                                    <span class="feature__title">Transfer Ownership</span>
+                                    <p class="feature__desc">
+                                        Easily buy, sell, or transfer ownership of any asset without the counterparty risk associated with escrow agents and brokers in traditional transactions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature__item">
+                                    <i class="icon-VerifyAuthenticity feature__icon"></i>
+                                    <span class="feature__title">Verify Authenticity</span>
+                                    <p class="feature__desc">
+                                        Verify the authenticity of an asset in seconds by querying details via MyBit to avoid relying on third-party verification services that are costly and inefficient.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="scroll-section">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature__item">
+                                <i class="icon-SecureAssets feature__icon"></i>
+                                <span class="feature__title">Secure Assets</span>
+                                <p class="feature__desc">
+                                    Govern assets with computer code that is guaranteed to execute exactly as programmed thus reducing overhead costs associated with asset management.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature__item">
+                                <i class="icon-TraceLineage feature__icon"></i>
+                                <span class="feature__title">Trace Lineage</span>
+                                <p class="feature__desc">
+                                    Easily access production and ownership history in a transparent, linear view which eliminates data gaps in asset history to further secure transactional commerce.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature__item">
+                                <i class="icon-ReduceRisk feature__icon"></i>
+                                <span class="feature__title">Reduce Risk</span>
+                                <p class="feature__desc">
+                                    Greatly reduce the risk of securing assets and conducting business by removing the need for third-parties and intermediaries to govern, secure, and facilitate transactions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="feature__wrap">-->
+                <!-- -->
+                <!--</div>-->
+                <!--<div class="feature__wrap">-->
+                <!-- -->
+                <!--</div>-->
             </div>
         </div>
     </div>
 
-    <div class="section__use">
+    <div id="use_cases" class="section__use">
         <div class="container">
             <h2 class="h2">Use Cases</h2>
             <div class="tabs__wrap">
@@ -230,7 +269,7 @@
                         <div class="col-sm-7">
                             <span class="tabs__title">Smart Trusts</span>
                             <p class="tabs__desc">Overhead maintenance expenses of traditional Trusts can be extensive to have trustees (administrator of the Trust) manage and govern them based on provided terms.  Smart Trusts are governed by irrefutable computer code to make the process much cleaner, affordable, and manageable.The trustee’s role can be replaced by smart computer code (Trust contract) that is guaranteed to execute as instructed by the trustor (creator of the trust) without the exorbitant fees and reliance on a third-party.</p>
-                            <a href="" class="btn btn-default">Get In Touch!</a>
+                            <a href="#contact" class="btn btn-default btn_scroll">Get In Touch!</a>
                         </div>
                     </div>
 
@@ -241,7 +280,7 @@
                         <div class="col-sm-7">
                             <span class="tabs__title">Rating System</span>
                             <p class="tabs__desc">By leveraging UBI and singularity in unique asset registration, there is potential for a cross-platform rating system to be put into place to prevent fraudsters from jumping from one commerce platform to the next, continuously ripping off customers.  Since an asset registry is immutable and linked to their unique Blockchain Identifier, transactional history both good and bad will follow users, further securing peer to peer commerce..</p>
-                            <a href="" class="btn btn-default">Get In Touch!</a>
+                            <a href="#contact" class="btn btn-default btn_scroll">Get In Touch!</a>
                         </div>
                     </div>
 
@@ -252,7 +291,7 @@
                         <div class="col-sm-7">
                             <span class="tabs__title">Insurance Claims</span>
                             <p class="tabs__desc">Policy terms and procedures could be transformed into smart contract logic to remove the friction during claims processes.  The ownership titles of insured assets could be placed into a smart contract which is governed by policy terms such as remaining active as long as premiums continue to be paid on time, (or a set expiration date) and upon termination of the policy the associated smart contract is automatically destroyed.  If a trigger event occurs resulting in the policy to be paid out the asset titles could automatically be transferred to the UBI of the insurance provider and insurance money sent to the policy holder.  Human interaction could be in the form of oversight, rather than actually completing the claims process and interacting regularly with the policy holder saving insurance companies Billions of dollars.</p>
-                            <a href="" class="btn btn-default">Get In Touch!</a>
+                            <a href="#contact" class="btn btn-default btn_scroll">Get In Touch!</a>
                         </div>
                     </div>
                 </div>
@@ -260,7 +299,7 @@
         </div>
     </div>
 
-    <div class="section__team">
+    <div id="team" class="section__team">
         <div class="team__wrap">
             <div class="team__item">
                 <img src="images/content/team/garrett_macdonald.jpg" alt="" class="team__photo"/>
@@ -269,6 +308,7 @@
                     <span class="team__post">Community Manager</span>
                 </div>
                 <div class="team-info__wrap">
+                    <a href="" class="team-info__close"><i class="icon-close2"></i></a>
                     <div class="team-info__in">
                         <div class="team-info__head">
                             <i class="icon-user"></i>
@@ -288,6 +328,7 @@
                     <span class="team__post">Enterprise Business Applications</span>
                 </div>
                 <div class="team-info__wrap">
+                    <a href="" class="team-info__close"><i class="icon-close2"></i></a>
                     <div class="team-info__in">
                         <div class="team-info__head">
                             <i class="icon-user"></i>
@@ -307,6 +348,7 @@
                     <span class="team__post">Decentralized Solutions Architect</span>
                 </div>
                 <div class="team-info__wrap">
+                    <a href="" class="team-info__close"><i class="icon-close2"></i></a>
                     <div class="team-info__in">
                         <div class="team-info__head">
                             <i class="icon-user"></i>
@@ -326,6 +368,7 @@
                     <span class="team__post">Full Stack Developer</span>
                 </div>
                 <div class="team-info__wrap">
+                    <a href="" class="team-info__close"><i class="icon-close2"></i></a>
                     <div class="team-info__in">
                         <div class="team-info__head">
                             <i class="icon-user"></i>
@@ -345,6 +388,7 @@
                     <span class="team__post">UI/UX Designer</span>
                 </div>
                 <div class="team-info__wrap">
+                    <a href="" class="team-info__close"><i class="icon-close2"></i></a>
                     <div class="team-info__in">
                         <div class="team-info__head">
                             <i class="icon-user"></i>
@@ -364,6 +408,7 @@
                     <span class="team__post">Solidity Developer</span>
                 </div>
                 <div class="team-info__wrap">
+                    <a href="" class="team-info__close"><i class="icon-close2"></i></a>
                     <div class="team-info__in">
                         <div class="team-info__head">
                             <i class="icon-user"></i>
@@ -395,7 +440,7 @@
         </div>
     </div>
 
-    <div class="section__contact">
+    <div id="contact" class="section__contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -435,11 +480,93 @@
         </div>
     </div>
 
+    <div class="popup__wrap popup-register">
+        <div class="popup__in">
+            <div class="popup__body">
+                <a href="javascript:;" class="popup__close"><i class="icon-close2"></i></a>
+                <h2 class="h2">Let’s get started</h2>
+                <form class="form-popup">
+                    <div class="form__row">
+                        <input type="email" id="registerEmail" class="input input-bordered colored"/>
+                        <label for="registerEmail" class="dark">Your Email</label>
+                        <span class="error-txt top"><i class="icon-error"></i><span class="error_t"></span></span>
+                    </div>
+                    <div class="form__row">
+                        <input type="password" id="registerPassword" class="input input-bordered colored"/>
+                        <label for="registerPassword" class="dark">Password</label>
+                        <span class="error-txt top"><i class="icon-error"></i><span class="error_t"></span></span>
+                    </div>
+                    <div class="form__row">
+                        <input type="password" id="registerPasswordCopy" class="input input-bordered colored"/>
+                        <label for="registerPasswordCopy" class="dark">Password</label>
+                        <span class="error-txt top"><i class="icon-error"></i><span class="error_t"></span></span>
+                    </div>
+                    <div class="form__row">
+                        <a href="javascript:;" class="send_registration btn btn-success">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__wrap popup-login">
+        <div class="popup__in">
+            <div class="popup__body">
+                <a href="javascript:;" class="popup__close"><i class="icon-close2"></i></a>
+                <h2 class="h2">Let’s get started</h2>
+                <form class="form-popup">
+                    <div class="form__row">
+                        <input type="email" id="loginEmail" class="input input-bordered colored"/>
+                        <label for="loginEmail" class="dark">Your Email</label>
+                        <span class="error-txt top"><i class="icon-error"></i><span class="error_t"></span></span>
+                    </div>
+                    <div class="form__row">
+                        <input type="password" id="loginPassword" class="input input-bordered colored"/>
+                        <label for="loginPassword" class="dark">Password</label>
+                        <span class="error-txt top"><i class="icon-error"></i><span class="error_t"></span></span>
+                    </div>
+                    <div class="form__row">
+                        <a href="javascript:;" class="send_login btn btn-success">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__wrap popup-success">
+        <div class="popup__in">
+            <div class="popup__body">
+                <a href="javascript:;" class="popup__close"><i class="icon-close2"></i></a>
+                <h2 class="h2">Thank you for registration!</h2>
+                <div class="form__row">
+                    <a href="javascript:;" class="btn btn_popup_s btn-success" onclick="Action.closePopup(); window.open('/platform.php', '_blank');">ok</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <footer class="footer">
         <div class="container">
-            <span>Copyright &copy; MyBit 2017. All Rights Reserved</span>
+            <span>Copyright &copy; MyBit <?php echo date('Y'); ?>. All Rights Reserved</span>
         </div>
     </footer>
 </div>
+
+<div id="google_translate_element" style=" position: fixed; bottom: 0; left: 0; z-index: 5;"></div><script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            //includedLanguages: 'de,es,fr,nl,ru',
+            autoDisplay: true,
+            multilanguagePage: true,
+            layout: google.translate.TranslateElement.FloatPosition.BOTTOM_RIGHT
+        }, 'google_translate_element');
+    }
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+
 </body>
 </html>

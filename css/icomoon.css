@@ -24,6 +24,12 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-error:before {
+	content: "\e91e";
+}
+.icon-close2:before {
+	content: "\e91d";
+}
 .icon-RegisterAssets:before {
 	content: "\e919";
 }
