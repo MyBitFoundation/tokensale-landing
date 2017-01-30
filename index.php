@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/icomoon.css"/>
+    <link rel="stylesheet" href="css/jquery.scrollbar.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
 
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/jquery.scrollbar.min.js"></script>
@@ -61,7 +63,7 @@
                 <div class="row">
                     <div class="col-md-4 col-md-offset-0 col-sm-offset-1">
                         <div class="intro__logo">
-                            <img src="images/logo_txt.png" alt="" class="logo-txt"/>
+                            <img src="images/logo_txt.svg" alt="" class="logo-txt"/>
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-7 col-md-offset-0 col-sm-offset-1">
@@ -69,7 +71,7 @@
                             <h1 class="h1">Decentralized Asset Management</h1>
                             <span class="intro__desc">Unlocking the internet of value.</span>
                             <form id="subscribe_form_header" class="form form__subs" action="//mybit.us15.list-manage.com/subscribe/post?u=af48b1fdb5278fd9884338f23&amp;id=dbcac41639" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-                                <span class="form__title">Join our List today to receive exclusive updates and beta acces</span>
+                                <span class="form__title">Join our List today to receive exclusive updates and beta access!</span>
                                 <div class="form__row">
                                     <a href="javascript:;" onclick="$('#subscribe_form_header').submit();" class="btn btn-form">Subscribe</a>
                                     <div class="input__extend">
@@ -91,7 +93,7 @@
     <header class="header__wrap">
         <div class="header">
             <div class="container">
-                <a href="" class="header__logo"><img src="images/logo.png" alt="my bit"/></a>
+                <a href="" class="header__logo"><img src="images/logo.svg" alt="my bit"/></a>
                 <a href="" class="header__btnMenu hamburger">
                     <span class="line"></span>
                     <span class="line"></span>
@@ -144,93 +146,92 @@
         </div>
     </div>
 
-    <div class="section__featuresWrap">
-        <div id="how_it_works" class="section__features" data-parallax-speed="0.75">
+    <div class="section__featuresWrap" >
+        <div id="how_it_works" class="section__features" >
             <div class="container">
-                <div class="scroll-section">
-                    <div class="scroll-section__in">
-                        <h2 class="h2">Adding an Ownership Layer to the Internet</h2>
-                        <p class="desc">
-                            MyBit revolutionizes asset management by enabling the secure administration of ownership via a decentralized, golden source ledger.
-                        </p>
-                        <p class="desc">
-                            It effectively removes single point of failure risk, reliance on third-party escrow agents, and much of the friction in traditional systems.
-                        </p>
-                    </div>
-                </div>
-                <div class="scroll-section">
-                    <div class="scroll-section__in">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="feature__item">
-                                    <i class="icon-RegisterAssets feature__icon"></i>
-                                    <span class="feature__title">Register Assets</span>
-                                    <p class="feature__desc">
-                                        Link any phsyical or digital asset with your Unique Blockchain Identifier (UBI) to embed proof of ownership into the immutable Blockchain in perpetuity.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature__item">
-                                    <i class="icon-TransferOwnership feature__icon"></i>
-                                    <span class="feature__title">Transfer Ownership</span>
-                                    <p class="feature__desc">
-                                        Easily buy, sell, or transfer ownership of any asset without the counterparty risk associated with escrow agents and brokers in traditional transactions.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature__item">
-                                    <i class="icon-VerifyAuthenticity feature__icon"></i>
-                                    <span class="feature__title">Verify Authenticity</span>
-                                    <p class="feature__desc">
-                                        Verify the authenticity of an asset in seconds by querying details via MyBit to avoid relying on third-party verification services that are costly and inefficient.
-                                    </p>
-                                </div>
-                            </div>
+                <div id="skrollr-body" class="scroll-sectionWrap">
+                    <div class="scroll-section" data-43p-top="margin-top: 0;" data-38p-top="margin-top: -460px;">
+                        <div class="scroll-section__in">
+                            <h2 class="h2">Adding an Ownership Layer to the Internet</h2>
+                            <p class="desc">
+                                MyBit revolutionizes asset management by enabling the secure administration of ownership via a decentralized, golden source ledger.
+                            </p>
+                            <p class="desc">
+                                It effectively removes single point of failure risk, reliance on third-party escrow agents, and much of the friction in traditional systems.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="scroll-section">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="feature__item">
-                                <i class="icon-SecureAssets feature__icon"></i>
-                                <span class="feature__title">Secure Assets</span>
-                                <p class="feature__desc">
-                                    Govern assets with computer code that is guaranteed to execute exactly as programmed thus reducing overhead costs associated with asset management.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature__item">
-                                <i class="icon-TraceLineage feature__icon"></i>
-                                <span class="feature__title">Trace Lineage</span>
-                                <p class="feature__desc">
-                                    Easily access production and ownership history in a transparent, linear view which eliminates data gaps in asset history to further secure transactional commerce.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature__item">
-                                <i class="icon-ReduceRisk feature__icon"></i>
-                                <span class="feature__title">Reduce Risk</span>
-                                <p class="feature__desc">
-                                    Greatly reduce the risk of securing assets and conducting business by removing the need for third-parties and intermediaries to govern, secure, and facilitate transactions.
-                                </p>
+                    <div class="scroll-section" data-75p-top="margin-top: 0;" data-70p-top="margin-top: -460px;">
+                        <div class="scroll-section__in">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="feature__item">
+                                        <i class="icon-RegisterAssets feature__icon"></i>
+                                        <span class="feature__title">Register Assets</span>
+                                        <p class="feature__desc">
+                                            Link any phsyical or digital asset with your Unique Blockchain Identifier (UBI) to embed proof of ownership into the immutable Blockchain in perpetuity.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="feature__item">
+                                        <i class="icon-TransferOwnership feature__icon"></i>
+                                        <span class="feature__title">Transfer Ownership</span>
+                                        <p class="feature__desc">
+                                            Easily buy, sell, or transfer ownership of any asset without the counterparty risk associated with escrow agents and brokers in traditional transactions.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="feature__item">
+                                        <i class="icon-VerifyAuthenticity feature__icon"></i>
+                                        <span class="feature__title">Verify Authenticity</span>
+                                        <p class="feature__desc">
+                                            Verify the authenticity of an asset in seconds by querying details via MyBit to avoid relying on third-party verification services that are costly and inefficient.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="scroll-section">
+                        <div class="scroll-section__in">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="feature__item">
+                                        <i class="icon-SecureAssets feature__icon"></i>
+                                        <span class="feature__title">Secure Assets</span>
+                                        <p class="feature__desc">
+                                            Govern assets with computer code that is guaranteed to execute exactly as programmed thus reducing overhead costs associated with asset management.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="feature__item">
+                                        <i class="icon-TraceLineage feature__icon"></i>
+                                        <span class="feature__title">Trace Lineage</span>
+                                        <p class="feature__desc">
+                                            Easily access production and ownership history in a transparent, linear view which eliminates data gaps in asset history to further secure transactional commerce.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="feature__item">
+                                        <i class="icon-ReduceRisk feature__icon"></i>
+                                        <span class="feature__title">Reduce Risk</span>
+                                        <p class="feature__desc">
+                                            Greatly reduce the risk of securing assets and conducting business by removing the need for third-parties and intermediaries to govern, secure, and facilitate transactions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!--<div class="feature__wrap">-->
-                <!-- -->
-                <!--</div>-->
-                <!--<div class="feature__wrap">-->
-                <!-- -->
-                <!--</div>-->
             </div>
         </div>
     </div>
+
 
     <div id="use_cases" class="section__use">
         <div class="container">
@@ -302,7 +303,9 @@
     <div id="team" class="section__team">
         <div class="team__wrap">
             <div class="team__item">
-                <img src="images/content/team/garrett_macdonald.jpg" alt="" class="team__photo"/>
+                <div class="team__photoWrap">
+                    <img src="images/content/team/garrett_macdonald.jpg" alt="" class="team__photo"/>
+                </div>
                 <div class="team__more">
                     <span class="team__name">Garrett MacDonald</span>
                     <span class="team__post">Community Manager</span>
@@ -315,14 +318,16 @@
                             <span class="team-info__name">Garrett MacDonald</span>
                             <span class="team-info__post">Community Manager</span>
                         </div>
-                        <p class="team-info__desc">
+                        <p class="team-info__desc scrollbar-outer">
                             Description
                         </p>
                     </div>
                 </div>
             </div>
             <div class="team__item">
-                <img src="images/content/team/thomas_pollan.jpg" alt="" class="team__photo"/>
+                <div class="team__photoWrap">
+                    <img src="images/content/team/thomas_pollan.jpg" alt="" class="team__photo"/>
+                </div>
                 <div class="team__more">
                     <span class="team__name">Thomas Pollan</span>
                     <span class="team__post">Enterprise Business Applications</span>
@@ -335,15 +340,17 @@
                             <span class="team-info__name">Thomas Pollan</span>
                             <span class="team-info__post">Enterprise Business Applications</span>
                         </div>
-                        <p class="team-info__desc">
+                        <p class="team-info__desc scrollbar-outer">
                             Description
                         </p>
                     </div>
                 </div>
             </div>
             <div class="team__item">
-                <img src="images/content/team/ian_worral.jpg" alt="" class="team__photo"/>
-                <div class="team__more">
+                <div class="team__photoWrap">
+                    <img src="images/content/team/ian_worral.jpg" alt="" class="team__photo"/>
+                </div>
+                    <div class="team__more">
                     <span class="team__name">Ian Worrall</span>
                     <span class="team__post">Decentralized Solutions Architect</span>
                 </div>
@@ -355,14 +362,16 @@
                             <span class="team-info__name">Ian Worrall</span>
                             <span class="team-info__post">Decentralized Solutions Architect</span>
                         </div>
-                        <p class="team-info__desc">
+                        <p class="team-info__desc scrollbar-outer">
                             Description
                         </p>
                     </div>
                 </div>
             </div>
             <div class="team__item">
-                <img src="images/content/team/pedro_barros.jpg" alt="" class="team__photo"/>
+                <div class="team__photoWrap">
+                    <img src="images/content/team/pedro_barros.jpg" alt="" class="team__photo"/>
+                </div>
                 <div class="team__more">
                     <span class="team__name">Pedro Barros</span>
                     <span class="team__post">Full Stack Developer</span>
@@ -375,14 +384,16 @@
                             <span class="team-info__name">Pedro Barrosl</span>
                             <span class="team-info__post">Full Stack Developer</span>
                         </div>
-                        <p class="team-info__desc">
+                        <p class="team-info__desc scrollbar-outer">
                         Description
                         </p>
                     </div>
                 </div>
             </div>
             <div class="team__item">
-                <img src="images/content/team/jacob_DeBenedetto.jpg" alt="" class="team__photo"/>
+                <div class="team__photoWrap">
+                    <img src="images/content/team/jacob_DeBenedetto.jpg" alt="" class="team__photo"/>
+                </div>
                 <div class="team__more">
                     <span class="team__name">Jacob DeBenedetto</span>
                     <span class="team__post">UI/UX Designer</span>
@@ -395,14 +406,16 @@
                             <span class="team-info__name">Jacob DeBenedetto</span>
                             <span class="team-info__post">UI/UX Designer</span>
                         </div>
-                        <p class="team-info__desc">
+                        <p class="team-info__desc scrollbar-outer">
                             Description
                         </p>
                     </div>
                 </div>
             </div>
             <div class="team__item">
-                <img src="images/content/team/alex_dulub.jpg" alt="" class="team__photo"/>
+                <div class="team__photoWrap">
+                    <img src="images/content/team/alex_dulub.jpg" alt="" class="team__photo"/>
+                </div>
                 <div class="team__more">
                     <span class="team__name">Alex Dulub</span>
                     <span class="team__post">Solidity Developer</span>
@@ -415,7 +428,7 @@
                             <span class="team-info__name">Alex Dulub</span>
                             <span class="team-info__post">Solidity Developer</span>
                         </div>
-                        <p class="team-info__desc">
+                        <p class="team-info__desc scrollbar-outer">
                             Alex brings 10 years experience in designing high-performance and functional enterprise applications. Several years ago he began to focus on Blockchain and Decentralized technologies of which he has created  various, custom cryptocurrency and smart contract solutions for a wide range of business applications.
                         </p>
                     </div>
@@ -445,7 +458,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="contact__info">
-                        <img src="images/logo.png" alt="" class="contact__logo"/>
+                        <img src="images/logo.svg" alt="" class="contact__logo"/>
                         <span class="contact__title">Stay in touch with us</span>
                         <span class="contact__desc">Send us your questions and we will get back to you as soon as possible.</span>
                     </div>
@@ -552,21 +565,7 @@
     </footer>
 </div>
 
-<div id="google_translate_element" style=" position: fixed; bottom: 0; left: 0; z-index: 5;"></div><script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            //includedLanguages: 'de,es,fr,nl,ru',
-            autoDisplay: true,
-            multilanguagePage: true,
-            layout: google.translate.TranslateElement.FloatPosition.BOTTOM_RIGHT
-        }, 'google_translate_element');
-    }
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-
-
+<script src="js/skrollr.min.js"></script>
 
 </body>
 </html>

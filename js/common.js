@@ -7,15 +7,18 @@ Common = {
     init: function () {
         var self = this;
 
+        self.initEvents();
         self.initScrollTextarea();
         self.initScrollTeamDesc();
         self.headerFixed();
+        self.skrollrInit();
+        self.popupStatic();
+        if ($(window).width() > 768) {
+            Common.sizeFirstSection();
+        }
 
-        //$(document).on('click',function(event) {
-        //    if ($(event.target).find(".team-info__close").length) return;
-        //    $(".team__item").removeClass('hover');
-        //});
 
+        //FORM
         $('.input').focusout(function(){
             var el = $(this);
             if (el.val() == ''){
@@ -25,13 +28,11 @@ Common = {
                 el.addClass('fill');
             };
         });
-
         $('.input__extend input').focus(function(){
             $(this).closest('.form__row').addClass('focus');
         }).focusout(function () {
             $(this).closest('.form__row').removeClass('focus');
         });
-
         $('#textarea').focusout(function(){
             var el = $(this);
             el.closest('.scroll-textarea').removeClass('focus');
@@ -46,7 +47,7 @@ Common = {
             el.closest('.scroll-textarea').addClass('focus');
         });
 
-
+        //scrolling first section
         var lastScrollTop = $(window).scrollTop(),
             delta = 5,
             eleH = $('.section__intro').outerHeight(),
@@ -57,7 +58,7 @@ Common = {
 
             var nowScrollTop = $(this).scrollTop();
             if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
-                console.log(eleH);
+
                 if (nowScrollTop <= eleH && nowScrollTop >= lastScrollTop) {
                     isScolling = true;
                     $('html,body').animate({
@@ -66,7 +67,7 @@ Common = {
                         isScolling = false;
                         lastScrollTop = $(window).scrollTop();
                     });
-                    console.log('Scroll down');
+
                 } else if (nowScrollTop <= eleH && nowScrollTop < lastScrollTop) {
                     isScolling = true;
                     $('html,body').animate({
@@ -75,61 +76,23 @@ Common = {
                         isScolling = false;
                         lastScrollTop = $(window).scrollTop();
                     });
-                    console.log('Scroll up');
+
                 }
                 lastScrollTop = nowScrollTop;
             }
         });
 
-        $(document).ready(function() {
-            var wHeight = $(window).height();
-
-            function parallax() {
-                var pHeight = $(this).outerHeight();
-                var pMiddle = pHeight / 2;
-                var wMiddle = wHeight / 2;
-                var fromTop = $(this).offset().top;
-                var scrolled = $(window).scrollTop();
-                var speed = $(this).attr('data-parallax-speed');
-                var rangeA = (fromTop - wHeight);
-                var rangeB = (fromTop + pHeight);
-                var rangeC = (fromTop - wHeight);
-                var rangeD = (pMiddle + fromTop) - (wMiddle + (wMiddle / 2));
-
-                if (rangeA < 0) {
-                    rangeA = 0;
-                    rangeB = wHeight
-                }
-
-                var percent = (scrolled - rangeA) / (rangeB - rangeA);
-                percent = percent * 100;
-                percent = percent * speed;
-                percent = percent.toFixed(2);
-
-                var animFromBottom = (scrolled - rangeC) / (rangeD - rangeC);
-                animFromBottom = animFromBottom.toFixed(2);
-
-                if (animFromBottom >= 1) {
-                    animFromBottom = 100;
-                }
-
-                $(this).css('background-position', 'center ' + percent + '%');
-                $(this).find('.scroll-section').css('transform', 'translateY(' + '-' + animFromBottom + '%' + ')');
-            }
-            $('.section__features').each(parallax);
-            $(window).scroll(function(e) {
-                $('.section__features').each(parallax);
-            });
-        });
-
-
-        self.initEvents();
         $(window).on({
             load: function () {
                 Common.sizeTeamItem();
             },
             resize: function () {
                 Common.sizeTeamItem();
+                Common.popupStatic();
+
+                if ($(window).width() > 768) {
+                    Common.sizeFirstSection();
+                }
             },
             scroll: function () {
                 Common.headerFixed();
@@ -139,13 +102,20 @@ Common = {
 
     initEvents: function () {
         $('.tabs-nav__link').on('click',Common.toggleTabs);
-        $('.header__btnMenu').on('click',Common.openMobMenu);
-
-        if ($(window).width() < 768) {
-            $('.team__item').on('click',Common.teamHoverOpen);
-            $('.team-info__close').on('click',Common.teamHoverClose);
-        }
-
+        $('.header__btnMenu').on('click',Common.toggleMobMenu);
+        $('.nav__link').on('click',Common.clickMobMenu);
+        $('.team__item').on('click', function (e) {
+            if ($(e.target).closest(".team-info__wrap").length) return;
+            $('.team__item').removeClass('hover');
+            $(this).addClass('hover');
+        });
+        $('.team__item').on('mouseout', function () {
+            $(this).removeClass('hover');
+        });
+        $('.team-info__close').on('click',function(e) {
+            e.preventDefault();
+            Common.teamHoverClose();
+        });
 
         $('.team__photoWrap').each(function() {
             var th = $(this).height(),//box height
@@ -218,39 +188,45 @@ Common = {
         }
     },
 
-    openMobMenu: function (e) {
+    toggleMobMenu: function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
         $(this).next('.nav__wrap').toggleClass('open');
         $('body').toggleClass('static');
     },
 
-    teamHoverOpen: function () {
-        $(this).addClass('hover');
-        $('body').addClass('static');
-    },
-
-    teamHoverClose: function (e) {
+    clickMobMenu: function (e) {
         e.preventDefault();
-        $(this).closest('.team__item').removeClass('hover');
+        $('.nav__wrap').removeClass('open');
+        $('.header__btnMenu').removeClass('active');
         $('body').removeClass('static');
     },
+
+
+    teamHoverClose: function () {
+        $('.team__item').removeClass('hover');
+        $('body').removeClass('static');
+    },
+
+    sizeFirstSection: function () {
+        $('.section__intro').height($(window).height())
+    },
+
+    skrollrInit: function () {
+        skrollr.init();
+    },
+
+    popupStatic: function () {
+        var popup = $('.popup__wrap.open .popup__in');
+        if($(window).height() < popup.height() + 40) {
+            popup.addClass('static');
+        } else {
+            popup.removeClass('static');
+        }
+    }
 
 };
 
 $(document).ready(function() {
     Common.init();
-
-
-
-    $.ajax({
-        url: "http://ajaxhttpheaders.appspot.com",
-        dataType: 'jsonp',
-        success: function(headers) {
-           var language = headers['Accept-Language'];
-            console.log(language);
-
-        }
-    });
-
 });
