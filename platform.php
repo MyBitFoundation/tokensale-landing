@@ -1,4 +1,10 @@
 <?php
+
+echo '<pre>';
+    var_dump($_SERVER);
+echo '</pre>';
+die;
+
     require_once('classes/lib/db.php');
     require_once('classes/model/user.php');
 
@@ -42,7 +48,7 @@
                 <div class="row">
                     <div class="col-md-4 col-md-offset-0 col-sm-offset-1">
                         <div class="intro__logo">
-                            <img src="images/logo_txt.png" alt="" class="logo-txt"/>
+                            <img src="images/logo_txt.svg" alt="" class="logo-txt"/>
                         </div>
                     </div>
                     <div class="col-md-7 col-md-offset-0 col-sm-offset-1">

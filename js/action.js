@@ -126,7 +126,7 @@ var Action = {
                 success: function (response) {
                     if(response.result) {
                         Action.closePopup();
-                        window.open('/platform.php', '_blank');
+                        window.open('platform.php', '_blank');
                     } else {
                         for(var i in response.errors) {
                             $('#'+i).parent().addClass('error').find('.error_t').html(response.errors[i]);
