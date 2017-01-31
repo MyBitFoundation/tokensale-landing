@@ -140,7 +140,7 @@
                     <p>
                         The next piece of the puzzle is <strong>enabling the same for the transfer of assets</strong>.  With the combination of communication, money, and assets flowing freely on a global scale it unlocks further potential of the internet and fundamentally changes economics as we know it.
                     </p>
-                    <a href="/docs/MyBit_Whitepaper_v0.7.pdf" target="_blank" class="btn btn-rounded">Watch Whitepaper</a>
+                    <a href="docs/MyBit_Whitepaper_v0.8.pdf" target="_blank" class="btn btn-rounded">Watch Whitepaper</a>
                 </div>
             </div>
         </div>
