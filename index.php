@@ -262,6 +262,7 @@
                         </li>
                     </ul>
                 </div>
+                
                 <div class="tabs__cont">
                     <div id="smartTrusts" class="tabs__pane fade in active">
                         <div class="col-sm-5 tabs__img">
