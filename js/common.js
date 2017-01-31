@@ -55,30 +55,30 @@ Common = {
         $(window).scroll(function () {
             if(isScolling)
                 return;
-
             var nowScrollTop = $(this).scrollTop();
-            if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
-
-                if (nowScrollTop <= eleH && nowScrollTop >= lastScrollTop) {
-                    isScolling = true;
-                    $('html,body').animate({
-                        scrollTop: $('.header__wrap').offset().top
-                    }, 600, function() {
-                        isScolling = false;
-                        lastScrollTop = $(window).scrollTop();
-                    });
-
-                } else if (nowScrollTop <= eleH && nowScrollTop < lastScrollTop) {
-                    isScolling = true;
-                    $('html,body').animate({
-                        scrollTop: 0
-                    }, 600, function() {
-                        isScolling = false;
-                        lastScrollTop = $(window).scrollTop();
-                    });
-
+            if ($(window).width() > 767) {
+                if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
+                    if (nowScrollTop <= eleH && nowScrollTop >= lastScrollTop) {
+                        isScolling = true;
+                        $('html,body').animate({
+                            scrollTop: $('.header__wrap').offset().top
+                        }, 400, function() {
+                            isScolling = false;
+                            lastScrollTop = $(window).scrollTop();
+                        });
+                        console.log('Scroll down');
+                    } else if (nowScrollTop <= eleH && nowScrollTop < lastScrollTop) {
+                        isScolling = true;
+                        $('html,body').animate({
+                            scrollTop: 0
+                        }, 600, function() {
+                            isScolling = false;
+                            lastScrollTop = $(window).scrollTop();
+                        });
+                        console.log('Scroll up');
+                    }
+                    lastScrollTop = nowScrollTop;
                 }
-                lastScrollTop = nowScrollTop;
             }
         });
 
@@ -190,9 +190,21 @@ Common = {
 
     toggleMobMenu: function (e) {
         e.preventDefault();
-        $(this).toggleClass('active');
-        $(this).next('.nav__wrap').toggleClass('open');
-        $('body').toggleClass('static');
+        var btnMenu = $('.header__wrap .header__btnMenu');
+        var header = $('.header__wrap');
+        if ($(window).width() <= 767 && (!$(this).closest('.header').hasClass('header__mob')) && (!header.hasClass('fixed'))) {
+            $('html, body').stop().animate({
+                scrollTop: header.offset().top
+            }, 500, function() {
+                $(btnMenu).addClass('active');
+                $(btnMenu).next('.nav__wrap').addClass('open');
+                $('body').addClass('static');
+            });
+        } else {
+            $(this).toggleClass('active');
+            $(this).next('.nav__wrap').toggleClass('open');
+            $('body').toggleClass('static');
+        }
     },
 
     clickMobMenu: function (e) {
@@ -213,8 +225,9 @@ Common = {
     },
 
     skrollrInit: function () {
-        if ($(window).width() > 767)
+        if ($(window).width() > 767) {
             skrollr.init();
+        }
     },
 
     popupStatic: function () {
