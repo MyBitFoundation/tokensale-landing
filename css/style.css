@@ -1234,16 +1234,6 @@ input:focus + label.dark,
 .popup-success p {
   color: rgba(16, 0, 57, 0.5);
 }
-.skrollr-mobile .section__features {
-  height: auto;
-  padding: 90px 0;
-}
-.skrollr-mobile .scroll-section {
-  margin-top: 0!important;
-}
-.skrollr-mobile .feature__item {
-  margin-top: 60px;
-}
 .box {
   height: 100px;
   width: 100px;

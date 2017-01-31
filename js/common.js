@@ -213,7 +213,8 @@ Common = {
     },
 
     skrollrInit: function () {
-        skrollr.init();
+        if ($(window).width() > 767)
+            skrollr.init();
     },
 
     popupStatic: function () {
