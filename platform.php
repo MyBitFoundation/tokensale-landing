@@ -9,7 +9,7 @@
             die;
         }
     } else {
-        header('Location: /'.$config['basePath']);
+        header('Location: '.$config['basePath']);
         die;
     }
 
