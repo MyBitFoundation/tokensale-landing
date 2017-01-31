@@ -1,20 +1,15 @@
 <?php
 
-echo '<pre>';
-    var_dump($_SERVER);
-echo '</pre>';
-die;
-
     require_once('classes/lib/db.php');
     require_once('classes/model/user.php');
 
     if(isset($_COOKIE['user_hash']) && $_COOKIE['user_hash']) {
         if(!User::getInstance()->getUserByHash($_COOKIE['user_hash'])) {
-            header('Location: /');
+            header('Location: '.$config['basePath']);
             die;
         }
     } else {
-        header('Location: /');
+        header('Location: /'.$config['basePath']);
         die;
     }
 
