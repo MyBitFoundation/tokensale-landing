@@ -153,6 +153,16 @@
     line-height: 33px;
     padding: 0 11px;
   }
+  html:not(.skrollr) .section__features {
+    height: auto;
+    padding: 90px 0;
+  }
+  html:not(.skrollr) .scroll-section {
+    margin-top: 0!important;
+  }
+  html:not(.skrollr) .feature__item {
+    margin-top: 60px;
+  }
 }
 @media (max-width: 992px) {
   .logo-txt {
@@ -569,15 +579,5 @@
   .popup-success .popup__body {
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .section__features {
-    height: auto;
-    padding: 90px 0;
-  }
-  .scroll-section {
-    margin-top: 0!important;
-  }
-  .feature__item {
-    margin-top: 60px;
   }
 }

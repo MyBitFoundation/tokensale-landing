@@ -192,7 +192,7 @@ Common = {
         e.preventDefault();
         var btnMenu = $('.header__wrap .header__btnMenu');
         var header = $('.header__wrap');
-        if ($(window).width() <= 767 && (!$(this).closest('.header').hasClass('header__mob')) && (!header.hasClass('fixed'))) {
+        if ((navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone|webOS|Opera Mini/i)) && (!$(this).closest('.header').hasClass('header__mob')) && (!header.hasClass('fixed'))) {
             $('html, body').stop().animate({
                 scrollTop: header.offset().top
             }, 500, function() {
