@@ -553,7 +553,7 @@
                 <a href="javascript:;" class="popup__close"><i class="icon-close2"></i></a>
                 <h2 class="h2">Thank you for registration!</h2>
                 <div class="form__row">
-                    <a href="javascript:;" class="btn btn_popup_s btn-success" onclick="Action.closePopup(); window.open('/platform.php', '_blank');">ok</a>
+                    <a href="javascript:;" class="btn btn_popup_s btn-success" onclick="Action.closePopup(); window.open('platform.php', '_blank');">ok</a>
                 </div>
             </div>
         </div>
