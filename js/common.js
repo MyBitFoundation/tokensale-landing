@@ -73,7 +73,9 @@ Common = {
             }
         });
         $('.team__item').on('mouseout', function () {
-            $(this).removeClass('hover');
+            if ($(window).width() > 767) {
+                $(this).removeClass('hover');
+            }
         });
         $('.team-info__close').on('click',function(e) {
             e.preventDefault();
