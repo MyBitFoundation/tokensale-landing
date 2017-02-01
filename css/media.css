@@ -12,6 +12,24 @@
 .fl_r {
   float: right;
 }
+@media (max-width: 1600px) {
+  .team-info__desc {
+    height: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1300px) {
+  .team__item:nth-of-type(1) .team-info__wrap,
+  .team__item:nth-of-type(4) .team-info__wrap {
+    right: -100%;
+  }
+  .team__item:nth-of-type(2) .team-info__wrap,
+  .team__item:nth-of-type(5) .team-info__wrap {
+    right: -100%;
+  }
+  .team__item:nth-of-type(3n) .team-info__wrap {
+    left: -100%;
+  }
+}
 @media (max-width: 1300px) {
   html {
     font-size: 13px;
@@ -123,6 +141,9 @@
   .team-info__post {
     margin-bottom: 20px;
   }
+  .team-info__close {
+    display: block;
+  }
   .subscribe__wrap {
     max-width: 540px;
     margin: 40px auto 58px;
@@ -152,6 +173,9 @@
     height: 33px;
     line-height: 33px;
     padding: 0 11px;
+  }
+  .team__post {
+    display: none;
   }
   html:not(.skrollr) .section__features {
     height: auto;
@@ -305,6 +329,10 @@
     transition: all 0.2s ease-out;
     transition-delay: 0.15s;
   }
+  .team__item.hover,
+  .team__item:hover {
+    z-index: 1;
+  }
   .team__item.hover .team-info__wrap,
   .team__item:hover .team-info__wrap {
     opacity: 1;
@@ -317,6 +345,10 @@
   .team__item.hover .team-info__desc,
   .team__item:hover .team-info__desc {
     top: 0;
+  }
+  .team__item.close .team-info__wrap {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 @media (max-width: 767px) {

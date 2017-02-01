@@ -65,10 +65,10 @@ Common = {
         $('.nav__link').on('click',Common.clickMobMenu);
         $('.team__item').on('click', function (e) {
             if ($(e.target).closest(".team-info__wrap").length) return;
-            $('.team__item').removeClass('hover');
+            $('.team__item').removeClass('hover').removeClass('close');
             $(this).addClass('hover');
-            $('body').addClass('static');
             if ($(window).width() <= 767) {
+                $('body').addClass('static');
                 $('.header__wrap .header').addClass('hide');
             }
         });
@@ -78,7 +78,6 @@ Common = {
         $('.team-info__close').on('click',function(e) {
             e.preventDefault();
             Common.teamHoverClose();
-            $('.header__wrap .header').removeClass('hide');
         });
 
         $('.team__photoWrap').each(function() {
@@ -180,8 +179,9 @@ Common = {
 
 
     teamHoverClose: function () {
-        $('.team__item').removeClass('hover');
+        $('.team__item').removeClass('hover').addClass('close');
         $('body').removeClass('static');
+        $('.header__wrap .header').removeClass('hide');
     },
 
     skrollrInit: function () {

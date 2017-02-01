@@ -686,6 +686,9 @@ a {
   float: left;
   position: relative;
 }
+.team__item.hover {
+  z-index: 1;
+}
 .team__photo {
   width: 100%;
 }
@@ -741,8 +744,8 @@ a {
   top: 30px;
 }
 .team-info__in {
-  max-width: 71%;
-  padding: 11% 0 0 17%;
+  max-width: 77%;
+  padding: 10% 0 0 17%;
   height: 100%;
 }
 .team-info__name {
@@ -764,7 +767,8 @@ a {
   top: 30px;
 }
 .team-info__close {
-  position: fixed;
+  display: none;
+  position: absolute;
   color: rgba(255, 255, 255, 0.21);
   top: 0;
   right: 0;
