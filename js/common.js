@@ -13,9 +13,7 @@ Common = {
         self.headerFixed();
         self.skrollrInit();
         self.popupStatic();
-        if ($(window).width() > 768) {
-            Common.sizeFirstSection();
-        }
+        self.initScrollify();
 
 
         //FORM
@@ -47,41 +45,6 @@ Common = {
             el.closest('.scroll-textarea').addClass('focus');
         });
 
-        //scrolling first section
-        var lastScrollTop = $(window).scrollTop(),
-            delta = 5,
-            eleH = $('.section__intro').outerHeight(),
-            isScolling = false ;
-        $(window).scroll(function () {
-            if(isScolling)
-                return;
-            var nowScrollTop = $(this).scrollTop();
-            if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 767)  {
-                if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
-                    if (nowScrollTop <= eleH && nowScrollTop >= lastScrollTop) {
-                        isScolling = true;
-                        $('html,body').animate({
-                            scrollTop: $('.header__wrap').offset().top
-                        }, 400, function() {
-                            isScolling = false;
-                            lastScrollTop = $(window).scrollTop();
-                        });
-                        console.log('Scroll down');
-                    } else if (nowScrollTop <= eleH && nowScrollTop < lastScrollTop) {
-                        isScolling = true;
-                        $('html,body').animate({
-                            scrollTop: 0
-                        }, 600, function() {
-                            isScolling = false;
-                            lastScrollTop = $(window).scrollTop();
-                        });
-                        console.log('Scroll up');
-                    }
-                    lastScrollTop = nowScrollTop;
-                }
-            }
-        });
-
         $(window).on({
             load: function () {
                 Common.sizeTeamItem();
@@ -89,10 +52,6 @@ Common = {
             resize: function () {
                 Common.sizeTeamItem();
                 Common.popupStatic();
-
-                if ($(window).width() >= 768) {
-                    Common.sizeFirstSection();
-                }
             },
             scroll: function () {
                 Common.headerFixed();
@@ -108,6 +67,10 @@ Common = {
             if ($(e.target).closest(".team-info__wrap").length) return;
             $('.team__item').removeClass('hover');
             $(this).addClass('hover');
+            $('body').addClass('static');
+            if ($(window).width() <= 767) {
+                $('.header__wrap .header').addClass('hide');
+            }
         });
         $('.team__item').on('mouseout', function () {
             $(this).removeClass('hover');
@@ -115,6 +78,7 @@ Common = {
         $('.team-info__close').on('click',function(e) {
             e.preventDefault();
             Common.teamHoverClose();
+            $('.header__wrap .header').removeClass('hide');
         });
 
         $('.team__photoWrap').each(function() {
@@ -220,10 +184,6 @@ Common = {
         $('body').removeClass('static');
     },
 
-    sizeFirstSection: function () {
-        $('.section__intro').height($(window).height())
-    },
-
     skrollrInit: function () {
         if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 767) {
             skrollr.init();
@@ -237,7 +197,18 @@ Common = {
         } else {
             popup.removeClass('static');
         }
-    }
+    },
+
+    initScrollify: function () {
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 767) {
+            $.scrollify({
+                section : ".section",
+                scrollSpeed: 1000,
+                easing: "easeOutExpo",
+                sectionName : false,
+            });
+        }
+    },
 
 };
 

@@ -112,7 +112,9 @@ body.static {
 }
 .wrapper {
   height: 100%;
-  min-height: 100%;
+}
+#fullpage {
+  height: 100%;
 }
 strong {
   font-weight: 600;
@@ -348,6 +350,10 @@ a {
   width: 0;
   vertical-align: middle;
 }
+.section__team {
+  position: relative;
+  z-index: 3;
+}
 .scroll-section {
   height: 100%;
   -webkit-transition: all 0.6s ease-out;
@@ -443,7 +449,7 @@ a {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 3;
+  z-index: 4;
 }
 .header__logo {
   width: 35px;
