@@ -56,7 +56,7 @@ Common = {
             if(isScolling)
                 return;
             var nowScrollTop = $(this).scrollTop();
-            if ($(window).width() > 767) {
+            if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 767)  {
                 if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
                     if (nowScrollTop <= eleH && nowScrollTop >= lastScrollTop) {
                         isScolling = true;
@@ -90,7 +90,7 @@ Common = {
                 Common.sizeTeamItem();
                 Common.popupStatic();
 
-                if ($(window).width() > 768) {
+                if ($(window).width() >= 768) {
                     Common.sizeFirstSection();
                 }
             },
