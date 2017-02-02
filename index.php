@@ -82,7 +82,7 @@
                                         <span class="error-txt btm"><i class="icon-error"></i><span></span></span>
                                     </div>
                                 </form>
-                                <a href="https://vimeo.com/191182539" target="_blank" class="btn btn-rounded"><span>Watch Video</span> <i class="icon-video"></i></a>
+                                <a href="javascript:;" target="_blank" class="btn btn-rounded open_popup_watch_video"><span>Watch Video</span> <i class="icon-video"></i></a>
                             </div>
                         </div>
                     </div>
@@ -580,7 +580,7 @@
         </div>
     </div>
 
-    <div class="popup__wrap popup-registration-success">
+    <div class="popup__wrap popup-success popup-registration-success">
         <div class="popup__in">
             <div class="popup__body">
                 <a href="javascript:;" class="popup__close"><i class="icon-close2"></i></a>
@@ -603,7 +603,15 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="popup__wrap popup-video">
+        <div class="popup__in ">
+            <div class="popup__body popup__video">
+                <a href="" class="popup__close"><i class="icon-close2"></i></a>
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
 
 </div>
 

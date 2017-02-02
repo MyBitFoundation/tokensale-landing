@@ -14,7 +14,9 @@ var Action = {
         })
 
         $('.popup__close').click(function() {
-            Action.closePopup();
+            Action.closePopup(function() {
+                $('.popup__wrap iframe').removeAttr('src');
+            });
         })
 
         $('.send_registration').click(function() {
@@ -37,9 +39,16 @@ var Action = {
             Action.sayInTouch();
         })
 
+        $('.open_popup_watch_video').click(function() {
+            Action.openPopup($('.popup-video'));
+            $('.popup-video iframe').attr('src','https://player.vimeo.com/video/191182539');
+        })
+
         $(document).on('click',function(e) {
-            if ($(e.target).closest(".popup__wrap, .btn_registration, .btn_login").length) return;
-            Action.closePopup();
+            if ($(e.target).closest(".popup__wrap, .btn_registration, .btn_login, .open_popup_watch_video").length) return;
+            Action.closePopup(function() {
+                $('.popup__wrap iframe').removeAttr('src');
+            });
         })
     },
 
@@ -49,10 +58,12 @@ var Action = {
         $(_popup).addClass('open');
     },
 
-    closePopup: function() {
+    closePopup: function(callback) {
         $('body').removeClass('static');
         $('.overlay').removeClass('active');
         $('.popup__wrap').removeClass('open');
+        if(callback)
+            callback();
     },
 
     registration: function() {
