@@ -553,7 +553,6 @@
   }
   .team__item {
     width: 50%;
-    overflow: hidden;
   }
   .team__item.hover .team-info__wrap {
     position: fixed;

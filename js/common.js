@@ -54,7 +54,7 @@ Common = {
                 Common.sizeTeamItem();
                 Common.popupStatic();
                 Common.initScrollify();
-                Common.skrollrInit();
+                //Common.skrollrInit();
             },
             scroll: function () {
                 Common.headerFixed();
@@ -167,7 +167,6 @@ Common = {
             $('html, body').stop().animate({
                 scrollTop: header.offset().top
             }, 500, function() {
-                console.log('a')
                 $(btnMenu).addClass('active');
                 $(btnMenu).next('.nav__wrap').addClass('open');
                 $('body').addClass('static');
@@ -176,7 +175,6 @@ Common = {
             $(this).toggleClass('active');
             $(this).next('.nav__wrap').toggleClass('open');
             $('body').toggleClass('static');
-            console.log('b')
         }
     },
 
@@ -196,8 +194,8 @@ Common = {
 
     skrollrInit: function () {
         if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 767) {
-            var absolutePosition = $('.refresh');
-            skrollr.init().refresh(absolutePosition);
+            var s = skrollr.init();
+            s.refresh();
         }
     },
 
