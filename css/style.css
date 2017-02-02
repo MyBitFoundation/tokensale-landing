@@ -601,7 +601,6 @@ a {
   font-size: 15px;
   font-weight: 700;
   position: relative;
-  vertical-align: bottom !important;
   display: inline-block;
   vertical-align: top;
   text-align-last: left;
@@ -991,7 +990,7 @@ input,
   line-height: 60px;
   font-size: 1.25rem;
   background: rgba(255, 255, 255, 0.16);
-  padding: 0 25px;
+  padding: 8px 25px;
   border-radius: 5px;
   border: 1px solid transparent;
   -webkit-transition: all 0.2s ease-out;

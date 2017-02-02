@@ -327,6 +327,9 @@
   .popup__body {
     padding: 50px 70px 30px;
   }
+  .popup__video {
+    padding: 15px;
+  }
 }
 @media (min-width: 768px) {
   .team-info__head {
@@ -558,7 +561,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 4;
+    z-index: 20;
     padding: 0;
     overflow: auto;
     opacity: 1;

@@ -135,7 +135,7 @@
                                 In an increasingly digital age it is imperative that money and assets can flow freely and securely on a global scale transcending borders. <strong>This streamlines business functions creating unparalleled efficiencies.</strong>
                             </p>
                             <p>
-                                As Bitcoin (or other Blockchain-derived means of monetary exchange) begins to play a bigger role in the world economy, it further increases ones’ ability to securely transact quickly and affordably.
+                                As Bitcoin (or other Blockchain-derived means of monetary exchange) begins to play a bigger role in the world economy, it further increases one's ability to securely transact quickly and affordably.
                             </p>
                             <p>
                                 The next piece of the puzzle is <strong>enabling the same for the transfer of assets</strong>.  With the combination of communication, money, and assets flowing freely on a global scale it unlocks further potential of the internet and fundamentally changes economics as we know it.
@@ -269,7 +269,7 @@
                                 </div>
                                 <div class="col-sm-7">
                                     <span class="tabs__title">Smart Trusts</span>
-                                    <p class="tabs__desc">Overhead maintenance expenses of traditional Trusts can be extensive to have trustees (administrator of the Trust) manage and govern them based on provided terms.  Smart Trusts are governed by irrefutable computer code to make the process much cleaner, affordable, and manageable.The trustee’s role can be replaced by smart computer code (Trust contract) that is guaranteed to execute as instructed by the trustor (creator of the trust) without the exorbitant fees and reliance on a third-party.</p>
+                                    <p class="tabs__desc">Overhead maintenance expenses of traditional Trusts can be extensive to have trustees (administrator of the Trust) manage and govern them based on provided terms.  Smart Trusts are governed by irrefutable computer code to make the process much cleaner, affordable, and manageable. The trustee’s role can be replaced by smart computer code (Trust contract) that is guaranteed to execute as instructed by the trustor (creator of the trust) without the exorbitant fees and reliance on a third-party.</p>
                                     <a href="#contact" class="btn btn-default btn_scroll">Get In Touch!</a>
                                 </div>
                             </div>
@@ -454,8 +454,7 @@
                                     <span class="team-info__post">Solidity Developer</span>
                                 </div>
                                 <p class="team-info__desc scrollbar-outer">
-                                    Alex brings 10+ years experience in designing highA
-                                    performance and functional enterprise applications.
+                                    Alex brings 10+ years experience in designing high-performance and functional enterprise applications.
                                     Several years ago he began to focus on Blockchain and
                                     Decentralized technologies of which he has created
                                     various, custom cryptocurrency and smart contract

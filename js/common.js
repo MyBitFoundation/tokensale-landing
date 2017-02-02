@@ -32,7 +32,6 @@ Common = {
             $(this).closest('.form__row').removeClass('focus');
         });
         $('textarea[data-form-msg]').focusout(function(){
-            console.log('a')
             var el = $(this);
             el.closest('.scroll-textarea').removeClass('focus');
             if (el.val() == ''){
@@ -168,6 +167,7 @@ Common = {
             $('html, body').stop().animate({
                 scrollTop: header.offset().top
             }, 500, function() {
+                console.log('a')
                 $(btnMenu).addClass('active');
                 $(btnMenu).next('.nav__wrap').addClass('open');
                 $('body').addClass('static');
@@ -176,6 +176,7 @@ Common = {
             $(this).toggleClass('active');
             $(this).next('.nav__wrap').toggleClass('open');
             $('body').toggleClass('static');
+            console.log('b')
         }
     },
 
