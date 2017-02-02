@@ -518,6 +518,12 @@
                     </div>
                 </div>
             </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <span>Copyright &copy; MyBit <?php echo date('Y'); ?>. All Rights Reserved</span>
+                </div>
+            </footer>
         </div>
     </div>
 
@@ -598,11 +604,7 @@
         </div>
     </div>
     
-    <footer class="footer">
-        <div class="container">
-            <span>Copyright &copy; MyBit <?php echo date('Y'); ?>. All Rights Reserved</span>
-        </div>
-    </footer>
+
 </div>
 
 <script src="js/skrollr.min.js"></script>
