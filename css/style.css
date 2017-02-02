@@ -586,6 +586,8 @@ a {
   font-size: 0;
   text-align-last: justify;
   text-align: justify;
+  text-justify: newspaper;
+  zoom: 1;
 }
 .tabs-nav__list:after {
   width: 100%;
@@ -927,6 +929,9 @@ a {
   border-color: #dd464c transparent transparent transparent;
   top: 98%;
   left: 0;
+}
+.form__row .error-txt .icon-error {
+  margin-right: 5px;
 }
 .form__row.error .input {
   border: 2px solid #dd464c !important;

@@ -54,6 +54,8 @@ Common = {
             resize: function () {
                 Common.sizeTeamItem();
                 Common.popupStatic();
+                Common.initScrollify();
+                Common.skrollrInit();
             },
             scroll: function () {
                 Common.headerFixed();
@@ -110,10 +112,13 @@ Common = {
         $('.btn_scroll').click(function(event) {
             var id = $(this).attr("href");
             var offset = $('header').height() - 2;
-            var target = $(id).offset().top - offset;
-            $('html, body').animate({
-                scrollTop: target
-            }, 500);
+            var target = parseInt($(id).offset().top - offset);
+            if ($(window).scrollTop() != target) {
+                $('html, body').animate({
+                    scrollTop: target
+                }, 500);
+            }
+
             event.preventDefault();
         });
     },
@@ -190,7 +195,8 @@ Common = {
 
     skrollrInit: function () {
         if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 767) {
-            skrollr.init();
+            var absolutePosition = $('.refresh');
+            skrollr.init().refresh(absolutePosition);
         }
     },
 
@@ -211,7 +217,7 @@ Common = {
                 easing: "easeOutExpo",
                 sectionName : false,
             });
-            $.scrollify.disable()
+            $.scrollify.disable();
         }
     },
 

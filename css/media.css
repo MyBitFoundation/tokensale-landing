@@ -220,6 +220,7 @@
     text-align: center;
     padding: 0 15px 30px;
     overflow: auto;
+    line-height: 1.25;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     opacity: 0;

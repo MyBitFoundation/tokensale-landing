@@ -508,7 +508,7 @@
                                 </div>
                                 <div class="form__row">
                                     <textarea class="scrollbar-outer textarea-scrollbar textarea" data-form-msg="true" id="message"></textarea>
-                                    <label>Please describe your message here..</label>
+                                    <label>Please describe your message here...</label>
                                 </div>
                                 <div class="form__row">
                                     <a href="javascript:;" class="btn btn-default btn_say_in_touch">Send</a>
@@ -573,7 +573,7 @@
                         <span class="error-txt top"><i class="icon-error"></i><span class="error_t"></span></span>
                     </div>
                     <div class="form__row">
-                        <a href="javascript:;" class="send_login btn btn-success">Sign Up</a>
+                        <a href="javascript:;" class="send_login btn btn-success">Log in</a>
                     </div>
                 </form>
             </div>
