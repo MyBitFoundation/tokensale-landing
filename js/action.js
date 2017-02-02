@@ -45,7 +45,7 @@ var Action = {
         })
 
         $(document).on('click',function(e) {
-            if ($(e.target).closest(".popup__wrap, .btn_registration, .btn_login, .open_popup_watch_video").length) return;
+            if ($(e.target).closest(".popup__wrap, .btn_registration, .btn_login, .open_popup_watch_video, .header__btnMenu").length) return;
             Action.closePopup(function() {
                 $('.popup__wrap iframe').removeAttr('src');
             });
