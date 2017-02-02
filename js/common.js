@@ -31,7 +31,8 @@ Common = {
         }).focusout(function () {
             $(this).closest('.form__row').removeClass('focus');
         });
-        $('#textarea').focusout(function(){
+        $('textarea[data-form-msg]').focusout(function(){
+            console.log('a')
             var el = $(this);
             el.closest('.scroll-textarea').removeClass('focus');
             if (el.val() == ''){
@@ -48,6 +49,7 @@ Common = {
         $(window).on({
             load: function () {
                 Common.sizeTeamItem();
+                $.scrollify.enable()
             },
             resize: function () {
                 Common.sizeTeamItem();
@@ -209,6 +211,7 @@ Common = {
                 easing: "easeOutExpo",
                 sectionName : false,
             });
+            $.scrollify.disable()
         }
     },
 

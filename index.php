@@ -72,16 +72,14 @@
                             <div class="intro__info">
                                 <h1 class="h1">Decentralized Asset Management</h1>
                                 <span class="intro__desc">Unlocking the internet of value.</span>
-                                <form id="subscribe_form_header" class="form form__subs" action="//mybit.us15.list-manage.com/subscribe/post?u=af48b1fdb5278fd9884338f23&amp;id=dbcac41639" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                                <form id="subscribe_form_header" class="form form__subs">
                                     <span class="form__title">Join our List today to receive exclusive updates and beta access!</span>
                                     <div class="form__row">
-                                        <a href="javascript:;" onclick="$('#subscribe_form_header').submit();" class="btn btn-form">Subscribe</a>
+                                        <a href="javascript:;" class="btn btn-form btn_subscribe">Subscribe</a>
                                         <div class="input__extend">
-                                            <input type="email" placeholder="Your Email" name="EMAIL" class="input"/>
-                                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                                <input type="text" name="b_af48b1fdb5278fd9884338f23_dbcac41639" tabindex="-1" value="">
-                                            </div>
+                                            <input type="email" placeholder="Your Email" class="input subscribe_email"/>
                                         </div>
+                                        <span class="error-txt btm"><i class="icon-error"></i><span></span></span>
                                     </div>
                                 </form>
                                 <a href="https://vimeo.com/191182539" target="_blank" class="btn btn-rounded"><span>Watch Video</span> <i class="icon-video"></i></a>
@@ -470,12 +468,13 @@
                 <div class="subscribe__wrap">
                     <h2 class="h2">Subscribe For Updates</h2>
                     <span class="subscribe__desc">Join our 437,377 subscribers and get access to the latest tools, product announcements and much more!</span>
-                    <form class="form">
+                    <form id="subscribe_form_middle" class="form">
                         <div class="form__row">
-                            <a href="" class="btn btn-form">Subscribe</a>
+                            <a href="javascript:;" class="btn btn-form btn_subscribe_2">Subscribe</a>
                             <div class="input__extend">
-                                <input type="email" placeholder="Your Email" class="input input-bordered"/>
+                                <input type="email" placeholder="Your Email" class="input input-bordered subscribe_email"/>
                             </div>
+                            <span class="error-txt btm"><i class="icon-error"></i><span></span></span>
                             <span class="form__remark">Don't worry we will never give your email address to others.</span>
                         </div>
                     </form>
@@ -493,28 +492,26 @@
                             </div>
                         </div>
                         <div class="col-md-5 col-md-offset-1">
-                            <form id="say_in_touch_form" class="form form-contact" action="//mybit.us15.list-manage.com/subscribe/post?u=af48b1fdb5278fd9884338f23&amp;id=882814ab87" method="post" target="_blank" novalidate>
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                    <input type="text" name="b_af48b1fdb5278fd9884338f23_882814ab87" tabindex="-1" value="">
-                                </div>
+                            <form id="say_in_touch_form" class="form form-contact">
                                 <div class="form__row">
-                                    <input type="text" id="name" name="NAME" class="input"/>
+                                    <input type="text" id="name" class="input"/>
                                     <label for="name">Your Name</label>
                                 </div>
                                 <div class="form__row">
-                                    <input type="email" id="email" name="EMAIL" class="input"/>
+                                    <input type="email" id="email" class="input"/>
                                     <label for="email">Your Email</label>
+                                    <span class="error-txt top"><i class="icon-error"></i><span></span></span>
                                 </div>
                                 <div class="form__row">
-                                    <input type="text" id="reference" name="REFERENCE" class="input"/>
+                                    <input type="text" id="reference" class="input"/>
                                     <label for="reference">Please tell us what this is in reference to</label>
                                 </div>
                                 <div class="form__row">
-                                    <textarea class="textarea" name="MESSAGE"></textarea>
+                                    <textarea class="scrollbar-outer textarea-scrollbar textarea" data-form-msg="true" id="message"></textarea>
                                     <label>Please describe your message here..</label>
                                 </div>
                                 <div class="form__row">
-                                    <a href="javascript:;" onclick="$('#say_in_touch_form').submit();" class="btn btn-default">Send</a>
+                                    <a href="javascript:;" class="btn btn-default btn_say_in_touch">Send</a>
                                 </div>
                             </form>
                         </div>
@@ -577,13 +574,25 @@
         </div>
     </div>
 
-    <div class="popup__wrap popup-success">
+    <div class="popup__wrap popup-registration-success">
         <div class="popup__in">
             <div class="popup__body">
                 <a href="javascript:;" class="popup__close"><i class="icon-close2"></i></a>
                 <h2 class="h2">Thank you for registration!</h2>
                 <div class="form__row">
                     <a href="javascript:;" class="btn btn_popup_s btn-success" onclick="Action.closePopup(); window.open('platform.php', '_blank');">ok</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__wrap popup-success popup-mailchimp-success">
+        <div class="popup__in">
+            <div class="popup__body">
+                <a href="javascript:;" class="popup__close"><i class="icon-close2"></i></a>
+                <h2 class="h2">Thank you for subscribing!</h2>
+                <div class="form__row">
+                    <a href="javascript:;" class="btn btn_popup_s btn-success" onclick="Action.closePopup();">ok</a>
                 </div>
             </div>
         </div>

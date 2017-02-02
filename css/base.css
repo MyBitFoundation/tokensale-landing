@@ -96,3 +96,8 @@ sub {
 .fade.in {
   opacity: 1;
 }
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+}

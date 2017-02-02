@@ -90,6 +90,9 @@
     font-size: 16px;
     min-width: 145px;
   }
+  .btn-bordered {
+    line-height: 44px;
+  }
   .header {
     height: 90px;
     line-height: 90px;
@@ -126,6 +129,7 @@
     margin-top: 0;
   }
   .tabs-nav__link {
+    height: 96px;
     padding: 46px 30px 30px;
   }
   .team-info__wrap {
@@ -186,6 +190,12 @@
   }
   html:not(.skrollr) .feature__item {
     margin-top: 60px;
+  }
+  .popup__video {
+    height: 400px;
+  }
+  .popup-video .popup__in {
+    max-width: 600px;
   }
 }
 @media (max-width: 992px) {
@@ -613,7 +623,7 @@
   }
   .popup__in {
     width: 95%;
-    max-width: 95%;
+    max-width: 95% !important;
   }
   .popup__body {
     padding: 50px 20px 30px;
@@ -621,6 +631,9 @@
   .popup__body .h2 {
     text-align: center;
     margin-bottom: 35px;
+  }
+  .popup__video {
+    padding: 10px;
   }
   .popup-success .popup__body {
     padding-left: 20px;

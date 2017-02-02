@@ -3,19 +3,21 @@
 session_start();
 
 require_once('classes/lib/db.php');
+require_once('classes/common.php');
 require_once('classes/model/user.php');
 
 if (!isset($_REQUEST['action'])){
     header('Location: /');
 }
 
+$response   = array();
+$result     = true;
+$errors     = array();
+$data       = $_REQUEST;
+
 switch ($_REQUEST['action']) {
 
     case 'registration':
-        $result = true;
-        $errors = array();
-        $data = $_REQUEST;
-
         if(!isset($data['email']) || !$data['email'] || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
             $result = false;
             $errors['registerEmail'] = 'Incorrect email';
@@ -46,20 +48,14 @@ switch ($_REQUEST['action']) {
             }
         }
 
-        $data = array(
+        $response = array(
             'result' => $result,
             'errors' => $errors,
         );
-        echo json_encode($data);
-        die;
 
         break;
 
     case 'authorisation':
-        $result = true;
-        $errors = array();
-        $data = $_REQUEST;
-
         if(!isset($data['email']) || !$data['email'] || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
             $result = false;
             $errors['loginEmail'] = 'Incorrect email';
@@ -81,12 +77,48 @@ switch ($_REQUEST['action']) {
             }
         }
 
-        $data = array(
+        $response = array(
             'result' => $result,
             'errors' => $errors,
         );
-        echo json_encode($data);
-        die;
+
+
+        break;
+
+    case 'subscribe':
+        if(!isset($data['email']) || !$data['email'] || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+            $result = false;
+            $errors['email'] = 'Incorrect email';
+        }
+
+        if($result) {
+           $resultMailChimp = Common::getInstance()->subscribeMailChimp($data['email']);
+
+            $response = array(
+                'result' => $resultMailChimp['result'],
+                'errors' => isset($resultMailChimp['error']) ? $resultMailChimp['error'] : '',
+            );
+        }
+
+        break;
+
+    case 'say_in_touch':
+
+        if(!isset($data['email']) || !$data['email'] || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+            $result = false;
+            $errors['email'] = 'Incorrect email';
+        }
+
+        if($result) {
+            $resultMailChimp = Common::getInstance()->sayInTouchMailChimp($data['email'],isset($data['name']) ? $data['name'] : '', isset($data['reference']) ? $data['reference'] : '', isset($data['message']) ? $data['message'] : '' );
+            $response = array(
+                'result' => $resultMailChimp['result'],
+                'errors' => isset($resultMailChimp['error']) ? $resultMailChimp['error'] : '',
+            );
+        }
 
         break;
 }
+
+echo json_encode($response);
+die;

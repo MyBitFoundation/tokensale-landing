@@ -25,6 +25,18 @@ var Action = {
             Action.login();
         })
 
+        $('.btn_subscribe').click(function() {
+            Action.subscribe($('#subscribe_form_header'));
+        })
+
+        $('.btn_subscribe_2').click(function() {
+            Action.subscribe($('#subscribe_form_middle'));
+        })
+
+        $('.btn_say_in_touch').click(function() {
+            Action.sayInTouch();
+        })
+
         $(document).on('click',function(e) {
             if ($(e.target).closest(".popup__wrap, .btn_registration, .btn_login").length) return;
             Action.closePopup();
@@ -86,7 +98,7 @@ var Action = {
                         $('#registerPassword').val('');
                         $('#registerPasswordCopy').val('');
                         Action.closePopup();
-                        Action.openPopup($('.popup-success'));
+                        Action.openPopup($('.popup-registration-success'));
                     } else {
                         for(var i in response.errors) {
                             $('#'+i).parent().addClass('error').find('.error_t').html(response.errors[i]);
@@ -131,6 +143,76 @@ var Action = {
                         for(var i in response.errors) {
                             $('#'+i).parent().addClass('error').find('.error_t').html(response.errors[i]);
                         }
+                    }
+                }
+            });
+        }
+    },
+
+    subscribe: function(form) {
+        var status = true;
+        $('.form__row',form).removeClass('error');
+        if(!$('.subscribe_email',form).val() || !this.validateEmail($('.subscribe_email',form).val())) {
+            $('.form__row',form).addClass('error').find('.error-txt span').html(' '+'Email is invalid');
+            status = false;
+        }
+
+        if(status) {
+            var data = {
+                action : 'subscribe',
+                email: $('.subscribe_email',form).val(),
+            };
+
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: 'action.php',
+                data: data,
+                success: function (response) {
+                    if(response.result) {
+                        $('.subscribe_email',form).val('');
+                        Action.openPopup($('.popup-mailchimp-success'));
+                    } else {
+                        $('.form__row',form).addClass('error').find('.error-txt span').html(' '+response.errors);
+                    }
+                }
+            });
+        }
+    },
+
+    sayInTouch: function() {
+        var form = $('#say_in_touch_form');
+        var status = true;
+        $('.form__row',form).removeClass('error');
+
+        if(!$('#email').val() || !this.validateEmail($('#email').val())) {
+            $('#email').parent().addClass('error').find('.error-txt span').html(' '+'Email is invalid');
+            status = false;
+        }
+
+        if(status) {
+            var data = {
+                action : 'say_in_touch',
+                email: $('#email',form).val(),
+                name: $('#name',form).val(),
+                reference: $('#reference',form).val(),
+                message: $('#message',form).val(),
+            };
+
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: 'action.php',
+                data: data,
+                success: function (response) {
+                    if(response.result) {
+                        Action.openPopup($('.popup-mailchimp-success'));
+                        $('#email',form).val('');
+                        $('#name',form).val('');
+                        $('#reference',form).val('');
+                        $('#message',form).val('');
+                    } else {
+                        $('#email').parent().addClass('error').find('.error-txt span').html(' '+response.errors);
                     }
                 }
             });
