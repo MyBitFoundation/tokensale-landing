@@ -1,6 +1,10 @@
 var Action = {
 
+    watch_video: null,
+
     init: function() {
+        this.watch_video = document.getElementById("watch_video");
+
         this.initEvents();
     },
 
@@ -14,9 +18,7 @@ var Action = {
         })
 
         $('.popup__close').click(function() {
-            Action.closePopup(function() {
-                $('.popup__wrap iframe').removeAttr('src');
-            });
+            Action.closePopup();
         })
 
         $('.send_registration').click(function() {
@@ -41,11 +43,16 @@ var Action = {
 
         $('.open_popup_watch_video').click(function() {
             Action.openPopup($('.popup-video'));
+            setTimeout(function() {
+                Action.watch_video.currentTime = 0;
+                Action.watch_video.play();
+            },1000);
+
             $('.popup-video iframe').attr('src','https://player.vimeo.com/video/191182539');
         })
 
         $(document).on('click',function(e) {
-            if ($(e.target).closest(".popup__wrap, .popup__wrap input, .btn_registration, .btn_login, .open_popup_watch_video, .header__btnMenu").length) return;
+            if ($(e.target).closest(".popup__wrap, .btn_registration, .btn_login, .open_popup_watch_video, .header__btnMenu").length) return;
             Action.closePopup(function() {
                 $('.popup__wrap iframe').removeAttr('src');
             });
@@ -62,6 +69,11 @@ var Action = {
         $('body').removeClass('static');
         $('.overlay').removeClass('active');
         $('.popup__wrap').removeClass('open');
+        $('.popup__wrap input, .popup__wrap textarea').val('');
+
+        $('.popup__wrap iframe').removeAttr('src');
+        Action.watch_video.pause();
+
         if(callback)
             callback();
     },
@@ -71,7 +83,7 @@ var Action = {
         var status = true;
 
         if(!$('#registerEmail').val() || !this.validateEmail($('#registerEmail').val())) {
-            $('#registerEmail').parent().addClass('error').find('.error_t').html('Incorrect email');
+            $('#registerEmail').parent().addClass('error').find('.error_t').html('Incorrect e-mail');
             status = false;
         }
 
@@ -120,12 +132,12 @@ var Action = {
         }
     },
 
-    login: function() {
+    login: function(callback) {
         $('.popup-login .form__row').removeClass('error');
         var status = true;
 
         if(!$('#loginEmail').val() || !this.validateEmail($('#loginEmail').val())) {
-            $('#loginEmail').parent().addClass('error').find('.error_t').html('Email is empty');
+            $('#loginEmail').parent().addClass('error').find('.error_t').html('E-mail is empty');
             status = false;
         }
 
@@ -149,7 +161,7 @@ var Action = {
                 success: function (response) {
                     if(response.result) {
                         Action.closePopup();
-                        window.open('platform.php', '_blank');
+                        window.location.href = 'platform.php';
                     } else {
                         for(var i in response.errors) {
                             $('#'+i).parent().addClass('error').find('.error_t').html(response.errors[i]);
@@ -164,7 +176,7 @@ var Action = {
         var status = true;
         $('.form__row',form).removeClass('error');
         if(!$('.subscribe_email',form).val() || !this.validateEmail($('.subscribe_email',form).val())) {
-            $('.form__row',form).addClass('error').find('.error-txt span').html(' '+'Email is invalid');
+            $('.form__row',form).addClass('error').find('.error-txt span').html(' '+'E-mail is invalid');
             status = false;
         }
 
@@ -197,7 +209,7 @@ var Action = {
         $('.form__row',form).removeClass('error');
 
         if(!$('#email').val() || !this.validateEmail($('#email').val())) {
-            $('#email').parent().addClass('error').find('.error-txt span').html(' '+'Email is invalid');
+            $('#email').parent().addClass('error').find('.error-txt span').html(' '+'E-mail is invalid');
             status = false;
         }
 
@@ -237,7 +249,7 @@ var Action = {
         } else {
             return true;
         }
-    }
+    },
 
 }
 

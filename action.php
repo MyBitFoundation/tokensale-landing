@@ -20,7 +20,7 @@ switch ($_REQUEST['action']) {
     case 'registration':
         if(!isset($data['email']) || !$data['email'] || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
             $result = false;
-            $errors['registerEmail'] = 'Incorrect email';
+            $errors['registerEmail'] = 'Incorrect e-mail';
         } else {
             if(User::getInstance()->checkExistUserByEmail($data['email'])) {
                 $result = false;
@@ -58,7 +58,7 @@ switch ($_REQUEST['action']) {
     case 'authorisation':
         if(!isset($data['email']) || !$data['email'] || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
             $result = false;
-            $errors['loginEmail'] = 'Incorrect email';
+            $errors['loginEmail'] = 'Incorrect e-mail';
         }
 
         if(!isset($data['password']) || !$data['password'] || mb_strlen($data['password']) < 5) {
@@ -73,7 +73,7 @@ switch ($_REQUEST['action']) {
                 setcookie('user_hash', $hash, time()+60*60*24*30, '/');
             } else {
                 $result = false;
-                $errors['loginEmail'] = 'Email or Password incorrect';
+                $errors['loginEmail'] = 'E-mail or Password incorrect';
             }
         }
 
@@ -88,7 +88,7 @@ switch ($_REQUEST['action']) {
     case 'subscribe':
         if(!isset($data['email']) || !$data['email'] || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
             $result = false;
-            $errors['email'] = 'Incorrect email';
+            $errors['email'] = 'Incorrect e-mail';
         }
 
         if($result) {
@@ -106,7 +106,7 @@ switch ($_REQUEST['action']) {
 
         if(!isset($data['email']) || !$data['email'] || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
             $result = false;
-            $errors['email'] = 'Incorrect email';
+            $errors['email'] = 'Incorrect e-mail';
         }
 
         if($result) {

@@ -607,10 +607,17 @@
         <div class="popup__in ">
             <div class="popup__body popup__video">
                 <a href="" class="popup__close"><i class="icon-close2"></i></a>
-                <iframe src="" frameborder="0"></iframe>
+                <div>
+                    <video id="watch_video" controls preload='auto'>
+                        <source src="video/mybit.mp4" type="video/mp4" />
+                        <a href="video/mybit.mp4">Download the video</a> file.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
+
+    <a href="platform.php" class="open_new_tab_platform" target="_blank"></a>
 
 </div>
 
