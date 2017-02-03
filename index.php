@@ -146,86 +146,70 @@
                 </div>
             </div>
 
-            <div class="section__featuresWrap" >
-                <div id="how_it_works" class="section__features" >
-                    <div class="container">
-                        <div id="skrollr-body" class="scroll-sectionWrap">
-                            <div class="scroll-section" data-43p-top="margin-top: 0;" data-38p-top="margin-top: -460px;">
-                                <div class="scroll-section__in">
-                                    <h2 class="h2">Adding an Ownership Layer to the Internet</h2>
-                                    <p class="desc">
-                                        MyBit revolutionizes asset management by enabling the secure administration of ownership via a decentralized, golden source ledger.
-                                    </p>
-                                    <p class="desc">
-                                        It effectively removes single point of failure risk, reliance on third-party escrow agents, and much of the friction in traditional systems.
-                                    </p>
-                                </div>
+            <div id="how_it_works" class="section__features" >
+                <div class="container">
+                    <div class="feature__head">
+                        <h2 class="h2">Adding an Ownership Layer to the Internet</h2>
+                        <p class="desc">
+                            MyBit revolutionizes asset management by enabling the secure administration of ownership via a decentralized, golden source ledger.
+                        </p>
+                        <p class="desc">
+                            It effectively removes single point of failure risk, reliance on third-party escrow agents, and much of the friction in traditional systems.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="feature__item">
+                                <i class="icon-RegisterAssets feature__icon"></i>
+                                <span class="feature__title">Register Assets</span>
+                                <p class="feature__desc">
+                                    Link any phsyical or digital asset with your Unique Blockchain Identifier (UBI) to embed proof of ownership into the immutable Blockchain in perpetuity.
+                                </p>
                             </div>
-                            <div class="scroll-section" data-75p-top="margin-top: 0;" data-70p-top="margin-top: -460px;">
-                                <div class="scroll-section__in">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="feature__item">
-                                                <i class="icon-RegisterAssets feature__icon"></i>
-                                                <span class="feature__title">Register Assets</span>
-                                                <p class="feature__desc">
-                                                    Link any phsyical or digital asset with your Unique Blockchain Identifier (UBI) to embed proof of ownership into the immutable Blockchain in perpetuity.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="feature__item">
-                                                <i class="icon-TransferOwnership feature__icon"></i>
-                                                <span class="feature__title">Transfer Ownership</span>
-                                                <p class="feature__desc">
-                                                    Easily buy, sell, or transfer ownership of any asset without the counterparty risk associated with escrow agents and brokers in traditional transactions.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="feature__item">
-                                                <i class="icon-VerifyAuthenticity feature__icon"></i>
-                                                <span class="feature__title">Verify Authenticity</span>
-                                                <p class="feature__desc">
-                                                    Verify the authenticity of an asset in seconds by querying details via MyBit to avoid relying on third-party verification services that are costly and inefficient.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="feature__item">
+                                <i class="icon-TransferOwnership feature__icon"></i>
+                                <span class="feature__title">Transfer Ownership</span>
+                                <p class="feature__desc">
+                                    Easily buy, sell, or transfer ownership of any asset without the counterparty risk associated with escrow agents and brokers in traditional transactions.
+                                </p>
                             </div>
-                            <div class="scroll-section">
-                                <div class="scroll-section__in">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="feature__item">
-                                                <i class="icon-SecureAssets feature__icon"></i>
-                                                <span class="feature__title">Secure Assets</span>
-                                                <p class="feature__desc">
-                                                    Govern assets with computer code that is guaranteed to execute exactly as programmed thus reducing overhead costs associated with asset management.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="feature__item">
-                                                <i class="icon-TraceLineage feature__icon"></i>
-                                                <span class="feature__title">Trace Lineage</span>
-                                                <p class="feature__desc">
-                                                    Easily access production and ownership history in a transparent, linear view which eliminates data gaps in asset history to further secure transactional commerce.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="feature__item">
-                                                <i class="icon-ReduceRisk feature__icon"></i>
-                                                <span class="feature__title">Reduce Risk</span>
-                                                <p class="feature__desc">
-                                                    Greatly reduce the risk of securing assets and conducting business by removing the need for third-parties and intermediaries to govern, secure, and facilitate transactions.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="feature__item">
+                                <i class="icon-VerifyAuthenticity feature__icon"></i>
+                                <span class="feature__title">Verify Authenticity</span>
+                                <p class="feature__desc">
+                                    Verify the authenticity of an asset in seconds by querying details via MyBit to avoid relying on third-party verification services that are costly and inefficient.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="feature__item">
+                                <i class="icon-SecureAssets feature__icon"></i>
+                                <span class="feature__title">Secure Assets</span>
+                                <p class="feature__desc">
+                                    Govern assets with computer code that is guaranteed to execute exactly as programmed thus reducing overhead costs associated with asset management.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="feature__item">
+                                <i class="icon-TraceLineage feature__icon"></i>
+                                <span class="feature__title">Trace Lineage</span>
+                                <p class="feature__desc">
+                                    Easily access production and ownership history in a transparent, linear view which eliminates data gaps in asset history to further secure transactional commerce.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="feature__item">
+                                <i class="icon-ReduceRisk feature__icon"></i>
+                                <span class="feature__title">Reduce Risk</span>
+                                <p class="feature__desc">
+                                    Greatly reduce the risk of securing assets and conducting business by removing the need for third-parties and intermediaries to govern, secure, and facilitate transactions.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -620,8 +604,6 @@
     <a href="platform.php" class="open_new_tab_platform" target="_blank"></a>
 
 </div>
-
-<script src="js/skrollr.min.js"></script>
 
 </body>
 </html>

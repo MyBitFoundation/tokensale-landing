@@ -113,6 +113,7 @@ body {
   color: #fff;
 }
 body.static {
+  position: relative;
   overflow: hidden !important;
 }
 .wrapper {
@@ -295,8 +296,7 @@ a {
   background: #4b4359;
 }
 .section__features {
-  height: 460px;
-  overflow: hidden;
+  padding: 6.875rem 0;
   background: url("../images/bg/features_bg.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   background-size: cover;
@@ -355,35 +355,6 @@ a {
 .section__team {
   position: relative;
   z-index: 3;
-}
-.scroll-section {
-  height: 100%;
-  -webkit-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out;
-  position: relative;
-  line-height: 0;
-  font-size: 0;
-}
-.scroll-section:after {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  width: 0;
-  vertical-align: middle;
-}
-.scroll-section__in {
-  line-height: 1.25;
-  display: inline-block;
-  vertical-align: middle;
-}
-.scroll-sectionWrap {
-  height: 100%;
-}
-#skrollr-body {
-  height: 100%;
-  overflow: visible;
-  position: relative;
-  z-index: 2;
 }
 .overlay {
   position: fixed;
@@ -507,6 +478,8 @@ a {
 .nav__link:hover {
   background: rgba(255, 255, 255, 0.16);
 }
+.nav__login.active,
+.nav__link.active,
 .nav__login:active,
 .nav__link:active {
   background: transparent;
@@ -560,9 +533,13 @@ a {
 .feature__wrap {
   margin-top: 6rem;
 }
+.feature__head {
+  margin-bottom: 6.25rem;
+}
 .feature__item {
   font-size: 15px;
   text-align: left;
+  margin-bottom: 100px;
 }
 .feature__icon {
   font-size: 32px;
@@ -1185,13 +1162,15 @@ input:focus + label.dark,
   opacity: 1;
   visibility: visible;
 }
+.popup__wrap.open .popup__in{
+  pointer-events: all;
+}
 .popup__wrap.open .popup__body {
   opacity: 1;
   visibility: visible;
 }
 .popup__in {
   width: 100%;
-  pointer-events: all;
   max-width: 600px;
   background: #fff;
   color: #281f39;
@@ -1229,19 +1208,15 @@ input:focus + label.dark,
   border-radius: 10px;
   padding: 15px;
   margin: 0 auto;
-  height: auto !important;
+  height: auto;
   position: relative;
   transition-delay: 1s;
 }
-.popup__video div{
+.popup__videoWrap {
   width: 100%;
   height: 100%;
 }
-video{
-  width: 100%;
-  height: 100%;
-}
-.popup__video iframe {
+.popup__video video {
   width: 100%;
   height: 100%;
 }

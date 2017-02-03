@@ -113,8 +113,12 @@
   .section__contact {
     padding: 56px 0;
   }
+  .feature__head {
+    margin-bottom: 80px;
+  }
   .feature__item {
     font-size: 14px;
+    margin-bottom: 75px;
   }
   .feature__title {
     font-size: 20px;
@@ -180,19 +184,6 @@
   }
   .team__post {
     display: none;
-  }
-  html:not(.skrollr) .section__features {
-    height: auto;
-    padding: 90px 0;
-  }
-  html:not(.skrollr) .scroll-section {
-    margin-top: 0!important;
-  }
-  html:not(.skrollr) .feature__item {
-    margin-top: 60px;
-  }
-  .popup__video {
-    height: 400px;
   }
   .popup-video .popup__in {
     max-width: 600px;
@@ -401,7 +392,7 @@
   }
   .h2 {
     font-size: 24px;
-    line-height: 1;
+    line-height: 1.2;
   }
   p {
     margin-bottom: 10px;
@@ -471,6 +462,9 @@
   .form__row .error-txt.top-left {
     top: -21px;
   }
+  .input {
+    line-height: 1.25;
+  }
   .input__extend {
     overflow: inherit;
     padding-bottom: 70px;
@@ -485,6 +479,9 @@
     margin: 0;
     border-radius: 6px;
     top: 70px;
+  }
+  .btn:hover:before {
+    width: 100%;
   }
   .nav__wrap {
     top: 50px;
@@ -507,6 +504,13 @@
   }
   .section__contact {
     padding: 28px 0 10px;
+  }
+  .section__features {
+    padding: 26px 0 0;
+  }
+  .section__features .desc {
+    font-size: 15px;
+    line-height: 1.5;
   }
   .tabs__wrap {
     margin: 0;
@@ -621,8 +625,22 @@
   .textarea-scrolbar {
     height: 80px;
   }
-  .skrollr-mobile .feature__item {
-    margin-top: 38px;
+  .feature__head {
+    margin-bottom: 48px;
+  }
+  .feature__item {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .feature__icon {
+    font-size: 26px;
+    margin-bottom: 9px;
+  }
+  .feature__title {
+    margin-bottom: 6px;
+  }
+  .feature__desc {
+    line-height: 1.4;
   }
   .popup__in {
     width: 95%;
@@ -641,5 +659,16 @@
   .popup-success .popup__body {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media (max-device-width: 727px) and (orientation: landscape) {
+  .popup__video {
+    padding-top: 26px;
+  }
+  .popup__video .popup__close {
+    padding: 5px 10px;
+    top: 0;
+    color: rgba(40, 31, 57, 0.33);
+    bottom: inherit;
   }
 }

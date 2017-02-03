@@ -11,7 +11,6 @@ Common = {
         self.initScrollTextarea();
         self.initScrollTeamDesc();
         self.headerFixed();
-        self.skrollrInit();
         self.popupStatic();
         self.initScrollify();
 
@@ -54,10 +53,10 @@ Common = {
                 Common.sizeTeamItem();
                 Common.popupStatic();
                 Common.initScrollify();
-                //Common.skrollrInit();
             },
             scroll: function () {
                 Common.headerFixed();
+                Common.onScroll();
             }
         });
     },
@@ -180,6 +179,8 @@ Common = {
 
     clickMobMenu: function (e) {
         e.preventDefault();
+        $('.nav__link').removeClass('active');
+        $(this).addClass('active');
         $('.nav__wrap').removeClass('open');
         $('.header__btnMenu').removeClass('active');
         $('body').removeClass('static');
@@ -190,13 +191,6 @@ Common = {
         $('.team__item').removeClass('hover').addClass('close');
         $('body').removeClass('static');
         $('.header__wrap .header').removeClass('hide');
-    },
-
-    skrollrInit: function () {
-        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 767) {
-            var s = skrollr.init();
-            s.refresh();
-        }
     },
 
     popupStatic: function () {
@@ -218,6 +212,22 @@ Common = {
             });
             $.scrollify.disable();
         }
+    },
+
+    onScroll: function() {
+        var scrollPosition = $(document).scrollTop();
+        $('.nav__link').each(function () {
+            var currentLink = $(this);
+            var offset = $('.header').height() + 50;
+            var refElement = $(currentLink.attr("href"));
+            if (refElement.position().top <= scrollPosition + 150 && (refElement.offset().top - offset) + refElement.outerHeight(true)  > scrollPosition) {
+                $('.nav__link').removeClass("active");
+                currentLink.addClass("active");
+            }
+            else{
+                currentLink.removeClass("active");
+            }
+        });
     },
 
 };
