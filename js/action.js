@@ -66,7 +66,13 @@ var Action = {
     },
 
     closePopup: function(callback) {
-        $('body').removeClass('static');
+        var is_open_nav__wrap = false;
+        $('.nav__wrap').each(function(e,value) {
+            if($(value).hasClass('open'))
+                is_open_nav__wrap = true;
+        })
+        if(!is_open_nav__wrap)
+            $('body').removeClass('static');
         $('.overlay').removeClass('active');
         $('.popup__wrap').removeClass('open');
         $('.popup__wrap input, .popup__wrap textarea').val('');
