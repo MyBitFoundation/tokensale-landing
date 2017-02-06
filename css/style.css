@@ -1198,6 +1198,10 @@ input:focus + label.dark,
   top: 20px;
   left: inherit;
   margin: 0 auto;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
 }
 .popup__body {
   padding: 70px 110px 30px;
