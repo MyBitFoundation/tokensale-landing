@@ -205,15 +205,12 @@ Common = {
     },
 
     popupPosition: function () {
-        var popup = $('.popup__in'),
-            popupHeight = popup.height(),
-            popupWidth = popup.width(),
-            marginTop = popupHeight/ 2,
-            marginLeft = popupWidth/ 2;
-        popup.css({
-            marginTop: '-' + marginTop + 'px',
-            marginLeft: '-' + marginLeft + 'px'
-        })
+        if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
+            $('.popup__in').addClass('entry');
+        } else {
+            $('.popup__in').removeClass('entry');
+        }
+        window.scrollTo(0,0);
     },
 
     initScrollify: function () {
