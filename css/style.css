@@ -1162,7 +1162,7 @@ input:focus + label.dark,
   opacity: 1;
   visibility: visible;
 }
-.popup__wrap.open .popup__in{
+.popup__wrap.open .popup__in {
   pointer-events: all;
 }
 .popup__wrap.open .popup__body {
@@ -1176,12 +1176,8 @@ input:focus + label.dark,
   color: #281f39;
   border-radius: 10px;
   position: absolute;
-  /*left: 50%;*/
-  /*top: 50%;*/
-  /*-webkit-transform: translate(-50%, -50%);*/
-  /*-moz-transform: translate(-50%, -50%);*/
-  /*-ms-transform: translate(-50%, -50%);*/
-  /*-o-transform: translate(-50%, -50%);*/
+  top: 50%;
+  left: 50%;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }

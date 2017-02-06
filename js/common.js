@@ -13,6 +13,7 @@ Common = {
         self.headerFixed();
         self.popupStatic();
         self.initScrollify();
+        self.popupPosition();
 
 
         //FORM
@@ -53,6 +54,7 @@ Common = {
                 Common.sizeTeamItem();
                 Common.popupStatic();
                 Common.initScrollify();
+                Common.popupPosition();
             },
             scroll: function () {
                 Common.headerFixed();
@@ -202,12 +204,24 @@ Common = {
         }
     },
 
+    popupPosition: function () {
+        var popup = $('.popup__in'),
+            popupHeight = popup.height(),
+            popupWidth = popup.width(),
+            marginTop = popupHeight/ 2,
+            marginLeft = popupWidth/ 2;
+        popup.css({
+            marginTop: '-' + marginTop + 'px',
+            marginLeft: '-' + marginLeft + 'px'
+        })
+    },
+
     initScrollify: function () {
         if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 767) {
             $.scrollify({
                 section : ".section",
                 scrollSpeed: 1000,
-                easing: "easeOutExpo",
+                easing: "easeInOutCubic",
                 sectionName : false,
             });
             $.scrollify.disable();
@@ -229,6 +243,8 @@ Common = {
             }
         });
     },
+
+
 
 };
 

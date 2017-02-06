@@ -21,6 +21,7 @@
 
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/easing.js"></script>
     <script src="js/jquery.scrollify.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/action.js"></script>
