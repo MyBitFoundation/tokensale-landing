@@ -16,6 +16,26 @@
   .team-info__desc {
     height: 42%;
   }
+  .header .container {
+    max-width: 1400px;
+  }
+  .nav__login,
+  .nav__link {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 1450px) {
+  .header .container {
+    max-width: 1300px;
+  }
+  .nav__login,
+  .nav__link {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .nav__list + .btn {
+    margin-left: 1rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .team__item:nth-of-type(1) .team-info__wrap,
@@ -34,6 +54,10 @@
   }
 }
 @media (max-width: 1300px) {
+  .nav__login,
+  .nav__link {
+    font-size: 13px;
+  }
   html {
     font-size: 13px;
   }
@@ -127,14 +151,16 @@
     font-size: 14px;
   }
   .tabs__pane img {
-    max-width: 235px;
+    max-width: 90%;
   }
   .tabs__title {
     margin-top: 0;
   }
+  #smartTrusts img {
+    max-width: 235px;
+  }
   .tabs-nav__link {
-    height: 96px;
-    padding: 46px 30px 30px;
+    padding: 20px 7px;
   }
   .team-info__wrap {
     font-size: 14px;
@@ -189,16 +215,31 @@
     max-width: 600px;
   }
 }
-@media (max-width: 992px) {
-  .logo-txt {
-    max-width: 170px;
+@media (max-width: 1200px) {
+  .footerNav__part {
+    width: 50%;
+    margin-bottom: 27px;
   }
-  .intro__logo {
-    margin-bottom: 90px;
+  .footerNav__part.three {
+    width: 100%;
   }
-  .intro__desc {
-    font-size: 28px;
-    margin-bottom: 50px;
+  .footerNav__part.three li:nth-child(odd) {
+    width: 12.5%;
+  }
+  .footerNav__part.three li:nth-child(even) {
+    width: 12.5%;
+  }
+  .footerNav__part.three .footerNav__wrap {
+    border-left: none;
+  }
+  .footerNav__link img {
+    margin-right: 5px;
+  }
+  .header__btnMenu {
+    display: block;
+  }
+  .header__mob {
+    display: block;
   }
   .nav__wrap {
     position: fixed;
@@ -246,6 +287,21 @@
     color: #fff;
     background: rgba(255, 255, 255, 0.16);
   }
+}
+@media (max-width: 992px) {
+  .logo-txt {
+    max-width: 170px;
+  }
+  .intro__logo {
+    margin-bottom: 90px;
+  }
+  .intro__desc {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+  .section__whitepaper .h2 {
+    font-size: 24px;
+  }
   .intro__logo {
     text-align: left;
   }
@@ -257,12 +313,6 @@
   }
   .h2 {
     font-size: 32px;
-  }
-  .header__btnMenu {
-    display: block;
-  }
-  .header__mob {
-    display: block;
   }
   .team__more {
     padding: 10px;
@@ -323,6 +373,31 @@
   }
   .popup__video {
     padding: 15px;
+  }
+  .tabs-nav__item {
+    width: 50%;
+  }
+  .tabs-nav__item:nth-child(1),
+  .tabs-nav__item:nth-child(4) {
+    width: 50%;
+  }
+  .footerNav__part {
+    width: 100%;
+  }
+  .footerNav__part.second .footerNav__wrap {
+    border-left: none;
+  }
+  .footerNav__part.second li:nth-child(odd) {
+    width: 33.33%;
+  }
+  .footerNav__part.three {
+    width: 100%;
+  }
+  .footerNav__part.three li:nth-child(odd) {
+    width: 33.33%;
+  }
+  .footerNav__part.three li:nth-child(even) {
+    width: 33.33%;
   }
 }
 @media (min-width: 768px) {
@@ -515,6 +590,16 @@
     font-size: 15px;
     line-height: 1.5;
   }
+  .section__enterprise {
+    padding: 30px 0 50px;
+  }
+  .section__enterprise .desc {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .section__footerNav .title {
+    padding-left: 0;
+  }
   .tabs__wrap {
     margin: 0;
   }
@@ -541,18 +626,19 @@
     margin-bottom: 32px;
   }
   .tabs-nav__item {
-    width: 33.33%;
     font-size: 12px;
-    text-align-last: inherit;
   }
   .tabs-nav__link {
-    padding: 10px;
+    padding: 10px 5px;
     text-align: center;
-    height: 80px;
+    height: 78px;
   }
   .tabs-nav__link i {
     display: inline-block;
     margin: 5px 0;
+  }
+  .tabs-nav__link .line {
+    display: block;
   }
   .tabs-nav__title {
     display: block;
@@ -662,6 +748,18 @@
   .popup-success .popup__body {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .social__item {
+    width: 25%;
+  }
+  .footerNav__wrap {
+    padding: 0;
+  }
+  .footerNav__part li:nth-child(odd) {
+    width: 50% !important;
+  }
+  .footerNav__part li:nth-child(even) {
+    width: 50% !important;
   }
 }
 @media (max-device-width: 727px) and (orientation: landscape) {

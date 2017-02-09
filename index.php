@@ -40,16 +40,22 @@
                 <nav class="nav__wrap">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#whitepaper" class="nav__link btn_scroll">Whitepaper</a>
-                        </li>
-                        <li class="nav__item">
                             <a href="#how_it_works" class="nav__link btn_scroll"> How It Works</a>
                         </li>
                         <li class="nav__item">
                             <a href="#use_cases" class="nav__link btn_scroll">Use cases</a>
                         </li>
                         <li class="nav__item">
+                            <a href="#enterprise" class="nav__link btn_scroll">For Enterprise</a>
+                        </li>
+                        <li class="nav__item">
                             <a href="#team" class="nav__link btn_scroll">Team</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#dapp_model" class="nav__link btn_scroll">Dapp Model</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#getInvolved" class="nav__link btn_scroll">Get Involved</a>
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link btn_scroll">Contact us</a>
@@ -74,7 +80,7 @@
                                 <h1 class="h1">Decentralized Asset Management</h1>
                                 <span class="intro__desc">Unlocking the internet of value.</span>
                                 <form id="subscribe_form_header" class="form form__subs">
-                                    <span class="form__title">Join our List today to receive exclusive updates and beta access!</span>
+                                    <span class="form__title">Join our List today to receive exclusive updates and stay involved!</span>
                                     <div class="form__row">
                                         <a href="javascript:;" class="btn btn-form btn_subscribe">Subscribe</a>
                                         <div class="input__extend">
@@ -84,6 +90,7 @@
                                     </div>
                                 </form>
                                 <a href="javascript:;" target="_blank" class="btn btn-rounded open_popup_watch_video"><span>Watch Video</span> <i class="icon-video"></i></a>
+                                <a href="javascript:;" target="_blank" class="btn btn-rounded learn_more_btn"><span>Learn More</span> <i class="icon-icon-rocket"></i></a>
                             </div>
                         </div>
                     </div>
@@ -103,16 +110,22 @@
                         <nav class="nav__wrap">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a href="#whitepaper" class="nav__link btn_scroll">Whitepaper</a>
-                                </li>
-                                <li class="nav__item">
                                     <a href="#how_it_works" class="nav__link btn_scroll"> How It Works</a>
                                 </li>
                                 <li class="nav__item">
                                     <a href="#use_cases" class="nav__link btn_scroll">Use cases</a>
                                 </li>
                                 <li class="nav__item">
+                                    <a href="#enterprise" class="nav__link btn_scroll">For Enterprise</a>
+                                </li>
+                                <li class="nav__item">
                                     <a href="#team" class="nav__link btn_scroll">Team</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#dapp_model" class="nav__link btn_scroll">Dapp Model</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#getInvolved" class="nav__link btn_scroll">Get Involved</a>
                                 </li>
                                 <li class="nav__item">
                                     <a href="#contact" class="nav__link btn_scroll">Contact us</a>
@@ -127,11 +140,11 @@
                 </div>
             </header>
 
-            <div id="whitepaper" class="section__whitepaper">
+            <div class="section__whitepaper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-9 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-                            <h2 class="h2">Free and Secure Flowing of Money and Assets.</h2>
+                        <div class="col-md-10 col-md-offset-1">
+                            <h2 class="h2">Transfering Ownership, Titles, and Assets should be easier.</h2>
                             <p>
                                 In an increasingly digital age it is imperative that money and assets can flow freely and securely on a global scale transcending borders. <strong>This streamlines business functions creating unparalleled efficiencies.</strong>
                             </p>
@@ -141,7 +154,7 @@
                             <p>
                                 The next piece of the puzzle is <strong>enabling the same for the transfer of assets</strong>.  With the combination of communication, money, and assets flowing freely on a global scale it unlocks further potential of the internet and fundamentally changes economics as we know it.
                             </p>
-                            <a href="docs/MyBit_Whitepaper_v0.8.pdf" target="_blank" class="btn btn-rounded">Watch Whitepaper</a>
+                            <a href="docs/MyBit_Whitepaper_v0.8.pdf" target="_blank" class="btn btn-rounded">Read Whitepaper</a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +163,7 @@
             <div id="how_it_works" class="section__features" >
                 <div class="container">
                     <div class="feature__head">
-                        <h2 class="h2">Adding an Ownership Layer to the Internet</h2>
+                        <h2 class="h2">Our Goal is Adding an Ownership Layer to the Internet</h2>
                         <p class="desc">
                             MyBit revolutionizes asset management by enabling the secure administration of ownership via a decentralized, golden source ledger.
                         </p>
@@ -219,249 +232,217 @@
 
             <div id="use_cases" class="section__use">
                 <div class="container">
-                    <h2 class="h2">Use Cases</h2>
-                    <div class="tabs__wrap">
-                        <div class="tabs-nav__wrap">
-                    <span class="tabs-nav___current">
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <h2 class="h2">Use Cases</h2>
+                            <div class="tabs__wrap">
+                                <div class="tabs-nav__wrap">
+                                    <ul class="tabs-nav__list">
+                                        <li class="tabs-nav__item">
+                                            <a href="#smartTrusts" class="tabs-nav__link active">
+                                                <i class="icon-SmartTrusts"></i>
+                                                <span class="tabs-nav__title">Smart Trusts</span>
+                                            </a>
+                                        </li>
+                                        <li class="tabs-nav__item">
+                                            <a href="#ratingSystem" class="tabs-nav__link">
+                                                <i class="icon-RatingSystem"></i>
+                                                <span class="tabs-nav__title">Universal User <span class="line">Rating System</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="tabs-nav__item">
+                                            <a href="#insuranceClaims" class="tabs-nav__link">
+                                                <i class="icon-InsuranceClaims"></i>
+                                                <span class="tabs-nav__title">Insurance Policies <span class="line">& Claims</span></span>
+                                            </a>
+                                        </li>
+                                        <li class="tabs-nav__item">
+                                            <a href="#p2pCommerce" class="tabs-nav__link">
+                                                <i class="icon-p2p"></i>
+                                                <span class="tabs-nav__title">P2P Commerce</span>
+                                            </a>
+                                        </li>
+                                        <li class="tabs-nav__item">
+                                            <a href="#marketplaces" class="tabs-nav__link">
+                                                <i class="icon-marketplaces"></i>
+                                                <span class="tabs-nav__title">Authenticated Marketplaces</span>
+                                            </a>
+                                        </li>
+                                        <li class="tabs-nav__item">
+                                            <a href="#auditing" class="tabs-nav__link">
+                                                <i class="icon-audit"></i>
+                                                <span class="tabs-nav__title">Auditing, Compliance, and Analytics</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tabs__cont">
+                                    <div id="smartTrusts" class="tabs__pane fade in active">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <span class="tabs__title">Smart Trusts</span>
+                                            <p class="tabs__desc">Overhead maintenance expenses of traditional Trusts can be extensive to have trustees (administrator of the Trust) manage and govern them based on provided terms.  Smart Trusts are governed by irrefutable computer code to make the process much cleaner, affordable, and manageable. The trustee’s role can be replaced by smart computer code (Trust contract) that is guaranteed to execute as instructed by the trustor (creator of the trust) without the exorbitant fees and reliance on a third-party.</p>
+                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                        </div>
+                                    </div>
 
-					</span>
-                            <ul class="tabs-nav__list">
-                                <li class="tabs-nav__item">
-                                    <a href="#smartTrusts" class="tabs-nav__link active">
-                                        <i class="icon-SmartTrusts"></i>
-                                        <span class="tabs-nav__title">Smart Trusts</span>
-                                    </a>
-                                </li>
-                                <li class="tabs-nav__item">
-                                    <a href="#ratingSystem" class="tabs-nav__link">
-                                        <i class="icon-RatingSystem"></i>
-                                        <span class="tabs-nav__title">Rating System</span>
-                                    </a>
-                                </li>
-                                <li class="tabs-nav__item">
-                                    <a href="#insuranceClaims" class="tabs-nav__link">
-                                        <i class="icon-InsuranceClaims"></i>
-                                        <span class="tabs-nav__title">Insurance Claims</span>
-                                    </a>
-                                </li>
-                            </ul>
+                                    <div id="ratingSystem" class="tabs__pane fade">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <span class="tabs__title">Universal User Rating System</span>
+                                            <p class="tabs__desc">By leveraging UBI and singularity in unique asset registration, there is potential for a cross-platform rating system to be put into place to prevent fraudsters from jumping from one commerce platform to the next, continuously ripping off customers.  Since an asset registry is immutable and linked to their unique Blockchain Identifier, transactional history both good and bad will follow users, further securing peer to peer commerce..</p>
+                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                        </div>
+                                    </div>
+
+                                    <div id="insuranceClaims" class="tabs__pane fade">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <span class="tabs__title">Insurance Policies & Claims</span>
+                                            <p class="tabs__desc">Policy terms and procedures could be transformed into smart contract logic to remove the friction during claims processes.  The ownership titles of insured assets could be placed into a smart contract which is governed by policy terms such as remaining active as long as premiums continue to be paid on time, (or a set expiration date) and upon termination of the policy the associated smart contract is automatically destroyed.  If a trigger event occurs resulting in the policy to be paid out the asset titles could automatically be transferred to the UBI of the insurance provider and insurance money sent to the policy holder.  Human interaction could be in the form of oversight, rather than actually completing the claims process and interacting regularly with the policy holder saving insurance companies Billions of dollars.</p>
+                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                        </div>
+                                    </div>
+
+                                    <div id="p2pCommerce" class="tabs__pane fade">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <span class="tabs__title">P2P Commerce</span>
+                                            <p class="tabs__desc" style="text-align: center">Testing P2P</p>
+                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                        </div>
+                                    </div>
+
+                                    <div id="marketplaces" class="tabs__pane fade">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <span class="tabs__title">Authenticated Marketplaces</span>
+                                            <p class="tabs__desc" style="text-align: center">Testing marketplaces</p>
+                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                        </div>
+                                    </div>
+
+                                    <div id="auditing" class="tabs__pane fade">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <span class="tabs__title">Auditing, Compliance, Analytics</span>
+                                            <p class="tabs__desc" style="text-align: center">Testing Auditing</p>
+                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="tabs__cont">
-                            <div id="smartTrusts" class="tabs__pane fade in active">
-                                <div class="col-sm-5 tabs__img">
-                                    <img src="images/content/smart_trusts.png" alt="">
-                                </div>
-                                <div class="col-sm-7">
-                                    <span class="tabs__title">Smart Trusts</span>
-                                    <p class="tabs__desc">Overhead maintenance expenses of traditional Trusts can be extensive to have trustees (administrator of the Trust) manage and govern them based on provided terms.  Smart Trusts are governed by irrefutable computer code to make the process much cleaner, affordable, and manageable. The trustee’s role can be replaced by smart computer code (Trust contract) that is guaranteed to execute as instructed by the trustor (creator of the trust) without the exorbitant fees and reliance on a third-party.</p>
-                                    <a href="#contact" class="btn btn-default btn_scroll">Get In Touch!</a>
-                                </div>
-                            </div>
+                </div>
+            </div>
 
-                            <div id="ratingSystem" class="tabs__pane fade">
-                                <div class="col-sm-5 tabs__img">
-                                    <img src="images/content/smart_trusts.png" alt="">
-                                </div>
-                                <div class="col-sm-7">
-                                    <span class="tabs__title">Rating System</span>
-                                    <p class="tabs__desc">By leveraging UBI and singularity in unique asset registration, there is potential for a cross-platform rating system to be put into place to prevent fraudsters from jumping from one commerce platform to the next, continuously ripping off customers.  Since an asset registry is immutable and linked to their unique Blockchain Identifier, transactional history both good and bad will follow users, further securing peer to peer commerce..</p>
-                                    <a href="#contact" class="btn btn-default btn_scroll">Get In Touch!</a>
-                                </div>
-                            </div>
-
-                            <div id="insuranceClaims" class="tabs__pane fade">
-                                <div class="col-sm-5 tabs__img">
-                                    <img src="images/content/smart_trusts.png" alt="">
-                                </div>
-                                <div class="col-sm-7">
-                                    <span class="tabs__title">Insurance Claims</span>
-                                    <p class="tabs__desc">Policy terms and procedures could be transformed into smart contract logic to remove the friction during claims processes.  The ownership titles of insured assets could be placed into a smart contract which is governed by policy terms such as remaining active as long as premiums continue to be paid on time, (or a set expiration date) and upon termination of the policy the associated smart contract is automatically destroyed.  If a trigger event occurs resulting in the policy to be paid out the asset titles could automatically be transferred to the UBI of the insurance provider and insurance money sent to the policy holder.  Human interaction could be in the form of oversight, rather than actually completing the claims process and interacting regularly with the policy holder saving insurance companies Billions of dollars.</p>
-                                    <a href="#contact" class="btn btn-default btn_scroll">Get In Touch!</a>
-                                </div>
-                            </div>
+            <div id="enterprise" class="section__enterprise">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h2 class="h2">Enterprise Edition</h2>
+                            <p class="desc">
+                                AI is going to take jobs from people. It is also going to cost companies a lot of money to start producing their own hardware. Especially service companies such as Uber that now have to move from capital light to capital intensive as they move from a service provider to a manufacturer or AI-powered autonomous cars.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div id="team" class="section__team">
-                <div class="team__wrap">
-                    <div class="team__item">
-                        <div class="team__photoWrap">
-                            <img src="images/content/team/garrett_macdonald.jpg" alt="" class="team__photo"/>
-                        </div>
-                        <div class="team__more">
-                            <span class="team__name">Garrett MacDonald</span>
-                            <span class="team__post">Blockchain Design / Entrepreneurial Background in Bitcoin and Blockchain</span>
-                        </div>
-                        <div class="team-info__wrap">
-                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
-                            <div class="team-info__in">
-                                <div class="team-info__head">
-                                    <i class="icon-user"></i>
-                                    <span class="team-info__name">Garrett MacDonald</span>
-                                    <span class="team-info__post">Blockchain Design / Entrepreneurial Background in Bitcoin and Blockchain</span>
-                                </div>
-                                <p class="team-info__desc scrollbar-outer">
-                                    Garrett is a passionate innovator who has been involved
-                                    in the Bitcoin/Blockchain industry since 2011. He
-                                    crowdfunded what became a millionAdollar bitcoin
-                                    mining company when he was in high school, and has
-                                    advised for various startups and corporations. Now he is
-                                    focused on making the world's energy situation
-                                    sustainable using Blockchain.
-                                </p>
-                            </div>
-                        </div>
+                <div class="team__wrap"
+                <div class="container">
+                    <div class="team__joining">
+                        <h2 class="h2">Interested in Joining the team?</h2>
+                        <a href="#contact" class="btn btn-default">Get In Touch!</a>
                     </div>
-                    <div class="team__item">
-                        <div class="team__photoWrap">
-                            <img src="images/content/team/thomas_pollan.jpg" alt="" class="team__photo"/>
-                        </div>
-                        <div class="team__more">
-                            <span class="team__name">Thomas Pollan</span>
-                            <span class="team__post">Enterprise Business Applications / Sales & Strategy Background</span>
-                        </div>
-                        <div class="team-info__wrap">
-                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
-                            <div class="team-info__in">
-                                <div class="team-info__head">
-                                    <i class="icon-user"></i>
-                                    <span class="team-info__name">Thomas Pollan</span>
-                                    <span class="team-info__post">Enterprise Business Applications / Sales & Strategy Background</span>
-                                </div>
-                                <p class="team-info__desc scrollbar-outer">
-                                    Mr. Pollan has over 30 years of business consulting and
-                                    business startAup experience. Mr. Pollan's roles have
-                                    included Senior Director, Client Principal with Hewlett
-                                    Packard Enterprise, Senior Partner with Accenture, and
-                                    founder and President of Pollan Enterprises, a multiA
-                                    million dollar holding company for new startAup
-                                    businesses.
+                </div>
+            </div>
+
+            <div id="dapp_model" class="section__dappModel">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h2 class="h2">Decentralized Architecture</h2>
+                            <div class="desc">
+                                <p>
+                                    The Decentralized business model enables anyone to get involved and benefit through profit sharing for revenue from both the consumer and enterprise releases. This opens up doors of opportunity to the average person.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team__item">
-                        <div class="team__photoWrap">
-                            <img src="images/content/team/ian_worral.jpg" alt="" class="team__photo"/>
-                        </div>
-                        <div class="team__more">
-                            <span class="team__name">Ian Worrall</span>
-                            <span class="team__post">Decentralized Solutions Architect / Entrepreneurial Background in Finance and SaaS</span>
-                        </div>
-                        <div class="team-info__wrap">
-                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
-                            <div class="team-info__in">
-                                <div class="team-info__head">
-                                    <i class="icon-user"></i>
-                                    <span class="team-info__name">Ian Worrall</span>
-                                    <span class="team-info__post">Decentralized Solutions Architect / Entrepreneurial Background in Finance and SaaS</span>
-                                </div>
-                                <p class="team-info__desc scrollbar-outer">
-                                    Ian has been involved fullAtime in the Blockchain industry
-                                    since early 2013 when he began a small mining operation
-                                    that grew rapidly.  Since then he has managed a
-                                    company that builds custom software for small
-                                    businesses up to large corporations.  His true passion is
-                                    decentralized applications and the potential they have to
-                                    disrupt traditional business models.
+                                <p>
+                                    In a traditional model, a central party or group takes on a large amount of risk (building and bringing to market), has full autonomy in devision-making, and if sucessful, reaps all the montary benefits. This creates a huge barrier for entry and keeps the rich in control and enables them to get richer. By the time the general public can buy shares (typicall through an initial public offering), everyone has already gotten rich.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team__item">
-                        <div class="team__photoWrap">
-                            <img src="images/content/team/pedro_barros.jpg" alt="" class="team__photo"/>
-                        </div>
-                        <div class="team__more">
-                            <span class="team__name">Pedro Barros</span>
-                            <span class="team__post">Full Stack Developer</span>
-                        </div>
-                        <div class="team-info__wrap">
-                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
-                            <div class="team-info__in">
-                                <div class="team-info__head">
-                                    <i class="icon-user"></i>
-                                    <span class="team-info__name">Pedro Barrosl</span>
-                                    <span class="team-info__post">Full Stack Developer</span>
-                                </div>
-                                <p class="team-info__desc scrollbar-outer">
-                                    Pedro has 6+ years experience as an engineer and has
-                                    built applications ranging from simple mobile apps to
-                                    robust enterprise software.  His specialties include
-                                    Angular2, Ionic, Ruby on Rails, Nodejs, and cloud
-                                    application deployment, to name a few.
+                                <p>
+                                    The Decentralized model is how business should be run. People (often thousands) invest small amounts (think crowdfunding), thus spreading the risk very thin. Everyone also has a say in the development and ongoing operations (to the extent that they choose), and everyone reaps the benefits when successful.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team__item">
-                        <div class="team__photoWrap">
-                            <img src="images/content/team/jacob_DeBenedetto.jpg" alt="" class="team__photo"/>
-                        </div>
-                        <div class="team__more">
-                            <span class="team__name">Jacob DeBenedetto</span>
-                            <span class="team__post">UI/UX Designer</span>
-                        </div>
-                        <div class="team-info__wrap">
-                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
-                            <div class="team-info__in">
-                                <div class="team-info__head">
-                                    <i class="icon-user"></i>
-                                    <span class="team-info__name">Jacob DeBenedetto</span>
-                                    <span class="team-info__post">UI/UX Designer</span>
-                                </div>
-                                <p class="team-info__desc scrollbar-outer">
-                                    Jacob brings 5+ years of software development and
-                                    graphic design to the team.  He has experience designing
-                                    and implementing incredible user interfaces across a
-                                    variety of application verticals.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team__item">
-                        <div class="team__photoWrap">
-                            <img src="images/content/team/alex_dulub.jpg" alt="" class="team__photo"/>
-                        </div>
-                        <div class="team__more">
-                            <span class="team__name">Alex Dulub</span>
-                            <span class="team__post">Solidity Developer</span>
-                        </div>
-                        <div class="team-info__wrap">
-                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
-                            <div class="team-info__in">
-                                <div class="team-info__head">
-                                    <i class="icon-user"></i>
-                                    <span class="team-info__name">Alex Dulub</span>
-                                    <span class="team-info__post">Solidity Developer</span>
-                                </div>
-                                <p class="team-info__desc scrollbar-outer">
-                                    Alex brings 10+ years experience in designing high-performance and functional enterprise applications.
-                                    Several years ago he began to focus on Blockchain and
-                                    Decentralized technologies of which he has created
-                                    various, custom cryptocurrency and smart contract
-                                    solutions for a wide range of business applications.
+                                <p>
+                                    In summation, the decentralized model greatly reduces barriers to entry, reduces individual risk (as well as single point of failure), and creates a truly democratic organization.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="subscribe__wrap">
-                    <h2 class="h2">Subscribe For Updates</h2>
-                    <span class="subscribe__desc">Join our 437,377 subscribers and get access to the latest tools, product announcements and much more!</span>
-                    <form id="subscribe_form_middle" class="form">
-                        <div class="form__row">
-                            <a href="javascript:;" class="btn btn-form btn_subscribe_2">Subscribe</a>
-                            <div class="input__extend">
-                                <input type="email" placeholder="Your Email" class="input input-bordered subscribe_email"/>
-                            </div>
-                            <span class="error-txt btm"><i class="icon-error"></i><span></span></span>
-                            <span class="form__remark">Don't worry we will never give your email address to others.</span>
+            </div>
+
+            <div id="getInvolved" class="section__getInvolved">
+                <div class="container">
+                    <div class="row">
+                        <div class="subscribe__wrap">
+                            <h2 class="h2">Subscribe For Updates</h2>
+                            <span class="subscribe__desc">Join our 437,377 subscribers and get access to the latest tools, product announcements and much more!</span>
+                            <form id="subscribe_form_middle" class="form">
+                                <div class="form__row">
+                                    <a href="javascript:;" class="btn btn-form btn_subscribe_2">Subscribe</a>
+                                    <div class="input__extend">
+                                        <input type="email" placeholder="Your Email" class="input input-bordered subscribe_email"/>
+                                    </div>
+                                    <span class="error-txt btm"><i class="icon-error"></i><span></span></span>
+                                    <span class="form__remark">Don't worry we will never give your email address to others.</span>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <span class="subscribe__desc">Depending on the level of involvement you desire, you can get active on social channels to share opinions, advice, etc. to help drive development. Or if you still have questions, ask away via email, and we would love to help you understand anything better.</span>
+                            <ul class="social__wrap">
+                                <li class="social__item">
+                                    <a href="" class="social__link">
+                                        <img src="images/icons/fb.svg" alt=""/>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="" class="social__link">
+                                        <img src="images/icons/twitter.svg" alt=""/>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="" class="social__link">
+                                        <img src="images/icons/linkedin.svg" alt=""/>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="" class="social__link">
+                                        <img src="images/icons/reddit.svg" alt=""/>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="" class="social__link">
+                                        <img src="images/icons/slack.svg" alt=""/>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="" class="social__link">
+                                        <img src="images/icons/youtube.svg" alt=""/>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="" class="social__link">
+                                        <img src="images/icons/bitcoin.svg" alt=""/>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="" class="social__link">
+                                        <img src="images/icons/medium.svg" alt=""/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -499,6 +480,95 @@
                                 </div>
                             </form>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section__footerNav">
+                <div class="container">
+                    <div class="footerNav__part">
+                        <span class="title">NAVIGATION</span>
+                        <ul class="footerNav__wrap">
+                            <li class="footerNav__item">
+                                <a href="javascript:;" class="btn_login footerNav__link">Log In</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="#use_cases" class="btn_scroll footerNav__link">Use Cases</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="#dapp_model" class="btn_scroll footerNav__link">DApp Model</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="javascript:;" class="btn_registration footerNav__link">Sign Up</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="#enterprise" class="btn_scroll footerNav__link">For Enterprise</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="#getInvolved" class="btn_scroll footerNav__link">Get Involved</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="#how_it_works" class="btn_scroll footerNav__link">How It Works</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="#team" class="btn_scroll footerNav__link">Team</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="#contact" class="btn_scroll footerNav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footerNav__part second">
+                        <span class="title">Resources</span>
+                        <ul class="footerNav__wrap">
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link">ICO</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link">Careers</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link">Press Inquiriesl</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link">Frequently Asked Questions</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link">News</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link">Developer API</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footerNav__part three">
+                        <span class="title">GET Social</span>
+                        <ul class="footerNav__wrap">
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link"><img src="images/icons/fb.svg" alt=""/> Facebook</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link"><img src="images/icons/slack.svg" alt=""/> Slack</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link"><img src="images/icons/twitter.svg" alt=""/> Twitter</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link"><img src="images/icons/youtube.svg" alt=""/> YouTube</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link"><img src="images/icons/linkedin.svg" alt=""/> LinkedIn</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link"><img src="images/icons/bitcoin.svg" alt=""/> BitcoinTalk</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link"><img src="images/icons/reddit.svg" alt=""/> Reddit</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="" class="footerNav__link"><img src="images/icons/medium.svg" alt=""/> Medium</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
