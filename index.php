@@ -281,7 +281,7 @@
                                         <div class="col-md-10 col-md-offset-1">
                                             <span class="tabs__title">Smart Trusts</span>
                                             <p class="tabs__desc">Overhead maintenance expenses of traditional Trusts can be extensive to have trustees (administrator of the Trust) manage and govern them based on provided terms.  Smart Trusts are governed by irrefutable computer code to make the process much cleaner, affordable, and manageable. The trustee’s role can be replaced by smart computer code (Trust contract) that is guaranteed to execute as instructed by the trustor (creator of the trust) without the exorbitant fees and reliance on a third-party.</p>
-                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
                                         </div>
                                     </div>
 
@@ -289,7 +289,7 @@
                                         <div class="col-md-10 col-md-offset-1">
                                             <span class="tabs__title">Universal User Rating System</span>
                                             <p class="tabs__desc">By leveraging UBI and singularity in unique asset registration, there is potential for a cross-platform rating system to be put into place to prevent fraudsters from jumping from one commerce platform to the next, continuously ripping off customers.  Since an asset registry is immutable and linked to their unique Blockchain Identifier, transactional history both good and bad will follow users, further securing peer to peer commerce..</p>
-                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
                                         </div>
                                     </div>
 
@@ -297,7 +297,7 @@
                                         <div class="col-md-10 col-md-offset-1">
                                             <span class="tabs__title">Insurance Policies & Claims</span>
                                             <p class="tabs__desc">Policy terms and procedures could be transformed into smart contract logic to remove the friction during claims processes.  The ownership titles of insured assets could be placed into a smart contract which is governed by policy terms such as remaining active as long as premiums continue to be paid on time, (or a set expiration date) and upon termination of the policy the associated smart contract is automatically destroyed.  If a trigger event occurs resulting in the policy to be paid out the asset titles could automatically be transferred to the UBI of the insurance provider and insurance money sent to the policy holder.  Human interaction could be in the form of oversight, rather than actually completing the claims process and interacting regularly with the policy holder saving insurance companies Billions of dollars.</p>
-                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
                                         </div>
                                     </div>
 
@@ -305,7 +305,7 @@
                                         <div class="col-md-10 col-md-offset-1">
                                             <span class="tabs__title">P2P Commerce</span>
                                             <p class="tabs__desc" style="text-align: center">Testing P2P</p>
-                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
                                         </div>
                                     </div>
 
@@ -313,7 +313,7 @@
                                         <div class="col-md-10 col-md-offset-1">
                                             <span class="tabs__title">Authenticated Marketplaces</span>
                                             <p class="tabs__desc" style="text-align: center">Testing marketplaces</p>
-                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
                                         </div>
                                     </div>
 
@@ -321,7 +321,7 @@
                                         <div class="col-md-10 col-md-offset-1">
                                             <span class="tabs__title">Auditing, Compliance, Analytics</span>
                                             <p class="tabs__desc" style="text-align: center">Testing Auditing</p>
-                                            <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
                                         </div>
                                     </div>
 
@@ -351,7 +351,7 @@
                 <div class="container">
                     <div class="team__joining">
                         <h2 class="h2">Interested in Joining the team?</h2>
-                        <a href="#contact" class="btn btn-default">Get In Touch!</a>
+                        <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
                     </div>
                 </div>
             </div>
