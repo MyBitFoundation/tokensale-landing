@@ -347,11 +347,173 @@
             </div>
 
             <div id="team" class="section__team">
-                <div class="team__wrap"
+                <div class="team__wrap">
+                    <div class="team__item">
+                        <div class="team__photoWrap">
+                            <img src="images/content/team/garrett_macdonald.jpg" alt="" class="team__photo"/>
+                        </div>
+                        <div class="team__more">
+                            <span class="team__name">Garrett MacDonald</span>
+                            <span class="team__post">Blockchain Design / Entrepreneurial Background in Bitcoin and Blockchain</span>
+                        </div>
+                        <div class="team-info__wrap">
+                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
+                            <div class="team-info__in">
+                                <div class="team-info__head">
+                                    <i class="icon-user"></i>
+                                    <span class="team-info__name">Garrett MacDonald</span>
+                                    <span class="team-info__post">Blockchain Design / Entrepreneurial Background in Bitcoin and Blockchain</span>
+                                </div>
+                                <p class="team-info__desc scrollbar-outer">
+                                    Garrett is a passionate innovator who has been involved
+                                    in the Bitcoin/Blockchain industry since 2011. He
+                                    crowdfunded what became a millionAdollar bitcoin
+                                    mining company when he was in high school, and has
+                                    advised for various startups and corporations. Now he is
+                                    focused on making the world's energy situation
+                                    sustainable using Blockchain.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__photoWrap">
+                            <img src="images/content/team/thomas_pollan.jpg" alt="" class="team__photo"/>
+                        </div>
+                        <div class="team__more">
+                            <span class="team__name">Thomas Pollan</span>
+                            <span class="team__post">Enterprise Business Applications / Sales & Strategy Background</span>
+                        </div>
+                        <div class="team-info__wrap">
+                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
+                            <div class="team-info__in">
+                                <div class="team-info__head">
+                                    <i class="icon-user"></i>
+                                    <span class="team-info__name">Thomas Pollan</span>
+                                    <span class="team-info__post">Enterprise Business Applications / Sales & Strategy Background</span>
+                                </div>
+                                <p class="team-info__desc scrollbar-outer">
+                                    Mr. Pollan has over 30 years of business consulting and
+                                    business startAup experience. Mr. Pollan's roles have
+                                    included Senior Director, Client Principal with Hewlett
+                                    Packard Enterprise, Senior Partner with Accenture, and
+                                    founder and President of Pollan Enterprises, a multiA
+                                    million dollar holding company for new startAup
+                                    businesses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__photoWrap">
+                            <img src="images/content/team/ian_worral.jpg" alt="" class="team__photo"/>
+                        </div>
+                        <div class="team__more">
+                            <span class="team__name">Ian Worrall</span>
+                            <span class="team__post">Decentralized Solutions Architect / Entrepreneurial Background in Finance and SaaS</span>
+                        </div>
+                        <div class="team-info__wrap">
+                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
+                            <div class="team-info__in">
+                                <div class="team-info__head">
+                                    <i class="icon-user"></i>
+                                    <span class="team-info__name">Ian Worrall</span>
+                                    <span class="team-info__post">Decentralized Solutions Architect / Entrepreneurial Background in Finance and SaaS</span>
+                                </div>
+                                <p class="team-info__desc scrollbar-outer">
+                                    Ian has been involved fullAtime in the Blockchain industry
+                                    since early 2013 when he began a small mining operation
+                                    that grew rapidly.  Since then he has managed a
+                                    company that builds custom software for small
+                                    businesses up to large corporations.  His true passion is
+                                    decentralized applications and the potential they have to
+                                    disrupt traditional business models.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__photoWrap">
+                            <img src="images/content/team/pedro_barros.jpg" alt="" class="team__photo"/>
+                        </div>
+                        <div class="team__more">
+                            <span class="team__name">Pedro Barros</span>
+                            <span class="team__post">Full Stack Developer</span>
+                        </div>
+                        <div class="team-info__wrap">
+                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
+                            <div class="team-info__in">
+                                <div class="team-info__head">
+                                    <i class="icon-user"></i>
+                                    <span class="team-info__name">Pedro Barrosl</span>
+                                    <span class="team-info__post">Full Stack Developer</span>
+                                </div>
+                                <p class="team-info__desc scrollbar-outer">
+                                    Pedro has 6+ years experience as an engineer and has
+                                    built applications ranging from simple mobile apps to
+                                    robust enterprise software.  His specialties include
+                                    Angular2, Ionic, Ruby on Rails, Nodejs, and cloud
+                                    application deployment, to name a few.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__photoWrap">
+                            <img src="images/content/team/jacob_DeBenedetto.jpg" alt="" class="team__photo"/>
+                        </div>
+                        <div class="team__more">
+                            <span class="team__name">Jacob DeBenedetto</span>
+                            <span class="team__post">UI/UX Designer</span>
+                        </div>
+                        <div class="team-info__wrap">
+                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
+                            <div class="team-info__in">
+                                <div class="team-info__head">
+                                    <i class="icon-user"></i>
+                                    <span class="team-info__name">Jacob DeBenedetto</span>
+                                    <span class="team-info__post">UI/UX Designer</span>
+                                </div>
+                                <p class="team-info__desc scrollbar-outer">
+                                    Jacob brings 5+ years of software development and
+                                    graphic design to the team.  He has experience designing
+                                    and implementing incredible user interfaces across a
+                                    variety of application verticals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__photoWrap">
+                            <img src="images/content/team/alex_dulub.jpg" alt="" class="team__photo"/>
+                        </div>
+                        <div class="team__more">
+                            <span class="team__name">Alex Dulub</span>
+                            <span class="team__post">Solidity Developer</span>
+                        </div>
+                        <div class="team-info__wrap">
+                            <a href="" class="team-info__close"><i class="icon-close2"></i></a>
+                            <div class="team-info__in">
+                                <div class="team-info__head">
+                                    <i class="icon-user"></i>
+                                    <span class="team-info__name">Alex Dulub</span>
+                                    <span class="team-info__post">Solidity Developer</span>
+                                </div>
+                                <p class="team-info__desc scrollbar-outer">
+                                    Alex brings 10+ years experience in designing high-performance and functional enterprise applications.
+                                    Several years ago he began to focus on Blockchain and
+                                    Decentralized technologies of which he has created
+                                    various, custom cryptocurrency and smart contract
+                                    solutions for a wide range of business applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="container">
                     <div class="team__joining">
                         <h2 class="h2">Interested in Joining the team?</h2>
-                        <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
+                        <a href="#contact" class="btn btn_scroll btn-default">Get In Touch!</a>
                     </div>
                 </div>
             </div>
