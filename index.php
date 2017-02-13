@@ -96,7 +96,7 @@
                                     </div>
                                 </form>
                                 <a href="javascript:;" target="_blank" class="btn btn-rounded open_popup_watch_video"><span>Watch Video</span> <i class="icon-video"></i></a>
-                                <a href="javascript:;" target="_blank" class="btn btn-rounded learn_more_btn"><span>Learn More</span> <i class="icon-rocket"></i></a>
+                                <a href="#whitepaper" target="_blank" class="btn btn-rounded btn_scroll"><span>Learn More</span> <i class="icon-rocket"></i></a>
                             </div>
                         </div>
                     </div>
