@@ -117,6 +117,10 @@
   .btn-bordered {
     line-height: 44px;
   }
+  .btn.small {
+    height: 48px;
+    line-height: 48px;
+  }
   .header {
     height: 90px;
     line-height: 90px;
@@ -136,6 +140,9 @@
   }
   .section__contact {
     padding: 56px 0;
+  }
+  .section__enterprise .body {
+    padding: 150px 0;
   }
   .feature__head {
     margin-bottom: 80px;
@@ -302,6 +309,15 @@
   .section__whitepaper .h2 {
     font-size: 24px;
   }
+  .section__dappModel .head {
+    font-size: 18px;
+  }
+  .section__dappModel .body {
+    padding: 90px 0 50px;
+  }
+  .section__enterprise .body {
+    padding: 90px 0;
+  }
   .intro__logo {
     text-align: left;
   }
@@ -374,13 +390,6 @@
   .popup__video {
     padding: 15px;
   }
-  .tabs-nav__item {
-    width: 50%;
-  }
-  .tabs-nav__item:nth-child(1),
-  .tabs-nav__item:nth-child(4) {
-    width: 50%;
-  }
   .footerNav__part {
     width: 100%;
   }
@@ -398,6 +407,19 @@
   }
   .footerNav__part.three li:nth-child(even) {
     width: 33.33%;
+  }
+  .model__title {
+    margin-bottom: 10px;
+  }
+  .model__item {
+    margin-bottom: 50px;
+  }
+  .sideTabs-nav__item + li {
+    margin-top: 4px;
+  }
+  .sideTabs-nav__link {
+    font-size: 13px;
+    padding: 13px 25px;
   }
 }
 @media (min-width: 768px) {
@@ -435,6 +457,9 @@
   }
 }
 @media (max-width: 767px) {
+  .divider {
+    display: none;
+  }
   .header {
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
@@ -561,6 +586,10 @@
   .btn:hover:before {
     width: 100%;
   }
+  .btn + .btn {
+    margin-left: 0;
+    margin-top: 16px;
+  }
   .nav__wrap {
     top: 50px;
   }
@@ -590,12 +619,18 @@
     font-size: 15px;
     line-height: 1.5;
   }
-  .section__enterprise {
-    padding: 30px 0 50px;
+  .section__enterprise .head {
+    padding: 40px 0;
   }
   .section__enterprise .desc {
     font-size: 15px;
     line-height: 1.5;
+  }
+  .section__enterprise .body {
+    padding: 50px 0 70px;
+  }
+  .section__dappModel .head {
+    font-size: 15px;
   }
   .section__footerNav .title {
     padding-left: 0;
@@ -609,16 +644,30 @@
   .tabs__pane {
     margin: 0;
   }
-  .tabs__cont {
-    margin: 0 -15px;
+  .tabs__pane.restAPI {
+    padding-top: 0;
+  }
+  .tabs__pane.restAPI .tabs__desc {
+    margin-left: 0;
+    text-align: left;
   }
   .tabs__desc {
     font-size: 13px;
     line-height: 1.4;
     margin-bottom: 35px;
   }
+  .tabs__desc.md {
+    width: 100%;
+  }
   .tabs__title {
     margin-bottom: 12px;
+  }
+  .tabs__accent {
+    padding: 15px 20px;
+  }
+  .tabs__accent:before {
+    top: -15px;
+    bottom: -20px;
   }
   .tabs-nav__list {
     text-align: center;
@@ -760,6 +809,37 @@
   }
   .footerNav__part li:nth-child(even) {
     width: 50% !important;
+  }
+  .sideTabs-nav__wrap {
+    position: relative;
+  }
+  .sideTabs-nav__list:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .sideTabs-nav__item {
+    width: 50%;
+    float: left;
+  }
+  .sideTabs-nav__item + li {
+    margin-top: 0;
+  }
+  .sideTabs-nav__link {
+    text-align: center;
+    padding: 10px 0;
+    margin: 5px;
+    font-size: 12.5px;
+  }
+  .sideTabs-nav__link.active {
+    box-shadow: inset 0 -4px 0 #fd8b19;
+  }
+  .sideTabs__cont {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .sideTabs__cont .tabs__desc {
+    margin-bottom: 10px;
   }
 }
 @media (max-device-width: 727px) and (orientation: landscape) {
