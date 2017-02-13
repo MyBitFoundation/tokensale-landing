@@ -25,48 +25,6 @@
 }
 
 
-.icon-linkedin .path1:before {
-	content: "\e91f";
-	color: rgb(255, 255, 255);
-}
-.icon-linkedin .path2:before {
-	content: "\e920";
-	margin-left: -1em;
-	color: rgb(0, 119, 183);
-}
-.icon-youtube .path1:before {
-	content: "\e921";
-	color: rgb(255, 255, 255);
-}
-.icon-youtube .path2:before {
-	content: "\e922";
-	margin-left: -1em;
-	color: rgb(246, 28, 13);
-}
-.icon-bitcoin:before {
-	content: "\e923";
-}
-.icon-twitter:before {
-	content: "\e924";
-}
-.icon-fb .path1:before {
-	content: "\e925";
-	color: rgb(255, 255, 255);
-}
-.icon-fb .path2:before {
-	content: "\e926";
-	margin-left: -1em;
-	color: rgb(71, 89, 147);
-}
-.icon-audit:before {
-	content: "\e927";
-}
-.icon-marketplaces:before {
-	content: "\e928";
-}
-.icon-p2p:before {
-	content: "\e929";
-}
 .icon-rocket:before {
 	content: "\e92a";
 }
@@ -97,10 +55,10 @@
 .icon-video:before {
 	content: "\e915";
 }
-.icon-InsuranceClaims:before {
+.icon-RestAPI:before {
 	content: "\e916";
 }
-.icon-RatingSystem:before {
+.icon-SmartTrusts:before {
 	content: "\e917";
 }
 .icon-ReduceRisk:before {
@@ -109,7 +67,7 @@
 .icon-SecureAssets:before {
 	content: "\e91a";
 }
-.icon-SmartTrusts:before {
+.icon-Core:before {
 	content: "\e91b";
 }
 .icon-add:before {
@@ -163,4 +121,5 @@
 .icon-transactions:before {
 	content: "\e910";
 }
+
 

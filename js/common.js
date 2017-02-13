@@ -42,11 +42,31 @@ Common = {
             var el = $(this);
             el.closest('.scroll-textarea').addClass('focus');
         });
-        if ((navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone|webOS|Opera Mini/i))) {
-            $('.popup__wrap.open input').focus(function () {
-                $(this).closest('.popup__in').addClass('entry');
+
+        if(/iPhone|iPod|Android|iPad/.test(window.navigator.platform)){
+            $('.modal').on('show.bs.modal', function() {
+                setTimeout(function () {
+                    var scrollLocation = $(window).scrollTop();
+                    $('.popup__wrap')
+                        .addClass('modal-ios')
+                        .height($(window).height())
+                        .css({'margin-top': scrollLocation + 'px'});
+                }, 0);
+            });
+            $('input').on('blur', function(){
+                setTimeout(function() {
+                    // This causes iOS to refresh, fixes problems when virtual keyboard closes
+                    $(window).scrollLeft(0);
+                    var $focused = $(':focus');
+                    // Needed in case user clicks directly from one input to another
+                    if(!$focused.is('input')) {
+                        // Otherwise reset the scoll to the top of the modal
+                        $(window).scrollTop($(window).scrollTop());
+                    }
+                }, 0);
             })
         }
+
 
         $(window).on({
             load: function () {
@@ -66,7 +86,7 @@ Common = {
     },
 
     initEvents: function () {
-        $('.tabs-nav__link').on('click',Common.toggleTabs);
+        $('.tabs__link_js').on('click',Common.toggleTabs);
         $('.header__btnMenu').on('click',Common.toggleMobMenu);
         $('.nav__link').on('click',Common.clickMobMenu);
         $('.team__item').on('click', function (e) {
@@ -127,10 +147,10 @@ Common = {
 
     toggleTabs: function (e) {
         e.preventDefault();
-        $('.tabs-nav__link').removeClass('active');
+        $(this).closest('.tabs__wrap_js').find('.tabs__link_js').removeClass('active');
         $(this).addClass('active');
         var tab = $(this).attr('href');
-        $('.tabs__pane').not(tab).removeClass('active').removeClass('in');
+        $(this).closest('.tabs__wrap_js').find('.tabs__pane_js').not(tab).removeClass('active').removeClass('in');
         $(tab).addClass('active');
         setTimeout(function(){
             $(tab).addClass('in');
@@ -205,7 +225,7 @@ Common = {
             popup.removeClass('static');
         }
     },
-    
+
     initScrollify: function () {
         if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 767) {
             $.scrollify({

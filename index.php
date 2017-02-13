@@ -40,16 +40,22 @@
                 <nav class="nav__wrap">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#how_it_works" class="nav__link btn_scroll"> How It Works</a>
+                            <a href="#features" class="nav__link btn_scroll">Features</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#use_cases" class="nav__link btn_scroll">Use cases</a>
+                            <a href="#how_it_works" class="nav__link btn_scroll">how it works</a>
                         </li>
                         <li class="nav__item">
                             <a href="#enterprise" class="nav__link btn_scroll">For Enterprise</a>
                         </li>
                         <li class="nav__item">
                             <a href="#team" class="nav__link btn_scroll">Team</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#dapp_model" class="nav__link btn_scroll">Dapp Model</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#getInvolved" class="nav__link btn_scroll">Get Involved</a>
                         </li>
                         <li class="nav__item">
                             <a href="#dapp_model" class="nav__link btn_scroll">Dapp Model</a>
@@ -110,10 +116,10 @@
                         <nav class="nav__wrap">
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a href="#how_it_works" class="nav__link btn_scroll"> How It Works</a>
+                                    <a href="#features" class="nav__link btn_scroll">Features</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#use_cases" class="nav__link btn_scroll">Use cases</a>
+                                    <a href="#how_it_works" class="nav__link btn_scroll">How It Works</a>
                                 </li>
                                 <li class="nav__item">
                                     <a href="#enterprise" class="nav__link btn_scroll">For Enterprise</a>
@@ -140,11 +146,11 @@
                 </div>
             </header>
 
-            <div class="section__whitepaper">
+            <div id="whitepaper" class="section__whitepaper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <h2 class="h2">Transfering Ownership, Titles, and Assets should be easier.</h2>
+                        <div class="col-md-8 col-md-offset-2">
+                            <h2 class="h2">Why MyBit?</h2>
                             <p>
                                 In an increasingly digital age it is imperative that money and assets can flow freely and securely on a global scale transcending borders. <strong>This streamlines business functions creating unparalleled efficiencies.</strong>
                             </p>
@@ -160,7 +166,7 @@
                 </div>
             </div>
 
-            <div id="how_it_works" class="section__features" >
+            <div id="features" class="section__features" >
                 <div class="container">
                     <div class="feature__head">
                         <h2 class="h2">Our Goal is Adding an Ownership Layer to the Internet</h2>
@@ -230,101 +236,105 @@
                 </div>
             </div>
 
-            <div id="use_cases" class="section__use">
+            <div id="how_it_works" class="section__howWorks">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-10 col-lg-offset-1">
-                            <h2 class="h2">Use Cases</h2>
-                            <div class="tabs__wrap">
+                        <div class="col-lg-12">
+                            <h2 class="h2">How It Works</h2>
+                            <div class="tabs__wrap tabs__wrap_js">
                                 <div class="tabs-nav__wrap">
                                     <ul class="tabs-nav__list">
                                         <li class="tabs-nav__item">
-                                            <a href="#smartTrusts" class="tabs-nav__link active">
+                                            <a href="#core" class="tabs-nav__link active tabs__link_js">
+                                                <i class="icon-Core"></i>
+                                                <span class="tabs-nav__title">Core</span>
+                                            </a>
+                                        </li>
+                                        <li class="tabs-nav__item">
+                                            <a href="#smartTrasts" class="tabs-nav__link tabs__link_js">
                                                 <i class="icon-SmartTrusts"></i>
                                                 <span class="tabs-nav__title">Smart Trusts</span>
                                             </a>
                                         </li>
                                         <li class="tabs-nav__item">
-                                            <a href="#ratingSystem" class="tabs-nav__link">
-                                                <i class="icon-RatingSystem"></i>
-                                                <span class="tabs-nav__title">Universal User <span class="line">Rating System</span></span>
-                                            </a>
-                                        </li>
-                                        <li class="tabs-nav__item">
-                                            <a href="#insuranceClaims" class="tabs-nav__link">
-                                                <i class="icon-InsuranceClaims"></i>
-                                                <span class="tabs-nav__title">Insurance Policies <span class="line">& Claims</span></span>
-                                            </a>
-                                        </li>
-                                        <li class="tabs-nav__item">
-                                            <a href="#p2pCommerce" class="tabs-nav__link">
-                                                <i class="icon-p2p"></i>
-                                                <span class="tabs-nav__title">P2P Commerce</span>
-                                            </a>
-                                        </li>
-                                        <li class="tabs-nav__item">
-                                            <a href="#marketplaces" class="tabs-nav__link">
-                                                <i class="icon-marketplaces"></i>
-                                                <span class="tabs-nav__title">Authenticated Marketplaces</span>
-                                            </a>
-                                        </li>
-                                        <li class="tabs-nav__item">
-                                            <a href="#auditing" class="tabs-nav__link">
-                                                <i class="icon-audit"></i>
-                                                <span class="tabs-nav__title">Auditing, Compliance, and Analytics</span>
+                                            <a href="#restAPI" class="tabs-nav__link tabs__link_js">
+                                                <i class="icon-RestAPI"></i>
+                                                <span class="tabs-nav__title">Rest API</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="tabs__cont">
-                                    <div id="smartTrusts" class="tabs__pane fade in active">
-                                        <div class="col-md-10 col-md-offset-1">
-                                            <span class="tabs__title">Smart Trusts</span>
-                                            <p class="tabs__desc">Overhead maintenance expenses of traditional Trusts can be extensive to have trustees (administrator of the Trust) manage and govern them based on provided terms.  Smart Trusts are governed by irrefutable computer code to make the process much cleaner, affordable, and manageable. The trustee’s role can be replaced by smart computer code (Trust contract) that is guaranteed to execute as instructed by the trustor (creator of the trust) without the exorbitant fees and reliance on a third-party.</p>
-                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
+                                    <div id="core" class="tabs__pane tabs__pane_js fade in active core">
+                                        <p class="tabs__desc md">
+                                            At its core, MyBit packs powerful features that streamline asset management, authentication, and peer to peer commerce. To date there has yet to be a successful uniformed global database of registries. This is due to centralized systems posing too large of a security threat and a single point of failure risk. Through decentralization, these risks are exponentially mitigated.
+                                        </p>
+                                        <span class="divider"></span>
+                                        <p class="tabs__desc md">
+                                            MyBit makes it easy for anyone to register and manage all of their assets in one platform. The core capabilities include: (rightful) ownership verification, authenticity searches, and an automated bill of sale generated and stored immutably for all transactions. The latter of these features is widely applicable (and needed) for securing peer to peer commerce. These transactions are conducted largely in cash and have a limited trail, which often leads to ownership disputes.
+                                        </p>
+                                        <span class="tabs__title">
+                                                Example
+                                            </span>
+                                        <p class="tabs__desc">
+                                            Alice sells her drone to Bob in exchange for cash. There are two major issues with how this transaction is conducted. One, Bob has limited ability to verify if Alice is the rightful owner which could result in the actual owner taking claim of the asset. Two, Alice has the drone registered with the FAA. Bob is supposed to register it under his name after the purchase but may elect not to. If Bob commits a crime with the drone or is civilly liable for an action, registration will still be traced to Alice. She must then (at her own expense) try to prove Bob is the rightful owner via communication regarding the sale (emails, texts, etc.) since there is no verifiable receipt of the sale nor monetary exchange. MyBit vastly reduces the risk of either of these situations occurring by making it easy to verify ownership, and having an immutable transactional receipt of the sale embedded on the auditable Blockchain.
+                                        </p>
+                                    </div>
+                                    <div id="smartTrasts" class="tabs__pane tabs__pane_js fade smartTrasts">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <p class="tabs__desc">
+                                                    The manner in which assets from trusts, wills, and many other forms of divestment are distributed is archaic. The overhead administration fees are exorbitant and the process is extraordinarily slow.
+                                                </p>
+                                                <p class="tabs__desc">
+                                                    Smart Trusts are governed by irrefutable computer code to make the process much cleaner, affordable, and manageable. The administrator’s role to govern and act based on the outlined terms can be replaced by efficient computer code that is guaranteed to execute exactly as instructed.
+                                                </p>
+                                                <p class="tabs__desc">
+                                                    This results in massive cost savings, time reduction, and eliminates reliance on third-parties prone to human-error.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-
-                                    <div id="ratingSystem" class="tabs__pane fade">
-                                        <div class="col-md-10 col-md-offset-1">
-                                            <span class="tabs__title">Universal User Rating System</span>
-                                            <p class="tabs__desc">By leveraging UBI and singularity in unique asset registration, there is potential for a cross-platform rating system to be put into place to prevent fraudsters from jumping from one commerce platform to the next, continuously ripping off customers.  Since an asset registry is immutable and linked to their unique Blockchain Identifier, transactional history both good and bad will follow users, further securing peer to peer commerce..</p>
-                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
+                                    <div id="restAPI" class="tabs__pane tabs__pane_js fade restAPI">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-sm-offset-2">
+                                                <p class="tabs__desc">
+                                                    MyBit’s core functionality can be extended to use cases across many verticals.
+                                                </p>
+                                                <p class="tabs__desc">
+                                                    A rich REST API enables applications to easily be built, tested, deployed, and scaled on top of MyBit’s core.
+                                                </p>
+                                                <p class="tabs__desc">
+                                                    The API will be publicly available for developers and rapid prototyping. For high-resource production applications a license can be purchased.
+                                                </p>
+                                            </div>
+                                            <div class="col-sm-6 col-sm-offset-1">
+                                                <div class="tabs__accent">
+                                                    <span class="title">A few prominent examples of next generation applications that can be developed include:</span>
+                                                    <ul class="listLine__wrap">
+                                                        <li class="listLine__item">
+                                                            Insurance products & back-office management
+                                                        </li>
+                                                        <li class="listLine__item">
+                                                            Authenticated marketplaces
+                                                        </li>
+                                                        <li class="listLine__item">
+                                                            Universal rating systems
+                                                        </li>
+                                                        <li class="listLine__item">
+                                                            Auditing, compliance, and analytics
+                                                        </li>
+                                                        <li class="listLine__item">
+                                                            Medical device management
+                                                        </li>
+                                                        <li class="listLine__item">
+                                                            Many uses cases that do exist yet
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
-                                    <div id="insuranceClaims" class="tabs__pane fade">
-                                        <div class="col-md-10 col-md-offset-1">
-                                            <span class="tabs__title">Insurance Policies & Claims</span>
-                                            <p class="tabs__desc">Policy terms and procedures could be transformed into smart contract logic to remove the friction during claims processes.  The ownership titles of insured assets could be placed into a smart contract which is governed by policy terms such as remaining active as long as premiums continue to be paid on time, (or a set expiration date) and upon termination of the policy the associated smart contract is automatically destroyed.  If a trigger event occurs resulting in the policy to be paid out the asset titles could automatically be transferred to the UBI of the insurance provider and insurance money sent to the policy holder.  Human interaction could be in the form of oversight, rather than actually completing the claims process and interacting regularly with the policy holder saving insurance companies Billions of dollars.</p>
-                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
-                                        </div>
-                                    </div>
-
-                                    <div id="p2pCommerce" class="tabs__pane fade">
-                                        <div class="col-md-10 col-md-offset-1">
-                                            <span class="tabs__title">P2P Commerce</span>
-                                            <p class="tabs__desc" style="text-align: center">Testing P2P</p>
-                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
-                                        </div>
-                                    </div>
-
-                                    <div id="marketplaces" class="tabs__pane fade">
-                                        <div class="col-md-10 col-md-offset-1">
-                                            <span class="tabs__title">Authenticated Marketplaces</span>
-                                            <p class="tabs__desc" style="text-align: center">Testing marketplaces</p>
-                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
-                                        </div>
-                                    </div>
-
-                                    <div id="auditing" class="tabs__pane fade">
-                                        <div class="col-md-10 col-md-offset-1">
-                                            <span class="tabs__title">Auditing, Compliance, Analytics</span>
-                                            <p class="tabs__desc" style="text-align: center">Testing Auditing</p>
-                                            <a href="#contact" class="btn_scroll btn btn-default">Get In Touch!</a>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -334,17 +344,83 @@
             </div>
 
             <div id="enterprise" class="section__enterprise">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2 class="h2">Enterprise Edition</h2>
-                            <p class="desc">
-                                AI is going to take jobs from people. It is also going to cost companies a lot of money to start producing their own hardware. Especially service companies such as Uber that now have to move from capital light to capital intensive as they move from a service provider to a manufacturer or AI-powered autonomous cars.
-                            </p>
+                <div class="head">
+                    <div class="container">
+                        <h2 class="h2">Enterprise Edition</h2>
+                        <p class="desc">
+                            AI will replace many human jobs. It has already begun.
+                        </p>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="container">
+                        <div class="sideTabs__wrap tabs__wrap_js">
+                            <div class="sideTabs-nav__wrap">
+                                <ul class="sideTabs-nav__list">
+                                    <li class="sideTabs-nav__item">
+                                        <a href="#problem" class="sideTabs-nav__link active tabs__link_js">Problem</a>
+                                    </li>
+                                    <li class="sideTabs-nav__item">
+                                        <a href="#myBitEnterprise" class="sideTabs-nav__link tabs__link_js">MyBit Enterprise</a>
+                                    </li>
+                                    <li class="sideTabs-nav__item">
+                                        <a href="#autonomousMobility" class="sideTabs-nav__link tabs__link_js">Autonomous Mobility</a>
+                                    </li>
+                                    <li class="sideTabs-nav__item">
+                                        <a href="#smartHomes" class="sideTabs-nav__link tabs__link_js">Smart Homes</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sideTabs__cont">
+                                <div id="problem" class="tabs__pane tabs__pane_js fade in active">
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <p class="tabs__desc">
+                                                There are many socioeconomic factors that need to be carefully considered as the transition to AI becomes widespread.  Unemployment will rise short-term and may remain long-term.  Older generations will be the most affected as they have less incentive to learn new skills due to limited time remaining in the workforce.  Companies will need to weigh financing options for equipment and system upgrades.  While AI technology is becoming increasingly affordable, capital light (mainly service) companies must transition to capital intensive in order to fund massive investments into hardware.  A disruptive global shift at this scale could easily become highly problematic.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="myBitEnterprise" class="tabs__pane tabs__pane_js fade">
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <p class="tabs__desc">
+                                                MyBit Enterprise is designed to fill the void between unemployment and AI-takeover during this disruptive transition by facilitating the creation of a new model that is beneficial to individuals, companies, and sustainability.  MyBit Enterprise provides companies with viable financing solutions through tokenized fractional assets, enables new methods of income generation for the average person; and strives towards sustainability by managing this vast amount of data and activity with minimal resource consumption.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="autonomousMobility" class="tabs__pane tabs__pane_js fade">
+                                    <p class="tabs__desc">
+                                        We are going to look at Uber for this synopsis, but other companies working on autonomous mobility such as airbus, industrial automation equipment for commercial usage, and countless others are all applicable.
+                                    </p>
+                                    <p class="tabs__desc">
+                                        Uber is a capital light company.  Their technology currently provides the service of connecting drivers and riders.  Under this model they have minimal investment requirements into hardware because the drivers supply the labor and their own vehicles.  As they transition to self-driving cars, this changes their model substantially.  Not only will millions of drivers across the globe be out of jobs, but from a company perspective this requires a massive investment in the building and/or purchasing of a self-driving fleet.  If Uber financed this themselves (with institutional aid), it could take them many years to achieve an ROI – but that’s normal in business.  What’s important to look at is the amount of jobs that will be lost and multiply this across all industries that will have massive layoffs.  High unemployment is bad for society.
+                                    </p>
+                                    <p class="tabs__desc">
+                                        An alternative to this approach is to register each autonomous mobile on MyBit and issue tokenized fractional shares of the underlying asset.  These shares will be offered to the public for purchase -it is important they are fractional to reduce the financial barrier to entry of purchasing an entire mobile.  In exchange for purchasing shares in a self-driving car, the investor will receive an ownership stake which entitles them to receive automated revenue distributions.  By tokenizing these shares it creates high liquidity in the market to buy, sell, and swap after the initial offering so capital is free flowing and largely unrestricted.
+                                    </p>
+                                    <p class="tabs__desc">
+                                        This creates a sustainably ecosystem for all.  The (service) company is able to transition to AI machinery faster, more effectively, and remain capital light with minimal disruption to their business model. The average person has the ability to generate passive income without traditional barriers to entry.  This model can be replicated over and over to nearly any autonomous mobility initiative.
+                                    </p>
+                                </div>
+                                <div id="smartHomes" class="tabs__pane tabs__pane_js fade">
+                                    <p class="tabs__desc">
+                                        MyBit Enterprise has the potential to make smart homes powered by decentralized energy grids widely accessible to the masses.  Clean, sustainable energy is important not just for environmental factors.  With the massive increase in IoT devices and other electric-powered machinery, global power consumption may surpass what traditional power grids can produce which creates a large need for decentralized power sources.  The cost and slow ROI of these power sources at one’s home is the main constraint preventing widespread adoption.
+                                    </p>
+                                    <p class="tabs__desc">
+                                        MyBit Enterprise can resolve this barrier to entry in a similar method to financing autonomous mobiles.  The hardware producer (with installation agreement from homeowner), can register the asset on MyBit and issue tokenized fractional shares which are offered to the public for purchase.  Power consumption charged to the homeowner will be distributed to the shareholders, and if the homeowner elects they can choose to use cost-savings (over traditional utilities) to buy back ownership gradually.  Self-driving electric cars (and future forms of mobility) will be a major source of income for decentralized power grid owners to monetize excess production.  By utilizing the Blockchain, which is transparent by nature, revenue disbursements can be monitored in real-time and flow to stakeholders in an automated and frictionless process.
+                                    </p>
+                                    <p class="tabs__desc">
+                                        This financing and ownership model based on real-time micropayments-per-use can be applied to nearly any IoT device to increase the accessibility of otherwise expensive hardware.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <div id="team" class="section__team">
                 <div class="team__wrap">
@@ -519,24 +595,76 @@
             </div>
 
             <div id="dapp_model" class="section__dappModel">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <h2 class="h2">Decentralized Architecture</h2>
-                            <div class="desc">
+                <div class="head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <h2 class="h2">Decentralized Architecture</h2>
+                                <div class="desc">
+                                    <p>
+                                        The Decentralized business model enables anyone to participate and benefit by partaking in profit sharing and revenue distributions. This creates an <span class="mark">opportunity for the average person to get involved from the beginning. </span>
+                                    </p>
+                                    <p>
+                                        In a traditional model, a central party or group takes on a large amount of risk (building and bringing to market), has full autonomy in decision-making, and if successful, reaps all the monetary benefits. This creates a huge barrier for entry and keeps the rich in control and enables them to get richer. By the time the general public can buy shares (typically through an initial public offering), the initial investors can sell theirs to the average person often at 100x what they paid or more.                                </p>
+                                    <p>
+                                        The Decentralized model is how business should be run. People (often thousands) invest small amounts (think crowdfunding), thus spreading the risk very thin. <span class="mark">Everyone also has a say in the development and ongoing operations (to the extent that they choose), and everyone reaps the benefits when successful.</span> The decentralized model greatly reduces barriers to entry, reduces individual risk (as well as single point of failure), and creates a truly democratic organization.                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 model__item">
+                                <span class="model__title">Why we chose the decentralized model for this project? </span>
                                 <p>
-                                    The Decentralized business model enables anyone to get involved and benefit through profit sharing for revenue from both the consumer and enterprise releases. This opens up doors of opportunity to the average person.
+                                    We believe that over the next decade there will be a global shift towards decentralizing business models and want to stay ahead of the curve. For MyBit, a decentralized model makes the most sense.
                                 </p>
                                 <p>
-                                    In a traditional model, a central party or group takes on a large amount of risk (building and bringing to market), has full autonomy in devision-making, and if sucessful, reaps all the montary benefits. This creates a huge barrier for entry and keeps the rich in control and enables them to get richer. By the time the general public can buy shares (typicall through an initial public offering), everyone has already gotten rich.
+                                    When dealing with ownership records, payments, and other critical information a <strong>decentralized model provides the most secure route for the protection of information and for people.</strong>
                                 </p>
                                 <p>
-                                    The Decentralized model is how business should be run. People (often thousands) invest small amounts (think crowdfunding), thus spreading the risk very thin. Everyone also has a say in the development and ongoing operations (to the extent that they choose), and everyone reaps the benefits when successful.
+                                    If our core development team was to disappear, none of the information would be lost and anyone could take over the project to keep it going. Also, when dealing with payments, if a central company controlled the entire system they could easily raise prices unfairly to “extort” the general public.
                                 </p>
                                 <p>
-                                    In summation, the decentralized model greatly reduces barriers to entry, reduces individual risk (as well as single point of failure), and creates a truly democratic organization.
+                                    Therefore, a decentralized model provides the most secure and democratic solution.
                                 </p>
                             </div>
+                            <div class="col-md-3 col-md-offset-2 model__item">
+                                <span class="model__title">Incentive</span>
+                                <p>
+                                    Incentivizing participants drives the ecosystem and encourages growth. To use certain services of the platform, a token specific to MyBit must be utilized. These tokens are offered in a crowdsale to fairly distribute among the network.
+                                </p>
+                                <p>
+                                    <strong>The value of each is determined by the laws of supply and demand.</strong> Since there is a fixed supply of tokens it is expected that as popularity (demand) of the platform increases, the value will rise.
+                                </p>
+                            </div>
+                            <div class="col-md-6 model__item">
+                                <span class="model__title">Crowdsale and ongoing operations</span>
+                                <p>
+                                    The goal of the crowdsale is to fund the initial development and continued operations of the platform while also giving the community input and enabling them to benefit from a successful launch and share in the ongoing success.
+                                </p>
+                                <p>
+                                    First, <strong>information regarding the project is publicly released for feedback and review.</strong> Then the crowdsale period is announced days or weeks before it officially opens.
+                                </p>
+                                <p>
+                                    The crowdsale is managed by an ethereum smart-contract to ensure tokens are received after funds are sent to the associated address. Within a few seconds of the transaction confirming, an amount of tokens equal to the sent monetary value are minted and automatically sent to the recipient’s wallet.
+                                </p>
+                                <p>
+                                    Once the crowdsale period ends, funds are made accessible to the core team to fund development and ongoing expenses.
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-md-offset-2 model__item">
+                                <span class="model__title">Post-Crowdfund</span>
+                                <p>
+                                    Typically, within a few days of ending, the token is tradable on various cryptocurrency exchanges so people who missed out on the crowdsale can purchase them and participants can sell their tokens or buy more if they choose. This liquidity in an early-stage is not possible in traditional models.
+                                </p>
+                                <p>
+                                    Once the project is launched, the tokens are used to access certain components of the platform. <strong>Those who hold tokens once the platform is live and generating money will automatically receive revenue disbursements in real-time directly to their wallets. </strong>
+                                </p>
+                            </div>
+                            <a href="#contact" class="btn btn-default btn_scroll">Join Crowdsale</a>
                         </div>
                     </div>
                 </div>
@@ -546,8 +674,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="subscribe__wrap">
-                            <h2 class="h2">Subscribe For Updates</h2>
-                            <span class="subscribe__desc">Join our 437,377 subscribers and get access to the latest tools, product announcements and much more!</span>
+                            <h2 class="h2">How to get involved?</h2>
+                            <span class="subscribe__desc">If this revolutionary model is appealing to you, first sign up below with your email address and stay tuned for updates.</span>
                             <form id="subscribe_form_middle" class="form">
                                 <div class="form__row">
                                     <a href="javascript:;" class="btn btn-form btn_subscribe_2">Subscribe</a>
@@ -560,7 +688,12 @@
                             </form>
                         </div>
                         <div class="col-sm-8 col-sm-offset-2">
-                            <span class="subscribe__desc">Depending on the level of involvement you desire, you can get active on social channels to share opinions, advice, etc. to help drive development. Or if you still have questions, ask away via email, and we would love to help you understand anything better.</span>
+                            <span class="subscribe__desc">All information regarding the crowdsale, instructions to participate, tracking, and news will be made available in the custom portal.  If you are not subscribed to the mailing list for updates regarding the project, it is strongly encouraged to log-in to the portal to check the current status to avoid missing anything.  If you have not registered, you can do so below.</span>
+                            <a href="javascript:;" class="btn_registration btn btn-default small">Sing Up</a>
+                            <a href="javascript:;" class="btn_login btn btn-default btn-accent small">Log In</a>
+                            <p class="social__desc">
+                                Depending on the level of involvement you desire, you can get active on social channels to share opinions, advice, etc. to help drive development. Or if you still have questions, ask away via email, and we would love to help you understand anything better.
+                            </p>
                             <ul class="social__wrap">
                                 <li class="social__item">
                                     <a href="" class="social__link">
@@ -655,7 +788,7 @@
                                 <a href="javascript:;" class="btn_login footerNav__link">Log In</a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="#use_cases" class="btn_scroll footerNav__link">Use Cases</a>
+                                <a href="#how_it_works" class="btn_scroll footerNav__link">How It Works</a>
                             </li>
                             <li class="footerNav__item">
                                 <a href="#dapp_model" class="btn_scroll footerNav__link">DApp Model</a>
@@ -670,7 +803,7 @@
                                 <a href="#getInvolved" class="btn_scroll footerNav__link">Get Involved</a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="#how_it_works" class="btn_scroll footerNav__link">How It Works</a>
+                                <a href="#features" class="btn_scroll footerNav__link">Features</a>
                             </li>
                             <li class="footerNav__item">
                                 <a href="#team" class="btn_scroll footerNav__link">Team</a>
@@ -707,28 +840,52 @@
                         <span class="title">GET Social</span>
                         <ul class="footerNav__wrap">
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link"><img src="images/icons/fb.svg" alt=""/> Facebook</a>
+                                <a href="" class="footerNav__link">
+                                    <span class="footerNav__icon"> <img src="images/icons/fb.svg" alt=""/></span>
+                                    <span class="footerNav__soc">Facebook</span>
+                                </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link"><img src="images/icons/slack.svg" alt=""/> Slack</a>
+                                <a href="" class="footerNav__link">
+                                    <span class="footerNav__icon"> <img src="images/icons/slack.svg" alt=""/></span>
+                                    <span class="footerNav__soc">Slack</span>
+                                </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link"><img src="images/icons/twitter.svg" alt=""/> Twitter</a>
+                                <a href="" class="footerNav__link">
+                                    <span class="footerNav__icon"> <img src="images/icons/twitter.svg" alt=""/> </span>
+                                    <span class="footerNav__soc">Twitter</span>
+                                </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link"><img src="images/icons/youtube.svg" alt=""/> YouTube</a>
+                                <a href="" class="footerNav__link">
+                                    <span class="footerNav__icon"> <img src="images/icons/youtube.svg" alt=""/> </span>
+                                    <span class="footerNav__soc">YouTube</span>
+                                </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link"><img src="images/icons/linkedin.svg" alt=""/> LinkedIn</a>
+                                <a href="" class="footerNav__link">
+                                    <span class="footerNav__icon"> <img src="images/icons/linkedin.svg" alt=""/> </span>
+                                    <span class="footerNav__soc">LinkedIn</span>
+                                </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link"><img src="images/icons/bitcoin.svg" alt=""/> BitcoinTalk</a>
+                                <a href="" class="footerNav__link">
+                                    <span class="footerNav__icon"> <img src="images/icons/bitcoin.svg" alt=""/> </span>
+                                    <span class="footerNav__soc">BitcoinTalk</span>
+                                </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link"><img src="images/icons/reddit.svg" alt=""/> Reddit</a>
+                                <a href="" class="footerNav__link">
+                                    <span class="footerNav__icon"> <img src="images/icons/reddit.svg" alt=""/> </span>
+                                    <span class="footerNav__soc">Reddit</span>
+                                </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link"><img src="images/icons/medium.svg" alt=""/> Medium</a>
+                                <a href="" class="footerNav__link">
+                                    <span class="footerNav__icon"> <img src="images/icons/medium.svg" alt=""/> </span>
+                                    <span class="footerNav__soc">Medium</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
