@@ -25,6 +25,17 @@
     <script src="js/jquery.scrollify.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/action.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+            { (i[r].q=i[r].q||[]).push(arguments)}
+            ,i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-92007007-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
 </head>
 <body>
 <div class="overlay"></div>
@@ -665,7 +676,7 @@
                                 </p>
                             </div>
                         </div>
-                        <a href="#contact" class="btn btn-default btn_scroll">Join Crowdsale</a>
+                        <a href="javascript:;" class="btn_registration btn btn-default">Join Crowdsale</a>
                     </div>
                 </div>
             </div>
@@ -696,32 +707,32 @@
                             </p>
                             <ul class="social__wrap">
                                 <li class="social__item">
-                                    <a href="" class="social__link">
+                                    <a href="https://www.facebook.com/MyBitDApp/" class="social__link" target="_blank">
                                         <img src="images/icons/fb.svg" alt=""/>
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="" class="social__link">
+                                    <a href="https://twitter.com/MyBit_DApp" class="social__link" target="_blank">
                                         <img src="images/icons/twitter.svg" alt=""/>
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="" class="social__link">
+                                    <a href="https://www.linkedin.com/company/mybit?trk=biz-companies-cym" class="social__link" target="_blank">
                                         <img src="images/icons/linkedin.svg" alt=""/>
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="" class="social__link">
+                                    <a href="https://www.reddit.com/user/MyBit_DApp/" class="social__link" target="_blank">
                                         <img src="images/icons/reddit.svg" alt=""/>
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="" class="social__link">
+                                    <a href="https://mybit-dapp.slack.com/" class="social__link" target="_blank">
                                         <img src="images/icons/slack.svg" alt=""/>
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="" class="social__link">
+                                    <a href="https://www.youtube.com/channel/UCtLn7Vi-3VbsY5F9uF1RJYg" class="social__link" target="_blank">
                                         <img src="images/icons/youtube.svg" alt=""/>
                                     </a>
                                 </li>
@@ -731,7 +742,7 @@
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a href="" class="social__link">
+                                    <a href="https://medium.com/@MyBit_Blog" class="social__link" target="_blank">
                                         <img src="images/icons/medium.svg" alt=""/>
                                     </a>
                                 </li>
@@ -840,31 +851,31 @@
                         <span class="title">GET Social</span>
                         <ul class="footerNav__wrap">
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link">
+                                <a href="https://www.facebook.com/MyBitDApp/" class="footerNav__link" target="_blank">
                                     <span class="footerNav__icon"> <img src="images/icons/fb.svg" alt=""/></span>
                                     <span class="footerNav__soc">Facebook</span>
                                 </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link">
+                                <a href="https://mybit-dapp.slack.com/" class="footerNav__link" target="_blank">
                                     <span class="footerNav__icon"> <img src="images/icons/slack.svg" alt=""/></span>
                                     <span class="footerNav__soc">Slack</span>
                                 </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link">
+                                <a href="https://twitter.com/MyBit_DApp" class="footerNav__link" target="_blank">
                                     <span class="footerNav__icon"> <img src="images/icons/twitter.svg" alt=""/> </span>
                                     <span class="footerNav__soc">Twitter</span>
                                 </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link">
+                                <a href="https://www.youtube.com/channel/UCtLn7Vi-3VbsY5F9uF1RJYg" class="footerNav__link" target="_blank">
                                     <span class="footerNav__icon"> <img src="images/icons/youtube.svg" alt=""/> </span>
                                     <span class="footerNav__soc">YouTube</span>
                                 </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link">
+                                <a href="https://www.linkedin.com/company/mybit?trk=biz-companies-cym" class="footerNav__link" target="_blank">
                                     <span class="footerNav__icon"> <img src="images/icons/linkedin.svg" alt=""/> </span>
                                     <span class="footerNav__soc">LinkedIn</span>
                                 </a>
@@ -876,13 +887,13 @@
                                 </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link">
+                                <a href="https://www.reddit.com/user/MyBit_DApp/" class="footerNav__link" target="_blank">
                                     <span class="footerNav__icon"> <img src="images/icons/reddit.svg" alt=""/> </span>
                                     <span class="footerNav__soc">Reddit</span>
                                 </a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="" class="footerNav__link">
+                                <a href=" https://medium.com/@MyBit_Blog" class="footerNav__link" target="_blank">
                                     <span class="footerNav__icon"> <img src="images/icons/medium.svg" alt=""/> </span>
                                     <span class="footerNav__soc">Medium</span>
                                 </a>

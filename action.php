@@ -110,7 +110,7 @@ switch ($_REQUEST['action']) {
         }
 
         if($result) {
-            $resultMailChimp = Common::getInstance()->sayInTouchMailChimp($data['email'],isset($data['name']) ? $data['name'] : '', isset($data['reference']) ? $data['reference'] : '', isset($data['message']) ? $data['message'] : '' );
+            $resultMailChimp = Common::getInstance()->sayInTouchMail($data['email'],isset($data['name']) ? $data['name'] : '', isset($data['reference']) ? $data['reference'] : '', isset($data['message']) ? $data['message'] : '' );
             $response = array(
                 'result' => $resultMailChimp['result'],
                 'errors' => isset($resultMailChimp['error']) ? $resultMailChimp['error'] : '',
