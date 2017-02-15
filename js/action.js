@@ -200,6 +200,7 @@ var Action = {
                 success: function (response) {
                     if(response.result) {
                         $('.subscribe_email',form).val('');
+                        $('.popup-mailchimp-success h2').html('Thank you for subscribing!');
                         Action.openPopup($('.popup-mailchimp-success'));
                     } else {
                         $('.form__row',form).addClass('error').find('.error-txt span').html(' '+response.errors);
@@ -235,6 +236,7 @@ var Action = {
                 data: data,
                 success: function (response) {
                     if(response.result) {
+                        $('.popup-mailchimp-success h2').html('Thank you!');
                         Action.openPopup($('.popup-mailchimp-success'));
                         $('#email',form).val('');
                         $('#name',form).val('');

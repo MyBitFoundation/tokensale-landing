@@ -78,7 +78,7 @@ class Common {
         $headers .= "From: Mybit <".$from.">\r\n";
         $headers .= "Bcc: ".$from."\r\n";
 
-        mail($to, $subject, $message, $headers);
+//        mail($to, $subject, $message, $headers);
 
         return array(
             'result' => true
