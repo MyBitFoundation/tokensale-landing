@@ -56,7 +56,7 @@ class Common {
         }
 
         $to  = EMAIL_CONTACT_FORM;
-        $from = 'info@'.SERVER_NAME;
+        $from = $email;
         $subject = "Contact form";
 
         $message = ' 
