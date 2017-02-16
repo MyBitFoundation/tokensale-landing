@@ -56,7 +56,7 @@ class Common {
         }
 
         $to  = EMAIL_CONTACT_FORM;
-        $from = $email;
+        $from = "contact@mybit.io";
         $subject = "Contact form";
 
         $message = ' 
