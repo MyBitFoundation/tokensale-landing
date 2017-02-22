@@ -1,3 +1,9 @@
+var config = {
+    "login": "http://localhost:60800/users/login", //post
+    "logout": "http://localhost:60800/users/logout", //get
+    "signup": "http://localhost:60800/users/registration" //post
+}
+
 var Action = {
 
     watch_video: null,
@@ -119,10 +125,10 @@ var Action = {
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: 'action.php',
+                url: config.signup,//'action.php',
                 data: data,
                 success: function (response) {
-                    if(response.result) {
+                    if(response.email && response.lastLoginDate) {
                         $('#registerEmail').val('');
                         $('#registerPassword').val('');
                         $('#registerPasswordCopy').val('');
@@ -162,10 +168,11 @@ var Action = {
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: 'action.php',
+                url: config.login,//'action.php',
                 data: data,
                 success: function (response) {
                     if(response.result) {
+                        console.log('ok')
                         Action.closePopup();
                         window.location.href = 'platform.php';
                     } else {
@@ -173,6 +180,7 @@ var Action = {
                             $('#'+i).parent().addClass('error').find('.error_t').html(response.errors[i]);
                         }
                     }
+                    Action.closePopup();
                 }
             });
         }
@@ -264,4 +272,3 @@ var Action = {
 $(document).ready(function() {
     Action.init();
 });
-
