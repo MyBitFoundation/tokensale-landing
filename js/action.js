@@ -1,9 +1,3 @@
-var config = {
-    "login": "http://localhost:60800/users/login", //post
-    "logout": "http://localhost:60800/users/logout", //get
-    "signup": "http://localhost:60800/users/registration" //post
-}
-
 var Action = {
 
     watch_video: null,
@@ -125,7 +119,7 @@ var Action = {
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: config.signup,//'action.php',
+                url: window.config.request.signup,//'action.php',
                 data: data,
                 success: function (response) {
                     if(response.email && response.lastLoginDate) {
@@ -134,10 +128,16 @@ var Action = {
                         $('#registerPasswordCopy').val('');
                         Action.closePopup();
                         Action.openPopup($('.popup-registration-success'));
-                    } else {
-                        for(var i in response.errors) {
-                            $('#'+i).parent().addClass('error').find('.error_t').html(response.errors[i]);
-                        }
+                        window.location.href = window.config.redirect;
+                    }
+                },
+                error: function(error) {
+                    let response = error.responseJSON.message;
+                    if(/email/i.test(response)) {
+                        $('#registerEmail').parent().addClass('error').find('.error_t').html(response);
+                    }
+                    if(/password/i.test(response)) {
+                        $('#registerPassword').parent().addClass('error').find('.error_t').html(response);
                     }
                 }
             });
@@ -168,19 +168,18 @@ var Action = {
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: config.login,//'action.php',
+                url: window.config.request.login,//'action.php',
                 data: data,
                 success: function (response) {
-                    if(response.result) {
-                        console.log('ok')
+                    if(response.email && response.lastLoginDate) {
                         Action.closePopup();
-                        window.location.href = 'platform.php';
-                    } else {
-                        for(var i in response.errors) {
-                            $('#'+i).parent().addClass('error').find('.error_t').html(response.errors[i]);
-                        }
+                        window.location.href = window.config.redirect;
                     }
-                    Action.closePopup();
+                },
+                error: function (error) {
+                    let response = error.responseJSON.message;
+                    $('#loginEmail').parent().addClass('error').find('.error_t').html(response);
+                    $('#loginPassword').parent().addClass('error').find('.error_t').html(response);
                 }
             });
         }
