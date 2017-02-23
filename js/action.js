@@ -121,6 +121,7 @@ var Action = {
                 dataType: "json",
                 url: window.config.request.signup,//'action.php',
                 data: data,
+                xhrFields: { withCredentials: true },
                 success: function (response) {
                     if(response.email && response.lastLoginDate) {
                         $('#registerEmail').val('');
@@ -128,7 +129,15 @@ var Action = {
                         $('#registerPasswordCopy').val('');
                         Action.closePopup();
                         Action.openPopup($('.popup-registration-success'));
-                        window.location.href = window.config.redirect;
+                        $.ajax({
+                            type: "GET",
+                            dataType: "json",
+                            url: 'http://localhost:60800/users/me',
+                            xhrFields: { withCredentials: true },
+                            success: function(res) {
+                                window.location.href = window.config.redirect;
+                            }
+                        })
                     }
                 },
                 error: function(error) {
@@ -169,11 +178,20 @@ var Action = {
                 type: "POST",
                 dataType: "json",
                 url: window.config.request.login,//'action.php',
+                xhrFields: { withCredentials: true },
                 data: data,
                 success: function (response) {
                     if(response.email && response.lastLoginDate) {
                         Action.closePopup();
-                        window.location.href = window.config.redirect;
+                        $.ajax({
+                            type: "GET",
+                            dataType: "json",
+                            url: 'http://localhost:60800/users/me',
+                            xhrFields: { withCredentials: true },
+                            success: function(res) {
+                                window.location.href = window.config.redirect;
+                            }
+                        })
                     }
                 },
                 error: function (error) {
