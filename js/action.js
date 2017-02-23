@@ -132,7 +132,7 @@ var Action = {
                         $.ajax({
                             type: "GET",
                             dataType: "json",
-                            url: 'http://localhost:60800/users/me',
+                            url:  window.config.request.me,
                             xhrFields: { withCredentials: true },
                             success: function(res) {
                                 window.location.href = window.config.redirect;
@@ -186,7 +186,7 @@ var Action = {
                         $.ajax({
                             type: "GET",
                             dataType: "json",
-                            url: 'http://localhost:60800/users/me',
+                            url:  window.config.request.me,
                             xhrFields: { withCredentials: true },
                             success: function(res) {
                                 window.location.href = window.config.redirect;
