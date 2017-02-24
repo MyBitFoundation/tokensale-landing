@@ -5,5 +5,5 @@ var config = {
         signup: "http://localhost:60800/users/registration",
         me: "http://localhost:60800/users/me"
     },
-    redirect: "http://dashboard.mybit.io"
+    redirect: "http://localhost:8080"
 }

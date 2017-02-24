@@ -942,7 +942,7 @@
         </div>
     </div>
 
-    <div class="popup__wrap popup-login">
+    <div class="popup__wrap popup-login" id="login">
         <div class="popup__in">
             <div class="popup__body">
                 <a href="javascript:;" class="popup__close"><i class="icon-close2"></i></a>
@@ -959,7 +959,25 @@
                         <span class="error-txt top"><i class="icon-error"></i><span class="error_t"></span></span>
                     </div>
                     <div class="form__row">
-                        <a href="javascript:;" class="send_login btn btn-success">Log in</a>
+                        <a href="javascript:;" class="send_login btn btn-success" id="send-login">Log in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popup__wrap popup-login" id="login-tfa">
+        <div class="popup__in">
+            <div class="popup__body">
+                <a href="javascript:;" class="popup__close"><i class="icon-close2"></i></a>
+                <h2 class="h2">Login</h2>
+                <form class="form-popup">
+                    <div class="form__row">
+                        <input id="tfaToken" class="input input-bordered colored"/>
+                        <label class="dark">6-Digit_Key</label>
+                        <span class="error-txt top"><i class="icon-error"></i><span class="error_t"></span></span>
+                    </div>
+                    <div class="form__row">
+                        <a href="javascript:;" class="send_login btn btn-success" id="send-login-tfa">Submit</a>
                     </div>
                 </form>
             </div>

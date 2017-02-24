@@ -1,6 +1,8 @@
 var Action = {
 
     watch_video: null,
+    email: null,
+    password: null,
 
     init: function() {
         this.watch_video = document.getElementById("watch_video");
@@ -14,7 +16,7 @@ var Action = {
         })
 
         $('.btn_login').click(function() {
-            Action.openPopup($('.popup-login'));
+            Action.openPopup($('#login'));
         })
 
         $('.popup__close').click(function() {
@@ -25,8 +27,12 @@ var Action = {
             Action.registration();
         })
 
-        $('.send_login').click(function() {
+        $('#send-login').click(function() {
             Action.login();
+        })
+
+        $('#send-login-tfa').click(function() {
+            Action.tfaLogin();
         })
 
         $('.btn_subscribe').click(function() {
@@ -195,12 +201,55 @@ var Action = {
                     }
                 },
                 error: function (error) {
-                    let response = error.responseJSON.message;
-                    $('#loginEmail').parent().addClass('error').find('.error_t').html(response);
-                    $('#loginPassword').parent().addClass('error').find('.error_t').html(response);
+                    if(error.status === 406){
+                        email = $('#loginEmail').val();
+                        password = $('#loginPassword').val();
+                        Action.closePopup();
+                        Action.openPopup($('#login-tfa'));
+                    } else {
+                        let response = error.responseJSON.message;
+                        $('#loginEmail').parent().addClass('error').find('.error_t').html(response);
+                        $('#loginPassword').parent().addClass('error').find('.error_t').html(response);
+                    }
                 }
             });
         }
+    },
+
+    tfaLogin: function(callback) {
+        $('.popup-login .form__row').removeClass('error');
+        var data = {
+            action : 'authorisation',
+            email,
+            password,
+            token: $('#tfaToken').val()
+        };
+
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: window.config.request.login,//'action.php',
+            xhrFields: { withCredentials: true },
+            data: data,
+            success: function (response) {
+                if(response.email && response.lastLoginDate) {
+                    Action.closePopup();
+                    $.ajax({
+                        type: "GET",
+                        dataType: "json",
+                        url:  window.config.request.me,
+                        xhrFields: { withCredentials: true },
+                        success: function(res) {
+                            window.location.href = window.config.redirect;
+                        }
+                    })
+                }
+            },
+            error: function (error) {
+                let response = error.responseJSON.message;
+                $('#tfaToken').parent().addClass('error').find('.error_t').html(response);
+            }
+        });
     },
 
     subscribe: function(form) {
