@@ -6,4 +6,4 @@ var config = {
         me: "http://localhost:60800/users/me"
     },
     redirect: "http://localhost:8080"
-}
+};
