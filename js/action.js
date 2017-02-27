@@ -121,7 +121,7 @@ var Action = {
                 password: $('#registerPassword').val(),
                 passwordCopy: $('#registerPasswordCopy').val(),
             };
-
+			console.log(window.config);
             $.ajax({
                 type: "POST",
                 dataType: "json",
@@ -147,7 +147,7 @@ var Action = {
                     }
                 },
                 error: function(error) {
-                    let response = error.responseJSON.message;
+                    var response = error.responseJSON.message;
                     if(/email/i.test(response)) {
                         $('#registerEmail').parent().addClass('error').find('.error_t').html(response);
                     }
@@ -207,7 +207,7 @@ var Action = {
                         Action.closePopup();
                         Action.openPopup($('#login-tfa'));
                     } else {
-                        let response = error.responseJSON.message;
+	                    var response = error.responseJSON.message;
                         $('#loginEmail').parent().addClass('error').find('.error_t').html(response);
                         $('#loginPassword').parent().addClass('error').find('.error_t').html(response);
                     }
@@ -220,8 +220,8 @@ var Action = {
         $('.popup-login .form__row').removeClass('error');
         var data = {
             action : 'authorisation',
-            email,
-            password,
+            email: email,
+            password: password,
             token: $('#tfaToken').val()
         };
 
@@ -246,7 +246,7 @@ var Action = {
                 }
             },
             error: function (error) {
-                let response = error.responseJSON.message;
+	            var response = error.responseJSON.message;
                 $('#tfaToken').parent().addClass('error').find('.error_t').html(response);
             }
         });
