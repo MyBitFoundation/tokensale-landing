@@ -142,7 +142,7 @@
     padding: 56px 0;
   }
   .section__enterprise .body {
-    padding: 90px 0;
+    padding: 150px 0;
   }
   .feature__head {
     margin-bottom: 80px;
@@ -316,7 +316,7 @@
     padding: 90px 0 50px;
   }
   .section__enterprise .body {
-    padding: 70px 0;
+    padding: 90px 0;
   }
   .intro__logo {
     text-align: left;
@@ -546,11 +546,16 @@
   .form__row .error-txt {
     padding: 2px 10px;
     font-size: 11px;
+    width: 60%;
+    white-space: normal;
+    text-align: center;
+    padding: 5px 10px;
   }
   .form__row .error-txt.btm {
-    top: -21px;
+    top: inherit;
     left: inherit;
     right: 0;
+    bottom: 103%;
   }
   .form__row .error-txt.btm:before {
     border-width: 0 5px 5px 0;
@@ -560,10 +565,12 @@
     left: inherit;
   }
   .form__row .error-txt.top {
-    top: -21px;
+    top: inherit;
+    bottom: 103%;
   }
   .form__row .error-txt.top-left {
-    top: -21px;
+    top: inherit;
+    bottom: 103%;
   }
   .input {
     line-height: 1.25;

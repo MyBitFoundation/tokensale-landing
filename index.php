@@ -194,7 +194,7 @@
                                 <i class="icon-RegisterAssets feature__icon"></i>
                                 <span class="feature__title">Register Assets</span>
                                 <p class="feature__desc">
-                                    Link any phsyical or digital asset with your Unique Blockchain Identifier (UBI) to embed proof of ownership into the immutable Blockchain in perpetuity.
+                                    Link any physical or digital asset with your Unique Blockchain Identifier (UBI) to embed proof of ownership into the immutable Blockchain in perpetuity.
                                 </p>
                             </div>
                         </div>
@@ -454,7 +454,7 @@
                                 <p class="team-info__desc scrollbar-outer">
                                     Garrett is a passionate innovator who has been involved
                                     in the Bitcoin/Blockchain industry since 2011. He
-                                    crowdfunded what became a millionAdollar bitcoin
+                                    crowdfunded what became a million-dollar bitcoin
                                     mining company when he was in high school, and has
                                     advised for various startups and corporations. Now he is
                                     focused on making the world's energy situation
@@ -481,11 +481,10 @@
                                 </div>
                                 <p class="team-info__desc scrollbar-outer">
                                     Mr. Pollan has over 30 years of business consulting and
-                                    business startAup experience. Mr. Pollan's roles have
+                                    business start-up experience. Mr. Pollan's roles have
                                     included Senior Director, Client Principal with Hewlett
                                     Packard Enterprise, Senior Partner with Accenture, and
-                                    founder and President of Pollan Enterprises, a multiA
-                                    million dollar holding company for new startAup
+                                    founder and President of Pollan Enterprises, a multi-million dollar holding company for new start-up
                                     businesses.
                                 </p>
                             </div>
@@ -508,7 +507,7 @@
                                     <span class="team-info__post">Decentralized Solutions Architect / Entrepreneurial Background in Finance and SaaS</span>
                                 </div>
                                 <p class="team-info__desc scrollbar-outer">
-                                    Ian has been involved fullAtime in the Blockchain industry
+                                    Ian has been involved full-time in the Blockchain industry
                                     since early 2013 when he began a small mining operation
                                     that grew rapidly.  Since then he has managed a
                                     company that builds custom software for small

@@ -388,7 +388,7 @@ a {
 }
 .section__enterprise .body {
   color: #281f39;
-  padding: 60px 0 125px;
+  padding: 250px 0;
 }
 .section__dappModel .head {
   padding: 5.4rem 0 7rem;
@@ -739,7 +739,7 @@ a {
 }
 .tabs__pane.restAPI .tabs__desc {
   font-weight: 600;
-  text-align: left;
+  text-align: right;
   margin-left: -10px;
 }
 .tabs__title {
@@ -1190,6 +1190,7 @@ a {
 label {
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
   position: absolute;
   top: 17px;
   left: 25px;
@@ -1395,8 +1396,15 @@ input:focus + label.dark,
   z-index: 5;
   pointer-events: none;
   overflow: auto;
+  text-align: center;
   opacity: 0;
   visibility: hidden;
+}
+.popup__wrap:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 .popup__wrap.open {
   opacity: 1;
@@ -1415,23 +1423,18 @@ input:focus + label.dark,
   background: #fff;
   color: #281f39;
   border-radius: 10px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 .popup__in.static {
-  top: 0;
-  -webkit-transform: translate(-50%, 0);
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  margin: 20px 0;
+  margin: 18px 0;
+  height: 90%;
+}
+.popup__in.static .popup__video {
+  height: 100%;
 }
 .popup__in.entry {
   position: relative;
@@ -1445,6 +1448,7 @@ input:focus + label.dark,
 }
 .popup__body {
   padding: 70px 110px 30px;
+  position: relative;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   opacity: 0;
