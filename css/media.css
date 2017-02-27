@@ -266,7 +266,7 @@
     visibility: hidden;
   }
   .nav__wrap.open {
-    bottom: 0;
+    bottom: -1px;
     opacity: 1;
     visibility: visible;
   }

@@ -107,13 +107,13 @@ body {
   height: 100%;
   font-size: 16px;
   overflow: visible!important;
+  -webkit-overflow-scrolling: touch;
 }
 body {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
 }
 body.static {
-  height: auto;
   position: relative;
   overflow: hidden !important;
 }
@@ -474,7 +474,7 @@ a {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   background: rgba(0, 0, 0, 0.8);
   z-index: 5;
   -webkit-transition: all 0.2s ease-out;
@@ -1398,6 +1398,11 @@ input:focus + label.dark,
   pointer-events: none;
   overflow: auto;
   text-align: center;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateZ(1px);
+  -moz-transform: translateZ(1px);
+  -o-transform: translateZ(1px);
+  transform: translateZ(1px);
   opacity: 0;
   visibility: hidden;
 }
