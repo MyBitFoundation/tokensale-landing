@@ -106,7 +106,7 @@
                                         <span class="error-txt btm"><i class="icon-error"></i><span></span></span>
                                     </div>
                                 </form>
-                                <a href="javascript:;" target="_blank" class="btn btn-rounded open_popup_watch_video"><span>Watch Video</span> <i class="icon-video"></i></a>
+                                <a href="javascript:;" class="btn btn-rounded open_popup_watch_video"><span>Watch Video</span> <i class="icon-video"></i></a>
                                 <a href="#whitepaper" target="_blank" class="btn btn-rounded btn_scroll"><span>Learn More</span> <i class="icon-rocket"></i></a>
                             </div>
                         </div>
@@ -990,7 +990,7 @@
     <div class="popup__wrap popup-video">
         <div class="popup__in ">
             <div class="popup__body popup__video">
-                <a href="" class="popup__close"><i class="icon-close2"></i></a>
+                <a href="javascript:;" class="popup__close"><i class="icon-close2"></i></a>
                 <div>
                     <video id="watch_video" controls preload='auto'>
                         <source src="video/mybit.mp4" type="video/mp4" />
