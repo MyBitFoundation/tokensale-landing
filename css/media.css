@@ -860,3 +860,9 @@
     bottom: inherit;
   }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .section__enterprise .head,
+  .section__features {
+    background-attachment: scroll;
+  }
+}
