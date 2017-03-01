@@ -35,7 +35,6 @@ var Action = {
 
         $('.btn_login').click(function() {
             Action.openPopup($('#login'));
-            $('#loginEmail').focus();
         })
 
         $('.popup__close').click(function() {
@@ -92,7 +91,7 @@ var Action = {
         $('body').addClass('static');
         $('.overlay').addClass('active');
         $(_popup).addClass('open');
-        $(_popup).find('input')[0].focus();
+        setTimeout(function() {$(_popup).find('input')[0].focus();}, 150);
     },
 
     closePopup: function(callback) {
