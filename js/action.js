@@ -11,12 +11,31 @@ var Action = {
     },
 
     initEvents: function() {
+        $('.popup-register').keypress(function (e) {
+            if (e.which == 13) {
+                Action.registration();
+            }
+        })
+
+        $('#login').keypress(function (e) {
+            if (e.which == 13) {
+                Action.login();
+            }
+        })
+
+        $('#login-tfa').keypress(function (e) {
+            if (e.which == 13) {
+                Action.tfaLogin();
+            }
+        })
+
         $('.btn_registration').click(function() {
             Action.openPopup($('.popup-register'));
         })
 
         $('.btn_login').click(function() {
             Action.openPopup($('#login'));
+            $('#loginEmail').focus();
         })
 
         $('.popup__close').click(function() {
@@ -25,6 +44,10 @@ var Action = {
 
         $('.send_registration').click(function() {
             Action.registration();
+        })
+
+        $('#successRegistrationBtn').click(function() {
+            Action.successRegistration();
         })
 
         $('#send-login').click(function() {
@@ -69,6 +92,7 @@ var Action = {
         $('body').addClass('static');
         $('.overlay').addClass('active');
         $(_popup).addClass('open');
+        $(_popup).find('input')[0].focus();
     },
 
     closePopup: function(callback) {
@@ -121,7 +145,6 @@ var Action = {
                 password: $('#registerPassword').val(),
                 passwordCopy: $('#registerPasswordCopy').val(),
             };
-			console.log(window.config);
             $.ajax({
                 type: "POST",
                 dataType: "json",
@@ -135,15 +158,6 @@ var Action = {
                         $('#registerPasswordCopy').val('');
                         Action.closePopup();
                         Action.openPopup($('.popup-registration-success'));
-                        $.ajax({
-                            type: "GET",
-                            dataType: "json",
-                            url:  window.config.request.me,
-                            xhrFields: { withCredentials: true },
-                            success: function(res) {
-                                window.location.href = window.config.redirect;
-                            }
-                        })
                     }
                 },
                 error: function(error) {
@@ -157,6 +171,22 @@ var Action = {
                 }
             });
         }
+    },
+
+    successRegistration: function() {
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url:  window.config.request.me,
+            xhrFields: { withCredentials: true },
+            success: function(res) {
+                Action.closePopup();
+                window.location.href = window.config.redirect;
+            },
+            error: function(error) {
+                Action.closePopup();
+            }
+        })
     },
 
     login: function(callback) {
