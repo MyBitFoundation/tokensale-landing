@@ -308,7 +308,7 @@
                                     </div>
                                     <div id="restAPI" class="tabs__pane tabs__pane_js fade restAPI">
                                         <div class="row">
-                                            <div class="col-md-3 col-md-offset-2">
+                                            <div class="col-sm-5 col-md-3 col-md-offset-2">
                                                 <p class="tabs__desc">
                                                     MyBit’s core functionality can be extended to use cases across many verticals.
                                                 </p>
@@ -319,7 +319,7 @@
                                                     The API will be publicly available for developers and rapid prototyping. For high-resource production applications a license can be purchased.
                                                 </p>
                                             </div>
-                                            <div class="col-md-6 col-md-offset-1">
+                                            <div class="col-sm-6 col-sm-offset-1">
                                                 <div class="tabs__accent">
                                                     <span class="title">A few prominent examples of next generation applications that can be developed include:</span>
                                                     <ul class="listLine__wrap">
