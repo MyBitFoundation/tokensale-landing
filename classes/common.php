@@ -59,18 +59,18 @@ class Common {
         $from = "contact@mybit.io";
         $subject = "Contact form";
 
-        $message = ' 
-                <html> 
-                    <head> 
-                        <title>Contact form</title> 
-                    </head> 
-                    <body> 
+        $message = '
+                <html>
+                    <head>
+                        <title>Contact form</title>
+                    </head>
+                    <body>
                         <h2>Contact form</h2>
-                        '.$name.' 
-                        <p>Email: '.$email.'</p> 
-                        '.$reference.' 
-                        '.$message.' 
-                    </body> 
+                        '.$name.'
+                        <p>Email: '.$email.'</p>
+                        '.$reference.'
+                        '.$message.'
+                    </body>
                 </html>';
 
 
