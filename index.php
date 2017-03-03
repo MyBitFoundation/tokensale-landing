@@ -171,7 +171,7 @@
                             <p>
                                 The next piece of the puzzle is <strong>enabling the same for the transfer of assets</strong>.  With the combination of communication, money, and assets flowing freely on a global scale it unlocks further potential of the internet and fundamentally changes economics as we know it.
                             </p>
-                            <a href="docs/MyBit_Whitepaper_v0.8.pdf" target="_blank" class="btn btn-rounded">Read Whitepaper</a>
+                            <a href="docs/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-rounded">Read Whitepaper</a>
                         </div>
                     </div>
                 </div>
@@ -795,31 +795,31 @@
                         <span class="title">NAVIGATION</span>
                         <ul class="footerNav__wrap">
                             <li class="footerNav__item">
-                                <a href="javascript:;" class="btn_login footerNav__link">Log In</a>
+                                <a href="#features" class="btn_scroll footerNav__link">Features</a>
                             </li>
                             <li class="footerNav__item">
                                 <a href="#how_it_works" class="btn_scroll footerNav__link">How It Works</a>
                             </li>
                             <li class="footerNav__item">
-                                <a href="#dapp_model" class="btn_scroll footerNav__link">DApp Model</a>
-                            </li>
-                            <li class="footerNav__item">
-                                <a href="javascript:;" class="btn_registration footerNav__link">Sign Up</a>
-                            </li>
-                            <li class="footerNav__item">
                                 <a href="#enterprise" class="btn_scroll footerNav__link">For Enterprise</a>
-                            </li>
-                            <li class="footerNav__item">
-                                <a href="#getInvolved" class="btn_scroll footerNav__link">Get Involved</a>
-                            </li>
-                            <li class="footerNav__item">
-                                <a href="#features" class="btn_scroll footerNav__link">Features</a>
                             </li>
                             <li class="footerNav__item">
                                 <a href="#team" class="btn_scroll footerNav__link">Team</a>
                             </li>
                             <li class="footerNav__item">
+                                <a href="#dapp_model" class="btn_scroll footerNav__link">DApp Model</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="#getInvolved" class="btn_scroll footerNav__link">Get Involved</a>
+                            </li>
+                            <li class="footerNav__item">
                                 <a href="#contact" class="btn_scroll footerNav__link">Contact</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="javascript:;" class="btn_registration footerNav__link">Sign Up</a>
+                            </li>
+                            <li class="footerNav__item">
+                                <a href="javascript:;" class="btn_login footerNav__link">Log In</a>
                             </li>
                         </ul>
                     </div>

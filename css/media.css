@@ -457,6 +457,14 @@
   }
 }
 @media (max-width: 767px) {
+  html,
+  body {
+    -webkit-overflow-scrolling: touch !important;
+    height: auto;
+  }
+  .wrapper {
+    position: relative;
+  }
   .divider {
     display: none;
   }

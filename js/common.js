@@ -58,6 +58,28 @@ Common = {
                 Common.onScroll();
             }
         });
+
+        $(document).ready(function() {
+            $(".popup__wrap input").on('focus', function() {
+                $(this).closest(".popup__wrap").css({
+                    'position': 'absolute',
+                });
+                $(this).closest(".popup__in").addClass('absolute').css({
+                    'top': $(document).scrollTop()
+                });
+                $('body').addClass('static');
+            })
+            $(".popup__wrap input").on('blur', function() {
+                $(this).closest(".popup__wrap").css({
+                    'position': 'fixed',
+                    'top': 0
+                });
+                $(this).closest(".popup__in").removeClass('absolute').css({
+                    'top': 0
+                });
+                $('body').removeClass('static');
+            })
+        });
     },
 
     initEvents: function () {

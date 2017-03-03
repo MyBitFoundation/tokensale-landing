@@ -1436,10 +1436,19 @@ input:focus + label.dark,
   text-align: left;
 }
 .popup__in.static {
-  margin: 0;
+  margin: 18px 0;
 }
 .popup__in.static .popup__video {
   height: 100%;
+}
+.popup__in.absolute {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  margin: 20px 0;
 }
 .popup__in.entry {
   position: relative;
