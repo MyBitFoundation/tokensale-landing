@@ -6,7 +6,20 @@ var Action = {
 
     init: function() {
         this.watch_video = document.getElementById("watch_video");
-
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url:  window.config.request.me,
+            xhrFields: { withCredentials: true },
+            success: function(res) {
+                $('.btn_login').remove();
+                $('.btn_registration').remove();
+                $('.btn_logout').removeAttr('style');
+                $('.btn_email').removeAttr('style');
+                var email = res.email;
+                setTimeout($('.btn_email').html(email),150)
+            }
+        });
         this.initEvents();
     },
 
