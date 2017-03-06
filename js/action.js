@@ -12,24 +12,22 @@ var Action = {
             url:  window.config.request.me,
             xhrFields: { withCredentials: true },
             success: function(res) {
-                $('.btn_login').remove();
-                $('.btn_registration').remove();
-                $('.btn_logout').removeAttr('style');
-                $('.btn_email').removeAttr('style');
+                $('.btn_login').addClass('none')
+                $('.btn_registration').parent().addClass('none');
+                $('.header__profile').removeClass('none');
                 var email = res.email;
-                setTimeout($('.btn_email').html(email),150)
+                setTimeout($('.header__profileName').html(email),150)
             }
         });
         this.initEvents();
     },
 
     initEvents: function() {
-        $('.btn_email').click(function() {
+        $('.header__profileName').click(function() {
             window.location.href = window.config.redirect;
         })
 
-        $('.btn_logout').click(function() {
-            console.log("logout")
+        $('.header__sign').click(function() {
             $.ajax({
                 type: "GET",
                 dataType: "json",
@@ -40,7 +38,7 @@ var Action = {
                 }
             })
         })
-        
+
         $('.popup-register').keypress(function (e) {
             if (e.which == 13) {
                 Action.registration();
