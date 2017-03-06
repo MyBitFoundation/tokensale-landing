@@ -24,6 +24,23 @@ var Action = {
     },
 
     initEvents: function() {
+        $('.btn_email').click(function() {
+            window.location.href = window.config.redirect;
+        })
+
+        $('.btn_logout').click(function() {
+            console.log("logout")
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url:  window.config.request.logout,
+                xhrFields: { withCredentials: true },
+                success: function(res) {
+                    location.reload();
+                }
+            })
+        })
+        
         $('.popup-register').keypress(function (e) {
             if (e.which == 13) {
                 Action.registration();
