@@ -51,10 +51,9 @@ var Action = {
             }
         })
 
-        $('#login-tfa').keypress(function (e) {
-            if (e.which == 13) {
-                Action.tfaLogin();
-            }
+        $('#login-tfa-form').submit(function (e) {
+            e.preventDefault();
+            $('#send-login-tfa').click();
         })
 
         $('.btn_registration').click(function() {
