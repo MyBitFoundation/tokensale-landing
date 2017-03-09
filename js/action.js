@@ -236,6 +236,8 @@ var Action = {
                 password: $('#loginPassword').val(),
             };
 
+            $('#send-login').attr('disabled');
+
             $.ajax({
                 type: "POST",
                 dataType: "json",
