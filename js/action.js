@@ -12,8 +12,8 @@ var Action = {
             url:  window.config.request.me,
             xhrFields: { withCredentials: true },
             success: function(res) {
-                $('.btn_login').addClass('none')
-                $('.btn_registration').parent().addClass('none');
+                $('.nav_login_btn').addClass('none')
+                $('.nav_signup_btn').parent().addClass('none');
                 $('.header__profile').removeClass('none');
                 var email = res.email;
                 setTimeout($('.header__profileName').html(email),150)
