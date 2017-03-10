@@ -23,6 +23,10 @@ var Action = {
     },
 
     initEvents: function() {
+        $('.slack').click(function() {
+            window.open(window.config.slackInvite, '_blank');
+        })
+
         $('.header__profileName').click(function() {
             window.location.href = window.config.redirect;
         })

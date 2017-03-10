@@ -5,5 +5,6 @@ var config = {
         signup: "http://localhost:60800/users/registration",
         me: "http://localhost:60800/users/me"
     },
-    redirect: "http://localhost:8080"
+    redirect: "http://localhost:8080",
+    slackInvite: "http://localhost:3000"
 };
