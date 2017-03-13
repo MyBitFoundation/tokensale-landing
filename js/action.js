@@ -240,7 +240,7 @@ var Action = {
                 password: $('#loginPassword').val(),
             };
 
-            $('#send-login').attr('disabled');
+            $('#send-login').attr("disabled", "disabled");
 
             $.ajax({
                 type: "POST",
