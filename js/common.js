@@ -12,7 +12,6 @@ Common = {
         self.initScrollTeamDesc();
         self.headerFixed();
         self.popupStatic();
-        self.initScrollify();
 
         //FORM
         $('.input').focusout(function(){
@@ -46,19 +45,22 @@ Common = {
         $(window).on({
             load: function () {
                 Common.sizeTeamItem();
-                $.scrollify.enable()
             },
             resize: function () {
                 Common.sizeTeamItem();
                 Common.popupStatic();
-                Common.initScrollify();
+                if ($(window).width() > 1200) {
+                    $('.header__wrap .header__btnMenu').removeClass('active');
+                    $('.header__wrap .header__btnMenu').next('.nav__wrap').removeClass('open');
+                    $('body').removeClass('static');
+                }
             },
             scroll: function () {
                 Common.headerFixed();
                 Common.onScroll();
             }
         });
-        
+
     },
 
     initEvents: function () {
@@ -199,18 +201,6 @@ Common = {
             popup.addClass('static');
         } else {
             popup.removeClass('static');
-        }
-    },
-
-    initScrollify: function () {
-        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 767) {
-            $.scrollify({
-                section : ".section",
-                scrollSpeed: 1000,
-                easing: "easeInOutCubic",
-                sectionName : false,
-            });
-            $.scrollify.disable();
         }
     },
 

@@ -874,3 +874,11 @@
     background-attachment: scroll;
   }
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .scroll-textarea > .scroll-content > textarea {
+    overflow: hidden !important;
+  }
+  .scroll-textarea > .scroll-content {
+    margin: 0 !important;
+  }
+}

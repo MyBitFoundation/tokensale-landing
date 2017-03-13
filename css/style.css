@@ -120,9 +120,6 @@ body.static {
 .wrapper {
   height: 100%;
 }
-#fullpage {
-  height: 100%;
-}
 strong {
   font-weight: 600;
 }
@@ -1344,19 +1341,19 @@ input:focus + label.dark,
 .textarea:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-.textarea:focus {
+.textarea.focus {
   border-color: rgba(255, 255, 255, 0.44);
 }
-.textarea:focus::-webkit-input-placeholder {
+.textarea.focus::-webkit-input-placeholder {
   color: #ffffff;
 }
-.textarea:focus::-moz-placeholder {
+.textarea.focus::-moz-placeholder {
   color: #ffffff;
 }
-.textarea:focus:-moz-placeholder {
+.textarea.focus:-moz-placeholder {
   color: #ffffff;
 }
-.textarea:focus:-ms-input-placeholder {
+.textarea.focus:-ms-input-placeholder {
   color: #ffffff;
 }
 .textarea.fill ~ label,
@@ -1556,7 +1553,11 @@ input:focus + label.dark,
   position: absolute;
   overflow: visible;
 }
-
+@supports (-ms-ime-align:auto) {
+  .scroll-textarea > .scroll-content > textarea {
+    overflow: hidden !important;
+  }
+}
 .nav__item.none{
   display: none;
 }
