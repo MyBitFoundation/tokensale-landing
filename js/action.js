@@ -264,8 +264,10 @@ var Action = {
                 },
                 error: function (error) {
                     if(error.status === 406){
-                        email = $('#loginEmail').val();
-                        password = $('#loginPassword').val();
+                        if($('#loginEmail').val() && $('#loginPassword').val()) {
+                            email = $('#loginEmail').val();
+                            password = $('#loginPassword').val();                            
+                        }
                         Action.closePopup();
                         Action.openPopup($('#login-tfa'));
                     } else {
