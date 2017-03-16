@@ -119,10 +119,11 @@ var Action = {
     },
 
     openPopup: function(_popup) {
+        $('.error').removeClass('error');
         $('body').addClass('static');
         $('.overlay').addClass('active');
-        $(_popup).addClass('open');
-        setTimeout(function() {$(_popup).find('input')[0].focus();}, 150);
+        setTimeout(function() {$(_popup).addClass('open');}, 150);
+        setTimeout(function() {$(_popup).find('input')[0].focus();}, 300);
     },
 
     closePopup: function(callback) {
@@ -266,7 +267,7 @@ var Action = {
                     if(error.status === 406){
                         if($('#loginEmail').val() && $('#loginPassword').val()) {
                             email = $('#loginEmail').val();
-                            password = $('#loginPassword').val();                            
+                            password = $('#loginPassword').val();
                         }
                         Action.closePopup();
                         Action.openPopup($('#login-tfa'));
