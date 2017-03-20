@@ -123,7 +123,11 @@ var Action = {
         $('body').addClass('static');
         $('.overlay').addClass('active');
         setTimeout(function() {$(_popup).addClass('open');}, 150);
-        setTimeout(function() {$(_popup).find('input')[0].focus();}, 300);
+        setTimeout(function() {
+            if($(_popup).find('input')[0]) {
+                $(_popup).find('input')[0].focus();
+            }
+        }, 300);
     },
 
     closePopup: function(callback) {
