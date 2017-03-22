@@ -9,7 +9,7 @@ var Action = {
         $.ajax({
             type: "GET",
             dataType: "json",
-            url:  window.config.request.me,
+            url:  window.config.request.info,
             xhrFields: { withCredentials: true },
             success: function(res) {
                 $('.nav_login_btn').addClass('none')
@@ -212,7 +212,7 @@ var Action = {
         $.ajax({
             type: "GET",
             dataType: "json",
-            url:  window.config.request.me,
+            url:  window.config.request.info,
             xhrFields: { withCredentials: true },
             success: function(res) {
                 Action.closePopup();
@@ -259,7 +259,7 @@ var Action = {
                         $.ajax({
                             type: "GET",
                             dataType: "json",
-                            url:  window.config.request.me,
+                            url:  window.config.request.info,
                             xhrFields: { withCredentials: true },
                             success: function(res) {
                                 window.location.href = window.config.redirect;
@@ -306,7 +306,7 @@ var Action = {
                     $.ajax({
                         type: "GET",
                         dataType: "json",
-                        url:  window.config.request.me,
+                        url:  window.config.request.info,
                         xhrFields: { withCredentials: true },
                         success: function(res) {
                             window.location.href = window.config.redirect;

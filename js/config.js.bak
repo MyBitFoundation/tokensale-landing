@@ -3,7 +3,7 @@ var config = {
         login: "http://localhost:60800/users/login",
         logout: "http://localhost:60800/users/logout",
         signup: "http://localhost:60800/users/registration",
-        me: "http://localhost:60800/users/me"
+        info: "http://localhost:60800/users/info"
     },
     redirect: "http://localhost:8080",
     slackInvite: "http://localhost:3000"
