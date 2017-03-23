@@ -9,7 +9,7 @@ var Action = {
         $.ajax({
             type: "GET",
             dataType: "json",
-            url:  window.config.request.me,
+            url:  window.config.request.info,
             xhrFields: { withCredentials: true },
             success: function(res) {
                 $('.nav_login_btn').addClass('none')
@@ -119,10 +119,15 @@ var Action = {
     },
 
     openPopup: function(_popup) {
+        $('.error').removeClass('error');
         $('body').addClass('static');
         $('.overlay').addClass('active');
-        $(_popup).addClass('open');
-        setTimeout(function() {$(_popup).find('input')[0].focus();}, 150);
+        setTimeout(function() {$(_popup).addClass('open');}, 150);
+        setTimeout(function() {
+            if($(_popup).find('input')[0]) {
+                $(_popup).find('input')[0].focus();
+            }
+        }, 300);
     },
 
     closePopup: function(callback) {
@@ -207,7 +212,7 @@ var Action = {
         $.ajax({
             type: "GET",
             dataType: "json",
-            url:  window.config.request.me,
+            url:  window.config.request.info,
             xhrFields: { withCredentials: true },
             success: function(res) {
                 Action.closePopup();
@@ -254,7 +259,7 @@ var Action = {
                         $.ajax({
                             type: "GET",
                             dataType: "json",
-                            url:  window.config.request.me,
+                            url:  window.config.request.info,
                             xhrFields: { withCredentials: true },
                             success: function(res) {
                                 window.location.href = window.config.redirect;
@@ -266,7 +271,7 @@ var Action = {
                     if(error.status === 406){
                         if($('#loginEmail').val() && $('#loginPassword').val()) {
                             email = $('#loginEmail').val();
-                            password = $('#loginPassword').val();                            
+                            password = $('#loginPassword').val();
                         }
                         Action.closePopup();
                         Action.openPopup($('#login-tfa'));
@@ -301,7 +306,7 @@ var Action = {
                     $.ajax({
                         type: "GET",
                         dataType: "json",
-                        url:  window.config.request.me,
+                        url:  window.config.request.info,
                         xhrFields: { withCredentials: true },
                         success: function(res) {
                             window.location.href = window.config.redirect;
