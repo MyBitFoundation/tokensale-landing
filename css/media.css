@@ -462,6 +462,12 @@
     -webkit-overflow-scrolling: touch !important;
     height: auto;
   }
+  html.static,
+  body.static {
+    -webkit-overflow-scrolling: touch !important;
+    overflow: auto !important;
+    height: 100% !important;
+  }
   .wrapper {
     position: relative;
   }
@@ -872,6 +878,13 @@
   .section__enterprise .head,
   .section__features {
     background-attachment: scroll;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
   }
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

@@ -106,7 +106,7 @@ body {
   min-width: 320px;
   height: 100%;
   font-size: 16px;
-  overflow: visible!important;
+  overflow: visible;
   -webkit-overflow-scrolling: touch;
 }
 body {
@@ -115,7 +115,7 @@ body {
 }
 body.static {
   position: relative;
-  overflow: hidden !important;
+  overflow: hidden;
 }
 .wrapper {
   height: 100%;
@@ -1557,50 +1557,4 @@ input:focus + label.dark,
   .scroll-textarea > .scroll-content > textarea {
     overflow: hidden !important;
   }
-}
-.nav__item.none{
-  display: none;
-}
-.btn.none{
-  display: none;
-}
-
-/*style for header logout*/
-.header__profile {
-  float: right;
-  text-align: right;
-  padding: 31px 0 31px 10px;
-  line-height: 1.3;
-}
-.header__profileName {
-  display: block;
-  font-weight: 600;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  color: #fccc59;
-  max-width: 250px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.header__profileName:hover {
-  text-decoration: underline;
-}
-@media only screen and (max-width: 1200px) {
-  .header__profile {
-    float: none;
-    text-align: center;
-    padding: 10px;
-  }
-  .header__profileName {
-    max-width: 100%;
-  }
-}
-
-.header__sign {
-  color: #fff;
-  font-size: 14px;
-}
-.header__sign:hover {
-  text-decoration: underline;
 }
