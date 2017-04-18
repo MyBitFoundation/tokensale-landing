@@ -1,29 +1,22 @@
 var Action = {
 
-    watch_video: null,
     email: null,
     password: null,
 
     init: function() {
-        this.watch_video = document.getElementById("watch_video");
-        $.ajax({
-            type: "GET",
-            dataType: "json",
-            url:  window.config.request.info,
-            xhrFields: { withCredentials: true },
-            success: function(res) {
-                $('.nav_login_btn').addClass('none')
-                $('.nav_signup_btn').parent().addClass('none');
-                $('.header__profile').removeClass('none');
-                var email = res.email;
-                setTimeout($('.header__profileName').html(email),150)
-            }
-        });
         this.initEvents();
     },
 
     initEvents: function() {
-        $('.slack').click(function() {
+        $('.form_subscribe .btn_subscribe').click(function() {
+            Action.subscribe($(this).closest('.form_subscribe'));
+        })
+
+        $('.form_subscribe .input__wrap [name=email]').keypress(function (e) {
+            $(this).closest('.form__row').removeClass('error');
+        })
+
+       /* $('.slack').click(function() {
             window.open(window.config.slackInvite, '_blank');
         })
 
@@ -86,39 +79,10 @@ var Action = {
 
         $('#send-login-tfa').click(function() {
             Action.tfaLogin();
-        })
-
-        $('.btn_subscribe').click(function() {
-            Action.subscribe($('#subscribe_form_header'));
-        })
-
-        $('.btn_subscribe_2').click(function() {
-            Action.subscribe($('#subscribe_form_middle'));
-        })
-
-        $('.btn_say_in_touch').click(function() {
-            Action.sayInTouch();
-        })
-
-        $('.open_popup_watch_video').click(function() {
-            Action.openPopup($('.popup-video'));
-            setTimeout(function() {
-                Action.watch_video.currentTime = 0;
-                Action.watch_video.play();
-            },1000);
-
-            $('.popup-video iframe').attr('src','https://player.vimeo.com/video/191182539');
-        })
-
-        $(document).on('click',function(e) {
-            if ($(e.target).closest(".popup__wrap, .btn_registration, .btn_login, .open_popup_watch_video, .header__btnMenu").length) return;
-            Action.closePopup(function() {
-                $('.popup__wrap iframe').removeAttr('src');
-            });
-        })
+        })*/
     },
 
-    openPopup: function(_popup) {
+ /*   openPopup: function(_popup) {
         $('.error').removeClass('error');
         $('body').addClass('static');
         $('.overlay').addClass('active');
@@ -147,7 +111,7 @@ var Action = {
 
         if(callback)
             callback();
-    },
+    },*/
 
     registration: function() {
         $('.popup-register .form__row').removeClass('error');
@@ -322,75 +286,33 @@ var Action = {
     },
 
     subscribe: function(form) {
-        var status = true;
         $('.form__row',form).removeClass('error');
-        if(!$('.subscribe_email',form).val() || !this.validateEmail($('.subscribe_email',form).val())) {
-            $('.form__row',form).addClass('error').find('.error-txt span').html(' '+'E-mail is invalid');
-            status = false;
-        }
+        var data = {
+            action : 'subscribe',
+            email: $('.input__wrap [name=email]',form).val()
+        };
 
-        if(status) {
-            var data = {
-                action : 'subscribe',
-                email: $('.subscribe_email',form).val(),
-            };
-
-            $.ajax({
-                type: "POST",
-                dataType: "json",
-                url: 'action.php',
-                data: data,
-                success: function (response) {
-                    if(response.result) {
-                        $('.subscribe_email',form).val('');
-                        $('.popup-mailchimp-success h2').html('Thank you for subscribing!');
-                        Action.openPopup($('.popup-mailchimp-success'));
-                    } else {
-                        $('.form__row',form).addClass('error').find('.error-txt span').html(' '+response.errors);
-                    }
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: 'action.php',
+            data: data,
+            success: function (response) {
+                if(response.result) {
+                    var $button = $('.btn_subscribe',form);
+                    $button.closest('.form__updates_js').addClass('start');
+                    setTimeout(function(){
+                        $button.closest('.form__updates_js').addClass('processing').removeClass('start');
+                        setTimeout(function() {
+                            $button.closest('.form__updates_js').addClass('submited').removeClass('processing');
+                        }, 2300);
+                    }, 700);
+                } else {
+                    $('.form__row',form).addClass('error');
+                    $('.form__errorTxt',form).html(response.errors);
                 }
-            });
-        }
-    },
-
-    sayInTouch: function() {
-        var form = $('#say_in_touch_form');
-        var status = true;
-        $('.form__row',form).removeClass('error');
-
-        if(!$('#email').val() || !this.validateEmail($('#email').val())) {
-            $('#email').parent().addClass('error').find('.error-txt span').html(' '+'E-mail is invalid');
-            status = false;
-        }
-
-        if(status) {
-            var data = {
-                action : 'say_in_touch',
-                email: $('#email',form).val(),
-                name: $('#name',form).val(),
-                reference: $('#reference',form).val(),
-                message: $('#message',form).val(),
-            };
-
-            $.ajax({
-                type: "POST",
-                dataType: "json",
-                url: 'action.php',
-                data: data,
-                success: function (response) {
-                    if(response.result) {
-                        $('.popup-mailchimp-success h2').html('Thank you!');
-                        Action.openPopup($('.popup-mailchimp-success'));
-                        $('#email',form).val('');
-                        $('#name',form).val('');
-                        $('#reference',form).val('');
-                        $('#message',form).val('');
-                    } else {
-                        $('#email').parent().addClass('error').find('.error-txt span').html(' '+response.errors);
-                    }
-                }
-            });
-        }
+            }
+        });
     },
 
     validateEmail: function(email) {

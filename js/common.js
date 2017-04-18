@@ -4,214 +4,121 @@ var Common;
 
 Common = {
 
+    sectionArray: [],
+    mainLinkArray: [],
+
     init: function () {
         var self = this;
 
         self.initEvents();
-        self.initScrollTextarea();
-        self.initScrollTeamDesc();
-        self.headerFixed();
-        self.popupStatic();
-
-        //FORM
-        $('.input').focusout(function(){
-            var el = $(this);
-            if (el.val() == ''){
-                el.removeClass('fill');
-            }
-            else {
-                el.addClass('fill');
-            };
-        });
-        $('.input__extend input').focus(function(){
-            $(this).closest('.form__row').addClass('focus');
-        }).focusout(function () {
-            $(this).closest('.form__row').removeClass('focus');
-        });
-        $('textarea[data-form-msg]').focusout(function(){
-            var el = $(this);
-            el.closest('.scroll-textarea').removeClass('focus');
-            if (el.val() == ''){
-                el.closest('.scroll-textarea').removeClass('fill');
-            }
-            else {
-                el.closest('.scroll-textarea').addClass('fill');
-            };
-        }).focusin(function(){
-            var el = $(this);
-            el.closest('.scroll-textarea').addClass('focus');
-        });
+        Common.checkFirstSection();
+        Common.sectionPosition();
+        Common.colorMainMenu();
 
         $(window).on({
             load: function () {
-                Common.sizeTeamItem();
+                Common.slickInit();
             },
             resize: function () {
-                Common.sizeTeamItem();
-                Common.popupStatic();
-                if ($(window).width() > 1200) {
-                    $('.header__wrap .header__btnMenu').removeClass('active');
-                    $('.header__wrap .header__btnMenu').next('.nav__wrap').removeClass('open');
-                    $('body').removeClass('static');
-                }
+                $('.team__list').slick('resize');
+                Common.colorMainMenu();
             },
             scroll: function () {
-                Common.headerFixed();
                 Common.onScroll();
+                Common.colorMainMenu();
+                Common.checkFirstSection();
             }
         });
-
     },
 
     initEvents: function () {
-        $('.tabs__link_js').on('click',Common.toggleTabs);
-        $('.header__btnMenu').on('click',Common.toggleMobMenu);
-        $('.nav__link').on('click',Common.clickMobMenu);
-        $('.team__item').on('click', function (e) {
-            if ($(e.target).closest(".team-info__wrap").length) return;
-            $('.team__item').removeClass('hover').removeClass('close');
-            $(this).addClass('hover');
-            if ($(window).width() <= 767) {
-                $('body').addClass('static');
-                $('.header__wrap .header').addClass('hide');
-            }
-        });
-        $('.team__item').on('mouseout', function () {
-            if ($(window).width() > 767) {
-                $(this).removeClass('hover');
-            }
-        });
-        $('.team-info__close').on('click',function(e) {
+
+        $('.btn-mobMenu').on('click', function (e){
             e.preventDefault();
-            Common.teamHoverClose();
+            $(this).toggleClass('active');
+            $('.overlay').toggleClass('active');
+            $('.mainNav__wrap').toggleClass('open');
+            $('.lang__wrap').toggleClass('visible');
+            $('.header-mob').toggleClass('bg');
+            $('html').toggleClass('static');
+        });
+        $('.overlay').on('click', function (){
+            $(this).removeClass('active');
+            $('.btn-mobMenu').removeClass('active');
+            $('.mainNav__wrap').removeClass('open');
+            $('.lang__wrap').removeClass('visible');
+            $('.header-mob').addClass('bg');
+            $('html').removeClass('static');
         });
 
-        $('.team__photoWrap').each(function() {
-            var th = $(this).height(),//box height
-                tw = $(this).width(),//box width
-                im = $(this).children('img'),//image
-                ih = im.height(),//inital image height
-                iw = im.width();//initial image width
-            if (ih>iw) {//if portrait
-                im.addClass('ww').removeClass('wh');//set width 100%
-            } else {//if landscape
-                im.addClass('wh').removeClass('ww');//set height 100%
-            }
-            //set offset
-            var nh = im.height(),//new image height
-                nw = im.width(),//new image width
-                hd = (nh-th)/2,//half dif img/box height
-                wd = (nw-tw)/2;//half dif img/box width
-            if (nh<nw) {//if portrait
-                im.css({marginLeft: '-'+wd+'px', marginTop: 0});//offset left
-            } else {//if landscape
-                im.css({marginTop: '-'+hd+'px', marginLeft: 0});//offset top
-            }
+        //team
+        $('.team__btnMore_js').on('click',function (e){
+            e.preventDefault();
+            $(this).closest('.team__item').addClass('active');
         });
+        $('.team__item').on('click',function (){
+               if ($(window).width() < 768) {
+                   if ($(event.target).closest(".team__detailsClose").length) return;
+                   $(this).addClass('active');
+               }
+        });
+        $('.team__detailsClose_js').on('click',function (e){
+            e.preventDefault();
+            $(this).closest('.team__item').removeClass('active');
+        });
+
+        //description visible
+        $('.description__link').on('click',function (e){
+            e.preventDefault();
+            $(this).closest('.description__wrap').toggleClass('continuation-visible');
+        });
+
+        function afterReveal( el ) {
+            el.addEventListener('animationend', function( ) {
+                if(el.id == 'roadmap'){
+                    if ($(window).width() > 991) {
+                        $('.roadmap__progressBar').css('width', '46%')
+                    } else{
+                        $('.roadmap__progressBar').css({
+                            height: '46%'
+                        });
+                    }
+                }
+                if(el.id == 'structure'){
+                    $('.chart__box').addClass('visible');
+                }
+            });
+        }
+        var wow = new WOW(
+            {
+                offset:       0,
+                mobile:       true,
+                live:         true,
+                callback:     afterReveal
+            }
+        );
+        wow.init();
 
         $('.btn_scroll').click(function(event) {
             var id = $(this).attr("href");
-            var offset = $('header').height() - 2;
-            var target = parseInt($(id).offset().top - offset);
+            var target = parseInt($(id).offset().top);
             if ($(window).scrollTop() != target) {
                 $('html, body').animate({
                     scrollTop: target
                 }, 500);
             }
-
             event.preventDefault();
         });
     },
 
-    toggleTabs: function (e) {
-        e.preventDefault();
-        $(this).closest('.tabs__wrap_js').find('.tabs__link_js').removeClass('active');
-        $(this).addClass('active');
-        var tab = $(this).attr('href');
-        $(this).closest('.tabs__wrap_js').find('.tabs__pane_js').not(tab).removeClass('active').removeClass('in');
-        $(tab).addClass('active');
-        setTimeout(function(){
-            $(tab).addClass('in');
-        }, 100);
-    },
-
-    sizeTeamItem: function () {
-        var teamItem = $(".team__item"),
-            teamItemWidth = teamItem.width();
-        teamItem.height(teamItemWidth/1.18);
-    },
-
-    initScrollTextarea: function () {
-        $('.textarea-scrollbar').scrollbar();
-    },
-
-    initScrollTeamDesc: function () {
-        $('.team-info__desc').scrollbar();
-    },
-
-    headerFixed: function () {
-        var header = $(".header__wrap"),
-            headerTopPosiition = header.offset().top,
-            windowScroll = $(window).scrollTop();
-        if(windowScroll >= headerTopPosiition ) {
-            header.addClass('fixed')
-        } else {
-            header.removeClass('fixed')
-        }
-    },
-
-    toggleMobMenu: function (e) {
-        e.preventDefault();
-        var btnMenu = $('.header__wrap .header__btnMenu');
-        var header = $('.header__wrap');
-        if ((navigator.userAgent.match(/iPad|iPhone|iPod|Android|Windows Phone|webOS|Opera Mini/i)) && (!$(this).closest('.header').hasClass('header__mob')) && (!header.hasClass('fixed'))) {
-            $('html, body').stop().animate({
-                scrollTop: header.offset().top
-            }, 500, function() {
-                $(btnMenu).addClass('active');
-                $(btnMenu).next('.nav__wrap').addClass('open');
-                $('body').addClass('static');
-            });
-        } else {
-            $(this).toggleClass('active');
-            $(this).next('.nav__wrap').toggleClass('open');
-            $('body').toggleClass('static');
-        }
-    },
-
-    clickMobMenu: function (e) {
-        e.preventDefault();
-        $('.nav__link').removeClass('active');
-        $(this).addClass('active');
-        $('.nav__wrap').removeClass('open');
-        $('.header__btnMenu').removeClass('active');
-        $('body').removeClass('static');
-    },
-
-
-    teamHoverClose: function () {
-        $('.team__item').removeClass('hover').addClass('close');
-        $('body').removeClass('static');
-        $('.header__wrap .header').removeClass('hide');
-    },
-
-    popupStatic: function () {
-        var popup = $('.popup__wrap.open .popup__in');
-        if($(window).height() < popup.height() + 40) {
-            popup.addClass('static');
-        } else {
-            popup.removeClass('static');
-        }
-    },
-
     onScroll: function() {
         var scrollPosition = $(document).scrollTop();
-        $('.nav__link').each(function () {
+        var windowHeight = $(window).height();
+        $('.mainNav__link').each(function () {
             var currentLink = $(this);
-            var offset = $('.header').height() + 50;
             var refElement = $(currentLink.attr("href"));
-            if (refElement.position().top <= scrollPosition + 150 && (refElement.offset().top - offset) + refElement.outerHeight(true)  > scrollPosition) {
-                $('.nav__link').removeClass("active");
+            if (refElement.position().top <= scrollPosition + 300  && (refElement.offset().top) + refElement.outerHeight(true)  > scrollPosition) {
+                $('.mainNav__link').removeClass("active");
                 currentLink.addClass("active");
             }
             else{
@@ -220,6 +127,69 @@ Common = {
         });
     },
 
+    checkFirstSection: function () {
+        var firstSection = $('.large-header'),
+            wrap = $('.wrapper'),
+            scrollPosition = $(document).scrollTop();
+        if (firstSection.innerHeight() > scrollPosition) {
+            firstSection.closest(wrap).addClass('firstSection')
+        } else{
+            firstSection.closest(wrap).removeClass('firstSection')
+        }
+    },
+
+    sectionPosition: function () {
+        this.sectionArray = [];
+        var currentTopPixel = 0;
+        $(".section").each(function(i,value){
+            var section = {
+                start: currentTopPixel,
+                end: currentTopPixel+$(value).innerHeight(),
+                class: $(value).hasClass('section__inverse') ? 'dark' : 'light'
+            }
+            currentTopPixel += $(value).innerHeight();
+            Common.sectionArray.push(section);
+        });
+    },
+
+    colorMainMenu: function () {
+        this.mainLinkArray = [];
+        if($(window).width() > 767) {
+            $('.mainNav__link').each( function (i,value){
+                for(var i in Common.sectionArray) {
+                    if($(value).offset().top > Common.sectionArray[i].start && $(value).offset().top <= Common.sectionArray[i].end) {
+                        $(value).removeClass('dark').removeClass('light');
+                        $(value).addClass(Common.sectionArray[i].class);
+                        break;
+                    }
+                }
+            });
+        } else {
+            $('.mainNav__link ').removeClass('dark').removeClass('light');
+        }
+    },
+
+    slickInit: function () {
+        $('.team__list').slick({
+            responsive: [
+                {
+                    breakpoint: 99999,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        arrows: false,
+                        dots: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1,
+                        adaptiveHeight: true
+
+                    }
+                }
+            ]
+        });
+    },
 
 
 };
