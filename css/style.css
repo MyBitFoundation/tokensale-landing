@@ -384,6 +384,9 @@ p {
   width: 30px;
   bottom: 0;
 }
+.wow {
+  visibility: hidden;
+}
 .overlay {
   position: fixed;
   top: 0;
@@ -1500,6 +1503,39 @@ p {
   background-image: repeating-radial-gradient(ellipse closest-corner at center center, rgba(98, 100, 174, 0.75) 0%, rgba(43, 35, 59, 0.75) 100%);
   background-image: -ms-repeating-radial-gradient(center center, ellipse closest-corner, rgba(98, 100, 174, 0.75) 0%, rgba(43, 35, 59, 0.75) 100%);
 }
+.circle__wrap circle {
+  transform-origin: center;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.circle__wrap circle:nth-child(1) {
+  stroke-width: 20px;
+  stroke: #a772dd;
+  transform: rotate(143deg);
+  stroke-dasharray: 293%;
+  stroke-dashoffset: 293%;
+}
+.circle__wrap circle:nth-child(2) {
+  stroke-width: 19px;
+  stroke: #8bd8d9;
+  stroke-dasharray: 261%;
+  stroke-dashoffset: 261%;
+  transform: rotate(187deg);
+}
+.circle__wrap circle:nth-child(3) {
+  stroke-width: 17px;
+  stroke: #e05398;
+  stroke-dasharray: 228%;
+  stroke-dashoffset: 228%;
+  transform: rotate(127deg);
+}
+.circle__wrap circle:nth-child(4) {
+  stroke-width: 19px;
+  stroke: #dddfb4;
+  stroke-dasharray: 194%;
+  stroke-dashoffset: 194%;
+  transform: rotate(221deg);
+}
 .circle {
   transform-origin: center;
   -webkit-transition: all 0.2s ease-out;
@@ -1508,53 +1544,25 @@ p {
 .circle__box {
   display: inline-block;
 }
-.circle_1 {
-  stroke-width: 20px;
-  stroke: #a772dd;
-  transform: rotate(143deg);
-  stroke-dasharray: 293%;
-  stroke-dashoffset: 293%;
-}
-.circle_2 {
-  stroke-width: 19px;
-  stroke: #8bd8d9;
-  stroke-dasharray: 261%;
-  stroke-dashoffset: 261%;
-  transform: rotate(187deg);
-}
-.circle_3 {
-  stroke-width: 17px;
-  stroke: #e05398;
-  stroke-dasharray: 228%;
-  stroke-dashoffset: 228%;
-  transform: rotate(127deg);
-}
-.circle_4 {
-  stroke-width: 19px;
-  stroke: #dddfb4;
-  stroke-dasharray: 194%;
-  stroke-dashoffset: 194%;
-  transform: rotate(221deg);
-}
-.visible .circle_1 {
+.visible .circle__wrap circle:nth-child(1) {
   animation: circle1 0.8s linear;
   -webkit-animation: circle1 0.8s linear;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
 }
-.visible .circle_2 {
+.visible .circle__wrap circle:nth-child(2) {
   animation: circle2 0.7s 0.5s linear;
   -webkit-animation: circle2 0.7s 0.5s linear;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
 }
-.visible .circle_3 {
+.visible .circle__wrap circle:nth-child(3) {
   animation: circle3 0.8s 0.9s linear;
   -webkit-animation: circle3 0.8s 0.9s linear;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
 }
-.visible .circle_4 {
+.visible .circle__wrap circle:nth-child(4) {
   animation: circle4 0.5s 1.5s linear;
   -webkit-animation: circle4 0.5s 1.5s linear;
   animation-fill-mode: both;

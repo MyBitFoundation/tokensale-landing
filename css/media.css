@@ -693,7 +693,7 @@ sub {
     top: 33px;
     right: -38px;
   }
-  .chart__title_1:hover ~ .circle__box .circle_1 {
+  .chart__title_1:hover ~ .circle__box circle:nth-child(1) {
     stroke-width: 27px;
     stroke: #9666c6;
   }
@@ -716,7 +716,7 @@ sub {
     top: -61px;
     left: -71px;
   }
-  .chart__title_2:hover ~ .circle__box .circle_2 {
+  .chart__title_2:hover ~ .circle__box circle:nth-child(2) {
     stroke-width: 26px;
     stroke: #7dc2c3;
   }
@@ -735,7 +735,7 @@ sub {
     top: 0;
     right: 0;
   }
-  .chart__title_3:hover ~ .circle__box .circle_3 {
+  .chart__title_3:hover ~ .circle__box circle:nth-child(3) {
     stroke-width: 24px;
     stroke: #c94b89;
   }
@@ -758,7 +758,7 @@ sub {
     top: 44px;
     left: -83px;
   }
-  .chart__title_4:hover ~ .circle__box .circle_4 {
+  .chart__title_4:hover ~ .circle__box circle:nth-child(4) {
     stroke-width: 26px;
     stroke: #c6c8a2;
   }

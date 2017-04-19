@@ -153,7 +153,7 @@
                             <div class="desc">
                                 <p><?php echo t::message('global','MyBit revolutionizes asset management by enabling the secure administration of ownership via a decentralized, golden source ledger.  It effectively removes single point of failure risk, reliance on third-party escrow agents, and much of the friction in traditional systems.  MyBit’s design is optimized to increase the accessibility of asset management and investment services by utilizing innovative technology to lower costs.  Governed by a profit sharing smart contract, MyBit is the first DApp that truly bridges the gap between physical and digital realms while enabling investors to partake in revenue distributions.'); ?></p>
                                 <div class="btn__row">
-                                    <a href="/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
+                                    <a href="/docs/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
                                         <span class="progress" style="transition-duration: 4s"></span>
                                         <span class="download-icon__wrap">
                                             <span class="download-icon__top">
@@ -662,7 +662,7 @@
                                 <a href="https://www.reddit.com/user/MyBit_DApp/" class="soc__link" target="_blank"><i class="icon-redit"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://mybit-dapp.slack.com/ " class="soc__link" target="_blank"><i class="icon-slack"></i></a>
+                                <a href="https://slack.mybit.io" class="soc__link" target="_blank"><i class="icon-slack"></i></a>
                             </li>
                             <li class="soc__item">
                                 <a href="https://www.youtube.com/channel/UCtLn7Vi-3VbsY5F9uF1RJYg" class="soc__link" target="_blank"><i class="icon-youtube"></i></a>
@@ -678,7 +678,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="footer__download">
-                        <a href="/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
+                        <a href="/docs/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
                             <span class="progress" style="transition-duration: 4s"></span>
                                 <span class="download-icon__wrap">
                                     <span class="download-icon__top">
