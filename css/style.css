@@ -761,6 +761,15 @@ p {
   transition: all 0.2s ease-out;
   transition-delay: 0.3s;
 }
+.team__detailsClose__inverse {
+  background: #3a3665;
+}
+.team__details__inverse {
+  background: #3a3665;
+}
+.team__history__inverse {
+  color: #ffffff;
+}
 .soc__wrap {
   margin-bottom: 47px;
 }

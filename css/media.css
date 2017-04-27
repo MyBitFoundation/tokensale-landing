@@ -319,6 +319,7 @@ sub {
     left: 50%;
     margin-left: -30px;
   }
+  .section__advisor,
   .section__team {
     padding-bottom: 82px;
   }
@@ -579,6 +580,7 @@ sub {
   .section__structure .desc {
     margin-bottom: 32px;
   }
+  .section__advisor,
   .section__team {
     padding: 30px 0 48px;
   }
