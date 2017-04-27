@@ -82,6 +82,169 @@ sub {
 .uppercase {
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .details__content {
+    display: block !important;
+  }
+  .chart__title {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .chart__title:hover .name,
+  .chart__title:hover .value {
+    transform: scale(1.2);
+  }
+  .chart__title .name {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .chart__title .line {
+    display: block;
+    background: #d2d3d3;
+    height: 1px;
+    margin: 10px 0;
+    position: relative;
+  }
+  .chart__title .line:before {
+    content: '';
+    position: absolute;
+    background: #d2d3d3;
+    height: 1px;
+  }
+  .chart__title .line:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: #ffffff;
+    box-shadow: 0 0 3px 2px #fff;
+    border-radius: 100%;
+  }
+  .chart__title_1 {
+    text-align: left;
+    left: 57px;
+    top: 3px;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+  .chart__title_1 .line {
+    width: 175px;
+  }
+  .chart__title_1 .line:before {
+    width: 50px;
+    left: 100%;
+    transform: rotate(41deg);
+    top: 16px;
+    margin-left: -7px;
+  }
+  .chart__title_1 .line:after {
+    top: 33px;
+    right: -38px;
+  }
+  .chart__title_1:hover ~ .circle__box circle:nth-child(1) {
+    stroke-width: 27px;
+    stroke: #9666c6;
+  }
+  .chart__title_2 {
+    text-align: right;
+    right: 72px;
+    top: 135px;
+  }
+  .chart__title_2 .line {
+    width: 130px;
+  }
+  .chart__title_2 .line:before {
+    width: 95px;
+    right: 100%;
+    transform: rotate(41deg);
+    top: -31px;
+    margin-right: -12px;
+  }
+  .chart__title_2 .line:after {
+    top: -61px;
+    left: -71px;
+  }
+  .chart__title_2:hover ~ .circle__box circle:nth-child(2) {
+    stroke-width: 26px;
+    stroke: #7dc2c3;
+  }
+  .chart__title_3 {
+    text-align: left;
+    left: 51px;
+    top: 135px;
+  }
+  .chart__title_3 .line {
+    width: 242px;
+  }
+  .chart__title_3 .line:before {
+    display: none;
+  }
+  .chart__title_3 .line:after {
+    top: 0;
+    right: 0;
+  }
+  .chart__title_3:hover ~ .circle__box circle:nth-child(3) {
+    stroke-width: 24px;
+    stroke: #c94b89;
+  }
+  .chart__title_4 {
+    text-align: right;
+    right: 72px;
+    top: 3px;
+  }
+  .chart__title_4 .line {
+    width: 176px;
+  }
+  .chart__title_4 .line:before {
+    width: 95px;
+    right: 100%;
+    transform: rotate(-28deg);
+    top: 22px;
+    margin-right: -6px;
+  }
+  .chart__title_4 .line:after {
+    top: 44px;
+    left: -83px;
+  }
+  .chart__title_4:hover ~ .circle__box circle:nth-child(4) {
+    stroke-width: 26px;
+    stroke: #c6c8a2;
+  }
+  .chart__total {
+    opacity: 0;
+  }
+  .visible .chart__title_1 {
+    animation: titleOpacity 0.3s 0.2s linear;
+    -webkit-animation: titleOpacity 0.3s 0.2s linear;
+    animation-fill-mode: forwards;
+  }
+  .visible .chart__title_2 {
+    animation: titleOpacity 0.3s  1.1s linear;
+    -webkit-animation: titleOpacity 0.3s 1.1s linear;
+    animation-fill-mode: forwards;
+  }
+  .visible .chart__title_3 {
+    animation: titleOpacity 0.3s 1.2s linear;
+    -webkit-animation: titleOpacity 0.3s 1.2s linear;
+    animation-fill-mode: forwards;
+  }
+  .visible .chart__title_4 {
+    animation: titleOpacity 0.3s 1.8s linear;
+    -webkit-animation: titleOpacity 0.3s 1.8s linear;
+    animation-fill-mode: forwards;
+  }
+  .visible .chart__total {
+    animation: chartTotal 0.3s 2s linear;
+    -webkit-animation: chartTotal 0.3s 2s linear;
+    animation-fill-mode: forwards;
+  }
+}
 @media (max-width: 1200px) {
   .section__aboutMybit .desc {
     margin: 17px 0 0 0;
@@ -123,7 +286,9 @@ sub {
 }
 @media (max-width: 991px) {
   .h1 {
-    margin-bottom: 105px;
+    font-size: 16px;
+    margin-bottom: 46px;
+    letter-spacing: 0.4px;
   }
   .date__box {
     margin-bottom: 216px;
@@ -185,6 +350,7 @@ sub {
     width: 3px;
     height: 0;
     left: -1px;
+    padding: 0 1.5px;
   }
   .roadmap__item {
     width: 100%;
@@ -241,6 +407,23 @@ sub {
   }
   .soc__item {
     margin-right: 9px;
+  }
+  .tokenization__model__yellow__image {
+    width: 100px;
+  }
+  .tokenization__model__yellow__image__footer__center {
+    width: 180px;
+  }
+  .vertical__branch__right__bar {
+    left: 81.6%;
+  }
+}
+@media (max-width: 900px) {
+  .tokenization__model__description {
+    font-size: 2.2em;
+  }
+  .tokenization__model__description__long__text {
+    font-size: 1.5em;
   }
 }
 @media (max-width: 767px) {
@@ -629,167 +812,40 @@ sub {
   .footer__download {
     text-align: center;
   }
-}
-@media (min-width: 768px) {
-  .details__content {
-    display: block !important;
+  .tokenization__model__description {
+    font-size: 1.5em;
   }
-  .chart__title {
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+  .tokenization__model__description__long__text {
+    font-size: 1.1em;
   }
-  .chart__title:hover .name,
-  .chart__title:hover .value {
-    transform: scale(1.2);
+  .tokenization__model__image {
+    background-size: 80%;
   }
-  .chart__title .name {
-    display: block;
-    font-size: 15px;
-    font-weight: 300;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+  .tokenization__model__yellow__image {
+    width: 100%;
   }
-  .chart__title .line {
-    display: block;
-    background: #d2d3d3;
-    height: 1px;
-    margin: 10px 0;
-    position: relative;
+  .tokenization__model__yellow__image__footer__left {
+    width: 40%;
   }
-  .chart__title .line:before {
-    content: '';
-    position: absolute;
-    background: #d2d3d3;
-    height: 1px;
+  .tokenization__model__yellow__image__footer__center {
+    width: 80%;
   }
-  .chart__title .line:after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    background: #ffffff;
-    box-shadow: 0 0 3px 2px #fff;
-    border-radius: 100%;
+  .tokenization__model__yellow__image__footer__right {
+    width: 43%;
   }
-  .chart__title_1 {
-    text-align: left;
-    left: 57px;
-    top: 3px;
-    animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
+  .vertical__branch__left__bar {
+    left: 16.9%;
   }
-  .chart__title_1 .line {
-    width: 175px;
+  .vertical__branch__right__bar {
+    left: 80.8%;
   }
-  .chart__title_1 .line:before {
-    width: 50px;
-    left: 100%;
-    transform: rotate(41deg);
-    top: 16px;
-    margin-left: -7px;
+  .vertical__bar {
+    width: 8px;
   }
-  .chart__title_1 .line:after {
-    top: 33px;
-    right: -38px;
+  .horizontal__bar {
+    height: 8px;
   }
-  .chart__title_1:hover ~ .circle__box circle:nth-child(1) {
-    stroke-width: 27px;
-    stroke: #9666c6;
-  }
-  .chart__title_2 {
-    text-align: right;
-    right: 72px;
-    top: 135px;
-  }
-  .chart__title_2 .line {
-    width: 130px;
-  }
-  .chart__title_2 .line:before {
-    width: 95px;
-    right: 100%;
-    transform: rotate(41deg);
-    top: -31px;
-    margin-right: -12px;
-  }
-  .chart__title_2 .line:after {
-    top: -61px;
-    left: -71px;
-  }
-  .chart__title_2:hover ~ .circle__box circle:nth-child(2) {
-    stroke-width: 26px;
-    stroke: #7dc2c3;
-  }
-  .chart__title_3 {
-    text-align: left;
-    left: 51px;
-    top: 135px;
-  }
-  .chart__title_3 .line {
-    width: 242px;
-  }
-  .chart__title_3 .line:before {
-    display: none;
-  }
-  .chart__title_3 .line:after {
-    top: 0;
-    right: 0;
-  }
-  .chart__title_3:hover ~ .circle__box circle:nth-child(3) {
-    stroke-width: 24px;
-    stroke: #c94b89;
-  }
-  .chart__title_4 {
-    text-align: right;
-    right: 72px;
-    top: 3px;
-  }
-  .chart__title_4 .line {
-    width: 176px;
-  }
-  .chart__title_4 .line:before {
-    width: 95px;
-    right: 100%;
-    transform: rotate(-28deg);
-    top: 22px;
-    margin-right: -6px;
-  }
-  .chart__title_4 .line:after {
-    top: 44px;
-    left: -83px;
-  }
-  .chart__title_4:hover ~ .circle__box circle:nth-child(4) {
-    stroke-width: 26px;
-    stroke: #c6c8a2;
-  }
-  .chart__total {
-    opacity: 0;
-  }
-  .visible .chart__title_1 {
-    animation: titleOpacity 0.3s 0.2s linear;
-    -webkit-animation: titleOpacity 0.3s 0.2s linear;
-    animation-fill-mode: forwards;
-  }
-  .visible .chart__title_2 {
-    animation: titleOpacity 0.3s  1.1s linear;
-    -webkit-animation: titleOpacity 0.3s 1.1s linear;
-    animation-fill-mode: forwards;
-  }
-  .visible .chart__title_3 {
-    animation: titleOpacity 0.3s 1.2s linear;
-    -webkit-animation: titleOpacity 0.3s 1.2s linear;
-    animation-fill-mode: forwards;
-  }
-  .visible .chart__title_4 {
-    animation: titleOpacity 0.3s 1.8s linear;
-    -webkit-animation: titleOpacity 0.3s 1.8s linear;
-    animation-fill-mode: forwards;
-  }
-  .visible .chart__total {
-    animation: chartTotal 0.3s 2s linear;
-    -webkit-animation: chartTotal 0.3s 2s linear;
-    animation-fill-mode: forwards;
+  .vertical__branch__bar {
+    width: 8px;
   }
 }

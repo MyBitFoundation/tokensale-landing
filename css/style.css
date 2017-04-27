@@ -866,6 +866,7 @@ p {
   height: 3px;
   width: 0;
   background-color: #fdcc59;
+  padding: 1.5px 0;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
