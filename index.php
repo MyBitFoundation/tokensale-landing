@@ -37,6 +37,7 @@
     <script src="js/device.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/config.js"></script>
     <script src="js/common.js"></script>
     <script src="js/action.js"></script>
 </head>
@@ -103,8 +104,8 @@
                 </div>
                 <div class="offer-box wow animated fadeInUp"  data-wow-delay="0.3s">
                     <span class="title">Sign in to create, discover and connect with the global community.</span>
-                    <a href="" class="btn btn-shadow blue">sign Up</a>
-                    <a href="" class="btn btn-shadow yellow">sign in</a>
+                    <a href="" class="btn btn-shadow blue" data-toggle="modal" data-target="#modal-signUp">sign Up</a>
+                    <a href="" class="btn btn-shadow yellow" data-toggle="modal" data-target="#modal-signIn">sign in</a>
                 </div>
                 <div class="btn__row wow animated fadeInUp"  data-wow-delay="0.3s">
                     <a href="https://www.facebook.com/vejdiven/videos/1344609518964148/" class="btn btn-inverse" target="_blank"><span>Watch Presentation</span></a>
@@ -972,6 +973,116 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-signIn" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Welcome Back!</h5>
+                    <span class="desc">Sign in with your login to continue</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form__row">
+                            <input type="email" name="email" class="input" placeholder="Enter email"/>
+                            <span class="form__errorTxt"></span>
+                        </div>
+                        <div class="form__row">
+                            <input type="password" name="password" class="input" placeholder="Your password"/>
+                            <span class="form__errorTxt"></span>
+                        </div>
+                        <div class="btn__row">
+                            <a href="javascript:;" class="btn btn-shadow yellow send_login">Login</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+<!--                   <a href="#" class="link">Forgot password?</a>-->
+                    <span class="hint">Don’t have an account? <a href="#" class="link">Get started</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-signUp" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Let’s Get Started!</h5>
+                    <span class="desc">Sign in with your login to continue</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form__row">
+                            <input type="email" name="email" class="input" placeholder="Enter email"/>
+                            <span class="form__errorTxt"></span>
+                        </div>
+                        <div class="form__row">
+                            <input type="password" name="password" class="input" placeholder="Your password"/>
+                            <span class="form__errorTxt"></span>
+                        </div>
+                        <div class="form__row">
+                            <input type="password" name="repeat_password" class="input" placeholder="Repeat password"/>
+                            <span class="form__errorTxt"></span>
+                        </div>
+                        <div class="form__row">
+                            <input type="text" name="address" class="input" placeholder="Ethereum address"/>
+                            <span class="form__errorTxt"></span>
+                        </div>
+                        <div class="btn__row">
+                            <a href="javascript:;" class="btn btn-shadow yellow send_registration">Sign up</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-2fa" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form__row">
+                            <input type="text" class="input" placeholder="6 Digit_Key"/>
+                        </div>
+                        <div class="btn__row">
+                            <a href="" class="btn btn-shadow yellow">Submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-success" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thank you for registration!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="btn__row" >
+                        <a href="javascript:;" class="btn btn-inverse" data-dismiss="modal" aria-label="Close">ok</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 

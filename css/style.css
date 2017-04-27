@@ -1642,6 +1642,86 @@ p {
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
 }
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+.modal-backdrop.in {
+  opacity: 1;
+}
+.modal-content {
+  background: #302b51;
+  color: #fff;
+  padding: 0 45px;
+}
+.modal-content .link {
+  font-size: 13px;
+  display: inline-block;
+  font-weight: 700;
+  color: #ffc80a;
+}
+.modal-content .btn-inverse {
+  width: 180px;
+}
+.modal-dialog {
+  width: 525px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.modal-header {
+  text-align: center;
+  border: none;
+  padding: 48px 0 20px;
+}
+.modal-header .close {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.3);
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+.modal-header .desc {
+  display: block;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 28px;
+}
+.modal-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.modal-body {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.modal-body .form__row {
+  margin-bottom: 20px;
+}
+.modal-body .btn__row {
+  margin-top: 37px;
+}
+.modal-footer {
+  border: none;
+  text-align: left;
+  padding: 20px 15px 30px;
+}
+.modal-footer .hint {
+  float: right;
+  color: #838097;
+}
 .mobile .canvas__bg,
 .tablet .canvas__bg {
   display: none;

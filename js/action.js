@@ -53,36 +53,28 @@ var Action = {
             $('#send-login-tfa').click();
         })
 
-        $('.btn_registration').click(function() {
-            Action.openPopup($('.popup-register'));
-        })
-
-        $('.btn_login').click(function() {
-            Action.openPopup($('#login'));
-        })
-
-        $('.popup__close').click(function() {
-            Action.closePopup();
-        })
-
         $('.send_registration').click(function() {
             Action.registration();
         })
 
-        $('#successRegistrationBtn').click(function() {
-            Action.successRegistration();
-        })
-
-        $('#send-login').click(function() {
+        $('.send_login').click(function() {
             Action.login();
         })
 
-        $('#send-login-tfa').click(function() {
-            Action.tfaLogin();
-        })
+        // $('#send-login-tfa').click(function() {
+        //     Action.tfaLogin();
+        // })
+
+        $('#modal-success').on('hide.bs.modal', function (e) {
+            Action.successRegistration();
+        });
+
+        $('#modal-signUp, #modal-signIn').on('hide.bs.modal', function (e) {
+            $('.form__row',this).removeClass('error').find('input').val('');
+        });
     },
 
-    openPopup: function(_popup) {
+  /*  openPopup: function(_popup) {
         $('.error').removeClass('error');
         $('body').addClass('static');
         $('.overlay').addClass('active');
@@ -92,9 +84,9 @@ var Action = {
                 $(_popup).find('input')[0].focus();
             }
         }, 300);
-    },
+    },*/
 
-    closePopup: function(callback) {
+   /* closePopup: function(callback) {
         var is_open_nav__wrap = false;
         $('.nav__wrap').each(function(e,value) {
             if($(value).hasClass('open'))
@@ -111,38 +103,45 @@ var Action = {
 
         if(callback)
             callback();
-    },
+    },*/
 
     registration: function() {
-        $('.popup-register .form__row').removeClass('error');
+        var block = $('#modal-signUp');
+        $('.form__row',block).removeClass('error');
         var status = true;
 
-        if(!$('#registerEmail').val() || !this.validateEmail($('#registerEmail').val())) {
-            $('#registerEmail').parent().addClass('error').find('.error_t').html('Incorrect e-mail');
+        if(!$('input[name=email]',block).val() || !this.validateEmail($('input[name=email]',block).val())) {
+            $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect e-mail');
             status = false;
         }
 
-        if(!$('#registerPassword').val()) {
-            $('#registerPassword').parent().addClass('error').find('.error_t').html('Incorrect password');
+        if(!$('input[name=password]',block).val()) {
+            $('input[name=password]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect password');
             status = false;
         }
 
-        if(!$('#registerPasswordCopy').val()) {
-            $('#registerPasswordCopy').parent().addClass('error').find('.error_t').html('Incorrect password copy');
+        if(!$('input[name=repeat_password]',block).val()) {
+            $('input[name=repeat_password]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect repeat password');
             status = false;
         }
 
-        if($('#registerPasswordCopy').val() != $('#registerPassword').val()) {
-            $('#registerPasswordCopy').parent().addClass('error').find('.error_t').html('Passwords do not match');
+        if($('input[name=repeat_password]',block).val() != $('input[name=password]',block).val()) {
+            $('input[name=repeat_password]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Passwords do not match');
+            status = false;
+        }
+
+        if(!$('input[name=address]',block).val()) {
+            $('input[name=address]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect Ethereum address');
             status = false;
         }
 
         if(status) {
             var data = {
                 action : 'registration',
-                email: $('#registerEmail').val(),
-                password: $('#registerPassword').val(),
-                passwordCopy: $('#registerPasswordCopy').val(),
+                email: $('input[name=email]',block).val(),
+                password: $('input[name=password]',block).val(),
+                passwordCopy: $('input[name=repeat_password]',block).val(),
+                address: $('input[name=address]',block).val()
             };
             $.ajax({
                 type: "POST",
@@ -152,20 +151,21 @@ var Action = {
                 xhrFields: { withCredentials: true },
                 success: function (response) {
                     if(response.email && response.lastLoginDate) {
-                        $('#registerEmail').val('');
-                        $('#registerPassword').val('');
-                        $('#registerPasswordCopy').val('');
-                        Action.closePopup();
-                        Action.openPopup($('.popup-registration-success'));
+                        block.modal('hide');
+                        $('#modal-success').modal('show');
                     }
                 },
                 error: function(error) {
                     var response = error.responseJSON.message;
                     if(/email/i.test(response)) {
-                        $('#registerEmail').parent().addClass('error').find('.error_t').html(response);
+                        $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response);
                     }
                     if(/password/i.test(response)) {
-                        $('#registerPassword').parent().addClass('error').find('.error_t').html(response);
+                        $('input[name=password]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response);
+                        $('input[name=repeat_password]',block).closest('.form__row').addClass('error');
+                    }
+                    if(/address/i.test(response)) {
+                        $('input[name=address]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response);
                     }
                 }
             });
@@ -179,37 +179,35 @@ var Action = {
             url:  window.config.request.info,
             xhrFields: { withCredentials: true },
             success: function(res) {
-                Action.closePopup();
                 window.location.href = window.config.redirect;
             },
             error: function(error) {
-                Action.closePopup();
+
             }
         })
     },
 
     login: function(callback) {
-        $('.popup-login .form__row').removeClass('error');
+        var block = $('#modal-signIn');
+        $('.form__row',block).removeClass('error');
         var status = true;
 
-        if(!$('#loginEmail').val() || !this.validateEmail($('#loginEmail').val())) {
-            $('#loginEmail').parent().addClass('error').find('.error_t').html('E-mail is empty');
+        if(!$('input[name=email]',block).val() || !this.validateEmail($('input[name=email]',block).val())) {
+            $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect e-mail');
             status = false;
         }
 
-        if(!$('#loginPassword').val()) {
-            $('#loginPassword').parent().addClass('error').find('.error_t').html('Password is empty');
+        if(!$('input[name=password]',block).val()) {
+            $('input[name=password]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect password');
             status = false;
         }
 
         if(status) {
             var data = {
                 action : 'authorisation',
-                email: $('#loginEmail').val(),
-                password: $('#loginPassword').val(),
+                email: $('input[name=email]',block).val(),
+                password: $('input[name=password]',block).val(),
             };
-
-            $('#send-login').attr("disabled", "disabled");
 
             $.ajax({
                 type: "POST",
@@ -218,8 +216,9 @@ var Action = {
                 xhrFields: { withCredentials: true },
                 data: data,
                 success: function (response) {
+                    console.log(response);
                     if(response.email && response.lastLoginDate) {
-                        Action.closePopup();
+                        $('#modal-signIn').modal('hide');
                         $.ajax({
                             type: "GET",
                             dataType: "json",
@@ -232,17 +231,18 @@ var Action = {
                     }
                 },
                 error: function (error) {
+                    console.log(error);
                     if(error.status === 406){
-                        if($('#loginEmail').val() && $('#loginPassword').val()) {
-                            email = $('#loginEmail').val();
-                            password = $('#loginPassword').val();
+                        if($('input[name=email]',block).val() && $('input[name=password]',block).val()) {
+                            email = $('input[name=email]',block).val();
+                            password = $('input[name=password]',block).val();
                         }
-                        Action.closePopup();
-                        Action.openPopup($('#login-tfa'));
+                        $('#modal-signIn').modal('hide');
+                        $('#modal-2fa').modal('show');
                     } else {
 	                    var response = error.responseJSON.message;
-                        $('#loginEmail').parent().addClass('error').find('.error_t').html(response);
-                        $('#loginPassword').parent().addClass('error').find('.error_t').html(response);
+                        $('input[name=email]',block).closest('.form__row').addClass('error');
+                        $('input[name=password]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response);
                     }
                 }
             });
