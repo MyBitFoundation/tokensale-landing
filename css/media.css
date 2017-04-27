@@ -120,17 +120,6 @@ sub {
   .chart__total {
     margin-top: -48px;
   }
-  .mainNav__link {
-    display: inline-block;
-  }
-  .mainNav__link .title {
-    opacity: 0;
-    visibility: hidden;
-  }
-  .mainNav__link:hover .title {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 @media (max-width: 991px) {
   .h1 {
@@ -260,6 +249,8 @@ sub {
   }
   .mainNav__wrap {
     width: 90%;
+    height: auto;
+    line-height: 1.25;
     top: 0;
     right: inherit;
     left: -90%;
@@ -291,8 +282,10 @@ sub {
   }
   .mainNav__list {
     margin: 0;
+    text-align: left;
   }
   .mainNav__item {
+    display: block;
     text-align: left;
   }
   .mainNav__link {
@@ -441,10 +434,6 @@ sub {
   }
   .input__wrap .input {
     padding: 0 20px;
-  }
-  .video__wrap {
-    max-width: inherit;
-    margin: 10px -15px 22px;
   }
   .description__link {
     display: block;
@@ -693,7 +682,7 @@ sub {
     top: 33px;
     right: -38px;
   }
-  .chart__title_1:hover ~ .circle__box circle:nth-child(1) {
+  .chart__title_1:hover ~ .circle__box .circle_1 {
     stroke-width: 27px;
     stroke: #9666c6;
   }
@@ -716,7 +705,7 @@ sub {
     top: -61px;
     left: -71px;
   }
-  .chart__title_2:hover ~ .circle__box circle:nth-child(2) {
+  .chart__title_2:hover ~ .circle__box .circle_2 {
     stroke-width: 26px;
     stroke: #7dc2c3;
   }
@@ -735,7 +724,7 @@ sub {
     top: 0;
     right: 0;
   }
-  .chart__title_3:hover ~ .circle__box circle:nth-child(3) {
+  .chart__title_3:hover ~ .circle__box .circle_3 {
     stroke-width: 24px;
     stroke: #c94b89;
   }
@@ -758,7 +747,7 @@ sub {
     top: 44px;
     left: -83px;
   }
-  .chart__title_4:hover ~ .circle__box circle:nth-child(4) {
+  .chart__title_4:hover ~ .circle__box .circle_4 {
     stroke-width: 26px;
     stroke: #c6c8a2;
   }
@@ -789,16 +778,5 @@ sub {
     animation: chartTotal 0.3s 2s linear;
     -webkit-animation: chartTotal 0.3s 2s linear;
     animation-fill-mode: forwards;
-  }
-  .team__item:hover .team__photoWrap:before {
-    opacity: 1;
-  }
-  .team__item:hover .team__profession {
-    opacity: 0;
-    visibility: hidden;
-  }
-  .team__item:hover .btn-more {
-    opacity: 1;
-    visibility: visible;
   }
 }

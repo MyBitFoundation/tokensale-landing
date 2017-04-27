@@ -24,6 +24,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-telegram:before {
+	content: "\e913";
+}
 .icon-close:before {
 	content: "\e90b";
 }

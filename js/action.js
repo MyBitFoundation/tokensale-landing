@@ -35,7 +35,7 @@ var Action = {
                 }
             })
         })
-
+*/
         $('.popup-register').keypress(function (e) {
             if (e.which == 13) {
                 Action.registration();
@@ -79,10 +79,10 @@ var Action = {
 
         $('#send-login-tfa').click(function() {
             Action.tfaLogin();
-        })*/
+        })
     },
 
- /*   openPopup: function(_popup) {
+    openPopup: function(_popup) {
         $('.error').removeClass('error');
         $('body').addClass('static');
         $('.overlay').addClass('active');
@@ -107,11 +107,11 @@ var Action = {
         $('.popup__wrap input, .popup__wrap textarea').val('');
 
         $('.popup__wrap iframe').removeAttr('src');
-        Action.watch_video.pause();
+        // Action.watch_video.pause();
 
         if(callback)
             callback();
-    },*/
+    },
 
     registration: function() {
         $('.popup-register .form__row').removeClass('error');

@@ -60,22 +60,13 @@
                     <a href="#technology" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','Core Technology'); ?></span></a>
                 </li>
                 <li class="mainNav__item">
-                    <a href="#infrastructure" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','Tokenizing AI Infrastructure'); ?></span></a>
-                </li>
-                <li class="mainNav__item">
-                    <a href="#innovation" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','Innovation'); ?></span></a>
+                    <a href="#infrastructure" class="mainNav__link btn_scroll"><span class="title">Tokenization Of Energy</span></a>
                 </li>
                 <li class="mainNav__item">
                     <a href="#businessModel" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','Business Model'); ?></span></a>
                 </li>
                 <li class="mainNav__item">
-                    <a href="#roadmap" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','Roadmap'); ?></span></a>
-                </li>
-                <li class="mainNav__item">
-                    <a href="#icoDetails" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','ICO Details'); ?></span></a>
-                </li>
-                <li class="mainNav__item">
-                    <a href="#structure" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','Pricing Structure'); ?></span></a>
+                    <a href="#roadmap" class="mainNav__link btn_scroll"><span class="title">Crowdfunding Info</span></a>
                 </li>
                 <li class="mainNav__item">
                     <a href="#team" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','Team'); ?></span></a>
@@ -105,35 +96,20 @@
         <div class="section__intro">
             <div class="container">
                 <img src="images/logo_full.png" alt="" class="logo wow animated fadeInUp"/>
-                <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" ><?php echo t::message('global','Adding an otwnership layer to the internet'); ?></h1>
+                <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" >TOKENIZING AI, SMART ENERGY, AND OWNERSHIP</h1>
                 <div class="date__box wow animated fadeInUp" data-wow-delay="0.2s">
-                    <span class="date__title"><?php echo t::message('global','ICO Begins'); ?></span>
-                    <span class="date">27 <?php echo t::message('global','April'); ?> 2017</span>
+                    <span class="date__title">Pre-Sale Opens</span>
+                    <span class="date">April 27, 2017</span>
                 </div>
-                <form class="form form__updates form__updates_js wow animated fadeInUp form_subscribe" data-wow-delay="0.3s">
-                    <span class="form__title">
-                        <span class="usual"><?php echo t::message('global','Get Updates'); ?></span>
-                        <span class="success"><?php echo t::message('global','Thank You For Subscribing'); ?>!</span>
-                    </span>
-                    <div class="form__row "> <!--add class error-->
-                        <div class="btn-success">
-                            <span class="icon"><i class="icon-check"></i></span>
-                            <span class="text"><?php echo t::message('global','Success'); ?></span>
-                            <span class="text-submit"><?php echo t::message('global','Submit'); ?></span>
-                              <span class="spinner">
-                                   <svg width="44" height="44">
-                                       <circle r="20.5" cx="22" cy="22" />
-                                   </svg>
-                              </span>
-                        </div>
-                        <div class="input__wrap">
-                            <input type="email" name="email" placeholder="<?php echo t::message('global','Enter email'); ?>" class="input">
-                            <a href="javascript:;" class="btn_subscribe btn__inInput"><?php echo t::message('global','Submit'); ?></a>
-                        </div>
-                        <span class="form__errorTxt"></span>
-                        <span class="form__hint"><?php echo t::message('global','You’re almost done! Please check your email to confirm your subscription'); ?>.</span>
-                    </div>
-                </form>
+                <div class="offer-box wow animated fadeInUp"  data-wow-delay="0.3s">
+                    <span class="title">Sign in to create, discover and connect with the global community.</span>
+                    <a href="" class="btn btn-shadow blue">sign Up</a>
+                    <a href="" class="btn btn-shadow yellow">sign in</a>
+                </div>
+                <div class="btn__row wow animated fadeInUp"  data-wow-delay="0.3s">
+                    <a href="https://www.facebook.com/vejdiven/videos/1344609518964148/" class="btn btn-inverse" target="_blank"><span>Watch Presentation</span></a>
+                    <a href="https://www.slideshare.net/IanMWorrall/mybit-deck" class="btn btn-inverse" target="_blank"><span>View Deck</span></a>
+                </div>
             </div>
         </div>
     </div>
@@ -142,35 +118,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-11 col-md-offset-1 col-lg-offset-0">
-                    <h2 class="h2 section__title"><?php echo t::message('global','About MyBit'); ?></h2>
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="video__wrap">
-                                <img src="images/video_screen.jpg" alt="" class="img"/>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-10">
-                            <div class="desc">
-                                <p><?php echo t::message('global','MyBit revolutionizes asset management by enabling the secure administration of ownership via a decentralized, golden source ledger.  It effectively removes single point of failure risk, reliance on third-party escrow agents, and much of the friction in traditional systems.  MyBit’s design is optimized to increase the accessibility of asset management and investment services by utilizing innovative technology to lower costs.  Governed by a profit sharing smart contract, MyBit is the first DApp that truly bridges the gap between physical and digital realms while enabling investors to partake in revenue distributions.'); ?></p>
-                                <div class="btn__row">
-                                    <a href="/docs/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
-                                        <span class="progress" style="transition-duration: 4s"></span>
-                                        <span class="download-icon__wrap">
-                                            <span class="download-icon__top">
-                                                <i class="icon-download-top"></i>
-                                            </span>
-                                            <span class="line"></span>
-                                            <span class="download-icon__btm">
-                                                <i class="icon-download-btm"></i>
-                                            </span>
-                                        </span>
-                                        <span class="download-icon__check"><i class="icon-check"></i></span>
-                                        <span class="title title_calm"><?php echo t::message('global','Download whitepaper'); ?></span>
-                                        <span class="title title_during"><?php echo t::message('global','Downloading'); ?> <span class="value">38</span>%</span>
-                                        <span class="title title_ready"><?php echo t::message('global','Downloaded'); ?></span>
-                                    </a>
-                                </div>
-                            </div>
+                    <h2 class="h2 section__title">About MyBit</h2>
+                    <div class="desc">
+                        <p>MyBit revolutionizes asset management by enabling the secure administration of ownership via a decentralized, golden source ledger. It effectively removes single point of failure risk, reliance on third-party escrow agents, and much of the friction in traditional systems. MyBit’s design is optimized to increase the accessibility of asset management and investment services by utilizing innovative technology to lower costs. Governed by a profit sharing smart contract, MyBit is the first DApp that truly bridges the gap between physical and digital realms while enabling investors to partake in revenue distributions.</p>
+                        <p><strong>Our vision</strong> is to utilize Blockchain tokenization to create a new asset class for investing in revenue driving assets beginning in the Decentralized Energy and Autonomous Mobile Sectors. By leveraging an Ethereum core, governed by smart contract logic, we can make sustainable infrastructure easier to invest in securely, realize profits, and implement into emerging ecosystems.</p>
+                        <div class="btn__row">
+                            <a href="/docs/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
+                                <span class="progress" style="transition-duration: 4s"></span>
+                                <span class="download-icon__wrap">
+                                    <span class="download-icon__top">
+                                        <i class="icon-download-top"></i>
+                                    </span>
+                                    <span class="line"></span>
+                                    <span class="download-icon__btm">
+                                        <i class="icon-download-btm"></i>
+                                    </span>
+                                </span>
+                                <span class="download-icon__check"><i class="icon-check"></i></span>
+                                <span class="title title_calm">Download whitepaper</span>
+                                <span class="title title_during">Downloading <span class="value">38</span>%</span>
+                                <span class="title title_ready">Downloaded</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -197,8 +165,8 @@
                             </a>
                         </div>
                         <div class="btn__row">
-                            <a href="https://medium.com/@MyBit_Blog/what-is-mybit-acbe776cee51#.emhqzt1n9" target="_blank" class="btn btn-default"><span><?php echo t::message('global','Read Blog'); ?></span></a>
-                            <a href="https://www.youtube.com/watch?v=X9WZh51_IpQ" target="_blank" class="btn btn-default"><span><?php echo t::message('global','Watch Interview'); ?></span></a>
+                            <a href="https://medium.com/@MyBit_Blog/what-is-mybit-acbe776cee51" class="btn btn-inverse"><span>Read Blog</span></a>
+                            <a href="https://www.youtube.com/watch?v=X9WZh51_IpQ" class="btn btn-inverse"><span>Watch Interview</span></a>
                         </div>
                     </div>
                 </div>
@@ -211,23 +179,149 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                     <div class="desc">
-                        <h2 class="h3 section__title"><?php echo t::message('global','Tokenizing AI Infrastructure'); ?></h2>
+                        <h2 class="h3 section__title">TOKENIZING ENERGY AND AI INFRASTRUCTURE</h2>
                         <div class="description__wrap">
-                            <p><?php echo t::message('global','There are many socioeconomic factors that need to be carefully considered as the transition to AI becomes widespread. Unemployment will rise short-term and may remain long-term.'); ?><span class="continuation">
-                                <?php echo t::message('global','Older generations will be the most affected as they have less incentive to learn new skills due to limited time remaining in the workforce. Companies will need to weigh financing options for equipment and system upgrades. While AI technology is becoming increasingly affordable, capital light (mainly service) companies must transition to capital intensive in order to fund massive investments into hardware. A disruptive global shift at this scale could easily become highly problematic.'); ?></span>
+                            <p>The proliferation of Artificial Intelligence (AI) and the Internet of Things (IoT) will result in massive demand increases for energy.
+                                <span class="continuation">Traditional energy grids will not be able to scale rapidly enough to keep up with the demand. We believe
+                                decentralized energy grids, composed of renewable energy technologies such as solar panels that can be
+                                installed on homes and office buildings away from the traditional (centralized) energy production & storage facilities,
+                                will be a critical component of the solution to the increased energy demand.</span>
                             </p>
-                            <p><span class="continuation"><?php echo t::message('global','MyBit is designed to fill the void between unemployment and AI-takeover during this disruptive transition by facilitating the creation of a new financing model and asset class that is beneficial to individuals, companies, and sustainability. MyBit provides companies with viable financing solutions through tokenized fractional assets, enables new methods of income generation for the average person; and strives towards sustainability by managing this vast amount of data and activity with minimal resource consumption.'); ?></span>
+                            <p><span class="continuation">A major issue with decentralized energy grids is the financial-barrier to entry. While companies
+                                such as Solar City have done a good job providing alternative financing packages (although they heavily rely on incentives
+                                such as tax breaks which will not last forever), the centralized model only permits scaling to a certain level (which demand will
+                                surpass). Decentralizing this model via Blockchain tokenization and Ethereum based smart contract governance, provides
+                                an infinitely scalable model that benefits consumers, investors, and enterprise.</span>
+                            </p>
+                            <p>
+                                <span class="continuation">Our goal is to remove the financial barriers to entry and the friction currently present in the alternative
+                                    assets investment space; thereby, enabling anyone to benefit from sustainable infrastructure regardless of their socioeconomic
+                                    status or location. Aside from energy this model can be replicated across many industries including AI - specifically autonomous mobiles.</span>
                             </p>
                             <a href="" class="description__link">
-                                <span class="read"><?php echo t::message('global','Read More'); ?></span>
-                                <span class="hide-txt"><?php echo t::message('global','Hide text'); ?></span>
+                                <span class="read">Read More</span>
+                                <span class="hide-txt">Hide text</span>
                             </a>
                         </div>
                         <div class="btn__row">
-                            <a href="https://medium.com/@MyBit_Blog/tokenizing-ai-infrastructure-9bd05ded6164" target="_blank" class="btn btn-inverse"><span><?php echo t::message('global','Read Blog'); ?></span></a>
-                            <a href="https://www.youtube.com/watch?v=waYa-2l4m5s&t=68s" target="_blank" class="btn btn-inverse"><span><?php echo t::message('global','Watch Interview'); ?></span></a>
+                            <a href="https://medium.com/@MyBit_Blog/tokenizing-ai-infrastructure-9bd05ded6164" class="btn btn-default"><span>Read Blog</span></a>
+                            <a href="https://www.youtube.com/watch?v=waYa-2l4m5s&t=68s" class="btn btn-default"><span>Watch Interview</span></a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tokenizationModel" class="section section__tokenizationModel section__inverse wow  fadeInUp animated" data-wow-offset="50">
+        <h2 class="h3 section__title center">Tokenization Model</h2>
+        <div class="container tokenization__model__container">
+            <div class="row tokenization__model__step tokenization__model__step__odd">
+                <div class="col-xs-5">
+                    <p class="tokenization__model__description">
+                        <b>
+                            Asset Share Issuance
+                        </b>
+                    </p>
+                </div>
+                <div class="col-xs-2">
+                    <img class="tokenization__model__yellow__image tokenization__model__yellow__image__odd" src="images/tokenization_model/num_1.png">
+                    <div class="vertical__bar"> </div>
+                </div>
+                <div class="col-xs-5">
+                    <div class="tokenization__model__image asset__share">
+                    </div>
+                </div>
+            </div>
+            <div class="row tokenization__model__step tokenization__model__step__even">
+                <div class="col-xs-5">
+                    <div class="tokenization__model__image public__platform">
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <img class="tokenization__model__yellow__image tokenization__model__yellow__image__even" src="images/tokenization_model/num_2.png">
+                    <div class="vertical__bar"> </div>
+                </div>
+                <div class="col-xs-5">
+                    <p class="tokenization__model__description">
+                        <b>
+                            Open to investors on public platform
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div class="row tokenization__model__step tokenization__model__step__odd">
+                <div class="col-xs-5">
+                    <p class="tokenization__model__description tokenization__model__description__long__text">
+                        <b>
+                            Once $ amount is achieved
+                            smart contract automatically
+                            sends money to distributor
+                            to send/install machinery.
+                        </b>
+                    </p>
+                </div>
+                <div class="col-xs-2">
+                    <img class="tokenization__model__yellow__image tokenization__model__yellow__image__odd" src="images/tokenization_model/num_3.png">
+                    <div class="vertical__bar"> </div>
+                </div>
+                <div class="col-xs-5">
+                    <div class="tokenization__model__image smart__contract">
+                    </div>
+                </div>
+            </div>
+            <div class="row tokenization__model__step tokenization__model__step__even">
+                <div class="col-xs-5">
+                    <div class="tokenization__model__image revenue__distribution">
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <img class="tokenization__model__yellow__image tokenization__model__yellow__image__even" src="images/tokenization_model/num_4.png">
+                    <div class="vertical__bar vertical__bar__long"> </div>
+                </div>
+                <div class="col-xs-5">
+                    <p class="tokenization__model__description">
+                        <b>
+                            Revenue Distributions begin based on stake %
+                        </b>
+                    </p>
+                </div>
+            </div>
+            <div class="row tokenization__model__step tokenization__model__step__even">
+                <div class="horizontal__bar"> </div>
+                <div class="vertical__branch__bar vertical__branch__left__bar"> </div>
+                <div class="vertical__branch__bar vertical__branch__right__bar"> </div>
+
+            </div>
+            <div class="row tokenization__model__step tokenization__model__step__even">
+                <div class="col-xs-4">
+                    <img class="tokenization__model__yellow__image tokenization__model__yellow__image__even tokenization__model__yellow__image__footer__left" src="images/tokenization_model/hold.png">
+                    <p class="tokenization__model__footer__description">
+                        <b>
+                            Revenue Distributions <br>
+                            in real-time
+                        </b>
+                    </p>
+                </div>
+                <div class="col-xs-4">
+                    <img class="tokenization__model__yellow__image tokenization__model__yellow__image__even tokenization__model__yellow__image__footer__center" src="images/tokenization_model/place_in_trustwill.png">
+                    <p class="tokenization__model__footer__description">
+                        <b>
+                            Ownership is automatically <br>
+                            distributed to new owners you <br>
+                            choose if an event occurs <br>
+                            (such as graduation, age, death, etc.)
+                        </b>
+                    </p>
+                </div>
+                <div class="col-xs-4">
+                    <img class="tokenization__model__yellow__image tokenization__model__yellow__image__even tokenization__model__yellow__image__footer__right" src="images/tokenization_model/liquidate_stake.png">
+                    <p class="tokenization__model__footer__description">
+                        <b>
+                            in exchange for <br>
+                            cash on exchange
+                        </b>
+                    </p>
                 </div>
             </div>
         </div>
@@ -258,7 +352,7 @@
                 <div class="col-sm-6 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-0">
                     <div class="innovation__item">
                         <i class="icon-newAsset"></i>
-                        <span class="innovation__desc"><?php echo t::message('global','Creates new asset class for financing AI Infrastructure'); ?></span>
+                        <span class="innovation__desc">Creates new asset class for financing revenue-generating assets in Energy, AI, and many additional verticals.</span>
                     </div>
                 </div>
             </div>
@@ -294,7 +388,7 @@
 
     <div id="roadmap" class="section section__roadmap section__inverse wow animated fadeInUp" data-wow-offset="50">
         <div class="container">
-            <h2 class="h2 section__title"><?php echo t::message('global','Roadmap'); ?></h2>
+            <h2 class="h2 section__title">Roadmap</h2>
             <ul class="roadmap__list">
                 <li class="roadmap__progress">
                     <div class="roadmap__progressBar"></div>
@@ -302,50 +396,50 @@
                 <li class="roadmap__item active">
                     <div class="roadmap__date">
                         <span class="roadmap__year">2016</span>
-                        <span class="roadmap__month"><?php echo t::message('global','November'); ?></span>
+                        <span class="roadmap__month">November</span>
                     </div>
                     <span class="roadmap__dot"></span>
-                    <span class="roadmap__descr"><?php echo t::message('global','Idea Conceived'); ?></span>
+                    <span class="roadmap__descr">Idea Conceived</span>
                 </li>
                 <li class="roadmap__item active">
                     <div class="roadmap__date">
                         <span class="roadmap__year">2017</span>
-                        <span class="roadmap__month"><?php echo t::message('global','February'); ?></span>
+                        <span class="roadmap__month">February</span>
                     </div>
                     <span class="roadmap__dot"></span>
-                    <span class="roadmap__descr"><?php echo t::message('global','Whitepaper Published'); ?></span>
+                    <span class="roadmap__descr">Whitepaper Published</span>
                 </li>
                 <li class="roadmap__item active">
                     <div class="roadmap__date">
                         <span class="roadmap__year">2017</span>
-                        <span class="roadmap__month"><?php echo t::message('global','May'); ?></span>
+                        <span class="roadmap__month">June</span>
                     </div>
                     <span class="roadmap__dot"></span>
-                    <span class="roadmap__descr"><?php echo t::message('global','ICO'); ?></span>
+                    <span class="roadmap__descr">Crowdfund</span>
                 </li>
                 <li class="roadmap__item">
                     <div class="roadmap__date">
                         <span class="roadmap__year">2017</span>
-                        <span class="roadmap__month"><?php echo t::message('global','October'); ?></span>
+                        <span class="roadmap__month">October</span>
                     </div>
                     <span class="roadmap__dot"></span>
-                    <span class="roadmap__descr"><?php echo t::message('global','Phase 1 Beta Release'); ?></span>
+                    <span class="roadmap__descr">Phase 1 Beta Release</span>
                 </li>
                 <li class="roadmap__item">
                     <div class="roadmap__date">
                         <span class="roadmap__year">2017</span>
-                        <span class="roadmap__month"><?php echo t::message('global','November'); ?></span>
+                        <span class="roadmap__month">November</span>
                     </div>
                     <span class="roadmap__dot"></span>
-                    <span class="roadmap__descr"><?php echo t::message('global','Revenue Distributions Begin'); ?></span>
+                    <span class="roadmap__descr">Revenue Distributions Begin</span>
                 </li>
                 <li class="roadmap__item">
                     <div class="roadmap__date">
                         <span class="roadmap__year">2018</span>
-                        <span class="roadmap__month"><?php echo t::message('global','January'); ?></span>
+                        <span class="roadmap__month">January</span>
                     </div>
                     <span class="roadmap__dot"></span>
-                    <span class="roadmap__descr"><?php echo t::message('global','Phase 2 Beta Release'); ?></span>
+                    <span class="roadmap__descr">Phase 2 Beta Release</span>
                 </li>
             </ul>
         </div>
@@ -359,51 +453,66 @@
                     <div class="details__wrap">
                         <div class="details__row">
                             <div class="details__title">
-                                <span class="details__heading"><?php echo t::message('global','TOKEN NAME'); ?>:</span>
-                                <span class="details__subheading"><?php echo t::message('global','ICO Duration'); ?>: <?php echo t::message('global','March'); ?> 27<?php echo t::message('global','th'); ?> 2017 - <?php echo t::message('global','April'); ?> 27<?php echo t::message('global','th'); ?> 2017</span>
+                                <span class="details__heading">TOKEN NAME:</span>
                             </div>
                             <div class="details__content">
-                                <p class="details__text"><?php echo t::message('global','MyBit'); ?></p>
+                                <p class="details__text">MyBit ($MyB)</p>
                             </div>
                         </div>
                         <div class="details__row">
                             <div class="details__title">
-                                <span class="details__heading"><?php echo t::message('global','WHAT DOES THIS TOKEN REPRESENT?'); ?></span>
+                                <span class="details__heading">WHAT DOES THIS TOKEN REPRESENT?</span>
                             </div>
                             <div class="details__content">
-                                <p class="details__text"><?php echo t::message('global','MyBit tokens represent a Proof-of-Membership in a fund. It grants access to 50% of fund profits, executed by an Ethereum smart contract'); ?>.</p>
+                                <p class="details__text">MyBit tokens are used to access certain functionalities of the platform including registering a new asset, transferring an asset, and a variety of financing features. Holders of MyBit tokens will also receive real-time revenue distributions proportionate to their stake percentage.</p>
                             </div>
                         </div>
                         <div class="details__row">
                             <div class="details__title">
-                                <span class="details__heading"><?php echo t::message('global','PAYOUT STRUCTURE'); ?></span>
+                                <span class="details__heading">PAYOUT STRUCTURE</span>
                             </div>
                             <div class="details__content">
-                                <p class="details__text"><?php echo t::message('global','A smart contract lets token owners collect 50% of quarterly profits. Intuitively, it implies that investors with a larger share of tokens will collect a higher return. 25% of profits will be reinvested back into the fund, allowing the Net Asset Value (NAV) of a token to increase over time'); ?>.</p>
+                                <p class="details__text">A smart contract governs revenue distributions as a percentage based on individual stake divided by total MyB supply. Any incoming MyBit network fees (minus ethereum network fees) are automatically distributed to tokenholders in the next mined block.</p>
                             </div>
                         </div>
                         <div class="details__row">
                             <div class="details__title">
-                                <span class="details__heading"><?php echo t::message('global','TOTAL SUPPLY'); ?>:</span>
+                                <span class="details__heading">TOTAL SUPPLY:</span>
                             </div>
                             <div class="details__content">
-                                <p class="details__text">101,000,000 <?php echo t::message('global','tokens'); ?></p>
+                                <p class="details__text">Maximum of 10,000,000 tokens</p>
                             </div>
                         </div>
                         <div class="details__row">
                             <div class="details__title">
-                                <span class="details__heading"><?php echo t::message('global','PRICE PER TOKEN'); ?>:</span>
+                                <span class="details__heading">PRICE PER TOKEN:</span>
                             </div>
                             <div class="details__content">
-                                <p class="details__text"><?php echo t::message('global','US'); ?>$1</p>
+                                <p class="details__text">Variable, see pricing structure below</p>
                             </div>
                         </div>
                         <div class="details__row">
                             <div class="details__title">
-                                <span class="details__heading"><?php echo t::message('global','ADJUSTABLE'); ?>:</span>
+                                <span class="details__heading">Crowdfunding Milestones:</span>
                             </div>
                             <div class="details__content">
-                                <p class="details__text"><?php echo t::message('global','Tokens not sold during the ICO will be burnt. No additional tokens will ever be created. TaaS will never trade or own its own tokens'); ?>.</p>
+                                <a href="javascript:;" class="btn btn-default crowdfunding__milestones__link"><span>Click to view</span></a>
+                            </div>
+                        </div>
+                        <div class="details__row">
+                            <div class="details__title">
+                                <span class="details__heading">Escrow Release Terms:</span>
+                            </div>
+                            <div class="details__content">
+                                <a href="javascript:;" class="btn btn-default escrow__release__terms__link"><span>Click to view</span></a>
+                            </div>
+                        </div>
+                        <div class="details__row">
+                            <div class="details__title">
+                                <span class="details__heading">Token Document:</span>
+                            </div>
+                            <div class="details__content">
+                                <a href="javascript:;" class="btn btn-default"><span>Click to view</span></a>
                             </div>
                         </div>
                     </div>
@@ -416,32 +525,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <h2 class="h3 section__title"><?php echo t::message('global','Pricing Structure'); ?></h2>
+                    <h2 class="h3 section__title">Pricing Structure</h2>
                     <div class="desc">
-                        <p><?php echo t::message('global','To utilize our pre-sale script that automatically buys into the contract when it begins to ensure you are getting the optimal price , please email'); ?> <a href="mailto:info@mybit.io" class="link">info@mybit.io</a></p>
+                        <p>To utilize our pre-sale script that automatically buys into the contract when it begins to ensure you are getting the optimal price , please email <a href="" class="link">info@mybit.io</a> A 10% discount is applied in the form of Ethereum refund for any pre-sale order greater in value than 25 ETHER, and 20% discount for orders greater than 100 ETHER.</p>
                     </div>
-                    <!--<img src="images/graph.png" alt=""/>-->
 
                     <div class="chart__box">
                         <div class="chart__title chart__title_1">
-                            <span class="value">4 568</span>
+                            <span class="value">25% Discount</span>
                             <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Value Name'); ?></span>
+                            <span class="name">Week 1</span>
                         </div>
                         <div class="chart__title chart__title_2">
-                            <span class="value">3 256</span>
+                            <span class="value">Full-Price</span>
                             <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Value Name'); ?></span>
+                            <span class="name">Week 4</span>
                         </div>
                         <div class="chart__title chart__title_3">
-                            <span class="value">2 526</span>
+                            <span class="value">15% Discount</span>
                             <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Value Name'); ?></span>
+                            <span class="name">Week 2</span>
                         </div>
                         <div class="chart__title chart__title_4">
-                            <span class="value">5 825</span>
+                            <span class="value">10% Discount</span>
                             <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Value Name'); ?></span>
+                            <span class="name">Week 3</span>
                         </div>
                         <div class="circle__box">
                             <svg width="290" height="290" class="circle__wrap">
@@ -452,8 +560,7 @@
                             </svg>
                         </div>
                         <div class="chart__total">
-                            <span><?php echo t::message('global','TOTAL'); ?></span>
-                            <span class="value">11 936</span>
+                            <a href="javascript:;" class="btn btn-inverse deal__sheet__link"><span>View Deal Sheet</span></a>
                         </div>
                     </div>
                 </div>
@@ -609,13 +716,174 @@
         </div>
     </div>
 
-    <div id="media" class="section section__media section__inverse wow animated fadeInUp" data-wow-offset="50">
+    <div id="advisor" class="section section__advisor section__inverse wow  fadeInUp animated" data-wow-offset="50" style="visibility: visible; animation-name: fadeInUp;">
         <div class="container">
+            <h2 class="h3 section__title center">Advisors</h2>
+            <div class="team__wrap">
+                <div class="team__list inverse">
+                    <div class="team__item" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide10">
+                        <div class="team__photoWrap">
+                            <img src="images/advisor/peter.png" alt="" class="team__photo">
+                        </div>
+                        <span class="team__name">Peter Kleissner</span>
+                        <div class="team__professionWrap">
+                            <span class="team__profession">Hacker, Founder of AV Tracker &amp; Stoned Bootkit</span>
+                            <a href="" class="btn-more team__btnMore_js" tabindex="-1">MORE</a>
+                        </div>
+                        <div class="team__details team__details__inverse">
+                            <div class="team__detailsIn">
+                                <a href="" class="team__detailsClose team__detailsClose_js team__detailsClose__inverse" tabindex="-1"><i class="icon-close"></i></a>
+                                <div class="team__photoWrap">
+                                    <img src="images/advisor/peter.png" alt="" class="team__photo">
+                                </div>
+                                <span class="team__detailsName team__detailsName__inverse">Peter Kleissner</span>
+                                <span class="team__detailsProfession team__detailsProfession__inverse">Hacker, Founder of AV Tracker &amp; Stoned Bootkit</span>
+                                <p class="team__history team__history__inverse">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div><div class="team__item" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide11">
+                        <div class="team__photoWrap">
+                            <img src="images/advisor/nick.jpg" alt="" class="team__photo">
+                        </div>
+                        <span class="team__name">Nick Ayton</span>
+                        <div class="team__professionWrap">
+                            <span class="team__profession">Public Relations, Co-founder of The 21Million Project</span>
+                            <a href="" class="btn-more team__btnMore_js" tabindex="-1">MORE</a>
+                        </div>
+                        <div class="team__details team__details__inverse">
+                            <div class="team__detailsIn">
+                                <a href="" class="team__detailsClose team__detailsClose_js team__detailsClose__inverse" tabindex="-1"><i class="icon-close"></i></a>
+                                <div class="team__photoWrap">
+                                    <img src="images/advisor/nick.jpg" alt="" class="team__photo">
+                                </div>
+                                <span class="team__detailsName team__detailsName__inverse">Nick Ayton</span>
+                                <span class="team__detailsProfession team__detailsProfession__inverse">Public Relations, Co-founder of The 21Million Project</span>
+                                <p class="team__history team__history__inverse">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div><div class="team__item" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide12">
+                        <div class="team__photoWrap">
+                            <img src="images/advisor/mitchell.png" alt="" class="team__photo">
+                        </div>
+                        <span class="team__name">Mitchell Loureiro</span>
+                        <div class="team__professionWrap">
+                            <span class="team__profession">Marketing Strategy, VP of Marketing at Steemit</span>
+                            <a href="" class="btn-more team__btnMore_js" tabindex="-1">MORE</a>
+                        </div>
+                        <div class="team__details team__details__inverse">
+                            <div class="team__detailsIn">
+                                <a href="" class="team__detailsClose team__detailsClose_js team__detailsClose__inverse" tabindex="-1"><i class="icon-close"></i></a>
+                                <div class="team__photoWrap">
+                                    <img src="images/advisor/mitchell.png" alt="" class="team__photo">
+                                </div>
+                                <span class="team__detailsName team__detailsName__inverse">Mitchell Loureiro</span>
+                                <span class="team__detailsProfession team__detailsProfession__inverse">Marketing Strategy, VP of Marketing at Steemit</span>
+                                <p class="team__history team__history__inverse">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div><div class="team__item" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide13">
+                        <div class="team__photoWrap">
+                            <img src="images/advisor/mihaela.jpg" alt="" class="team__photo">
+                        </div>
+                        <span class="team__name">Dr. Mihaela Ulieru</span>
+                        <div class="team__professionWrap">
+                            <span class="team__profession">Technology, Global Advisor for World Economic Forum</span>
+                            <a href="" class="btn-more team__btnMore_js" tabindex="-1">MORE</a>
+                        </div>
+                        <div class="team__details team__details__inverse">
+                            <div class="team__detailsIn">
+                                <a href="" class="team__detailsClose team__detailsClose_js team__detailsClose__inverse" tabindex="-1"><i class="icon-close"></i></a>
+                                <div class="team__photoWrap">
+                                    <img src="images/advisor/mihaela.jpg" alt="" class="team__photo">
+                                </div>
+                                <span class="team__detailsName team__detailsName__inverse">Dr. Mihaela Ulieru</span>
+                                <span class="team__detailsProfession team__detailsProfession__inverse">Technology, Global Advisor for World Economic Forum</span>
+                                <p class="team__history team__history__inverse">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div><div class="team__item" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide14">
+                        <div class="team__photoWrap">
+                            <img src="images/advisor/bogdan.jpg" alt="" class="team__photo">
+                        </div>
+                        <span class="team__name">Bogdan Fiedur</span>
+                        <div class="team__professionWrap">
+                            <span class="team__profession">Technology, Co-founder at BitJob</span>
+                            <a href="" class="btn-more team__btnMore_js" tabindex="-1">MORE</a>
+                        </div>
+                        <div class="team__details team__details__inverse">
+                            <div class="team__detailsIn">
+                                <a href="" class="team__detailsClose team__detailsClose_js team__detailsClose__inverse" tabindex="-1"><i class="icon-close"></i></a>
+                                <div class="team__photoWrap">
+                                    <img src="images/advisor/bogdan.jpg" alt="" class="team__photo">
+                                </div>
+                                <span class="team__detailsName team__detailsName__inverse">Bogdan Fiedur</span>
+                                <span class="team__detailsProfession team__detailsProfession__inverse">Technology, Co-founder at BitJob</span>
+                                <p class="team__history team__history__inverse">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="media" class="section section__media wow animated fadeInUp" data-wow-offset="50">
+        <div class="container">
+            <h2 class="h3 section__title center">Media</h2>
             <div class="row">
-                <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <h2 class="h3 section__title"><?php echo t::message('global','Media'); ?></h2>
-                    <div class="desc">
-                        <p><?php echo t::message('global','Some text about MyBit. MyBit is built on a fully decentralized technology stack with BigchainDB, IPFS, Bitcoin’s Ledger, and Ethereum’s EVM.  This enables MyBit to possess unparalleled functionality and arguably be the world’s most secure registry technology to date.'); ?></p>
+                <div class="col-sm-6">
+                    <div class="media__img">
+                        <a href="https://bravenewcoin.com/news/mybit-tackles-data-manipulation-an-emerging-art-of-war-in-cyberspace/">
+                            <img src="images/media/bnc.jpeg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="media__img">
+                        <a href="http://www.digitaljournal.com/pr/3295444">
+                            <img src="images/media/digital.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="media__img">
+                        <a href="http://www.futureofeverything.io/2017/04/12/future-smart-home-technology/">
+                            <img src="images/media/final_future.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="media__img">
+                        <a href="https://cointelegraph.com/news/the-unbreachable-data-made-possible-with-bitcoin-ethereum-blockchain-heres-how&#10;">
+                            <img src="images/media/press-cointelegraph.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="media__img">
+                        <a href="https://blockgeeks.com/ama/ian-worrall-tokenizing-ai-smart-energy-and-ownership/">
+                            <img src="images/media/block.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="media__img">
+                        <a href="https://www.facebook.com/vejdiven/videos/1344609518964148/">
+                            <img src="images/media/paral.png">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -656,19 +924,19 @@
                                 <a href="https://twitter.com/MyBit_DApp" class="soc__link" target="_blank"><i class="icon-twitter"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://www.linkedin.com/company/mybit?trk=biz-companies-cym" class="soc__link" target="_blank"><i class="icon-linkedin"></i></a>
+                                <a href="https://t.me/mybit_dapp" class="soc__link" target="_blank"><i class="icon-telegram"></i></a>
                             </li>
                             <li class="soc__item">
                                 <a href="https://www.reddit.com/user/MyBit_DApp/" class="soc__link" target="_blank"><i class="icon-redit"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://slack.mybit.io" class="soc__link" target="_blank"><i class="icon-slack"></i></a>
+                                <a href="https://mybit-dapp.slack.com/ " class="soc__link" target="_blank"><i class="icon-slack"></i></a>
                             </li>
                             <li class="soc__item">
                                 <a href="https://www.youtube.com/channel/UCtLn7Vi-3VbsY5F9uF1RJYg" class="soc__link" target="_blank"><i class="icon-youtube"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://bitcointalk.org/index.php?topic=1797720" class="soc__link" target="_blank"><i class="icon-bitcointalk"></i></a>
+                                <a href="https://bitcointalk.org/index.php?topic=1797720.0" class="soc__link" target="_blank"><i class="icon-bitcointalk"></i></a>
                             </li>
                             <li class="soc__item">
                                 <a href="https://medium.com/@MyBit_Blog" class="soc__link" target="_blank"><i class="icon-medium"></i></a>
