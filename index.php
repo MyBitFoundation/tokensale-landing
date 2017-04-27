@@ -986,7 +986,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="form-signIn">
                         <div class="form__row">
                             <input type="email" name="email" class="input" placeholder="Enter email"/>
                             <span class="form__errorTxt"></span>
@@ -1018,7 +1018,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="form-signUp">
                         <div class="form__row">
                             <input type="email" name="email" class="input" placeholder="Enter email"/>
                             <span class="form__errorTxt"></span>
@@ -1054,12 +1054,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="form-2fa">
                         <div class="form__row">
-                            <input type="text" class="input" placeholder="6 Digit_Key"/>
+                            <input type="text" name="token" class="input" placeholder="6 Digit_Key"/>
+                            <span class="form__errorTxt"></span>
                         </div>
                         <div class="btn__row">
-                            <a href="" class="btn btn-shadow yellow">Submit</a>
+                            <a href="javascript:;" class="btn btn-shadow yellow send_2fa">Submit</a>
                         </div>
                     </form>
                 </div>
