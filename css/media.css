@@ -162,11 +162,24 @@ sub {
     padding: 0;
     width: 81%;
   }
-  .roadmap__progress {
+  .roadmap__progressBase {
     width: 1px;
-    height: 84%;
+    height: 81%;
     left: 50%;
     top: 51px;
+  }
+  .roadmap__progressPart {
+    width: 1px;
+    height: calc(100% - 14px);
+    left: 50%;
+    top: 42px;
+    margin: 0;
+  }
+  .roadmap__progressPart.first {
+    display: none;
+  }
+  .roadmap__progressPart.last {
+    display: none;
   }
   .roadmap__progressBar {
     width: 3px;
@@ -175,7 +188,7 @@ sub {
   }
   .roadmap__item {
     width: 100%;
-    margin: 23px 0;
+    padding: 5px 20px 42px 0;
   }
   .roadmap__item.active .roadmap__dot {
     width: 8px;
@@ -449,10 +462,10 @@ sub {
     margin-top: -10px;
   }
   .roadmap__item {
-    margin: 13px 0;
+    padding: 13px 0;
     padding-right: 0;
   }
-  .roadmap__progress {
+  .roadmap__progressBase {
     height: 83%;
   }
   .roadmap__date {
@@ -682,7 +695,7 @@ sub {
     top: 33px;
     right: -38px;
   }
-  .chart__title_1:hover ~ .circle__box .circle_1 {
+  .chart__title_1:hover ~ .circle__box circle:nth-child(1) {
     stroke-width: 27px;
     stroke: #9666c6;
   }
@@ -705,7 +718,7 @@ sub {
     top: -61px;
     left: -71px;
   }
-  .chart__title_2:hover ~ .circle__box .circle_2 {
+  .chart__title_2:hover ~ .circle__box circle:nth-child(2) {
     stroke-width: 26px;
     stroke: #7dc2c3;
   }
@@ -724,7 +737,7 @@ sub {
     top: 0;
     right: 0;
   }
-  .chart__title_3:hover ~ .circle__box .circle_3 {
+  .chart__title_3:hover ~ .circle__box circle:nth-child(3) {
     stroke-width: 24px;
     stroke: #c94b89;
   }
@@ -747,7 +760,7 @@ sub {
     top: 44px;
     left: -83px;
   }
-  .chart__title_4:hover ~ .circle__box .circle_4 {
+  .chart__title_4:hover ~ .circle__box circle:nth-child(4) {
     stroke-width: 26px;
     stroke: #c6c8a2;
   }

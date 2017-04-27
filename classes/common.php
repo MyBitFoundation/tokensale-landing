@@ -45,4 +45,14 @@ class Common {
         return $response;
     }
 
+    public function getPercentBetweenDate($current,$start,$end) {
+        if($current > $end)
+            return 100;
+
+        if($current < $start)
+            return false;
+
+        return round(($current-$start) / (($end-$start)/100));
+    }
+
 }

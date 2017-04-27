@@ -32,6 +32,16 @@ Common = {
     },
 
     initEvents: function () {
+
+        ////btn animation
+        //$('.btn-download_js').on('click',function (e){
+        //    e.preventDefault();
+        //    var self = this;
+        //    $(this).addClass('active');
+        //    setTimeout(function() {
+        //        $(self).addClass('ready');
+        //    }, 4000);
+        //});
         $('.btn-mobMenu').on('click', function (e){
             e.preventDefault();
             $(this).toggleClass('active');
@@ -76,10 +86,10 @@ Common = {
             el.addEventListener('animationend', function( ) {
                 if(el.id == 'roadmap'){
                     if ($(window).width() > 991) {
-                        $('.roadmap__progressBar').css('width', '46%')
+                        //$('.roadmap__progressBar').css('width', '46%')
                     } else{
                         $('.roadmap__progressBar').css({
-                            height: '46%'
+                            //height: '46%'
                         });
                     }
                 }

@@ -8,6 +8,17 @@
         die();
     }
 
+    $currentTime = time();
+    $roadMapDays = array(
+        strtotime('01-11-2016 00:00:00'),
+        strtotime('01-02-2017 00:00:00'),
+        strtotime('27-06-2017 00:00:00'),
+        strtotime('15-10-2017 00:00:00'),
+        strtotime('15-11-2017 00:00:00'),
+        strtotime('15-01-2018 00:00:00'),
+        strtotime('15-02-2018 00:00:00')
+    );
+
 ?>
 <!doctype html>
 <html>
@@ -391,10 +402,13 @@
         <div class="container">
             <h2 class="h2 section__title">Roadmap</h2>
             <ul class="roadmap__list">
-                <li class="roadmap__progress">
-                    <div class="roadmap__progressBar"></div>
+                <li class="roadmap__progressBase">
+                    <!--<div class="roadmap__progressBar"></div>-->
                 </li>
+                <li class="roadmap__progressPart first"><div class="roadmap__progressBar" style="width: 100%;"></div></li>
+
                 <li class="roadmap__item active">
+                    <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[0],$roadMapDays[1]); ?>%;"></div></div>
                     <div class="roadmap__date">
                         <span class="roadmap__year">2016</span>
                         <span class="roadmap__month">November</span>
@@ -402,7 +416,8 @@
                     <span class="roadmap__dot"></span>
                     <span class="roadmap__descr">Idea Conceived</span>
                 </li>
-                <li class="roadmap__item active">
+                <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[0],$roadMapDays[1]) == 100 ? 'active' : ''; ?>">
+                    <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[1],$roadMapDays[2]); ?>%;"></div></div>
                     <div class="roadmap__date">
                         <span class="roadmap__year">2017</span>
                         <span class="roadmap__month">February</span>
@@ -410,7 +425,8 @@
                     <span class="roadmap__dot"></span>
                     <span class="roadmap__descr">Whitepaper Published</span>
                 </li>
-                <li class="roadmap__item active">
+                <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[1],$roadMapDays[2]) == 100 ? 'active' : ''; ?>">
+                    <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[2],$roadMapDays[3]); ?>%;"></div></div>
                     <div class="roadmap__date">
                         <span class="roadmap__year">2017</span>
                         <span class="roadmap__month">June</span>
@@ -418,7 +434,8 @@
                     <span class="roadmap__dot"></span>
                     <span class="roadmap__descr">Crowdfund</span>
                 </li>
-                <li class="roadmap__item">
+                <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[2],$roadMapDays[3]) == 100 ? 'active' : ''; ?>">
+                    <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[3],$roadMapDays[4]); ?>%;"></div></div>
                     <div class="roadmap__date">
                         <span class="roadmap__year">2017</span>
                         <span class="roadmap__month">October</span>
@@ -426,7 +443,8 @@
                     <span class="roadmap__dot"></span>
                     <span class="roadmap__descr">Phase 1 Beta Release</span>
                 </li>
-                <li class="roadmap__item">
+                <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[3],$roadMapDays[4]) == 100 ? 'active' : ''; ?>">
+                    <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[4],$roadMapDays[5]); ?>%;"></div></div>
                     <div class="roadmap__date">
                         <span class="roadmap__year">2017</span>
                         <span class="roadmap__month">November</span>
@@ -434,7 +452,8 @@
                     <span class="roadmap__dot"></span>
                     <span class="roadmap__descr">Revenue Distributions Begin</span>
                 </li>
-                <li class="roadmap__item">
+                <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[4],$roadMapDays[5]) == 100 ? 'active' : ''; ?>">
+                    <div class="roadmap__progressPart last"><div class="roadmap__progressBar" style="width: <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[5],$roadMapDays[6]); ?>%;"></div></div>
                     <div class="roadmap__date">
                         <span class="roadmap__year">2018</span>
                         <span class="roadmap__month">January</span>
@@ -1002,7 +1021,7 @@
                 </div>
                 <div class="modal-footer">
 <!--                   <a href="#" class="link">Forgot password?</a>-->
-                    <span class="hint">Don’t have an account? <a href="#" class="link">Get started</a></span>
+                    <span class="hint">Don’t have an account? <a href="javascript:;" class="link" onclick="$('#modal-signIn').modal('hide'); $('#modal-signUp').modal('show');">Get started</a></span>
                 </div>
             </div>
         </div>
