@@ -113,10 +113,13 @@
                     <span class="date__title">Pre-Sale Opens</span>
                     <span class="date">April 27, 2017</span>
                 </div>
-                <div class="offer-box wow animated fadeInUp"  data-wow-delay="0.3s">
+                <div class="offer-box wow animated fadeInUp sign-in-block" data-wow-delay="0.3s">
                     <span class="title">Sign in to create, discover and connect with the global community.</span>
                     <a href="" class="btn btn-shadow blue" data-toggle="modal" data-target="#modal-signUp">sign Up</a>
                     <a href="" class="btn btn-shadow yellow" data-toggle="modal" data-target="#modal-signIn">sign in</a>
+                </div>
+                <div class="offer-box wow animated fadeInUp go-to-dashboard-block" data-wow-delay="0.3s" style="display: none;">
+                    <a href="" class="btn btn-shadow yellow">Go to dashboard</a>
                 </div>
                 <div class="btn__row wow animated fadeInUp"  data-wow-delay="0.3s">
                     <a href="https://www.facebook.com/vejdiven/videos/1344609518964148/" class="btn btn-inverse" target="_blank"><span>Watch Presentation</span></a>

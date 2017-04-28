@@ -2,9 +2,12 @@ var Action = {
 
     email: null,
     password: null,
+	
+	logged: false,
 
     init: function() {
         this.initEvents();
+        this.checkIsLogged();
     },
 
     initEvents: function() {
@@ -292,8 +295,20 @@ var Action = {
             return true;
         }
     },
-
-}
+	
+	checkIsLogged: function() {
+		$.ajax({
+			type: "GET",
+			dataType: "json",
+			url:  window.config.request.info,
+			xhrFields: { withCredentials: true },
+			success: function(res) {
+				$('.sign-in-block').hide();
+				$('.go-to-dashboard-block').show().find('a').attr('href', window.config.redirect);
+			}
+		})
+	}
+};
 
 $(document).ready(function() {
     Action.init();
