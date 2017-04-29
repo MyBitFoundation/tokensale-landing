@@ -45,6 +45,51 @@ class Common {
         return $response;
     }
 
+    public function sayInTouchMail($email,$name,$reference,$message) {
+        if($name) {
+            $name = '<p>Name: '.$name.'</p>';
+        }
+
+        if($message) {
+            $message = '<p>Message: '.$message.'</p>';
+        }
+
+        if($reference) {
+            $reference = '<p>Reference: '.$reference.'</p>';
+        }
+
+        $to  = EMAIL_CONTACT_FORM;
+        $from = "contact@mybit.io";
+        $subject = "Contact form";
+
+        $message = '
+                <html>
+                    <head>
+                        <title>Contact form</title>
+                    </head>
+                    <body>
+                        <h2>Contact form</h2>
+                        '.$name.'
+                        <p>Email: '.$email.'</p>
+                        '.$reference.'
+                        '.$message.'
+                    </body>
+                </html>';
+
+
+        $headers  = "Content-type: text/html; charset=utf-8 \r\n";
+        $headers .= "From: Mybit <".$from.">\r\n";
+        $headers .= "Bcc: ".$from."\r\n";
+
+        $result = mail($to, $subject, $message, $headers);
+
+        return array(
+            'result' => true,
+            'r' => $result
+        );
+
+    }
+
     public function getPercentBetweenDate($current,$start,$end) {
         if($current > $end)
             return 100;

@@ -69,12 +69,17 @@ var Action = {
             Action.tfaLogin();
         })
 
+        $('.send_question').click(function() {
+            Action.sayInTouch();
+        })
+
         $('#modal-success').on('hide.bs.modal', function (e) {
             Action.successRegistration();
         });
 
-        $('#modal-signUp, #modal-signIn').on('hide.bs.modal', function (e) {
+        $('#modal-signUp, #modal-signIn, #modal-askQuestion').on('hide.bs.modal', function (e) {
             $('.form__row',this).removeClass('error').find('input').val('');
+            $('.form__row',this).find('textarea').val('');
         });
 
         $('.crowdfunding__milestones__link').click(function(event) {
@@ -243,7 +248,7 @@ var Action = {
     },
 
     tfaLogin: function(callback) {
-        var block = $('#modal-2fa');
+        var block = $('#modal-2faInvalid email');
         $('.form__row',block).removeClass('error');
 
         var data = {
@@ -308,6 +313,42 @@ var Action = {
                 }
             }
         });
+    },
+
+    sayInTouch: function() {
+        var block = $('#modal-askQuestion');
+        $('.form__row',block).removeClass('error');
+        var status = true;
+
+        if(!$('input[name=email]',block).val() || !this.validateEmail($('input[name=email]',block).val())) {
+            $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect e-mail');
+            status = false;
+        }
+
+        if(status) {
+            var data = {
+                action : 'say_in_touch',
+                email: $('[name=email]',block).val(),
+                name: $('[name=name]',block).val(),
+                reference: $('[name=reference]',block).val(),
+                message: $('[name=message]',block).val(),
+            };
+
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: 'action.php',
+                data: data,
+                success: function (response) {
+                    if(response.result) {
+                        $('#modal-askQuestion').modal('hide');
+                        $('#modal-success-question').modal('show');
+                    } else {
+                        $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response.errors);
+                    }
+                }
+            });
+        }
     },
 
     validateEmail: function(email) {

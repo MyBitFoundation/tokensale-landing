@@ -1732,12 +1732,20 @@ circle:nth-child(4) {
 .modal-content .btn-inverse {
   width: 180px;
 }
+.modal-content.white-bg {
+  background: #fff;
+}
 .modal-dialog {
   width: 90%;
   max-width: 525px;
   display: inline-block;
   text-align: left;
   vertical-align: middle;
+}
+.modal-dialog.lg {
+  width: 75%;
+  margin: 5% 12.5%;
+  max-width: none;
 }
 .modal-header {
   text-align: center;

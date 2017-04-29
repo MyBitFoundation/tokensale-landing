@@ -1114,45 +1114,45 @@
     </div>
 
     <div id="crowdfunding__milestones" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog lg">
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content white-bg">
                 <img src="/images/tokenization_model/crowdfunding_milestones.png" width="100%">
             </div>
 
         </div>
     </div>
     <div id="crowdfunding__milestones__mobile" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog lg">
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content white-bg">
                 <img src="/images/tokenization_model/crowdfunding_milestones_mobile.png" width="100%">
             </div>
 
         </div>
     </div>
     <div id="escrow__release__terms" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog lg">
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content white-bg">
                 <img src="/images/tokenization_model/escrow_release.png" width="100%">
             </div>
 
         </div>
     </div>
     <div id="escrow__release__terms__mobile" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog lg">
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content white-bg">
                 <img src="/images/tokenization_model/escrow_release_mobile.png" width="100%">
             </div>
 
         </div>
     </div>
     <div id="deal__sheet" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog lg">
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content white-bg">
                 <img src="/images/tokenization_model/deal_sheet.png" width="100%">
             </div>
 
@@ -1172,25 +1172,43 @@
                 <div class="modal-body">
                     <form>
                         <div class="form__row">
-                            <input type="text" class="input" placeholder="Enter name"/>
-                            <span class="form__errorTxt">Invalid Data</span>
-                        </div>
-                        <div class="form__row error">
-                            <input type="email" class="input" placeholder="Enter email"/>
-                            <span class="form__errorTxt">Invalid Data</span>
+                            <input type="text" name="name" class="input" placeholder="Enter name"/>
+                            <span class="form__errorTxt"></span>
                         </div>
                         <div class="form__row">
-                            <input type="text" class="input" placeholder="Please tell us what this is in reference to"/>
-                            <span class="form__errorTxt">Invalid Data</span>
+                            <input type="email" name="email" class="input" placeholder="Enter email"/>
+                            <span class="form__errorTxt"></span>
                         </div>
                         <div class="form__row">
-                            <textarea class="textarea" placeholder="Please describe your message here..."></textarea>
-                            <span class="form__errorTxt">Invalid Data</span>
+                            <input type="text" name="reference" class="input" placeholder="Please tell us what this is in reference to"/>
+                            <span class="form__errorTxt"></span>
+                        </div>
+                        <div class="form__row">
+                            <textarea class="textarea" name="message" placeholder="Please describe your message here..."></textarea>
+                            <span class="form__errorTxt"></span>
                         </div>
                         <div class="btn__row">
-                            <a href="" class="btn btn-shadow yellow">Ask Question</a>
+                            <a href="javascript:;" class="btn btn-shadow yellow send_question">Ask Question</a>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-success-question" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thank you! We will contact you shortly.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="btn__row" >
+                        <a href="javascript:;" class="btn btn-inverse" data-dismiss="modal" aria-label="Close">ok</a>
+                    </div>
                 </div>
             </div>
         </div>

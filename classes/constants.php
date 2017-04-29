@@ -6,5 +6,5 @@
  * Time: 15.50
  */
 
-const EMAIL_CONTACT_FORM = 'info.mybit.io@gmail.com';
+const EMAIL_CONTACT_FORM = 'info@mybit.io';
 const SERVER_NAME = 'mybit.io';
