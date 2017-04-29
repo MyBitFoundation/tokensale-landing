@@ -248,7 +248,7 @@ var Action = {
     },
 
     tfaLogin: function(callback) {
-        var block = $('#modal-2faInvalid email');
+        var block = $('#modal-2fa');
         $('.form__row',block).removeClass('error');
 
         var data = {
