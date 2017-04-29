@@ -628,10 +628,15 @@ sub {
     margin: 20px 0 0 0;
   }
   .input {
-    font-size: 14px;
+    font-size: 13.5px;
+    padding: 0 15px;
   }
   .input__wrap .input {
     padding: 0 20px;
+  }
+  .textarea {
+    font-size: 13.5px;
+    padding: 15px 15px;
   }
   .description__link {
     display: block;
@@ -814,6 +819,9 @@ sub {
   .footer__download {
     text-align: center;
   }
+  .modal-content {
+    padding: 0 10px;
+  }
   .tokenization__model__description {
     font-size: 1.5em;
   }
@@ -849,5 +857,14 @@ sub {
   }
   .vertical__branch__bar {
     width: 8px;
+  }
+}
+@media (max-width: 360px) {
+  .modal-content {
+    padding: 0;
+  }
+  .textarea,
+  .input::-webkit-input-placeholder {
+    font-size: 12px;
   }
 }

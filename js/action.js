@@ -11,6 +11,8 @@ var Action = {
     },
 
     initEvents: function() {
+
+
         $('.form_subscribe .btn_subscribe').click(function() {
             Action.subscribe($(this).closest('.form_subscribe'));
         })
@@ -74,6 +76,27 @@ var Action = {
         $('#modal-signUp, #modal-signIn').on('hide.bs.modal', function (e) {
             $('.form__row',this).removeClass('error').find('input').val('');
         });
+
+        $('.crowdfunding__milestones__link').click(function(event) {
+            if ($(window).width() > 1024) {
+                $('#crowdfunding__milestones').modal();
+            }
+            else {
+                $('#crowdfunding__milestones__mobile').modal();
+            }
+        })
+
+        $('.escrow__release__terms__link').click(function(event) {
+            if ($(window).width() > 1024) {
+                $('#escrow__release__terms').modal();
+            }
+            else {
+                $('#escrow__release__terms__mobile').modal();
+            }
+        })
+        $('.deal__sheet__link').click(function(event) {
+            $('#deal__sheet').modal();
+        })
     },
 
     registration: function() {

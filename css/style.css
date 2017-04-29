@@ -1120,9 +1120,9 @@ p {
 }
 .vertical__bar {
   position: absolute;
-  top: calc(105%);
+  top: calc(50% + 55px);
   bottom: 0;
-  left: calc(45%);
+  left: calc(50% - 5px);
   width: 10px;
   background-color: #fff;
   border-radius: 5px;
@@ -1154,16 +1154,6 @@ p {
   left: 16%;
   position: relative;
   border-radius: 5px;
-}
-.vertical__bar {
-  position: absolute;
-  top: calc(105%);
-  bottom: 0;
-  left: calc(45%);
-  width: 10px;
-  background-color: #fff;
-  border-radius: 5px;
-  height: 166px;
 }
 .asset__share {
   background: url(../images/tokenization_model/asset_share.png) no-repeat center;
@@ -1247,6 +1237,7 @@ p {
 .form__row {
   position: relative;
 }
+.form__row.error .textarea,
 .form__row.error .input {
   border-color: #ff4d54;
 }
@@ -1502,6 +1493,43 @@ p {
 .input__wrap .input {
   padding-right: 140px;
 }
+.textarea {
+  width: 100%;
+  height: 140px;
+  line-height: 1.3;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 25px;
+  padding: 15px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.textarea:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.textarea:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.textarea:focus {
+  border-color: #ffffff;
+}
+.textarea:focus + .btn__inInput {
+  font-size: 15px;
+}
+.textarea + .form__errorTxt {
+  top: 98%;
+}
 .dropdown__wrap {
   position: relative;
   height: 60px;
@@ -1705,7 +1733,8 @@ circle:nth-child(4) {
   width: 180px;
 }
 .modal-dialog {
-  width: 525px;
+  width: 90%;
+  max-width: 525px;
   display: inline-block;
   text-align: left;
   vertical-align: middle;
