@@ -1501,7 +1501,6 @@ p {
   font-family: 'Ubuntu', sans-serif;
   border-radius: 25px;
   padding: 15px 25px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
   background: transparent;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -1518,17 +1517,20 @@ p {
 .textarea:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-.textarea:hover {
+.textarea + .form__errorTxt {
+  top: 99%;
+}
+.scroll-textarea {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.scroll-textarea:hover {
   border-color: rgba(255, 255, 255, 0.6);
 }
-.textarea:focus {
+.scroll-textarea:focus {
   border-color: #ffffff;
 }
-.textarea:focus + .btn__inInput {
+.scroll-textarea:focus + .btn__inInput {
   font-size: 15px;
-}
-.textarea + .form__errorTxt {
-  top: 98%;
 }
 .dropdown__wrap {
   position: relative;

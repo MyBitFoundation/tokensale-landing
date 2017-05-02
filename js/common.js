@@ -11,9 +11,10 @@ Common = {
         var self = this;
 
         self.initEvents();
-        Common.checkFirstSection();
-        Common.sectionPosition();
-        Common.colorMainMenu();
+        self.checkFirstSection();
+        self.sectionPosition();
+        self.colorMainMenu();
+        self.initScrollTextarea();
 
         $(window).on({
             load: function () {
@@ -198,6 +199,10 @@ Common = {
                 }
             ]
         });
+    },
+
+    initScrollTextarea: function () {
+        $('#textarea-scrollbar_js').scrollbar();
     },
 
 

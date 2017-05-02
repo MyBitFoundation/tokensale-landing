@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="css/animate.min.css"/>
     <link rel="stylesheet" href="css/slick.css"/>
     <link rel="stylesheet" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/jquery.scrollbar.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/media.css"/>
 
@@ -48,6 +49,7 @@
     <script src="js/device.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
     <script src="js/config.js"></script>
     <script src="js/common.js"></script>
     <script src="js/action.js"></script>
@@ -1184,7 +1186,7 @@
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="form__row">
-                            <textarea class="textarea" name="message" placeholder="Please describe your message here..."></textarea>
+                            <textarea name="message" class="scrollbar-outer textarea-scrollbar textarea" id="textarea-scrollbar_js"  placeholder="Please describe your message here..."></textarea>
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="btn__row">
