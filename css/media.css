@@ -420,6 +420,12 @@ sub {
   }
 }
 @media (max-width: 900px) {
+  .mainNav__link {
+    padding-right: 10px;
+  }
+  .header__logo {
+    width: 70px;
+  }
   .tokenization__model__description {
     font-size: 2.2em;
   }
@@ -443,6 +449,9 @@ sub {
   }
   .header-mob {
     display: block;
+  }
+  .header__logo {
+    display: none;
   }
   .mainNav__wrap {
     width: 90%;

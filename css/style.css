@@ -420,6 +420,14 @@ p {
 .header-mob.bg {
   background: #3a3665;
 }
+.header__logo {
+  display: inline-block;
+  width: 85px;
+  margin-left: 3%;
+}
+.header__logo img {
+  width: 100%;
+}
 .section__inverse {
   background: #3a3665;
   color: #fff;
@@ -1168,10 +1176,16 @@ p {
   height: 50px;
   line-height: 50px;
 }
+.mainNav__in:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 .mainNav__list {
   text-align: right;
   margin: 0;
   font-size: 0;
+  float: right;
 }
 .mainNav__item {
   display: inline-block;

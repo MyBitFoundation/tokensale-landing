@@ -66,6 +66,7 @@
     </div>
     <div class="mainNav__wrap">
         <div class="mainNav__in">
+            <a href="/" class="header__logo"><img src="images/logo_black.png" alt=""/></a>
             <ul class="mainNav__list">
                 <li class="mainNav__item">
                     <a href="#aboutMybit" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','About MyBit'); ?></span></a>
@@ -110,7 +111,7 @@
         <div class="section__intro">
             <div class="container">
                 <img src="images/logo_full.png" alt="" class="logo wow animated fadeInUp"/>
-                <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" >TOKENIZING AI, SMART ENERGY, AND OWNERSHIP</h1>
+                <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" >The platform for tokenizing revenue streams</h1>
                 <div class="date__box wow animated fadeInUp" data-wow-delay="0.2s">
                     <span class="date__title">Pre-Sale Opens</span>
                     <span class="date">April 27, 2017</span>
