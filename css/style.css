@@ -533,13 +533,13 @@ p {
 }
 .date {
   display: block;
-  font-size: 30px;
+  font-size: 58px;
   font-weight: 600;
   color: #ffc80a;
   text-shadow: 0 0 24px rgba(255, 200, 10, 0.27);
 }
 .date__box {
-  margin-bottom: 82px;
+  margin-bottom: 70px;
 }
 .date__title {
   display: block;

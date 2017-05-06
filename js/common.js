@@ -15,6 +15,7 @@ Common = {
         self.sectionPosition();
         self.colorMainMenu();
         self.initScrollTextarea();
+        self.initCountdown('6/27/2017 12:0', 'countdown');
 
         $(window).on({
             load: function () {
@@ -204,6 +205,39 @@ Common = {
     initScrollTextarea: function () {
         $('#textarea-scrollbar_js').scrollbar();
     },
+
+    initCountdown: function (dt, id) {
+            var end = new Date(dt);
+
+            var _second = 1000;
+            var _minute = _second * 60;
+            var _hour = _minute * 60;
+            var _day = _hour * 24;
+            var timer;
+
+            function showRemaining() {
+                var now = new Date();
+                var distance = end - now;
+                if (distance < 0) {
+
+                    clearInterval(timer);
+                    document.getElementById(id).innerHTML = 'EXPIRED!';
+
+                    return;
+                }
+                var days = Math.floor(distance / _day);
+                var hours = Math.floor((distance % _day) / _hour);
+                var minutes = Math.floor((distance % _hour) / _minute);
+
+                document.getElementById(id).innerHTML = days + ' : ';
+                document.getElementById(id).innerHTML += hours + ' : ';
+                document.getElementById(id).innerHTML += minutes + ' ';
+            }
+
+            showRemaining();
+            timer = setInterval(showRemaining, 1000);
+    }
+
 
 
 };

@@ -113,8 +113,8 @@
                 <img src="images/logo_full.png" alt="" class="logo wow animated fadeInUp"/>
                 <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" >The platform for tokenizing revenue streams</h1>
                 <div class="date__box wow animated fadeInUp" data-wow-delay="0.2s">
-                    <span class="date__title">Pre-Sale Opens</span>
-                    <span class="date">April 27, 2017</span>
+                    <span class="date__title">Join Tokensale</span>
+                    <span id="countdown" class="date"></span>
                 </div>
                 <div class="offer-box wow animated fadeInUp sign-in-block" data-wow-delay="0.3s">
                     <span class="title">Sign in to create, discover and connect with the global community.</span>
