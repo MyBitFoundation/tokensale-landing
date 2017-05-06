@@ -538,6 +538,11 @@ p {
   color: #ffc80a;
   text-shadow: 0 0 24px rgba(255, 200, 10, 0.27);
 }
+.date .small {
+  font-size: 46px;
+  display: inline-block;
+  margin-left: -5px;
+}
 .date__box {
   margin-bottom: 70px;
 }

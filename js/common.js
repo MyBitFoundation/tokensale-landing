@@ -15,7 +15,7 @@ Common = {
         self.sectionPosition();
         self.colorMainMenu();
         self.initScrollTextarea();
-        self.initCountdown('6/27/2017 12:0', 'countdown');
+        self.initCountdown('6/27/2017 12:00', 'countdown');
 
         $(window).on({
             load: function () {
@@ -207,37 +207,38 @@ Common = {
     },
 
     initCountdown: function (dt, id) {
-            var end = new Date(dt);
 
-            var _second = 1000;
-            var _minute = _second * 60;
-            var _hour = _minute * 60;
-            var _day = _hour * 24;
-            var timer;
+        var end = new Date(dt);
 
-            function showRemaining() {
-                var now = new Date();
-                var distance = end - now;
-                if (distance < 0) {
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
 
-                    clearInterval(timer);
-                    document.getElementById(id).innerHTML = 'EXPIRED!';
+        function showRemaining() {
+            var elem = $('#' + (id));
+            var now = new Date();
+            var distance = end - now;
 
-                    return;
-                }
-                var days = Math.floor(distance / _day);
-                var hours = Math.floor((distance % _day) / _hour);
-                var minutes = Math.floor((distance % _hour) / _minute);
-
-                document.getElementById(id).innerHTML = days + ' : ';
-                document.getElementById(id).innerHTML += hours + ' : ';
-                document.getElementById(id).innerHTML += minutes + ' ';
+            if (distance < 0) {
+                clearInterval(timer);
+                elem.html('EXPIRED!');
+                return;
             }
 
-            showRemaining();
-            timer = setInterval(showRemaining, 1000);
-    }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
 
+            elem.html(days ? ((String(days).length >= 2 ? days : "0" + days) + ' <span class="small">Days </span> ') : '') ;
+            elem.append((String(hours).length >= 2 ? hours : "0" + hours) + ' : ');
+            elem.append(String(minutes).length >= 2 ? minutes : "0" + minutes);
+        }
+
+        showRemaining();
+        timer = setInterval(showRemaining, 1000);
+    }
 
 
 };

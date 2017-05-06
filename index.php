@@ -138,8 +138,10 @@
                 <div class="col-xs-12 col-md-11 col-md-offset-1 col-lg-offset-0">
                     <h2 class="h2 section__title">About MyBit</h2>
                     <div class="desc">
-                        <p>MyBit revolutionizes asset management by enabling the secure administration of ownership via a decentralized, golden source ledger. It effectively removes single point of failure risk, reliance on third-party escrow agents, and much of the friction in traditional systems. MyBit’s design is optimized to increase the accessibility of asset management and investment services by utilizing innovative technology to lower costs. Governed by a profit sharing smart contract, MyBit is the first DApp that truly bridges the gap between physical and digital realms while enabling investors to partake in revenue distributions.</p>
-                        <p><strong>Our vision</strong> is to utilize Blockchain tokenization to create a new asset class for investing in revenue driving assets beginning in the Decentralized Energy and Autonomous Mobile Sectors. By leveraging an Ethereum core, governed by smart contract logic, we can make sustainable infrastructure easier to invest in securely, realize profits, and implement into emerging ecosystems.</p>
+                        <p>Mybit makes financing and maintaining revenue streams efficient and automatic.</p>
+                        <p>How?</p>
+                        <p>By commoditizing solar panel installation and other forms of renewable energy, investors and landowners can crowdfund the coming decentralized energy grid. With Mybit, investors get security on their investment, while landowners get access to investors willing to help in exchange for profit. By standardizing and automating setup, sales, and dividends, Mybit takes you one step closer to an equitable economy.</p>
+                        <p>The Future Our 5 year goal is to be at the forefront of commoditizing the coming AI economy. Mybit will be Europe's platform tokenizing any automatable or machine infrastructure. And it will be owned by the crowd.</p>
                         <div class="btn__row">
                             <a href="/docs/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
                                 <span class="progress" style="transition-duration: 4s"></span>

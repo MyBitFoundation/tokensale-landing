@@ -291,7 +291,7 @@ sub {
     letter-spacing: 0.4px;
   }
   .date__box {
-    margin-bottom: 216px;
+    margin-bottom: 150px;
   }
   .mainNav__link {
     padding-right: 22px;
@@ -611,7 +611,10 @@ sub {
     font-size: 22px;
   }
   .date {
-    font-size: 22px;
+    font-size: 40px;
+  }
+  .date .small {
+    font-size: 23px;
   }
   .date__box {
     margin-bottom: 70px;
