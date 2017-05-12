@@ -140,11 +140,6 @@
                         </div>
                     </form>
                     <a href="" class="btn btn-shadow blue" data-toggle="modal" data-target="#modal-signIn">sign in</a>
-
-                    <!--
-                    <a href="" class="btn btn-shadow blue" data-toggle="modal" data-target="#modal-signUp">sign Up</a>
-                    <a href="" class="btn btn-shadow yellow" data-toggle="modal" data-target="#modal-signIn">sign in</a>
-                    -->
                 </div>
                 <div class="offer-box wow animated fadeInUp go-to-dashboard-block" data-wow-delay="0.3s" style="display: none;">
                     <a href="" class="btn btn-shadow yellow">Go to dashboard</a>
