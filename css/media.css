@@ -244,6 +244,27 @@ sub {
     -webkit-animation: chartTotal 0.3s 2s linear;
     animation-fill-mode: forwards;
   }
+  .mainNav__dropdown {
+    padding: 12px 0;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    right: 0;
+    top: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.24);
+    margin-top: -10px;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mainNav__dropdown .link {
+    font-size: 12px;
+    color: #000000;
+  }
+  .mainNav__dropdown .link:hover {
+    background: rgba(60, 56, 105, 0.2);
+  }
 }
 @media (max-width: 1200px) {
   .section__aboutMybit .desc {
@@ -282,6 +303,9 @@ sub {
   }
   .chart__total {
     margin-top: -48px;
+  }
+  .video__wrap {
+    margin-top: 35px;
   }
 }
 @media (max-width: 991px) {
@@ -489,6 +513,7 @@ sub {
   .mainNav__list {
     margin: 0;
     text-align: left;
+    float: none;
   }
   .mainNav__item {
     display: block;
@@ -516,6 +541,17 @@ sub {
     color: #fff;
     background: rgba(38, 37, 70, 0.32);
     box-shadow: inset 4px 0 0 #fdcc59;
+  }
+  .mainNav__link .icon-arrow_dropdown {
+    display: none;
+  }
+  .mainNav__dropdown .link {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0 5px 44px;
+  }
+  .mainNav__dropdown .link:hover {
+    color: #fff;
   }
   .lang__wrap {
     position: fixed;
@@ -811,6 +847,10 @@ sub {
   .form__updates_js.processing .btn__inInput,
   .form__updates_js.start .btn__inInput {
     display: none;
+  }
+  .form__offer {
+    width: 100%;
+    padding-bottom: 20px;
   }
   .footer__info {
     border-top: none;

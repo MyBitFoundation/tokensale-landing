@@ -12,8 +12,6 @@ Common = {
 
         self.initEvents();
         self.checkFirstSection();
-        self.sectionPosition();
-        self.colorMainMenu();
         self.initScrollTextarea();
         self.initCountdown('6/27/2017 12:00', 'countdown');
 
@@ -23,11 +21,9 @@ Common = {
             },
             resize: function () {
                 $('.team__list').slick('resize');
-                Common.colorMainMenu();
             },
             scroll: function () {
                 Common.onScroll();
-                Common.colorMainMenu();
                 Common.checkFirstSection();
             }
         });
@@ -35,15 +31,26 @@ Common = {
 
     initEvents: function () {
 
-        ////btn animation
-        //$('.btn-download_js').on('click',function (e){
-        //    e.preventDefault();
-        //    var self = this;
-        //    $(this).addClass('active');
-        //    setTimeout(function() {
-        //        $(self).addClass('ready');
-        //    }, 4000);
-        //});
+        //btn animation
+        $('.btn-download_js').on('click',function (e){
+            e.preventDefault();
+            var self = this;
+            $(this).addClass('active');
+            setTimeout(function() {
+                $(self).addClass('ready');
+            }, 4000);
+        });
+        $('.btn__inInput').on('click',function (e){
+            e.preventDefault();
+            var $button = $(this);
+            $button.closest('.form__updates_js').addClass('start');
+            setTimeout(function(){
+                $button.closest('.form__updates_js').addClass('processing').removeClass('start');
+            }, 700);
+            setTimeout(function() {
+                $button.closest('.form__updates_js').addClass('submited').removeClass('processing');
+            }, 3000);
+        });
         $('.btn-mobMenu').on('click', function (e){
             e.preventDefault();
             $(this).toggleClass('active');
@@ -84,6 +91,16 @@ Common = {
             $(this).closest('.description__wrap').toggleClass('continuation-visible');
         });
 
+        //language selection
+        $('.dropdown__link').on('click', function(e){
+            $('#current__language').text($(this).data("lan"));
+        });
+
+        $('.ask-question-link').on('click', function(e) {
+            $(this).hide();
+            $(this).next().show();
+        });
+
         function afterReveal( el ) {
             el.addEventListener('animationend', function( ) {
                 if(el.id == 'roadmap'){
@@ -120,12 +137,33 @@ Common = {
             }
             event.preventDefault();
         });
+        $('.crowdfunding__milestones__link').click(function(event) {
+            if ($(window).width() > 1024) {
+                $('#crowdfunding__milestones').modal();
+            }
+            else {
+                $('#crowdfunding__milestones__mobile').modal();
+            }
+        })
+
+        $('.escrow__release__terms__link').click(function(event) {
+            if ($(window).width() > 1024) {
+                $('#escrow__release__terms').modal();
+            }
+            else {
+                $('#escrow__release__terms__mobile').modal();
+            }
+        })
+
+        $('.deal__sheet__link').click(function(event) {
+            $('#deal__sheet').modal();
+        })
     },
 
     onScroll: function() {
         var scrollPosition = $(document).scrollTop();
         var windowHeight = $(window).height();
-        $('.mainNav__link').each(function () {
+        $('.mainNav__link.btn_scroll').each(function () {
             var currentLink = $(this);
             var refElement = $(currentLink.attr("href"));
             if (refElement.position().top <= scrollPosition + 300  && (refElement.offset().top) + refElement.outerHeight(true)  > scrollPosition) {
@@ -146,37 +184,6 @@ Common = {
             firstSection.closest(wrap).addClass('firstSection')
         } else{
             firstSection.closest(wrap).removeClass('firstSection')
-        }
-    },
-
-    sectionPosition: function () {
-        this.sectionArray = [];
-        var currentTopPixel = 0;
-        $(".section").each(function(i,value){
-            var section = {
-                start: currentTopPixel,
-                end: currentTopPixel+$(value).innerHeight(),
-                class: $(value).hasClass('section__inverse') ? 'dark' : 'light'
-            }
-            currentTopPixel += $(value).innerHeight();
-            Common.sectionArray.push(section);
-        });
-    },
-
-    colorMainMenu: function () {
-        this.mainLinkArray = [];
-        if($(window).width() > 767) {
-            $('.mainNav__link').each( function (i,value){
-                for(var i in Common.sectionArray) {
-                    if($(value).offset().top > Common.sectionArray[i].start && $(value).offset().top <= Common.sectionArray[i].end) {
-                        $(value).removeClass('dark').removeClass('light');
-                        $(value).addClass(Common.sectionArray[i].class);
-                        break;
-                    }
-                }
-            });
-        } else {
-            $('.mainNav__link ').removeClass('dark').removeClass('light');
         }
     },
 
@@ -208,38 +215,37 @@ Common = {
 
     initCountdown: function (dt, id) {
 
-        var end = new Date(dt);
+            var end = new Date(dt);
 
-        var _second = 1000;
-        var _minute = _second * 60;
-        var _hour = _minute * 60;
-        var _day = _hour * 24;
-        var timer;
+            var _second = 1000;
+            var _minute = _second * 60;
+            var _hour = _minute * 60;
+            var _day = _hour * 24;
+            var timer;
 
-        function showRemaining() {
-            var elem = $('#' + (id));
-            var now = new Date();
-            var distance = end - now;
+            function showRemaining() {
+                var elem = $('#' + (id));
+                var now = new Date();
+                var distance = end - now;
 
-            if (distance < 0) {
-                clearInterval(timer);
-                elem.html('EXPIRED!');
-                return;
+                if (distance < 0) {
+                    clearInterval(timer);
+                    elem.html('EXPIRED!');
+                    return;
+                }
+
+                var days = Math.floor(distance / _day);
+                var hours = Math.floor((distance % _day) / _hour);
+                var minutes = Math.floor((distance % _hour) / _minute);
+
+                elem.html(days ? ((String(days).length >= 2 ? days : "0" + days) + ' <span class="small">Days </span> ') : '') ;
+                elem.append((String(hours).length >= 2 ? hours : "0" + hours) + ' : ');
+                elem.append(String(minutes).length >= 2 ? minutes : "0" + minutes);
             }
 
-            var days = Math.floor(distance / _day);
-            var hours = Math.floor((distance % _day) / _hour);
-            var minutes = Math.floor((distance % _hour) / _minute);
-
-            elem.html(days ? ((String(days).length >= 2 ? days : "0" + days) + ' <span class="small">Days </span> ') : '') ;
-            elem.append((String(hours).length >= 2 ? hours : "0" + hours) + ' : ');
-            elem.append(String(minutes).length >= 2 ? minutes : "0" + minutes);
-        }
-
-        showRemaining();
-        timer = setInterval(showRemaining, 1000);
+            showRemaining();
+            timer = setInterval(showRemaining, 1000);
     }
-
 
 };
 
