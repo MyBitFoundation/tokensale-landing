@@ -31,26 +31,6 @@ Common = {
 
     initEvents: function () {
 
-        //btn animation
-        $('.btn-download_js').on('click',function (e){
-            e.preventDefault();
-            var self = this;
-            $(this).addClass('active');
-            setTimeout(function() {
-                $(self).addClass('ready');
-            }, 4000);
-        });
-        $('.btn__inInput').on('click',function (e){
-            e.preventDefault();
-            var $button = $(this);
-            $button.closest('.form__updates_js').addClass('start');
-            setTimeout(function(){
-                $button.closest('.form__updates_js').addClass('processing').removeClass('start');
-            }, 700);
-            setTimeout(function() {
-                $button.closest('.form__updates_js').addClass('submited').removeClass('processing');
-            }, 3000);
-        });
         $('.btn-mobMenu').on('click', function (e){
             e.preventDefault();
             $(this).toggleClass('active');
