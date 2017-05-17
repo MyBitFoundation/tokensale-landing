@@ -208,6 +208,7 @@ Common = {
                 var distance = end - now;
 
                 if (distance < 0) {
+                    clearInterval(timer);
                     if (cb && typeof cb == "function")
                         cb();
 
