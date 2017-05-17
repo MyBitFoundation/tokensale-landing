@@ -13,7 +13,6 @@ Common = {
         self.initEvents();
         self.checkFirstSection();
         self.initScrollTextarea();
-        self.initCountdown('6/27/2017 12:00', 'countdown');
 
         $(window).on({
             load: function () {
@@ -193,10 +192,9 @@ Common = {
         $('#textarea-scrollbar_js').scrollbar();
     },
 
-    initCountdown: function (dt, id) {
+    initCountdown: function (dt, id, cb) {
 
             var end = new Date(dt);
-        end.toString()
 
             var _second = 1000;
             var _minute = _second * 60;
@@ -207,12 +205,12 @@ Common = {
             function showRemaining() {
                 var elem = $('#' + (id));
                 var now = new Date();
-                now.toString()
                 var distance = end - now;
 
                 if (distance < 0) {
-                    clearInterval(timer);
-                    elem.html('EXPIRED!');
+                    if (cb && typeof cb == "function")
+                        cb();
+
                     return;
                 }
 
