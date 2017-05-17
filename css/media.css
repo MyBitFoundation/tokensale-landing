@@ -244,6 +244,11 @@ sub {
     -webkit-animation: chartTotal 0.3s 2s linear;
     animation-fill-mode: forwards;
   }
+  .team__wrap.inline .team__item {
+    float: none;
+    display: inline-block;
+    width: 30%;
+  }
   .mainNav__dropdown {
     padding: 12px 0;
     position: absolute;
@@ -272,12 +277,6 @@ sub {
   }
   .section__businessModel {
     padding: 93px 0 143px;
-  }
-  .section__roadmap {
-    padding: 115px 0 140px;
-  }
-  .section__roadmap .h2 {
-    margin-left: 9%;
   }
   .section__details {
     padding-bottom: 135px;
@@ -326,22 +325,19 @@ sub {
   .section__aboutMybit {
     padding: 75px 0 119px;
   }
+  .section__aboutMybit .section__title {
+    text-align: center;
+    margin-left: 0;
+  }
+  .section__aboutMybit .section__title:before {
+    left: 50%;
+    margin-left: -30px;
+  }
   .section__technology {
     padding-bottom: 107px;
   }
   .section__infastructure {
     padding-bottom: 117px;
-  }
-  .section__roadmap {
-    padding: 90px 0 88px;
-  }
-  .section__roadmap .section__title {
-    text-align: center;
-    margin-left: 0;
-  }
-  .section__roadmap .section__title:before {
-    left: 50%;
-    margin-left: -30px;
   }
   .section__advisor,
   .section__team {
@@ -418,6 +414,9 @@ sub {
   .team__item:last-of-type {
     margin-left: 25%;
   }
+  .team__item:only-child {
+    margin-left: 0;
+  }
   .chart__title_1 {
     left: 64px;
   }
@@ -441,6 +440,9 @@ sub {
   }
   .vertical__branch__right__bar {
     left: 81.6%;
+  }
+  .footer__download {
+    margin-top: 0;
   }
 }
 @media (max-width: 900px) {
@@ -509,11 +511,12 @@ sub {
     overflow: auto;
     height: 100%;
     padding: 30px 0 20px;
+    text-align: left;
   }
   .mainNav__list {
     margin: 0;
     text-align: left;
-    float: none;
+    display: block;
   }
   .mainNav__item {
     display: block;
@@ -606,9 +609,6 @@ sub {
   .section__businessModel {
     padding: 30px 0;
   }
-  .section__roadmap {
-    padding: 30px 0 14px;
-  }
   .section__details {
     padding: 30px 0 28px;
   }
@@ -634,6 +634,19 @@ sub {
   }
   .section__media .desc {
     margin-bottom: 0;
+  }
+  .section__partners,
+  .section__tokensale {
+    text-align: center;
+  }
+  .section__partners .section__title,
+  .section__tokensale .section__title {
+    text-align: center;
+  }
+  .section__partners .section__title:before,
+  .section__tokensale .section__title:before {
+    left: 50%;
+    margin-left: -15px;
   }
   .h1 {
     font-size: 16px;
@@ -671,6 +684,15 @@ sub {
   .btn__row {
     margin-top: 26px;
     text-align: center;
+  }
+  .btn-whitepaper {
+    margin: 20px auto;
+    width: 95%;
+    display: block;
+    float: none;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
   }
   .btn + .btn {
     margin: 20px 0 0 0;

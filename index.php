@@ -94,12 +94,10 @@
                     <a href="#tokensale" class="mainNav__link btn_scroll"><span class="title">Tokensale</span></a>
                 </li>
                 <li class="mainNav__item">
-                    <a href="#resources" class="mainNav__link btn_scroll"><span class="title">Resources</span></a>
-                </li>
-                <li class="mainNav__item">
-                    <a href="/docs/MyBit_Whitepaper_v0.9.pdf" class="mainNav__link" target="_blank"><span class="title">Whitepaper</span></a>
+                    <a href="#partnerships" class="mainNav__link btn_scroll"><span class="title">Partnerships</span></a>
                 </li>
             </ul>
+            <a href="/docs/MyBit_Whitepaper_v0.9.pdf" class="btn btn-shadow yellow small btn-whitepaper" target="_blank"><span class="title">Whitepaper</span></a>
         </div>
     </div>
     <div class="lang__wrap">
@@ -127,7 +125,7 @@
                     <span id="countdown" class="date"></span>
                 </div>
                 <div class="offer-box wow animated fadeInUp sign-in-block" data-wow-delay="0.3s">
-                    <span class="title">Sign in to create, discover and connect with the global community.</span>
+                    <span class="title">Pre-Register Today</span>
 
                     <form class="form form__offer pre_offer">
                         <div class="form__row"> <!--add class error-->
@@ -139,14 +137,10 @@
                             <span class="form__errorTxt"></span>
                         </div>
                     </form>
-                    <a href="" class="btn btn-shadow blue" data-toggle="modal" data-target="#modal-signIn">sign in</a>
+                    <span class="title small">Already have an account? <a href="#" class="link yellow" data-toggle="modal" data-target="#modal-signIn"> Sign in</a></span>
                 </div>
                 <div class="offer-box wow animated fadeInUp go-to-dashboard-block" data-wow-delay="0.3s" style="display: none;">
                     <a href="" class="btn btn-shadow yellow">Go to dashboard</a>
-                </div>
-                <div class="btn__row wow animated fadeInUp"  data-wow-delay="0.3s">
-                    <a href="https://www.facebook.com/vejdiven/videos/1344609518964148/" class="btn btn-inverse" target="_blank"><span>Watch Presentation</span></a>
-                    <a href="https://www.slideshare.net/IanMWorrall/mybit-deck" class="btn btn-inverse" target="_blank"><span>View Deck</span></a>
                 </div>
             </div>
         </div>
@@ -161,10 +155,13 @@
                         <p>How?</p>
                         <p>By commoditizing solar panel installation and other forms of renewable energy, investors and landowners can crowdfund the coming decentralized energy grid. With Mybit, investors get security on their investment, while landowners get access to investors willing to help in exchange for profit. By standardizing and automating setup, sales, and dividends, Mybit takes you one step closer to an equitable economy.</p>
                         <p>The Future Our 5 year goal is to be at the forefront of commoditizing the coming AI economy. Mybit will be Europe's platform tokenizing any automatable or machine infrastructure. And it will be owned by the crowd.</p>
-                        <div class="btn__row">
-                            <a href="/docs/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
-                                <span class="progress" style="transition-duration: 4s"></span>
-                                <span class="download-icon__wrap">
+                    </div>
+                </div>
+            </div>
+            <div class="btn__row">
+                <a href="/docs/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
+                    <span class="progress" style="transition-duration: 4s"></span>
+                    <span class="download-icon__wrap">
                                     <span class="download-icon__top">
                                         <i class="icon-download-top"></i>
                                     </span>
@@ -173,24 +170,89 @@
                                         <i class="icon-download-btm"></i>
                                     </span>
                                 </span>
-                                <span class="download-icon__check"><i class="icon-check"></i></span>
-                                <span class="title title_calm">Download whitepaper</span>
-                                <span class="title title_during">Downloading <span class="value">38</span>%</span>
-                                <span class="title title_ready">Downloaded</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    <span class="download-icon__check"><i class="icon-check"></i></span>
+                    <span class="title title_calm">Download whitepaper</span>
+                    <span class="title title_during">Downloading <span class="value">38</span>%</span>
+                    <span class="title title_ready">Downloaded</span>
+                </a>
             </div>
             <div class="video__wrap">
                 <div class="video__box">
-                    <a href="" class="video__play">
+                    <span class="video__play">
                         <i class="icon-play"></i>
                         <span class="video__title">Video Coming Soon</span>
-                    </a>
+                    </span>
                     <span class="video"></span>
                 </div>
             </div>
+            <h2 class="h2 section__title">Roadmap</h2>
+            <ul class="roadmap__list">
+                <li class="roadmap__progressBase">
+                    <!--<div class="roadmap__progressBar"></div>-->
+                </li>
+                <li class="roadmap__progressPart first"><div class="roadmap__progressBar" style="width: 100%;"></div></li>
+
+                <li class="roadmap__item active">
+                    <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[0],$roadMapDays[1]);  ?>
+                    <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
+                    <div class="roadmap__date">
+                        <span class="roadmap__year">2016</span>
+                        <span class="roadmap__month">November</span>
+                    </div>
+                    <span class="roadmap__dot"></span>
+                    <span class="roadmap__descr">Idea Conceived</span>
+                </li>
+                <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[0],$roadMapDays[1]) == 100 ? 'active' : ''; ?>">
+                    <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[1],$roadMapDays[2]);  ?>
+                    <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
+                    <div class="roadmap__date">
+                        <span class="roadmap__year">2017</span>
+                        <span class="roadmap__month">February</span>
+                    </div>
+                    <span class="roadmap__dot"></span>
+                    <span class="roadmap__descr">Whitepaper Published</span>
+                </li>
+                <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[1],$roadMapDays[2]) == 100 ? 'active' : ''; ?>">
+                    <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[2],$roadMapDays[3]);  ?>
+                    <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
+                    <div class="roadmap__date">
+                        <span class="roadmap__year">2017</span>
+                        <span class="roadmap__month">May</span>
+                    </div>
+                    <span class="roadmap__dot"></span>
+                    <span class="roadmap__descr">Wireframes</span>
+                </li>
+                <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[2],$roadMapDays[3]) == 100 ? 'active' : ''; ?>">
+                    <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[3],$roadMapDays[4]);  ?>
+                    <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
+                    <div class="roadmap__date">
+                        <span class="roadmap__year">2017</span>
+                        <span class="roadmap__month">July</span>
+                    </div>
+                    <span class="roadmap__dot"></span>
+                    <span class="roadmap__descr">Crowdfund</span>
+                </li>
+                <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[3],$roadMapDays[4]) == 100 ? 'active' : ''; ?>">
+                    <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[4],$roadMapDays[5]);  ?>
+                    <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
+                    <div class="roadmap__date">
+                        <span class="roadmap__year">2017</span>
+                        <span class="roadmap__month">August</span>
+                    </div>
+                    <span class="roadmap__dot"></span>
+                    <span class="roadmap__descr">Ethereum Testnet Demo</span>
+                </li>
+                <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[4],$roadMapDays[5]) == 100 ? 'active' : ''; ?>">
+                    <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[5],$roadMapDays[6]);  ?>
+                    <div class="roadmap__progressPart last"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
+                    <div class="roadmap__date">
+                        <span class="roadmap__year">2018</span>
+                        <span class="roadmap__month">January</span>
+                    </div>
+                    <span class="roadmap__dot"></span>
+                    <span class="roadmap__descr">Beta Release and Pilot</span>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -467,32 +529,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <h2 class="h3 section__title">Community</h2>
-                    <div class="soc__wrap">
+                    <h2 class="h3 section__title center">Community</h2>
+                    <div class="soc__wrap in_bl">
                         <ul class="soc__list">
                             <li class="soc__item">
-                                <a href="https://www.facebook.com/MyBitDApp/" class="soc__link" target="_blank"><i class="icon-fb"></i></a>
+                                <a href="https://www.facebook.com/MyBitDApp/" class="soc__link colored fb" target="_blank"><i class="icon-fb"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://twitter.com/MyBit_DApp" class="soc__link" target="_blank"><i class="icon-twitter"></i></a>
+                                <a href="https://twitter.com/MyBit_DApp" class="soc__link colored twitter" target="_blank"><i class="icon-twitter"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://t.me/mybit_dapp" class="soc__link" target="_blank"><i class="icon-telegram"></i></a>
+                                <a href="https://t.me/mybit_dapp" class="soc__link colored telegram" target="_blank"><i class="icon-telegram"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://www.reddit.com/user/MyBit_DApp/" class="soc__link" target="_blank"><i class="icon-redit"></i></a>
+                                <a href="https://www.reddit.com/user/MyBit_DApp/" class="soc__link colored redit" target="_blank"><i class="icon-redit"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://mybit-dapp.slack.com/ " class="soc__link" target="_blank"><i class="icon-slack"></i></a>
+                                <a href="https://mybit-dapp.slack.com/ " class="soc__link colored slack" target="_blank"><i class="icon-slack"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://www.youtube.com/channel/UCtLn7Vi-3VbsY5F9uF1RJYg" class="soc__link" target="_blank"><i class="icon-youtube"></i></a>
+                                <a href="https://www.youtube.com/channel/UCtLn7Vi-3VbsY5F9uF1RJYg" class="soc__link colored youtube" target="_blank"><i class="icon-youtube"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://bitcointalk.org/index.php?topic=1797720.0" class="soc__link" target="_blank"><i class="icon-bitcointalk"></i></a>
+                                <a href="https://bitcointalk.org/index.php?topic=1797720.0" class="soc__link colored bitcointalk" target="_blank"><i class="icon-bitcointalk"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://medium.com/@MyBit_Blog" class="soc__link" target="_blank"><i class="icon-medium"></i></a>
+                                <a href="https://medium.com/@MyBit_Blog" class="soc__link colored medium" target="_blank"><i class="icon-medium"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -555,210 +617,35 @@
         </div>
     </div>
 
-    <div id="tokensale" class="wow animated fadeInUp"  data-wow-offset="50">
-        <div id="icoDetails" class="section section__details section__inverse wow animated fadeInUp" data-wow-offset="50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                        <h2 class="h3 section__title"><?php echo t::message('global','ICO Details'); ?></h2>
-                        <div class="details__wrap">
-                            <div class="details__row">
-                                <div class="details__title">
-                                    <span class="details__heading">TOKEN NAME:</span>
-                                </div>
-                                <div class="details__content">
-                                    <p class="details__text">MyBit ($MyB)</p>
-                                </div>
-                            </div>
-                            <div class="details__row">
-                                <div class="details__title">
-                                    <span class="details__heading">WHAT DOES THIS TOKEN REPRESENT?</span>
-                                </div>
-                                <div class="details__content">
-                                    <p class="details__text">MyBit tokens are used to access certain functionalities of the platform including registering a new asset, transferring an asset, and a variety of financing features. Holders of MyBit tokens will also receive real-time revenue distributions proportionate to their stake percentage.</p>
-                                </div>
-                            </div>
-                            <div class="details__row">
-                                <div class="details__title">
-                                    <span class="details__heading">PAYOUT STRUCTURE</span>
-                                </div>
-                                <div class="details__content">
-                                    <p class="details__text">A smart contract governs revenue distributions as a percentage based on individual stake divided by total MyB supply. Any incoming MyBit network fees (minus ethereum network fees) are automatically distributed to tokenholders in the next mined block.</p>
-                                </div>
-                            </div>
-                            <div class="details__row">
-                                <div class="details__title">
-                                    <span class="details__heading">TOTAL SUPPLY:</span>
-                                </div>
-                                <div class="details__content">
-                                    <p class="details__text">Maximum of 10,000,000 tokens</p>
-                                </div>
-                            </div>
-                            <div class="details__row">
-                                <div class="details__title">
-                                    <span class="details__heading">PRICE PER TOKEN:</span>
-                                </div>
-                                <div class="details__content">
-                                    <p class="details__text">Variable, see pricing structure below</p>
-                                </div>
-                            </div>
-                            <div class="details__row">
-                                <div class="details__title">
-                                    <span class="details__heading">Crowdfunding Milestones:</span>
-                                </div>
-                                <div class="details__content">
-                                    <a href="javascript:;" class="btn btn-default crowdfunding__milestones__link"><span>Click to view</span></a>
-                                </div>
-                            </div>
-                            <div class="details__row">
-                                <div class="details__title">
-                                    <span class="details__heading">Escrow Release Terms:</span>
-                                </div>
-                                <div class="details__content">
-                                    <a href="javascript:;" class="btn btn-default escrow__release__terms__link"><span>Click to view</span></a>
-                                </div>
-                            </div>
-                            <div class="details__row">
-                                <div class="details__title">
-                                    <span class="details__heading">Token Document:</span>
-                                </div>
-                                <div class="details__content">
-                                    <a href="javascript:;" class="btn btn-default"><span>Click to view</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="roadmap" class="section section__roadmap wow animated fadeInUp" data-wow-offset="50">
-            <div class="container">
-                <h2 class="h2 section__title">Roadmap</h2>
-                <ul class="roadmap__list">
-                    <li class="roadmap__progressBase">
-                        <!--<div class="roadmap__progressBar"></div>-->
-                    </li>
-                    <li class="roadmap__progressPart first"><div class="roadmap__progressBar" style="width: 100%;"></div></li>
-
-                    <li class="roadmap__item active">
-                        <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[0],$roadMapDays[1]);  ?>
-                        <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
-                        <div class="roadmap__date">
-                            <span class="roadmap__year">2016</span>
-                            <span class="roadmap__month">November</span>
-                        </div>
-                        <span class="roadmap__dot"></span>
-                        <span class="roadmap__descr">Idea Conceived</span>
-                    </li>
-                    <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[0],$roadMapDays[1]) == 100 ? 'active' : ''; ?>">
-                        <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[1],$roadMapDays[2]);  ?>
-                        <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
-                        <div class="roadmap__date">
-                            <span class="roadmap__year">2017</span>
-                            <span class="roadmap__month">February</span>
-                        </div>
-                        <span class="roadmap__dot"></span>
-                        <span class="roadmap__descr">Whitepaper Published</span>
-                    </li>
-                    <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[1],$roadMapDays[2]) == 100 ? 'active' : ''; ?>">
-                        <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[2],$roadMapDays[3]);  ?>
-                        <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
-                        <div class="roadmap__date">
-                            <span class="roadmap__year">2017</span>
-                            <span class="roadmap__month">May</span>
-                        </div>
-                        <span class="roadmap__dot"></span>
-                        <span class="roadmap__descr">Wireframes</span>
-                    </li>
-                    <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[2],$roadMapDays[3]) == 100 ? 'active' : ''; ?>">
-                        <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[3],$roadMapDays[4]);  ?>
-                        <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
-                        <div class="roadmap__date">
-                            <span class="roadmap__year">2017</span>
-                            <span class="roadmap__month">July</span>
-                        </div>
-                        <span class="roadmap__dot"></span>
-                        <span class="roadmap__descr">Crowdfund</span>
-                    </li>
-                    <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[3],$roadMapDays[4]) == 100 ? 'active' : ''; ?>">
-                        <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[4],$roadMapDays[5]);  ?>
-                        <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
-                        <div class="roadmap__date">
-                            <span class="roadmap__year">2017</span>
-                            <span class="roadmap__month">August</span>
-                        </div>
-                        <span class="roadmap__dot"></span>
-                        <span class="roadmap__descr">Ethereum Testnet Demo</span>
-                    </li>
-                    <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[4],$roadMapDays[5]) == 100 ? 'active' : ''; ?>">
-                        <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[5],$roadMapDays[6]);  ?>
-                        <div class="roadmap__progressPart last"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
-                        <div class="roadmap__date">
-                            <span class="roadmap__year">2018</span>
-                            <span class="roadmap__month">January</span>
-                        </div>
-                        <span class="roadmap__dot"></span>
-                        <span class="roadmap__descr">Beta Release and Pilot</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="structure" class="section section__structure section__inverse wow animated fadeInUp" data-wow-offset="50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                        <h2 class="h3 section__title">Pricing Structure</h2>
-                        <div class="desc">
-                            <p>To utilize our pre-sale script that automatically buys into the contract when it begins to ensure you are getting the optimal price , please email <a href="" class="link">info@mybit.io</a> A 10% discount is applied in the form of Ethereum refund for any pre-sale order greater in value than 25 ETHER, and 20% discount for orders greater than 100 ETHER.</p>
-                        </div>
-
-                        <div class="chart__box">
-                            <div class="chart__title chart__title_1">
-                                <span class="value">25% Discount</span>
-                                <span class="line"></span>
-                                <span class="name">Week 1</span>
-                            </div>
-                            <div class="chart__title chart__title_2">
-                                <span class="value">Full-Price</span>
-                                <span class="line"></span>
-                                <span class="name">Week 4</span>
-                            </div>
-                            <div class="chart__title chart__title_3">
-                                <span class="value">15% Discount</span>
-                                <span class="line"></span>
-                                <span class="name">Week 2</span>
-                            </div>
-                            <div class="chart__title chart__title_4">
-                                <span class="value">10% Discount</span>
-                                <span class="line"></span>
-                                <span class="name">Week 3</span>
-                            </div>
-                            <div class="circle__box">
-                                <svg width="290" height="290" class="circle__wrap">
-                                    <circle fill="none" cx="145" cy="145" r="125" class="circle circle_1"/>
-                                    <circle fill="none" cx="145" cy="145" r="106" class="circle circle_2"/>
-                                    <circle fill="none" cx="145" cy="145" r="89" class="circle circle_3"/>
-                                    <circle fill="none" cx="145" cy="145" r="71" class="circle circle_4"/>
-                                </svg>
-                            </div>
-                            <div class="chart__total">
-                                <a href="javascript:;" class="btn btn-inverse deal__sheet__link"><span>View Deal Sheet</span></a>
-                            </div>
-                        </div>
-                    </div>
+    <div id="tokensale" class="section section__tokensale section__inverse wow animated fadeInUp"  data-wow-offset="50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <h2 class="h3 section__title">Tokensale</h2>
+                    <p>Coming soon</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="resources" class="section section__resources wow animated fadeInUp" data-wow-offset="50">
+    <div id="partnerships" class="section section__partners wow animated fadeInUp" data-wow-offset="50">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <h2 class="h3 section__title">Resources</h2>
-                    <p>Coming soon</p>
+                    <h2 class="h3 section__title">Partnerships</h2>
+                    <div class="team__wrap inline">
+                        <div class="team__list">
+                            <div class="team__item">
+                                <a href="https://bravenewcoin.com/news/mybit-tackles-data-manipulation-an-emerging-art-of-war-in-cyberspace/" target="_blank" class="team__photoWrap">
+                                    <img src="images/media/bnc.jpeg" alt="" class="team__photo"/>
+                                </a>
+                                <span class="team__name">BraveNewCoin</span>
+                                <div class="team__professionWrap">
+                                    <span class="team__profession">Escrow/Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -766,9 +653,9 @@
 
     <footer class="footer">
         <div class="container wow animated fadeInUp" data-wow-offset="50">
-            <h2 class="h4"><?php echo t::message('global','Get Updates'); ?></h2>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-md-4">
+                    <h2 class="h4">Get Updates</h2>
                     <form class="form form__updates_js form__updatesFooter form_subscribe">
                         <div class="form__row "> <!--add class error-->
                             <div class="btn-success">
@@ -792,33 +679,37 @@
                     <div class="soc__wrap">
                         <ul class="soc__list">
                             <li class="soc__item">
-                                <a href="https://www.facebook.com/MyBitDApp/" class="soc__link" target="_blank"><i class="icon-fb"></i></a>
+                                <a href="https://www.facebook.com/MyBitDApp/" class="soc__link circle " target="_blank"><i class="icon-fb"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://twitter.com/MyBit_DApp" class="soc__link" target="_blank"><i class="icon-twitter"></i></a>
+                                <a href="https://twitter.com/MyBit_DApp" class="soc__link circle" target="_blank"><i class="icon-twitter"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://t.me/mybit_dapp" class="soc__link" target="_blank"><i class="icon-telegram"></i></a>
+                                <a href="https://t.me/mybit_dapp" class="soc__link circle" target="_blank"><i class="icon-telegram"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://www.reddit.com/user/MyBit_DApp/" class="soc__link" target="_blank"><i class="icon-redit"></i></a>
+                                <a href="https://www.reddit.com/user/MyBit_DApp/" class="soc__link circle" target="_blank"><i class="icon-redit"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://slack.mybit.io/" class="soc__link" target="_blank"><i class="icon-slack"></i></a>
+                                <a href="https://slack.mybit.io/" class="soc__link circle" target="_blank"><i class="icon-slack"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://www.youtube.com/channel/UCtLn7Vi-3VbsY5F9uF1RJYg" class="soc__link" target="_blank"><i class="icon-youtube"></i></a>
+                                <a href="https://www.youtube.com/channel/UCtLn7Vi-3VbsY5F9uF1RJYg" class="soc__link circle" target="_blank"><i class="icon-youtube"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://bitcointalk.org/index.php?topic=1797720.0" class="soc__link" target="_blank"><i class="icon-bitcointalk"></i></a>
+                                <a href="https://bitcointalk.org/index.php?topic=1797720.0" class="soc__link circle" target="_blank"><i class="icon-bitcointalk"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://medium.com/@MyBit_Blog" class="soc__link" target="_blank"><i class="icon-medium"></i></a>
+                                <a href="https://medium.com/@MyBit_Blog" class="soc__link circle" target="_blank"><i class="icon-medium"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-4 col-sm-6">
+                    <h2 class="h4">Resources</h2>
+                    <p>Coming soon</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
                     <div class="footer__download">
                         <a href="/docs/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
                             <span class="progress" style="transition-duration: 4s"></span>

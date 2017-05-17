@@ -196,6 +196,7 @@ Common = {
     initCountdown: function (dt, id) {
 
             var end = new Date(dt);
+        end.toString()
 
             var _second = 1000;
             var _minute = _second * 60;
@@ -206,6 +207,7 @@ Common = {
             function showRemaining() {
                 var elem = $('#' + (id));
                 var now = new Date();
+                now.toString()
                 var distance = end - now;
 
                 if (distance < 0) {
