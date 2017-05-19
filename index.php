@@ -8,6 +8,8 @@
         die();
     }
 
+    $path_whitepaper = '/docs/MyBit_Whitepaper_v0.12.pdf';
+
     $currentTime = time();
     $roadMapDays = array(
         strtotime('01-11-2016 12:00:00'),
@@ -97,7 +99,7 @@
                     <a href="#partnerships" class="mainNav__link btn_scroll"><span class="title">Partnerships</span></a>
                 </li>
             </ul>
-            <a href="/docs/MyBit_Whitepaper_v0.9.pdf" class="btn btn-shadow yellow small btn-whitepaper" target="_blank"><span class="title">Whitepaper</span></a>
+            <a href="<?php echo $path_whitepaper; ?>" class="btn btn-shadow yellow small btn-whitepaper" target="_blank"><span class="title">Whitepaper</span></a>
         </div>
     </div>
     <div class="lang__wrap">
@@ -159,7 +161,7 @@
                 </div>
             </div>
             <div class="btn__row">
-                <a href="/docs/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
+                <a href="<?php echo $path_whitepaper; ?>" target="_blank" class="btn btn-progress btn-download_js">
                     <span class="progress" style="transition-duration: 4s"></span>
                     <span class="download-icon__wrap">
                                     <span class="download-icon__top">
@@ -711,7 +713,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="footer__download">
-                        <a href="/docs/MyBit_Whitepaper_v0.9.pdf" target="_blank" class="btn btn-progress btn-download_js">
+                        <a href="<?php echo $path_whitepaper; ?>" target="_blank" class="btn btn-progress btn-download_js">
                             <span class="progress" style="transition-duration: 4s"></span>
                                 <span class="download-icon__wrap">
                                     <span class="download-icon__top">
