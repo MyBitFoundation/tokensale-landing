@@ -547,7 +547,7 @@
                                 <a href="https://www.reddit.com/user/MyBit_DApp/" class="soc__link colored redit" target="_blank"><i class="icon-redit"></i></a>
                             </li>
                             <li class="soc__item">
-                                <a href="https://mybit-dapp.slack.com/ " class="soc__link colored slack" target="_blank"><i class="icon-slack"></i></a>
+                                <a href="https://slack.mybit.io/ " class="soc__link colored slack" target="_blank"><i class="icon-slack"></i></a>
                             </li>
                             <li class="soc__item">
                                 <a href="https://www.youtube.com/channel/UCtLn7Vi-3VbsY5F9uF1RJYg" class="soc__link colored youtube" target="_blank"><i class="icon-youtube"></i></a>
