@@ -2,6 +2,8 @@ var Action = {
 
     email: null,
     password: null,
+
+    reg_email: null,
 	
 	logged: false,
 
@@ -77,6 +79,25 @@ var Action = {
             Action.successRegistration();
         });
 
+        $('.btn_pre_sign_up').click(function() {
+            var block = $('.pre_offer'),
+                status = true;
+
+            $('.form__row',block).removeClass('error');
+
+            if(!$('input[name=email]',block).val() || !Action.validateEmail($('input[name=email]',block).val())) {
+                $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect e-mail');
+                status = false;
+            }
+
+            if(status) {
+                Action.reg_email = $('input[name=email]',block).val();
+                $('input[name=email]',block).val('');
+                $('#modal-signUp').modal('show');
+            }
+
+        });
+
         $('#modal-signUp, #modal-signIn, #modal-askQuestion').on('hide.bs.modal', function (e) {
             $('.form__row',this).removeClass('error').find('input').val('');
             $('.form__row',this).find('textarea').val('');
@@ -109,11 +130,6 @@ var Action = {
         $('.form__row',block).removeClass('error');
         var status = true;
 
-        if(!$('input[name=email]',block).val() || !this.validateEmail($('input[name=email]',block).val())) {
-            $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect e-mail');
-            status = false;
-        }
-
         if(!$('input[name=password]',block).val()) {
             $('input[name=password]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect password');
             status = false;
@@ -137,7 +153,7 @@ var Action = {
         if(status) {
             var data = {
                 action : 'registration',
-                email: $('input[name=email]',block).val(),
+                email: Action.reg_email,
                 password: $('input[name=password]',block).val(),
                 passwordCopy: $('input[name=repeat_password]',block).val(),
                 address: $('input[name=address]',block).val()
@@ -376,4 +392,12 @@ var Action = {
 
 $(document).ready(function() {
     Action.init();
+
+    Common.initCountdown('7/17/2017 12:00', 'countdown',function() {
+        $('.date__title').html('Crowdsale Live');
+        Common.initCountdown('8/17/2017 12:00', 'countdown',function() {
+            $('.date__title').html('Crowdsale has ended');
+            $('#countdown').hide();
+        })
+    });
 });

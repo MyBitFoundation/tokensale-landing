@@ -244,6 +244,32 @@ sub {
     -webkit-animation: chartTotal 0.3s 2s linear;
     animation-fill-mode: forwards;
   }
+  .team__wrap.inline .team__item {
+    float: none;
+    display: inline-block;
+    width: 30%;
+  }
+  .mainNav__dropdown {
+    padding: 12px 0;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    right: 0;
+    top: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.24);
+    margin-top: -10px;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mainNav__dropdown .link {
+    font-size: 12px;
+    color: #000000;
+  }
+  .mainNav__dropdown .link:hover {
+    background: rgba(60, 56, 105, 0.2);
+  }
 }
 @media (max-width: 1200px) {
   .section__aboutMybit .desc {
@@ -251,12 +277,6 @@ sub {
   }
   .section__businessModel {
     padding: 93px 0 143px;
-  }
-  .section__roadmap {
-    padding: 115px 0 140px;
-  }
-  .section__roadmap .h2 {
-    margin-left: 9%;
   }
   .section__details {
     padding-bottom: 135px;
@@ -283,6 +303,9 @@ sub {
   .chart__total {
     margin-top: -48px;
   }
+  .video__wrap {
+    margin-top: 35px;
+  }
 }
 @media (max-width: 991px) {
   .h1 {
@@ -291,7 +314,7 @@ sub {
     letter-spacing: 0.4px;
   }
   .date__box {
-    margin-bottom: 216px;
+    margin-bottom: 150px;
   }
   .mainNav__link {
     padding-right: 22px;
@@ -302,22 +325,19 @@ sub {
   .section__aboutMybit {
     padding: 75px 0 119px;
   }
+  .section__aboutMybit .section__title {
+    text-align: center;
+    margin-left: 0;
+  }
+  .section__aboutMybit .section__title:before {
+    left: 50%;
+    margin-left: -30px;
+  }
   .section__technology {
     padding-bottom: 107px;
   }
   .section__infastructure {
     padding-bottom: 117px;
-  }
-  .section__roadmap {
-    padding: 90px 0 88px;
-  }
-  .section__roadmap .section__title {
-    text-align: center;
-    margin-left: 0;
-  }
-  .section__roadmap .section__title:before {
-    left: 50%;
-    margin-left: -30px;
   }
   .section__advisor,
   .section__team {
@@ -394,6 +414,9 @@ sub {
   .team__item:last-of-type {
     margin-left: 25%;
   }
+  .team__item:only-child {
+    margin-left: 0;
+  }
   .chart__title_1 {
     left: 64px;
   }
@@ -418,8 +441,17 @@ sub {
   .vertical__branch__right__bar {
     left: 81.6%;
   }
+  .footer__download {
+    margin-top: 0;
+  }
 }
 @media (max-width: 900px) {
+  .mainNav__link {
+    padding-right: 10px;
+  }
+  .header__logo {
+    width: 70px;
+  }
   .tokenization__model__description {
     font-size: 2.2em;
   }
@@ -443,6 +475,9 @@ sub {
   }
   .header-mob {
     display: block;
+  }
+  .header__logo {
+    display: none;
   }
   .mainNav__wrap {
     width: 90%;
@@ -476,10 +511,12 @@ sub {
     overflow: auto;
     height: 100%;
     padding: 30px 0 20px;
+    text-align: left;
   }
   .mainNav__list {
     margin: 0;
     text-align: left;
+    display: block;
   }
   .mainNav__item {
     display: block;
@@ -507,6 +544,17 @@ sub {
     color: #fff;
     background: rgba(38, 37, 70, 0.32);
     box-shadow: inset 4px 0 0 #fdcc59;
+  }
+  .mainNav__link .icon-arrow_dropdown {
+    display: none;
+  }
+  .mainNav__dropdown .link {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0 5px 44px;
+  }
+  .mainNav__dropdown .link:hover {
+    color: #fff;
   }
   .lang__wrap {
     position: fixed;
@@ -561,9 +609,6 @@ sub {
   .section__businessModel {
     padding: 30px 0;
   }
-  .section__roadmap {
-    padding: 30px 0 14px;
-  }
   .section__details {
     padding: 30px 0 28px;
   }
@@ -590,6 +635,19 @@ sub {
   .section__media .desc {
     margin-bottom: 0;
   }
+  .section__partners,
+  .section__tokensale {
+    text-align: center;
+  }
+  .section__partners .section__title,
+  .section__tokensale .section__title {
+    text-align: center;
+  }
+  .section__partners .section__title:before,
+  .section__tokensale .section__title:before {
+    left: 50%;
+    margin-left: -15px;
+  }
   .h1 {
     font-size: 16px;
     margin-bottom: 46px;
@@ -602,7 +660,10 @@ sub {
     font-size: 22px;
   }
   .date {
-    font-size: 22px;
+    font-size: 40px;
+  }
+  .date .small {
+    font-size: 23px;
   }
   .date__box {
     margin-bottom: 70px;
@@ -623,6 +684,15 @@ sub {
   .btn__row {
     margin-top: 26px;
     text-align: center;
+  }
+  .btn-whitepaper {
+    margin: 20px auto;
+    width: 95%;
+    display: block;
+    float: none;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
   }
   .btn + .btn {
     margin: 20px 0 0 0;
@@ -799,6 +869,10 @@ sub {
   .form__updates_js.processing .btn__inInput,
   .form__updates_js.start .btn__inInput {
     display: none;
+  }
+  .form__offer {
+    width: 100%;
+    padding-bottom: 20px;
   }
   .footer__info {
     border-top: none;
