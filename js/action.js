@@ -393,9 +393,9 @@ var Action = {
 $(document).ready(function() {
     Action.init();
 
-    Common.initCountdown('6/27/2017 12:00', 'countdown',function() {
+    Common.initCountdown('7/17/2017 12:00', 'countdown',function() {
         $('.date__title').html('Crowdsale Live');
-        Common.initCountdown('7/27/2017 12:00', 'countdown',function() {
+        Common.initCountdown('8/17/2017 12:00', 'countdown',function() {
             $('.date__title').html('Crowdsale has ended');
             $('#countdown').hide();
         })
