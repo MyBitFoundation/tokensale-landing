@@ -55,6 +55,7 @@
     <script src="js/config.js"></script>
     <script src="js/common.js"></script>
     <script src="js/action.js"></script>
+	<script src="js/page/index.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -94,6 +95,9 @@
                 </li>
                 <li class="mainNav__item">
                     <a href="#tokensale" class="mainNav__link btn_scroll"><span class="title">Tokensale</span></a>
+                </li>
+                <li class="mainNav__item">
+                    <a href="#partnerships" class="mainNav__link btn_scroll"><span class="title">Partnerships</span></a>
                 </li>
                 <li class="mainNav__item">
                     <a href="#partnerships" class="mainNav__link btn_scroll"><span class="title">Partnerships</span></a>
@@ -156,37 +160,49 @@
                         <p>Mybit makes financing and maintaining revenue streams efficient and automatic.</p>
                         <p>How?</p>
                         <p>By commoditizing solar panel installation and other forms of renewable energy, investors and landowners can crowdfund the coming decentralized energy grid. With Mybit, investors get security on their investment, while landowners get access to investors willing to help in exchange for profit. By standardizing and automating setup, sales, and dividends, Mybit takes you one step closer to an equitable economy.</p>
-                        <p>The Future Our 5 year goal is to be at the forefront of commoditizing the coming AI economy. Mybit will be Europe's platform tokenizing any automatable or machine infrastructure. And it will be owned by the crowd.</p>
+                        <p>The Future</p>
+	                    <p>Our 5 year goal is to be at the forefront of commoditizing the coming AI economy. Mybit will be Europe's platform tokenizing any automatable or machine infrastructure. And it will be owned by the crowd.</p>
                     </div>
                 </div>
             </div>
+	        <div class="video__wrap">
+		        <div class="video__box">
+                    <span class="video__play">
+                        <i class="icon-play"></i>
+                        <span class="video__title">Video Coming Soon</span>
+                    </span>
+			        <span class="video"></span>
+		        </div>
+	        </div>
+	        <div class="row">
+		        <div class="col-xs-12 col-md-11 col-md-offset-1 col-lg-offset-0">
+			        <div class="desc">
+				        <p>Why Decentralized Energy?</p>
+				        <p>The explosion of Artificial Intelligence (AI) and the Internet of Things (IoT) will result in massive demand increases for energy. Traditional energy grids will not be able to scale rapidly enough to keep up with the demand. Decentralized energy grids, composed of renewable energy technologies such as solar panels that can be installed on homes and office buildings away from the traditional (centralized) energy production & storage facilities, will be a critical component of the solution to the increased energy demand.</p>
+				        <p>A major issue with decentralized energy grids is the financial-barrier to entry. While companies such as Solar City have done a good job providing alternative financing packages (although they heavily rely on incentives such as tax breaks which will not last forever), the centralized model only permits scaling to a certain level (which demand will surpass). Decentralizing this model via Blockchain tokenization and Ethereum based smart contract governance, provides an infinitely scalable model that benefits consumers, investors, and enterprise.</p>
+				        <p>Our goal is to remove the financial barriers to entry and the friction currently present in the alternative assets investment space; thereby, enabling anyone to benefit from sustainable infrastructure regardless of their socioeconomic status or location. Aside from energy this model can be replicated across many industries including Land, Commercial Property, and AI - specifically autonomous mobiles.</p>
+			        </div>
+		        </div>
+	        </div>
             <div class="btn__row">
                 <a href="<?php echo $path_whitepaper; ?>" target="_blank" class="btn btn-progress btn-download_js">
                     <span class="progress" style="transition-duration: 4s"></span>
                     <span class="download-icon__wrap">
-                                    <span class="download-icon__top">
-                                        <i class="icon-download-top"></i>
-                                    </span>
-                                    <span class="line"></span>
-                                    <span class="download-icon__btm">
-                                        <i class="icon-download-btm"></i>
-                                    </span>
-                                </span>
+				        <span class="download-icon__top">
+				            <i class="icon-download-top"></i>
+				        </span>
+				        <span class="line"></span>
+				        <span class="download-icon__btm">
+				            <i class="icon-download-btm"></i>
+				        </span>
+				    </span>
                     <span class="download-icon__check"><i class="icon-check"></i></span>
                     <span class="title title_calm">Download whitepaper</span>
                     <span class="title title_during">Downloading <span class="value">38</span>%</span>
                     <span class="title title_ready">Downloaded</span>
                 </a>
             </div>
-            <div class="video__wrap">
-                <div class="video__box">
-                    <span class="video__play">
-                        <i class="icon-play"></i>
-                        <span class="video__title">Video Coming Soon</span>
-                    </span>
-                    <span class="video"></span>
-                </div>
-            </div>
+
             <h2 class="h2 section__title">Roadmap</h2>
             <ul class="roadmap__list">
                 <li class="roadmap__progressBase">
@@ -259,273 +275,66 @@
     </div>
 
     <div id="team" class="section section__team section__inverse wow animated fadeInUp" data-wow-offset="50">
-        <div class="container">
-            <h2 class="h3 section__title center">Meet Our Team</h2>
-            <div class="team__wrap">
-                <div class="team__list">
-                    <div class="team__item">
-                        <div class="team__photoWrap">
-                            <img src="images/team/garrett.jpg" alt="" class="team__photo"/>
-                        </div>
-                        <span class="team__name">Garrett MacDonald</span>
-                        <div class="team__professionWrap">
-                            <span class="team__profession">Blockchain Design / Entrepreneurial Background in Bitcoin and Blockchain</span>
-                            <a href="" class="btn-more team__btnMore_js">MORE</a>
-                        </div>
-                        <div class="team__details">
-                            <div class="team__detailsIn">
-                                <a href="" class="team__detailsClose team__detailsClose_js"><i class="icon-close"></i></a>
-                                <div class="team__photoWrap">
-                                    <img src="images/team/garrett.jpg" alt="" class="team__photo"/>
-                                </div>
-                                <span class="team__detailsName">Garrett MacDonald</span>
-                                <span class="team__detailsProfession">Blockchain Design / Entrepreneurial Background in Bitcoin and Blockchain</span>
-                                <p class="team__history">
-                                    Garrett has been involved fullAtime in the Blockchain industry since early 2013 when he began a small mining operation that grew rapidly.  Since then he has managed a company that builds custom software for small businesses up to large corporations.  His true passion is
-                                    decentralized applications and the potential they have to disrupt traditional business models.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team__item">
-                        <div class="team__photoWrap">
-                            <img src="images/team/thomas.jpg" alt="" class="team__photo"/>
-                        </div>
-                        <span class="team__name">Thomas Pollan</span>
-                        <div class="team__professionWrap">
-                            <span class="team__profession">Enterprise Business Applications / Sales & Strategy Background</span>
-                            <a href="" class="btn-more team__btnMore_js">MORE</a>
-                        </div>
-                        <div class="team__details">
-                            <div class="team__detailsIn">
-                                <a href="" class="team__detailsClose team__detailsClose_js"><i class="icon-close"></i></a>
-                                <div class="team__photoWrap">
-                                    <img src="images/team/thomas.jpg" alt="" class="team__photo"/>
-                                </div>
-                                <span class="team__detailsName">Thomas Pollan</span>
-                                <span class="team__detailsProfession">Enterprise Business Applications / Sales & Strategy Background</span>
-                                <p class="team__history">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team__item">
-                        <div class="team__photoWrap">
-                            <img src="images/team/ian.jpg" alt="" class="team__photo"/>
-                        </div>
-                        <span class="team__name">Ian Worrall</span>
-                        <div class="team__professionWrap">
-                            <span class="team__profession">Decentralized Solutions Architect / Entrepreneurial Background in Finance and SaaS</span>
-                            <a href="" class="btn-more team__btnMore_js">MORE</a>
-                        </div>
-                        <div class="team__details">
-                            <div class="team__detailsIn">
-                                <a href="" class="team__detailsClose team__detailsClose_js"><i class="icon-close"></i></a>
-                                <div class="team__photoWrap">
-                                    <img src="images/team/ian.jpg" alt="" class="team__photo"/>
-                                </div>
-                                <span class="team__detailsName">Ian Worrall</span>
-                                <span class="team__detailsProfession">Decentralized Solutions Architect / Entrepreneurial Background in Finance and SaaS</span>
-                                <p class="team__history">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team__item">
-                        <div class="team__photoWrap">
-                            <img src="images/team/pedro.jpg" alt="" class="team__photo"/>
-                        </div>
-                        <span class="team__name">Pedro Barrosl</span>
-                        <div class="team__professionWrap">
-                            <span class="team__profession">Full Stack Developer</span>
-                            <a href="" class="btn-more team__btnMore_js">MORE</a>
-                        </div>
-                        <div class="team__details">
-                            <div class="team__detailsIn">
-                                <a href="" class="team__detailsClose team__detailsClose_js"><i class="icon-close"></i></a>
-                                <div class="team__photoWrap">
-                                    <img src="images/team/pedro.jpg" alt="" class="team__photo"/>
-                                </div>
-                                <span class="team__detailsName">Pedro Barrosl</span>
-                                <span class="team__detailsProfession">Full Stack Developer</span>
-                                <p class="team__history">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team__item">
-                        <div class="team__photoWrap">
-                            <img src="images/team/jacob.jpg" alt="" class="team__photo"/>
-                        </div>
-                        <span class="team__name">Jacob DeBenedetto</span>
-                        <div class="team__professionWrap">
-                            <span class="team__profession">UI/UX Designer</span>
-                            <a href="" class="btn-more team__btnMore_js">MORE</a>
-                        </div>
-                        <div class="team__details">
-                            <div class="team__detailsIn">
-                                <a href="" class="team__detailsClose team__detailsClose_js"><i class="icon-close"></i></a>
-                                <div class="team__photoWrap">
-                                    <img src="images/team/jacob.jpg" alt="" class="team__photo"/>
-                                </div>
-                                <span class="team__detailsName">Jacob DeBenedetto</span>
-                                <span class="team__detailsProfession">UI/UX Designer</span>
-                                <p class="team__history">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--<div class="team__item">-->
-                    <!--<div class="team__photoWrap">-->
-                    <!--<img src="images/team/alex.jpg" alt="" class="team__photo"/>-->
-                    <!--</div>-->
-                    <!--<span class="team__name">Alex Dulub</span>-->
-                    <!--<div class="team__professionWrap">-->
-                    <!--<span class="team__profession">Solidity Developer</span>-->
-                    <!--<a href="" class="btn-more team__btnMore_js">MORE</a>-->
-                    <!--</div>-->
-                    <!--<div class="team__details">-->
-                    <!--<div class="team__detailsIn">-->
-                    <!--<a href="" class="team__detailsClose team__detailsClose_js"><i class="icon-close"></i></a>-->
-                    <!--<div class="team__photoWrap">-->
-                    <!--<img src="images/team/alex.jpg" alt="" class="team__photo"/>-->
-                    <!--</div>-->
-                    <!--<span class="team__detailsName">Alex Dulub</span>-->
-                    <!--<span class="team__detailsProfession">Solidity Developer</span>-->
-                    <!--<p class="team__history">-->
-                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
-                    <!--</p>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                </div>
-            </div>
-        </div>
+	    <div class="container">
+		    <h2 class="h3 section__title center">Meet Our Team</h2>
+		    <div class="team__wrap team__block"></div>
+	    </div>
     </div>
 
-    <div id="advisor" class="section section__advisor wow  fadeInUp animated" data-wow-offset="50">
-        <div class="container">
-            <h2 class="h3 section__title center">Advisors</h2>
-            <div class="team__wrap">
-                <div class="team__list">
-                    <div class="team__item" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide10">
-                        <div class="team__photoWrap">
-                            <img src="images/advisor/peter.png" alt="" class="team__photo">
-                        </div>
-                        <span class="team__name">Peter Kleissner</span>
-                        <div class="team__professionWrap">
-                            <span class="team__profession">Hacker, Founder of AV Tracker &amp; Stoned Bootkit</span>
-                            <a href="" class="btn-more team__btnMore_js" tabindex="-1">MORE</a>
-                        </div>
-                        <div class="team__details">
-                            <div class="team__detailsIn">
-                                <a href="" class="team__detailsClose team__detailsClose_js" tabindex="-1"><i class="icon-close"></i></a>
-                                <div class="team__photoWrap">
-                                    <img src="images/advisor/peter.png" alt="" class="team__photo">
-                                </div>
-                                <span class="team__detailsName">Peter Kleissner</span>
-                                <span class="team__detailsProfession">Hacker, Founder of AV Tracker &amp; Stoned Bootkit</span>
-                                <p class="team__history">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="team__item" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide11">
-                        <div class="team__photoWrap">
-                            <img src="images/advisor/nick.jpg" alt="" class="team__photo">
-                        </div>
-                        <span class="team__name">Nick Ayton</span>
-                        <div class="team__professionWrap">
-                            <span class="team__profession">Public Relations, Co-founder of The 21Million Project</span>
-                            <a href="" class="btn-more team__btnMore_js" tabindex="-1">MORE</a>
-                        </div>
-                        <div class="team__details">
-                            <div class="team__detailsIn">
-                                <a href="" class="team__detailsClose team__detailsClose_js" tabindex="-1"><i class="icon-close"></i></a>
-                                <div class="team__photoWrap">
-                                    <img src="images/advisor/nick.jpg" alt="" class="team__photo">
-                                </div>
-                                <span class="team__detailsName">Nick Ayton</span>
-                                <span class="team__detailsProfession">Public Relations, Co-founder of The 21Million Project</span>
-                                <p class="team__history">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="team__item" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide12">
-                        <div class="team__photoWrap">
-                            <img src="images/advisor/mitchell.png" alt="" class="team__photo">
-                        </div>
-                        <span class="team__name">Mitchell Loureiro</span>
-                        <div class="team__professionWrap">
-                            <span class="team__profession">Marketing Strategy, VP of Marketing at Steemit</span>
-                            <a href="" class="btn-more team__btnMore_js" tabindex="-1">MORE</a>
-                        </div>
-                        <div class="team__details">
-                            <div class="team__detailsIn">
-                                <a href="" class="team__detailsClose team__detailsClose_js" tabindex="-1"><i class="icon-close"></i></a>
-                                <div class="team__photoWrap">
-                                    <img src="images/advisor/mitchell.png" alt="" class="team__photo">
-                                </div>
-                                <span class="team__detailsName">Mitchell Loureiro</span>
-                                <span class="team__detailsProfession">Marketing Strategy, VP of Marketing at Steemit</span>
-                                <p class="team__history">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="team__item" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide13">
-                        <div class="team__photoWrap">
-                            <img src="images/advisor/mihaela.jpg" alt="" class="team__photo">
-                        </div>
-                        <span class="team__name">Dr. Mihaela Ulieru</span>
-                        <div class="team__professionWrap">
-                            <span class="team__profession">Technology, Global Advisor for World Economic Forum</span>
-                            <a href="" class="btn-more team__btnMore_js" tabindex="-1">MORE</a>
-                        </div>
-                        <div class="team__details">
-                            <div class="team__detailsIn">
-                                <a href="" class="team__detailsClose team__detailsClose_js" tabindex="-1"><i class="icon-close"></i></a>
-                                <div class="team__photoWrap">
-                                    <img src="images/advisor/mihaela.jpg" alt="" class="team__photo">
-                                </div>
-                                <span class="team__detailsName">Dr. Mihaela Ulieru</span>
-                                <span class="team__detailsProfession">Technology, Global Advisor for World Economic Forum</span>
-                                <p class="team__history">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div><div class="team__item" style="" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide14">
-                        <div class="team__photoWrap">
-                            <img src="images/advisor/bogdan.jpg" alt="" class="team__photo">
-                        </div>
-                        <span class="team__name">Bogdan Fiedur</span>
-                        <div class="team__professionWrap">
-                            <span class="team__profession">Technology, Co-founder at BitJob</span>
-                            <a href="" class="btn-more team__btnMore_js" tabindex="-1">MORE</a>
-                        </div>
-                        <div class="team__details">
-                            <div class="team__detailsIn">
-                                <a href="" class="team__detailsClose team__detailsClose_js" tabindex="-1"><i class="icon-close"></i></a>
-                                <div class="team__photoWrap">
-                                    <img src="images/advisor/bogdan.jpg" alt="" class="team__photo">
-                                </div>
-                                <span class="team__detailsName">Bogdan Fiedur</span>
-                                <span class="team__detailsProfession">Technology, Co-founder at BitJob</span>
-                                <p class="team__history">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </div>
-                        </div>
-                    </div></div>
-            </div>
-        </div>
-    </div>
+	<div id="advisor" class="section section__advisor wow  fadeInUp animated" data-wow-offset="50">
+		<div class="container">
+			<h2 class="h3 section__title center">Advisors</h2>
+			<div class="team__wrap">
+				<div class="team__list slick_mob">
+					<div class="team__item">
+						<div class="team__photoWrap">
+							<img src="images/advisor/peter.png" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Peter Kleissner</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Hacker, Founder of AV Tracker Stoned Bootkit</span>
+						</div>
+					</div>
+					<div class="team__item">
+						<div class="team__photoWrap">
+							<img src="images/advisor/nick.jpg" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Nick Ayton</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Public Relations, Co-founder of The 21Million Project</span>
+						</div>
+					</div>
+					<div class="team__item">
+						<div class="team__photoWrap">
+							<img src="images/advisor/mitchell.png" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Mitchell Loureiro</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Marketing Strategy, VP of Marketing at Steemit</span>
+						</div>
+					</div>
+					<div class="team__item">
+						<div class="team__photoWrap">
+							<img src="images/advisor/mihaela.jpg" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Dr. Mihaela Ulieru</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Technology, Global Advisor for World Economic Forum</span>
+						</div>
+					</div>
+					<div class="team__item">
+						<div class="team__photoWrap">
+							<img src="images/advisor/alvaro_portellano.jpeg" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Alvaro Portellano</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Energy, Renewables and Regulatory Affairs Manager, Iberdola</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <div id="community" class="section section__community section__inverse wow animated fadeInUp" data-wow-offset="50">
         <div class="container">
@@ -565,59 +374,57 @@
         </div>
     </div>
 
-    <div id="media" class="section section__media wow animated fadeInUp" data-wow-offset="50">
-        <div class="container">
-            <h2 class="h3 section__title center">Media</h2>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="media__img">
-                        <a href="https://bravenewcoin.com/news/mybit-tackles-data-manipulation-an-emerging-art-of-war-in-cyberspace/">
-                            <img src="images/media/bnc.jpeg">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="media__img">
-                        <a href="http://www.digitaljournal.com/pr/3295444">
-                            <img src="images/media/digital.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="media__img">
-                        <a href="http://www.futureofeverything.io/2017/04/12/future-smart-home-technology/">
-                            <img src="images/media/final_future.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="media__img">
-                        <a href="https://cointelegraph.com/news/the-unbreachable-data-made-possible-with-bitcoin-ethereum-blockchain-heres-how&#10;">
-                            <img src="images/media/press-cointelegraph.jpg">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="media__img">
-                        <a href="https://blockgeeks.com/ama/ian-worrall-tokenizing-ai-smart-energy-and-ownership/">
-                            <img src="images/media/block.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="media__img">
-                        <a href="https://www.facebook.com/vejdiven/videos/1344609518964148/">
-                            <img src="images/media/paral.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div id="media" class="section section__media wow animated fadeInUp" data-wow-offset="50">
+		<div class="container">
+			<h2 class="h3 section__title center">Media</h2>
+			<div class="row">
+				<div class="slick_desktop">
+					<div class="col-sm-3">
+						<div class="media__img">
+							<a href="https://bravenewcoin.com/news/mybit-tackles-data-manipulation-an-emerging-art-of-war-in-cyberspace/">
+								<img src="images/media/bnc.jpeg">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="media__img">
+							<a href="http://www.digitaljournal.com/pr/3295444">
+								<img src="images/media/digital.png">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="media__img">
+							<a href="http://www.futureofeverything.io/2017/04/12/future-smart-home-technology/">
+								<img src="images/media/final_future.png">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="media__img">
+							<a href="https://cointelegraph.com/news/the-unbreachable-data-made-possible-with-bitcoin-ethereum-blockchain-heres-how&#10;">
+								<img src="images/media/press-cointelegraph.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="media__img">
+							<a href="https://blockgeeks.com/ama/ian-worrall-tokenizing-ai-smart-energy-and-ownership/">
+								<img src="images/media/block.png">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="media__img">
+							<a href="https://www.facebook.com/vejdiven/videos/1344609518964148/">
+								<img src="images/media/paral.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <div id="tokensale" class="section section__tokensale section__inverse wow animated fadeInUp"  data-wow-offset="50">
         <div class="container">
@@ -630,28 +437,31 @@
         </div>
     </div>
 
-    <div id="partnerships" class="section section__partners wow animated fadeInUp" data-wow-offset="50">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <h2 class="h3 section__title">Partnerships</h2>
-                    <div class="team__wrap inline">
-                        <div class="team__list">
-                            <div class="team__item">
-                                <a href="https://bravenewcoin.com/news/mybit-tackles-data-manipulation-an-emerging-art-of-war-in-cyberspace/" target="_blank" class="team__photoWrap">
-                                    <img src="images/media/bnc.jpeg" alt="" class="team__photo"/>
-                                </a>
-                                <span class="team__name">BraveNewCoin</span>
-                                <div class="team__professionWrap">
-                                    <span class="team__profession">Escrow/Marketing</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div id="partnerships" class="section section__partners wow animated fadeInUp" data-wow-offset="50">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+					<h2 class="h3 section__title">Partnerships</h2>
+					<div class="partners__wrap">
+						<div class="partners__list slick_mob">
+							<div class="partners__item">
+								<a href="https://bravenewcoin.com/news/mybit-tackles-data-manipulation-an-emerging-art-of-war-in-cyberspace/" target="_blank" class="partners__logo">
+									<img src="images/media/bnc.jpeg" alt="" class="partners__pic"/>
+								</a>
+								<span class="partners__profession">Escrow/Marketing</span>
+							</div>
+							<div class="partners__item">
+								<a href="http://btc.pacatum.com" target="_blank" class="partners__logo">
+									<img src="images/media/pacatum.png" alt="" class="partners__pic"/>
+								</a>
+								<span class="partners__profession">Technology</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <footer class="footer">
         <div class="container wow animated fadeInUp" data-wow-offset="50">
@@ -707,11 +517,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <h2 class="h4">Resources</h2>
-                    <p>Coming soon</p>
-                </div>
-                <div class="col-md-4 col-sm-6">
+	            <div class="col-md-5 col-sm-6">
+		            <h2 class="h4">Resources</h2>
+		            <ul class="resources__list">
+			            <li class="resources__item"><a href="javascript:void(0)" class="resources__link">Wireframes</a></li>
+			            <li class="resources__item"><a href="javascript:void(0)" class="resources__link">Demo</a></li>
+			            <li class="resources__item"><a href="javascript:void(0)" class="resources__link">Presentation</a></li>
+			            <li class="resources__item"><a href="javascript:void(0)" class="resources__link">Deck</a></li>
+			            <li class="resources__item"><a href="javascript:void(0)" class="resources__link">Deal Sheet</a></li>
+		            </ul>
+	            </div>
+	            <div class="col-md-3 col-sm-6">
                     <div class="footer__download">
                         <a href="<?php echo $path_whitepaper; ?>" target="_blank" class="btn btn-progress btn-download_js">
                             <span class="progress" style="transition-duration: 4s"></span>
@@ -947,7 +763,172 @@
             </div>
         </div>
     </div>
+	<div class="team__template">
+		<div class="team__list slick_laptop">
 
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/team/garrett.jpg" alt="" class="team__photo"/>
+						</div>
+						<span class="team__name">Garrett McDonald</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Blockchain Design & Marketing Strategy</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/team/thomas.jpg" alt="" class="team__photo"/>
+						</div>
+						<span class="team__name">Thomas Pollan</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Business Development & Partnerships</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/team/ian.jpg" alt="" class="team__photo"/>
+						</div>
+						<span class="team__name">Ian Worrall</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Founder</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/team/pedro.jpg" alt="" class="team__photo"/>
+						</div>
+						<span class="team__name">Pedro Barros</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Engineer</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/team/jacob.jpg" alt="" class="team__photo"/>
+						</div>
+						<span class="team__name">Jacob DeBenedetto</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">UI/UX</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/team/bogdan.jpg" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Bogdan Fiedur</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Solidity Dev</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/team/ching_pong_su(Kenji).jpg" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Ching Pong Siu (Kenji)</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Chief Technology Officer</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/team/maclin.jpg" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Maclin Macalindong</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Graphic Design</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/team/hua_Li.jpg" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Hua Li</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Chinese Community Manager</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/team/jake_vartanian.jpg" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Jake Vartanian</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Community Strategy</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/no_photo.jpg" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Pedro Augusto</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Bounty Campaign Manager</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="team__item">
+				<div>
+					<div>
+						<div class="team__photoWrap">
+							<img src="images/team/fran_stajnar.jpg" alt="" class="team__photo">
+						</div>
+						<span class="team__name">Fran Strajnar</span>
+						<div class="team__professionWrap">
+							<span class="team__profession">Escrow Manager</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
 </div>
 
 <script src="js/easePack.min.js"></script>
