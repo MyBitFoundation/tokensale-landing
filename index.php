@@ -39,5 +39,4 @@
 
     $path_whitepaper = '/docs/MyBit_Whitepaper_v0.12.pdf';
 
-
     include_once 'classes/templates/main.php';
