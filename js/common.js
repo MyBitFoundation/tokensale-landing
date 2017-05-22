@@ -131,8 +131,7 @@ Common = {
 
     scrollToSectionOnClick: function (_id, cb) {
         if($(_id).length) {
-            var headerH = $('.mainNav__wrap').height();
-            var target = parseInt($(_id).offset().top) - headerH;
+            var target = parseInt($(_id).offset().top) - 50;
             if ($(window).scrollTop() != target) {
                 $('html, body').animate({
                     scrollTop: target
@@ -148,7 +147,7 @@ Common = {
         $('.mainNav__link.btn_scroll').each(function () {
             var currentLink = $(this);
             var refElement = $('#' + currentLink.data('scroll'));
-            if (refElement.position().top <= scrollPosition  && (refElement.offset().top) + refElement.outerHeight(true)  > scrollPosition) {
+            if (refElement.position().top <= scrollPosition + 100  && (refElement.offset().top) + refElement.outerHeight(true)  > scrollPosition) {
                 $('.mainNav__link').removeClass("active");
                 currentLink.addClass("active");
             }
