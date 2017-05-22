@@ -23,26 +23,14 @@ var Action = {
             $(this).closest('.form__row').removeClass('error');
         })
 
-       /* $('.slack').click(function() {
-            window.open(window.config.slackInvite, '_blank');
-        })
 
-        $('.header__profileName').click(function() {
-            window.location.href = window.config.redirect;
-        })
+        $('input').keypress(function (e) {
+            if (e.which == 13) {
+                $(this).closest('form').find('.submit_event').click();
+                return false;
+            }
+        });
 
-        $('.header__sign').click(function() {
-            $.ajax({
-                type: "GET",
-                dataType: "json",
-                url:  window.config.request.logout,
-                xhrFields: { withCredentials: true },
-                success: function(res) {
-                    location.reload();
-                }
-            })
-        })
-*/
 
         $('#form-signUp').submit(function (e) {
             e.preventDefault();
@@ -101,6 +89,12 @@ var Action = {
         $('#modal-signUp, #modal-signIn, #modal-askQuestion').on('hide.bs.modal', function (e) {
             $('.form__row',this).removeClass('error').find('input').val('');
             $('.form__row',this).find('textarea').val('');
+            $('.statusBox',this).html('');
+        });
+
+        $('#modal-signUp').on('show.bs.modal',function() {
+            var btn = $(this).find('.send_registration');
+            btn.html(btn.attr('data-text-send'));
         });
 
         $('.crowdfunding__milestones__link').click(function(event) {
@@ -127,6 +121,11 @@ var Action = {
 
     registration: function() {
         var block = $('#modal-signUp');
+        if($(block).find('.send_registration').html() == $(block).find('.send_registration').attr('data-text-back')) {
+            $('#modal-signUp').modal('hide');
+            return;
+        }
+
         $('.form__row',block).removeClass('error');
         var status = true;
 
@@ -173,7 +172,8 @@ var Action = {
                 error: function(error) {
                     var response = error.responseJSON.message;
                     if(/email/i.test(response)) {
-                        $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response);
+                        $(block).find('.statusBox').html(response);
+                        $(block).find('.send_registration').html($(block).find('.send_registration').attr('data-text-back'));
                     }
                     if(/password/i.test(response)) {
                         $('input[name=password]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response);

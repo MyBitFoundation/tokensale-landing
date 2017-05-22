@@ -29,7 +29,7 @@
                     <div class="form__row"> <!--add class error-->
                         <div class="input__wrap">
                             <input type="email" name="email" placeholder="Enter email" class="input">
-                            <a href="javascript:;" class="btn__inInput btn_pre_sign_up">sign Up</a>
+                            <a href="javascript:;" class="btn__inInput btn_pre_sign_up submit_event">sign Up</a>
                         </div>
                         <span class="form__hint">You’re almost done! Please check your email to confirm your subscription.</span>
                         <span class="form__errorTxt"></span>

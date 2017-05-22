@@ -69,6 +69,9 @@
                     </div>
                 </li>
                 <li class="mainNav__item">
+                    <a href="<?php echo Common::getInstance()->http(); ?>#partnerships" class="mainNav__link btn_scroll" data-scroll="partnerships"><span class="title">Partnerships</span></a>
+                </li>
+                <li class="mainNav__item">
                     <a href="<?php echo Common::getInstance()->http(); ?>tokensale" class="mainNav__link"><span class="title">Tokensale</span></a>
                 </li>
             </ul>
@@ -117,7 +120,7 @@
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="btn__row">
-                            <a href="javascript:;" class="btn btn-shadow yellow send_login">Login</a>
+                            <a href="javascript:;" class="btn btn-shadow yellow send_login submit_event">Login</a>
                         </div>
                     </form>
                 </div>
@@ -134,6 +137,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title">Let’s Get Started!</h5>
                     <span class="desc">Sign in with your login to continue</span>
+                    <span class="statusBox"></span>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="icon-close"></i>
                     </button>
@@ -153,7 +157,7 @@
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="btn__row">
-                            <a href="javascript:;" class="btn btn-shadow yellow send_registration">Sign up</a>
+                            <a href="javascript:;" data-text-send="Sign up" data-text-back="Back" class="btn btn-shadow yellow send_registration submit_event"></a>
                         </div>
                     </form>
                 </div>
@@ -177,7 +181,7 @@
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="btn__row">
-                            <a href="javascript:;" class="btn btn-shadow yellow send_2fa">Submit</a>
+                            <a href="javascript:;" class="btn btn-shadow yellow send_2fa submit_event">Submit</a>
                         </div>
                     </form>
                 </div>
@@ -277,7 +281,7 @@
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="btn__row">
-                            <a href="javascript:;" class="btn btn-shadow yellow send_question">Ask Question</a>
+                            <a href="javascript:;" class="btn btn-shadow yellow send_question submit_event">Ask Question</a>
                         </div>
                     </form>
                 </div>
@@ -323,7 +327,7 @@
                         </div>
                         <div class="input__wrap">
                             <input type="email" name="email" placeholder="<?php echo t::message('global','Enter email'); ?>" class="input">
-                            <a href="javascript:;" class="btn__inInput btn_subscribe"><?php echo t::message('global','Submit'); ?></a>
+                            <a href="javascript:;" class="btn__inInput btn_subscribe submit_event"><?php echo t::message('global','Submit'); ?></a>
                         </div>
                         <span class="form__errorTxt"></span>
                         <span class="form__hint"><?php echo t::message('global','You’re almost done! Please check your email to confirm your subscription.'); ?></span>
