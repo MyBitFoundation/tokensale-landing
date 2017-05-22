@@ -21,6 +21,19 @@ class Common {
         return $instance;
     }
 
+    public function http($slash = true){
+        return sprintf(
+            "%s://%s".($slash ? '/' : ''),
+            isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
+            $_SERVER['SERVER_NAME']
+        );
+    }
+
+    public function getWrapperClass($uri) {
+        if(isset($uri['wrapper_class']))
+            return $uri['wrapper_class'];
+    }
+
     public function subscribeMailChimp($email) {
         require_once 'lib/mailchimp-api/MailChimp.php';
 

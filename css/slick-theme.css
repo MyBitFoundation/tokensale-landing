@@ -105,7 +105,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -78px;
     left: 0;
     display: block;
     width: 100%;
@@ -160,4 +160,15 @@
     -o-transform: scale(1.5);
     transform: scale(1.5);
     background: #9c9ab2;
+}
+
+@media (max-width: 767px) {
+    .slick-dots{
+        bottom: -28px;
+    }
+}
+@media (max-width: 991px) {
+    .slick-dots{
+        bottom: -51px;
+    }
 }

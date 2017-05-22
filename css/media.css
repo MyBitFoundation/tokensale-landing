@@ -244,11 +244,6 @@ sub {
     -webkit-animation: chartTotal 0.3s 2s linear;
     animation-fill-mode: forwards;
   }
-  .team__wrap.inline .team__item {
-    float: none;
-    display: inline-block;
-    width: 30%;
-  }
   .mainNav__dropdown {
     padding: 12px 0;
     position: absolute;
@@ -281,10 +276,6 @@ sub {
   .section__details {
     padding-bottom: 135px;
   }
-  .roadmap__list {
-    margin-left: -25px;
-    margin-right: -25px;
-  }
   .roadmap__item {
     padding-right: 20px;
   }
@@ -305,6 +296,10 @@ sub {
   }
   .video__wrap {
     margin-top: 35px;
+  }
+  .footer__download {
+    text-align: center;
+    margin: 0 0 55px;
   }
 }
 @media (max-width: 991px) {
@@ -408,15 +403,6 @@ sub {
     margin: 0 0 20px 0;
     min-height: 320px;
   }
-  .team__item:nth-child(4) {
-    margin-left: 0;
-  }
-  .team__item:last-of-type {
-    margin-left: 25%;
-  }
-  .team__item:only-child {
-    margin-left: 0;
-  }
   .chart__title_1 {
     left: 64px;
   }
@@ -441,9 +427,6 @@ sub {
   .vertical__branch__right__bar {
     left: 81.6%;
   }
-  .footer__download {
-    margin-top: 0;
-  }
 }
 @media (max-width: 900px) {
   .mainNav__link {
@@ -462,6 +445,9 @@ sub {
 @media (max-width: 767px) {
   .canvas__bg {
     display: none;
+  }
+  .wrapper {
+    min-height: inherit;
   }
   .wrapper.firstSection .header-mob {
     background: transparent !important;
@@ -629,6 +615,10 @@ sub {
   .section__team {
     padding: 30px 0 48px;
   }
+  .section__advisor .team__item,
+  .section__team .team__item {
+    margin: 0;
+  }
   .section__media {
     padding: 30px 0;
   }
@@ -637,6 +627,7 @@ sub {
   }
   .section__partners,
   .section__tokensale {
+    height: auto;
     text-align: center;
   }
   .section__partners .section__title,
@@ -647,6 +638,19 @@ sub {
   .section__tokensale .section__title:before {
     left: 50%;
     margin-left: -15px;
+  }
+  .section__notFound {
+    height: auto;
+    padding-top: 56px;
+    min-height: 400px;
+  }
+  .page__tokensale {
+    height: auto;
+    min-height: inherit;
+    padding-top: 0;
+  }
+  .page__notFound {
+    height: auto;
   }
   .h1 {
     font-size: 16px;
@@ -788,42 +792,9 @@ sub {
     min-height: inherit;
     position: relative;
   }
-  .team__detailsIn {
-    width: 100%;
-    height: 100%;
-    padding-top: 0;
-    position: relative;
-    line-height: 0;
-    font-size: 0;
-  }
-  .team__detailsIn:after {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    width: 0;
-    vertical-align: middle;
-  }
-  .team__details .team__photoWrap {
-    display: none;
-  }
-  .team__detailsName {
-    display: none;
-  }
-  .team__detailsProfession {
-    display: none;
-  }
-  .team__detailsClose {
-    top: 0;
-    font-size: 17px;
-    height: 24px;
-    width: 24px;
-    margin-left: -12px;
-  }
-  .team__history {
-    font-size: 14px;
-    line-height: 1.3;
-    display: inline-block;
-    vertical-align: middle;
+  .partners__item {
+    float: left;
+    min-height: 120px;
   }
   .soc__wrap {
     margin-bottom: 30px;
@@ -891,7 +862,7 @@ sub {
     margin: 25px 0;
   }
   .footer__download {
-    text-align: center;
+    margin: 20px 0;
   }
   .modal-content {
     padding: 0 10px;

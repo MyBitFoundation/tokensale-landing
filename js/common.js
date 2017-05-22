@@ -12,23 +12,39 @@ Common = {
 
         self.initEvents();
         self.checkFirstSection();
-        self.initScrollTextarea();
+        self.fixPositionFooter();
 
         $(window).on({
             load: function () {
-                Common.slickInit();
+                setTimeout (function() {
+                    window.scrollTo(0, 0);
+                }, 1);
+                if (location.hash) {
+                    setTimeout(function() {
+                        Common.scrollToSectionOnClick(location.hash);
+                        history.pushState('', document.title, window.location.pathname);
+                    }, 800);
+                }
             },
             resize: function () {
-                $('.team__list').slick('resize');
+                self.fixPositionFooter();
             },
             scroll: function () {
                 Common.onScroll();
                 Common.checkFirstSection();
             }
         });
+        window.addEventListener("resize", function() {
+            self.fixPositionFooter();
+        }, false);
     },
 
     initEvents: function () {
+        $('.btn_scroll').on('click', function (e){
+            Common.scrollToSectionOnClick('#' + $(this).data('scroll'),function() {
+                e.preventDefault();
+            });
+        });
 
         $('.btn-mobMenu').on('click', function (e){
             e.preventDefault();
@@ -46,22 +62,6 @@ Common = {
             $('.lang__wrap').removeClass('visible');
             $('.header-mob').addClass('bg');
             $('html').removeClass('static');
-        });
-
-        //team
-        $('.team__btnMore_js').on('click',function (e){
-            e.preventDefault();
-            $(this).closest('.team__item').addClass('active');
-        });
-        $('.team__item').on('click',function (){
-               if ($(window).width() < 768) {
-                   if ($(event.target).closest(".team__detailsClose").length) return;
-                   $(this).addClass('active');
-               }
-        });
-        $('.team__detailsClose_js').on('click',function (e){
-            e.preventDefault();
-            $(this).closest('.team__item').removeClass('active');
         });
 
         //description visible
@@ -106,16 +106,6 @@ Common = {
         );
         wow.init();
 
-        $('.btn_scroll').click(function(event) {
-            var id = $(this).attr("href");
-            var target = parseInt($(id).offset().top);
-            if ($(window).scrollTop() != target) {
-                $('html, body').animate({
-                    scrollTop: target
-                }, 500);
-            }
-            event.preventDefault();
-        });
         $('.crowdfunding__milestones__link').click(function(event) {
             if ($(window).width() > 1024) {
                 $('#crowdfunding__milestones').modal();
@@ -139,13 +129,26 @@ Common = {
         })
     },
 
+    scrollToSectionOnClick: function (_id, cb) {
+        if($(_id).length) {
+            var headerH = $('.mainNav__wrap').height();
+            var target = parseInt($(_id).offset().top) - headerH;
+            if ($(window).scrollTop() != target) {
+                $('html, body').animate({
+                    scrollTop: target
+                }, 500);
+            }
+            if (cb && typeof cb == "function")
+                cb();
+        }
+    },
+
     onScroll: function() {
         var scrollPosition = $(document).scrollTop();
-        var windowHeight = $(window).height();
         $('.mainNav__link.btn_scroll').each(function () {
             var currentLink = $(this);
-            var refElement = $(currentLink.attr("href"));
-            if (refElement.position().top <= scrollPosition + 300  && (refElement.offset().top) + refElement.outerHeight(true)  > scrollPosition) {
+            var refElement = $('#' + currentLink.data('scroll'));
+            if (refElement.position().top <= scrollPosition  && (refElement.offset().top) + refElement.outerHeight(true)  > scrollPosition) {
                 $('.mainNav__link').removeClass("active");
                 currentLink.addClass("active");
             }
@@ -166,67 +169,52 @@ Common = {
         }
     },
 
-    slickInit: function () {
-        $('.team__list').slick({
-            responsive: [
-                {
-                    breakpoint: 99999,
-                    settings: "unslick"
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        arrows: false,
-                        dots: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1,
-                        adaptiveHeight: true
-
-                    }
-                }
-            ]
-        });
-    },
-
-    initScrollTextarea: function () {
-        $('#textarea-scrollbar_js').scrollbar();
-    },
-
     initCountdown: function (dt, id, cb) {
 
-            var end = new Date(dt);
+        var end = new Date(dt);
 
-            var _second = 1000;
-            var _minute = _second * 60;
-            var _hour = _minute * 60;
-            var _day = _hour * 24;
-            var timer;
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
 
-            function showRemaining() {
-                var elem = $('#' + (id));
-                var now = new Date();
-                var distance = end - now;
+        function showRemaining() {
+            var elem = $('#' + (id));
+            var now = new Date();
+            var distance = end - now;
 
-                if (distance < 0) {
-                    clearInterval(timer);
-                    if (cb && typeof cb == "function")
-                        cb();
+            if (distance < 0) {
+                clearInterval(timer);
+                if (cb && typeof cb == "function")
+                    cb();
 
-                    return;
-                }
-
-                var days = Math.floor(distance / _day);
-                var hours = Math.floor((distance % _day) / _hour);
-                var minutes = Math.floor((distance % _hour) / _minute);
-
-                elem.html(days ? ((String(days).length >= 2 ? days : "0" + days) + ' <span class="small">Days </span> ') : '') ;
-                elem.append((String(hours).length >= 2 ? hours : "0" + hours) + ' : ');
-                elem.append(String(minutes).length >= 2 ? minutes : "0" + minutes);
+                return;
             }
 
-            showRemaining();
-            timer = setInterval(showRemaining, 1000);
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+
+            elem.html(days ? ((String(days).length >= 2 ? days : "0" + days) + ' <span class="small">Days </span> ') : '') ;
+            elem.append((String(hours).length >= 2 ? hours : "0" + hours) + ' : ');
+            elem.append(String(minutes).length >= 2 ? minutes : "0" + minutes);
+        }
+
+        showRemaining();
+        timer = setInterval(showRemaining, 1000);
+    },
+
+    fixPositionFooter: function () {
+        if ($('.fix_footer').length) {
+            var footer = $('.footer'),
+                hFooter = footer.innerHeight();
+            if (!$('html').hasClass('mobile')) {
+                $('body').css('paddingBottom', hFooter);
+            }
+        }
     }
+
 
 };
 
