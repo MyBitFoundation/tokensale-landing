@@ -49,7 +49,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-11 col-md-offset-1 col-lg-offset-0">
                 <div class="desc">
-                    <p>Mybit makes financing and maintaining revenue streams efficient and automatic.</p>
+                    <p><strong>Mybit makes financing and maintaining revenue streams efficient and automatic.</strong></p>
                     <p>How?</p>
                     <p>By commoditizing solar panel installation and other forms of renewable energy, investors and landowners can crowdfund the coming decentralized energy grid. With Mybit, investors get security on their investment, while landowners get access to investors willing to help in exchange for profit. By standardizing and automating setup, sales, and dividends, Mybit takes you one step closer to an equitable economy.</p>
                     <p>The Future</p>
@@ -69,9 +69,8 @@
         <div class="row">
             <div class="col-xs-12 col-md-11 col-md-offset-1 col-lg-offset-0">
                 <div class="desc">
-                    <p>Why Decentralized Energy?</p>
+                    <p><strong>Why Decentralized Energy?</strong></p>
                     <p>The explosion of Artificial Intelligence (AI) and the Internet of Things (IoT) will result in massive demand increases for energy. Traditional energy grids will not be able to scale rapidly enough to keep up with the demand. Decentralized energy grids, composed of renewable energy technologies such as solar panels that can be installed on homes and office buildings away from the traditional (centralized) energy production & storage facilities, will be a critical component of the solution to the increased energy demand.</p>
-                    <p>A major issue with decentralized energy grids is the financial-barrier to entry. While companies such as Solar City have done a good job providing alternative financing packages (although they heavily rely on incentives such as tax breaks which will not last forever), the centralized model only permits scaling to a certain level (which demand will surpass). Decentralizing this model via Blockchain tokenization and Ethereum based smart contract governance, provides an infinitely scalable model that benefits consumers, investors, and enterprise.</p>
                     <p>Our goal is to remove the financial barriers to entry and the friction currently present in the alternative assets investment space; thereby, enabling anyone to benefit from sustainable infrastructure regardless of their socioeconomic status or location. Aside from energy this model can be replicated across many industries including Land, Commercial Property, and AI - specifically autonomous mobiles.</p>
                 </div>
             </div>
@@ -328,7 +327,7 @@
                             <a href="https://bravenewcoin.com/news/mybit-tackles-data-manipulation-an-emerging-art-of-war-in-cyberspace/" target="_blank" class="partners__logo">
                                 <img src="images/media/bnc.jpeg" alt="" class="partners__pic"/>
                             </a>
-                            <span class="partners__profession">Escrow/Marketing</span>
+                            <span class="partners__profession">Escrow</span>
                         </div>
                         <div class="partners__item">
                             <a href="https://btc.pacatum.com" target="_blank" class="partners__logo">
