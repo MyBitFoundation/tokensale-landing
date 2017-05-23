@@ -1458,7 +1458,13 @@ p {
 }
 .form__updatesFooter {
   max-width: 375px;
-  margin-bottom: 24px;
+}
+.form__updatesFooter .form__errorTxt {
+  min-height: 24px;
+  position: static;
+  display: block;
+  padding: 2px 20px 5px 25px;
+  text-align: left;
 }
 .form__updates .form__hint {
   display: block;

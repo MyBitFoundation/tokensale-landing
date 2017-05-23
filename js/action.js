@@ -67,6 +67,14 @@ var Action = {
             Action.successRegistration();
         });
 
+        $('.pre_offer input[name=email]').blur(function() {
+            var block = $('.pre_offer');
+            $('.form__row',block).removeClass('error');
+
+            if($(this).val() && !Action.validateEmail($('input[name=email]',block).val()))
+                $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect e-mail');
+        });
+
         $('.btn_pre_sign_up').click(function() {
             var block = $('.pre_offer'),
                 status = true;

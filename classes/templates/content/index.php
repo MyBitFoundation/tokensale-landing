@@ -330,7 +330,7 @@
                             <span class="partners__profession">Escrow</span>
                         </div>
                         <div class="partners__item">
-                            <a href="https://btc.pacatum.com" target="_blank" class="partners__logo">
+                            <a href="http://btc.pacatum.com" target="_blank" class="partners__logo">
                                 <img src="images/media/pacatum.png" alt="" class="partners__pic"/>
                             </a>
                             <span class="partners__profession">Technology</span>
