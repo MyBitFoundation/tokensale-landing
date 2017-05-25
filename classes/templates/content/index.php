@@ -5,8 +5,8 @@
         strtotime('01-11-2016 12:00:00'),
         strtotime('01-02-2017 12:00:00'),
         strtotime('01-05-2017 12:00:00'),
+        strtotime('01-06-2017 12:00:00'),
         strtotime('01-07-2017 12:00:00'),
-        strtotime('01-08-2017 12:00:00'),
         strtotime('01-01-2018 12:00:00'),
         strtotime('15-02-2018 00:00:00')
     );
@@ -128,10 +128,20 @@
                     <span class="roadmap__month">May</span>
                 </div>
                 <span class="roadmap__dot"></span>
-                <span class="roadmap__descr">Wireframes</span>
+                <span class="roadmap__descr">Architecture Designed</span>
             </li>
             <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[2],$roadMapDays[3]) == 100 ? 'active' : ''; ?>">
                 <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[3],$roadMapDays[4]);  ?>
+                <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
+                <div class="roadmap__date">
+                    <span class="roadmap__year">2017</span>
+                    <span class="roadmap__month">June</span>
+                </div>
+                <span class="roadmap__dot"></span>
+                <span class="roadmap__descr">Ethereum TestNet Demo</span>
+            </li>
+            <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[3],$roadMapDays[4]) == 100 ? 'active' : ''; ?>">
+                <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[4],$roadMapDays[5]);  ?>
                 <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
                 <div class="roadmap__date">
                     <span class="roadmap__year">2017</span>
@@ -139,16 +149,6 @@
                 </div>
                 <span class="roadmap__dot"></span>
                 <span class="roadmap__descr">Crowdfund</span>
-            </li>
-            <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[3],$roadMapDays[4]) == 100 ? 'active' : ''; ?>">
-                <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[4],$roadMapDays[5]);  ?>
-                <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
-                <div class="roadmap__date">
-                    <span class="roadmap__year">2017</span>
-                    <span class="roadmap__month">August</span>
-                </div>
-                <span class="roadmap__dot"></span>
-                <span class="roadmap__descr">Ethereum Testnet Demo</span>
             </li>
             <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[4],$roadMapDays[5]) == 100 ? 'active' : ''; ?>">
                 <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[5],$roadMapDays[6]);  ?>
