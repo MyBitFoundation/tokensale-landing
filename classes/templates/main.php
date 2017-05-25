@@ -44,7 +44,7 @@
     </div>
     <div class="mainNav__wrap">
         <div class="mainNav__in">
-            <a href="<?php echo Common::getInstance()->http(); ?>" class="header__logo"><img src="/images/logo_black.png" alt=""/></a>
+            <a href="<?php echo Common::getInstance()->http(); ?>" class="header__logo"><img src="/images/logo_black.svg" alt=""/></a>
             <ul class="mainNav__list">
                 <li class="mainNav__item">
                     <a href="<?php echo Common::getInstance()->http(); ?>#aboutMybit" data-scroll="aboutMybit" class="mainNav__link btn_scroll"><span class="title">About</span></a>
@@ -75,24 +75,24 @@
                     <a href="<?php echo Common::getInstance()->http(); ?>tokensale" class="mainNav__link"><span class="title">Tokensale</span></a>
                 </li>
             </ul>
+            <div class="lang__wrap">
+                <div class="dropdown__wrap">
+                    <a href="javascript:;" class="dropdown__current"><?php echo t::getInstance()->getCurrentLang(); ?> <i class="icon-arrow_dropdown"></i></a>
+                    <div class="dropdown__in">
+                        <ul class="dropdown__list">
+                            <?php foreach (t::getInstance()->languages as $key => $lang) : ?>
+                                <li class="dropdown__item">
+                                    <a href="<?php echo Common::getInstance()->http(); ?>?ln=<?php echo $key; ?>" class="dropdown__link"><?php echo $lang['title']; ?></a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <a href="<?php echo $path_whitepaper; ?>" class="btn btn-shadow yellow small btn-whitepaper" target="_blank"><span class="title">Whitepaper</span></a>
         </div>
     </div>
-    <div class="lang__wrap">
-        <div class="dropdown__wrap">
-            <a href="javascript:;" class="dropdown__current"><?php echo t::getInstance()->getCurrentLang(); ?> <i class="icon-arrow_dropdown"></i></a>
-            <div class="dropdown__in">
-                <ul class="dropdown__list">
-                    <?php foreach (t::getInstance()->languages as $key => $lang) : ?>
-                        <li class="dropdown__item">
-                            <a href="<?php echo Common::getInstance()->http(); ?>?ln=<?php echo $key; ?>" class="dropdown__link"><?php echo $lang['title']; ?></a>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-        </div>
-    </div>
-   
+
     <?php
         if(isset($content))
             include_once 'content/'.$content.'.php';

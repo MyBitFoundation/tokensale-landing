@@ -266,6 +266,17 @@ sub {
     background: rgba(60, 56, 105, 0.2);
   }
 }
+@media (min-width: 1100px) {
+  .mainNav__list {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+  }
+}
 @media (max-width: 1200px) {
   .section__aboutMybit .desc {
     margin: 17px 0 0 0;
@@ -317,6 +328,9 @@ sub {
   .mainNav__link:after {
     right: 12px;
   }
+  .section {
+    padding-bottom: 82px;
+  }
   .section__aboutMybit {
     padding: 75px 0 119px;
   }
@@ -333,10 +347,6 @@ sub {
   }
   .section__infastructure {
     padding-bottom: 117px;
-  }
-  .section__advisor,
-  .section__team {
-    padding-bottom: 82px;
   }
   .roadmap__list {
     margin: 0;
@@ -551,6 +561,7 @@ sub {
     -webkit-transition: all 0s ease-out;
     transition: all 0s ease-out;
     transition-delay: 0s;
+    color: #ffffff;
     opacity: 0;
     visibility: hidden;
   }
@@ -560,6 +571,9 @@ sub {
     transition-delay: 0.3s;
     opacity: 1;
     visibility: visible;
+  }
+  .section {
+    padding: 30px 0;
   }
   .section__intro {
     display: block;
@@ -863,6 +877,12 @@ sub {
   }
   .footer__download {
     margin: 20px 0;
+  }
+  .dropdown__in {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    padding-top: 0;
+    right: 17px;
   }
   .modal-content {
     padding: 0 10px;
