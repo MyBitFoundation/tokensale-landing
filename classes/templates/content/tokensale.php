@@ -256,6 +256,7 @@
                             <a href="javascript:;" class="btn btn-default escrow__release__terms__link"><span>Click to view</span></a>
                         </div>
                     </div>
+                    <h2 class="h3 section__title">Pricing Chart</h2>
                     <div class="chart__box">
                         <div class="chart__title chart__title_1">
                             <span class="value">25% Discount</span>
