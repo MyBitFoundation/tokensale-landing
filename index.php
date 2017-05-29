@@ -37,6 +37,6 @@
         $content = 'index';
     }
 
-    $path_whitepaper = '/docs/MyBit_Whitepaper_v0.13.pdf';
+    $path_whitepaper = '/docs/MyBit_Whitepaper_v0.14.pdf';
 
     include_once 'classes/templates/main.php';
