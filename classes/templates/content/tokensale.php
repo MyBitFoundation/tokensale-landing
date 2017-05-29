@@ -71,7 +71,7 @@
             <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                 <h2 class="h3 section__title">Escrow Details </h2>
                 <p>All funds contributed during the tokensale period will be held in escrow (a multi-signature Ethereum wallet contract). The MyBit team has worked with Brave New Coin to devise a release schedule that enables rapid development of the platform as well as protect investor funds.</p>
-                <p>Full details can be found <a href="#" class="link yellow">here</a>.</p>
+                <p>Full details can be found <a href="javascript:;" class="link yellow escrow__release__terms__link">here</a>.</p>
             </div>
         </div>
     </div>
@@ -83,7 +83,7 @@
             <div class="col-md-10 col-md-offset-1">
                 <h2 class="h3 section__title">Use of Funds</h2>
                 <p>Funds raised during the tokensale will be used for Legal, Marketing, Development, and ongoing operational expenses. The funds will initially aid in the hiring of full-time React, Solidity, and Full Stack engineers to speed up time to market. Then they will facilitate in-depth pilot testing and marketing.</p>
-                <p>A full analysis of Use of Funds and Milestones can be found <a href="#" class="link yellow">here</a>.</p>
+                <p>A full analysis of Use of Funds and Milestones can be found iin Section 9.3 of the <a href="<?php echo $path_whitepaper; ?>" target="_blank" class="link yellow">whitepaper</a>.</p>
             </div>
         </div>
     </div>
