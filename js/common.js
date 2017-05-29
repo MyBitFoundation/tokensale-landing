@@ -92,16 +92,7 @@ Common = {
 
         function afterReveal( el ) {
             el.addEventListener('animationend', function( ) {
-                if(el.id == 'roadmap'){
-                    if ($(window).width() > 991) {
-                        //$('.roadmap__progressBar').css('width', '46%')
-                    } else{
-                        $('.roadmap__progressBar').css({
-                            //height: '46%'
-                        });
-                    }
-                }
-                if(el.id == 'structure'){
+                if(el.id == 'icoDetails'){
                     $('.chart__box').addClass('visible');
                 }
             });
@@ -346,7 +337,9 @@ Common = {
     },
 
     initScrollTextarea: function () {
-        $('#textarea-scrollbar_js').scrollbar();
+        if($('#textarea-scrollbar_js').length) {
+            $('#textarea-scrollbar_js').scrollbar();
+        }
     }
 
 };

@@ -176,16 +176,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-8 col-md-offset-3">
-            <div class="list__box">
-                <strong>Use of Token</strong>
-                <p>MyB can be used actively for:</p>
-                <p>• Investing in Energy and AI revenue generating assets : Funding & Revenue Sharing</p>
-                <p>• Peer to Peer trading (buying and selling) of decentralized energy</p>
-                <p>• Machine to machine payments</p>
-                <p>• Trading on Open Exchanges</p>
-            </div>
-        </div>
 
 
     </div>
@@ -215,6 +205,19 @@
                     </div>
                     <div class="details__row">
                         <div class="details__title">
+                            <span class="details__heading">Use of Token</span>
+                        </div>
+                        <div class="details__content">
+                            <p class="details__text">MyB can be used actively for: <br/>
+                                Investing in Energy and AI revenue generating assets : Funding & Revenue Sharing <br/>
+                                Peer to Peer trading (buying and selling) of decentralized energy <br/>
+                                achine to machine payments <br/>
+                                MTrading on Open Exchanges
+                            </p>
+                        </div>
+                    </div>
+                    <div class="details__row">
+                        <div class="details__title">
                             <span class="details__heading">PAYOUT STRUCTURE</span>
                         </div>
                         <div class="details__content">
@@ -226,7 +229,7 @@
                             <span class="details__heading">TOTAL SUPPLY:</span>
                         </div>
                         <div class="details__content">
-                            <p class="details__text">Maximum of 10,000,000 tokens</p>
+                            <p class="details__text">Maximum of 7,000,000 tokens</p>
                         </div>
                     </div>
                     <div class="details__row">
@@ -253,12 +256,34 @@
                             <a href="javascript:;" class="btn btn-default escrow__release__terms__link"><span>Click to view</span></a>
                         </div>
                     </div>
-                    <div class="details__row">
-                        <div class="details__title">
-                            <span class="details__heading">Token Document:</span>
+                    <div class="chart__box">
+                        <div class="chart__title chart__title_1">
+                            <span class="value">25% Discount</span>
+                            <span class="line"></span>
+                            <span class="name">Week 1</span>
                         </div>
-                        <div class="details__content">
-                            <a href="javascript:;" class="btn btn-default"><span>Click to view</span></a>
+                        <div class="chart__title chart__title_2">
+                            <span class="value">Full-Price</span>
+                            <span class="line"></span>
+                            <span class="name">Week 4</span>
+                        </div>
+                        <div class="chart__title chart__title_3">
+                            <span class="value">15% Discount</span>
+                            <span class="line"></span>
+                            <span class="name">Week 2</span>
+                        </div>
+                        <div class="chart__title chart__title_4">
+                            <span class="value">10% Discount</span>
+                            <span class="line"></span>
+                            <span class="name">Week 3</span>
+                        </div>
+                        <div class="circle__box">
+                            <svg width="290" height="290" class="circle__wrap">
+                                <circle fill="none" cx="145" cy="145" r="125" class="circle circle_1"/>
+                                <circle fill="none" cx="145" cy="145" r="106" class="circle circle_2"/>
+                                <circle fill="none" cx="145" cy="145" r="89" class="circle circle_3"/>
+                                <circle fill="none" cx="145" cy="145" r="71" class="circle circle_4"/>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -273,12 +298,24 @@
             <div class="col-md-10 col-md-offset-1">
                 <h2 class="h3 center section__title">Post-Crowdfund Trading</h2>
                 <p>We will ensure that MyBit is tradable on a minimum of 1 major exchange (although our goal is 3-5 leading cryptocurrency exchanges). While we cannot guarantee substantial liquidity levels of the MyBit Token until the platform is fully deployed, we will make every effort to enable the growth of the liquidity market from the start.</p>
-                <p>Liquidity</p>
+                <p><strong>Liquidity</strong></p>
                 <p>Our goal is high levels of liquidity on the MyBit Token (MyB) market. This is achieved through the laws of supply & demand, P2P energy trading, and machine to machine payments.</p>
                 <p>Through the laws of supply and demand, as we gain more market share, the demand for MyB increases thus creating buy-side liquidity. P2P energy trading creates steady liquidity on both sides of the market. Machine to Machine payments create constant buy and sell-side liquidity.</p>
-                <div class="btn__row">
-                    <a href="" class="btn-shadow blue"><span>Have Questions?</span></a>
-                    <a href="" class="btn-shadow blue" data-toggle="modal" data-target="#modal-askQuestion"><span>Contact Us</span></a>
+                <div class="text_c sign-in-block">
+                    <form class="form form__offer pre_offer">
+                        <div class="form__row">
+                            <div class="input__wrap">
+                                <input type="email" name="email" placeholder="Enter email" class="input dark">
+                                <a href="javascript:;" class="btn__inInput btn_pre_sign_up submit_event">sign Up</a>
+                            </div>
+                            <span class="form__hint">You’re almost done! Please check your email to confirm your subscription.</span>
+                            <span class="form__errorTxt"></span>
+                        </div>
+                    </form>
+                    <span class="title small">Already have an account? <a href="#" class="link yellow" data-toggle="modal" data-target="#modal-signIn"> Sign in</a></span>
+                </div>
+                <div class="btn__row go-to-dashboard-block" style="display: none;">
+                    <a href="" class="btn btn-shadow yellow">Go to Dashboard</a>
                 </div>
             </div>
         </div>

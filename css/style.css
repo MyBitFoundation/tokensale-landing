@@ -546,6 +546,9 @@ p {
 .section__businessModel {
   background: #fff;
 }
+.section__details {
+  padding-bottom: 70px;
+}
 .section__structure {
   padding: 95px 0 145px;
 }
@@ -598,6 +601,18 @@ p {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+.section__postCrowdfund {
+  padding-bottom: 100px;
+}
+.section__postCrowdfund .form {
+  margin-top: 60px;
+}
+.section__postCrowdfund .title.small {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 30px 0 20px;
 }
 .section__postCrowdfund .btn__row {
   text-align: center;
@@ -662,6 +677,7 @@ p {
 }
 .details__wrap {
   margin-top: -22px;
+  margin-bottom: 50px;
 }
 .details__row {
   padding: 16px 0;
@@ -1695,6 +1711,22 @@ p {
 }
 .input__wrap .input {
   padding-right: 140px;
+}
+.input.dark {
+  color: #000000;
+  border-color: rgba(107, 107, 107, 0.4);
+}
+.input.dark::-webkit-input-placeholder {
+  color: rgba(107, 107, 107, 0.4);
+}
+.input.dark::-moz-placeholder {
+  color: rgba(107, 107, 107, 0.4);
+}
+.input.dark:-moz-placeholder {
+  color: rgba(107, 107, 107, 0.4);
+}
+.input.dark:-ms-input-placeholder {
+  color: rgba(107, 107, 107, 0.4);
 }
 .textarea {
   width: 100%;
