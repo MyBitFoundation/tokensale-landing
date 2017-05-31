@@ -7,6 +7,8 @@ var Action = {
 	
 	logged: false,
 
+    countryCode: null,
+
     init: function() {
         this.initEvents();
         this.checkIsLogged();
@@ -202,7 +204,11 @@ var Action = {
             url:  window.config.request.info,
             xhrFields: { withCredentials: true },
             success: function(res) {
-                window.location.href = window.config.redirect;
+                if(Action.countryCode && Action.countryCode == 'US') {
+                    $('#modal-disabled-dashboard').modal('show');
+                } else {
+                    window.location.href = window.config.redirect;
+                }
             },
             error: function(error) {
 
@@ -248,7 +254,11 @@ var Action = {
                             url:  window.config.request.info,
                             xhrFields: { withCredentials: true },
                             success: function(res) {
-                                window.location.href = window.config.redirect;
+                                if(Action.countryCode && Action.countryCode == 'US') {
+                                    $('#modal-disabled-dashboard').modal('show');
+                                } else {
+                                    window.location.href = window.config.redirect;
+                                }
                             }
                         })
                     }
@@ -297,7 +307,11 @@ var Action = {
                         url:  window.config.request.info,
                         xhrFields: { withCredentials: true },
                         success: function(res) {
-                            window.location.href = window.config.redirect;
+                            if(Action.countryCode && Action.countryCode == 'US') {
+                                $('#modal-disabled-dashboard').modal('show');
+                            } else {
+                                window.location.href = window.config.redirect;
+                            }
                         }
                     })
                 }
@@ -392,7 +406,12 @@ var Action = {
 			xhrFields: { withCredentials: true },
 			success: function(res) {
 				$('.sign-in-block').hide();
-				$('.go-to-dashboard-block').show().find('a').attr('href', window.config.redirect);
+
+				if(Action.countryCode && Action.countryCode == 'US') {
+                    $('.go-to-dashboard-block').show().find('a').attr('data-toggle', 'modal').attr('data-target','#modal-disabled-dashboard');
+                } else {
+                    $('.go-to-dashboard-block').show().find('a').attr('href', window.config.redirect);
+                }
 			}
 		})
 	}

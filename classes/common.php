@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 use DrewM\MailChimp\MailChimp;
 
 require_once 'translate.php';
@@ -27,6 +25,11 @@ class Common {
             isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
             $_SERVER['SERVER_NAME']
         );
+    }
+
+    public function getCountryByIp($ip) {
+        $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}"));
+        return $details->country;
     }
 
     public function getWrapperClass($uri) {

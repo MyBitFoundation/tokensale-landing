@@ -1,5 +1,7 @@
 <?php
 
+    session_start();
+
     require_once 'classes/common.php';
 
     if(isset($_GET['ln'])) {
@@ -12,6 +14,12 @@
         header("Location: ".$redirect);
         die();
     }
+
+    if(!$_SESSION['country_code']) {
+        $country_code = Common::getInstance()->getCountryByIp($_SERVER['REMOTE_ADDR']);
+        $_SESSION['country_code'] = $country_code;
+    } else
+        $country_code = $_SESSION['country_code'];
 
     $uri = substr($_SERVER['REQUEST_URI'], 1);
 

@@ -31,6 +31,12 @@
     <script src="<?php echo Common::getInstance()->http(); ?>js/config.js"></script>
     <script src="<?php echo Common::getInstance()->http(); ?>js/common.js"></script>
     <script src="<?php echo Common::getInstance()->http(); ?>js/action.js"></script>
+
+    <script>
+        <?php if($country_code) : ?>
+            Action.countryCode = '<?php echo $country_code; ?>';
+        <?php endif; ?>
+    </script>
 </head>
 <body>
 <div class="wrapper <?php echo $wrapper_class; ?>">
@@ -301,6 +307,21 @@
                 <div class="modal-body">
                     <div class="btn__row" >
                         <a href="javascript:;" class="btn btn-inverse" data-dismiss="modal" aria-label="Close">ok</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-disabled-dashboard" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sorry, the TokenSale is unavailable to individuals from your country.</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="btn__row" >
+                        <a href="javascript:;" class="btn btn-inverse" data-dismiss="modal" aria-label="Close">Return to website</a>
                     </div>
                 </div>
             </div>
