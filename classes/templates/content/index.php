@@ -506,6 +506,46 @@
             </div>
         </div>
 
+        <div class="team__item">
+            <div>
+                <div>
+                    <div class="team__photoWrap">
+                        <img src="images/team/kyle_dewhurst.jpg" alt="" class="team__photo">
+                    </div>
+                    <span class="team__name">Kyle Dewhurst</span>
+                    <div class="team__professionWrap">
+                        <span class="team__profession">Solidity Dev</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team__item">
+            <div>
+                <div>
+                    <div class="team__photoWrap">
+                        <img src="images/team/adina_pascall.jpeg" alt="" class="team__photo">
+                    </div>
+                    <span class="team__name">Adina Pascall</span>
+                    <div class="team__professionWrap">
+                        <span class="team__profession">Public Relations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team__item">
+            <div>
+                <div>
+                    <div class="team__photoWrap">
+                        <img src="images/team/jesse_duris.png" alt="" class="team__photo">
+                    </div>
+                    <span class="team__name">Jesse Duris</span>
+                    <div class="team__professionWrap">
+                        <span class="team__profession">React Dev</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
