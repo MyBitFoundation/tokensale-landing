@@ -211,8 +211,8 @@
                             <p class="details__text">MyB can be used actively for: <br/>
                                 Investing in Energy and AI revenue generating assets : Funding & Revenue Sharing <br/>
                                 Peer to Peer trading (buying and selling) of decentralized energy <br/>
-                                achine to machine payments <br/>
-                                MTrading on Open Exchanges
+                                Machine to machine payments <br/>
+                                Trading on Open Exchanges
                             </p>
                         </div>
                     </div>

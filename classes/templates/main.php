@@ -389,7 +389,7 @@
                     <li class="resources__item"><a href="https://www.fluidui.com/editor/live/livePreview/cF9YZTZ1NldrdGZSNkJ1bElUVG9UUFdPZkQ5YXJOdGZsTg==" target="_blank" class="resources__link">Wireframes</a></li>
                     <li class="resources__item"><a href="#" class="resources__link">Demo</a></li>
                     <li class="resources__item"><a href="https://www.facebook.com/vejdiven/videos/1344609518964148/" target="_blank" class="resources__link">Presentation</a></li>
-                    <li class="resources__item"><a href="/docs/MyBit_Deck_BlockchainConf.pptx" class="resources__link">Deck</a></li>
+                    <li class="resources__item"><a href="https://app.xtensio.com/folio/9q93e8z3" target="_blank" class="resources__link">One-Pager</a></li>
                     <li class="resources__item"><a href="#" class="resources__link">Deal Sheet</a></li>
                 </ul>
             </div>
