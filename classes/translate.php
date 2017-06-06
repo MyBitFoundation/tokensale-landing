@@ -46,6 +46,8 @@ class t {
         $current_lang = self::getInstance()->getCurrentLang();
         $result = $message;
 
+//        t::getInstance()->collectorMessages($message);
+
         if (!file_exists(__DIR__.'/'.self::FOLDER_MESSAGE.'/') || !file_exists(__DIR__.'/'.self::FOLDER_MESSAGE.'/'.$current_lang.'/'))
             return $result;
 
@@ -58,6 +60,38 @@ class t {
             $result = $messages[$message];
 
         return $result;
+    }
+
+    public function collectorMessages($message) {
+        if(!isset($_SESSION['collector_messages'])) {
+            $_SESSION['collector_messages'] = [];
+        }
+
+        if(!in_array($message,$_SESSION['collector_messages'])) {
+            $_SESSION['collector_messages'][] = $message;
+        }
+    }
+
+    public function getNewMessages($category) {
+        if(isset($_SESSION['collector_messages']) && $_SESSION['collector_messages']) {
+            if (!file_exists(__DIR__.'/'.self::FOLDER_MESSAGE.'/') || !file_exists(__DIR__.'/'.self::FOLDER_MESSAGE.'/'.self::DEFAULT_LANG.'/')) {
+                return false;
+            }
+
+            if (!file_exists(__DIR__.'/'.self::FOLDER_MESSAGE.'/'.self::DEFAULT_LANG.'/'.$category.'.php') )
+                return false;
+
+            $messages = include __DIR__.'/'.self::FOLDER_MESSAGE.'/'.self::DEFAULT_LANG.'/'.$category.'.php';
+
+            $log = new LogFile();
+            foreach ($_SESSION['collector_messages'] as $m) {
+                if($m && !in_array($m,$messages)) {
+                    $log->writeLog("'".$m."' => '".$m."',");
+                }
+
+            }
+
+        }
     }
 
 

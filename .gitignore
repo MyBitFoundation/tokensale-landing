@@ -2,3 +2,4 @@ classes/config/main.local.php
 .idea
 !documents/slice
 js/config.js
+classes/logs

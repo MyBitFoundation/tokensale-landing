@@ -17,28 +17,28 @@
     <div class="section__intro">
         <div class="container">
             <img src="images/logo_full.png" alt="" class="logo wow animated fadeInUp"/>
-            <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" >The platform for tokenizing revenue streams</h1>
+            <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" ><?php echo t::message('global','The platform for tokenizing revenue streams'); ?></h1>
             <div class="date__box wow animated fadeInUp" data-wow-delay="0.2s">
-                <span class="date__title">Join Tokensale</span>
+                <span class="date__title"><?php echo t::message('global','Join Tokensale'); ?></span>
                 <span id="countdown" class="date"></span>
             </div>
             <div class="offer-box wow animated fadeInUp sign-in-block" data-wow-delay="0.3s">
-                <span class="title">Pre-Register Today</span>
+                <span class="title"><?php echo t::message('global','Pre-Register Today'); ?></span>
 
                 <form class="form form__offer pre_offer">
                     <div class="form__row"> <!--add class error-->
                         <div class="input__wrap">
                             <input type="email" name="email" placeholder="Enter email" class="input">
-                            <a href="javascript:;" class="btn__inInput btn_pre_sign_up submit_event">sign Up</a>
+                            <a href="javascript:;" class="btn__inInput btn_pre_sign_up submit_event"><?php echo t::message('global','sign Up'); ?></a>
                         </div>
-                        <span class="form__hint">You’re almost done! Please check your email to confirm your subscription.</span>
+                        <span class="form__hint"><?php echo t::message('global','You’re almost done! Please check your email to confirm your subscription.'); ?></span>
                         <span class="form__errorTxt"></span>
                     </div>
                 </form>
-                <span class="title small">Already have an account? <a href="#" class="link yellow" data-toggle="modal" data-target="#modal-signIn"> Sign in</a></span>
+                <span class="title small"><?php echo t::message('global','Already have an account?'); ?> <a href="#" class="link yellow" data-toggle="modal" data-target="#modal-signIn"> <?php echo t::message('global','Sign in'); ?></a></span>
             </div>
             <div class="offer-box wow animated fadeInUp go-to-dashboard-block" data-wow-delay="0.3s" style="display: none;">
-                <a href="" class="btn btn-shadow yellow">Go to dashboard</a>
+                <a href="" class="btn btn-shadow yellow"><?php echo t::message('global','Go to dashboard'); ?></a>
             </div>
         </div>
     </div>
@@ -49,11 +49,11 @@
         <div class="row">
             <div class="col-xs-12 col-md-11 col-md-offset-1 col-lg-offset-0">
                 <div class="desc">
-                    <p><strong>Mybit makes financing and maintaining revenue streams efficient and automatic.</strong></p>
-                    <p>How?</p>
-                    <p>By commoditizing solar panel installation and other forms of renewable energy, investors and landowners can crowdfund the coming decentralized energy grid. With Mybit, investors get security on their investment, while landowners get access to investors willing to help in exchange for profit. By standardizing and automating setup, sales, and dividends, Mybit takes you one step closer to an equitable economy.</p>
-                    <p>The Future</p>
-                    <p>Our 5 year goal is to be at the forefront of commoditizing the coming AI economy. Mybit will be Europe's platform tokenizing any automatable or machine infrastructure. And it will be owned by the crowd.</p>
+                    <p><strong><?php echo t::message('global','Mybit makes financing and maintaining revenue streams efficient and automatic.'); ?></strong></p>
+                    <p><?php echo t::message('global','How?'); ?></p>
+                    <p><?php echo t::message('global','By commoditizing solar panel installation and other forms of renewable energy, investors and landowners can crowdfund the coming decentralized energy grid. With Mybit, investors get security on their investment, while landowners get access to investors willing to help in exchange for profit. By standardizing and automating setup, sales, and dividends, Mybit takes you one step closer to an equitable economy.'); ?></p>
+                    <p><?php echo t::message('global','The Future'); ?></p>
+                    <p><?php echo t::message('global','Our 5 year goal is to be at the forefront of commoditizing the coming AI economy. Mybit will be Europe\'s platform tokenizing any automatable or machine infrastructure. And it will be owned by the crowd.'); ?></p>
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@
             <div class="video__box">
                     <span class="video__play">
                         <i class="icon-play"></i>
-                        <span class="video__title">Video Coming Soon</span>
+                        <span class="video__title"><?php echo t::message('global','Video Coming Soon'); ?></span>
                     </span>
                 <span class="video"></span>
             </div>
@@ -69,9 +69,9 @@
         <div class="row">
             <div class="col-xs-12 col-md-11 col-md-offset-1 col-lg-offset-0">
                 <div class="desc">
-                    <p><strong>Why Decentralized Energy?</strong></p>
-                    <p>The explosion of Artificial Intelligence (AI) and the Internet of Things (IoT) will result in massive demand increases for energy. Traditional energy grids will not be able to scale rapidly enough to keep up with the demand. Decentralized energy grids, composed of renewable energy technologies such as solar panels that can be installed on homes and office buildings away from the traditional (centralized) energy production & storage facilities, will be a critical component of the solution to the increased energy demand.</p>
-                    <p>Our goal is to remove the financial barriers to entry and the friction currently present in the alternative assets investment space; thereby, enabling anyone to benefit from sustainable infrastructure regardless of their socioeconomic status or location. Aside from energy this model can be replicated across many industries including Land, Commercial Property, and AI - specifically autonomous mobiles.</p>
+                    <p><strong><?php echo t::message('global','Why Decentralized Energy?'); ?></strong></p>
+                    <p><?php echo t::message('global','The explosion of Artificial Intelligence (AI) and the Internet of Things (IoT) will result in massive demand increases for energy. Traditional energy grids will not be able to scale rapidly enough to keep up with the demand. Decentralized energy grids, composed of renewable energy technologies such as solar panels that can be installed on homes and office buildings away from the traditional (centralized) energy production & storage facilities, will be a critical component of the solution to the increased energy demand.'); ?></p>
+                    <p><?php echo t::message('global','Our goal is to remove the financial barriers to entry and the friction currently present in the alternative assets investment space; thereby, enabling anyone to benefit from sustainable infrastructure regardless of their socioeconomic status or location. Aside from energy this model can be replicated across many industries including Land, Commercial Property, and AI - specifically autonomous mobiles.'); ?></p>
                 </div>
             </div>
         </div>
@@ -88,12 +88,12 @@
 				        </span>
 				    </span>
                 <span class="download-icon__check"><i class="icon-check"></i></span>
-                <span class="title title_calm">Download whitepaper</span>
-                <span class="title title_during">Downloading <span class="value">38</span>%</span>
-                <span class="title title_ready">Downloaded</span>
+                <span class="title title_calm"><?php echo t::message('global','Download whitepaper'); ?></span>
+                <span class="title title_during"><?php echo t::message('global','Downloading'); ?> <span class="value">38</span>%</span>
+                <span class="title title_ready"><?php echo t::message('global','Downloaded'); ?></span>
             </a>
         </div>
-        <h2 class="h2 section__title">Roadmap</h2>
+        <h2 class="h2 section__title"><?php echo t::message('global','Roadmap'); ?></h2>
         <ul class="roadmap__list">
             <li class="roadmap__progressBase">
                 <!--<div class="roadmap__progressBar"></div>-->
@@ -105,60 +105,60 @@
                 <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
                 <div class="roadmap__date">
                     <span class="roadmap__year">2016</span>
-                    <span class="roadmap__month">November</span>
+                    <span class="roadmap__month"><?php echo t::message('global','November'); ?></span>
                 </div>
                 <span class="roadmap__dot"></span>
-                <span class="roadmap__descr">Idea Conceived</span>
+                <span class="roadmap__descr"><?php echo t::message('global','Idea Conceived'); ?></span>
             </li>
             <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[0],$roadMapDays[1]) == 100 ? 'active' : ''; ?>">
                 <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[1],$roadMapDays[2]);  ?>
                 <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
                 <div class="roadmap__date">
                     <span class="roadmap__year">2017</span>
-                    <span class="roadmap__month">February</span>
+                    <span class="roadmap__month"><?php echo t::message('global','February'); ?></span>
                 </div>
                 <span class="roadmap__dot"></span>
-                <span class="roadmap__descr">Whitepaper Published</span>
+                <span class="roadmap__descr"><?php echo t::message('global','Whitepaper Published'); ?></span>
             </li>
             <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[1],$roadMapDays[2]) == 100 ? 'active' : ''; ?>">
                 <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[2],$roadMapDays[3]);  ?>
                 <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
                 <div class="roadmap__date">
                     <span class="roadmap__year">2017</span>
-                    <span class="roadmap__month">May</span>
+                    <span class="roadmap__month"><?php echo t::message('global','May'); ?></span>
                 </div>
                 <span class="roadmap__dot"></span>
-                <span class="roadmap__descr">Architecture Designed</span>
+                <span class="roadmap__descr"><?php echo t::message('global','Architecture Designed'); ?></span>
             </li>
             <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[2],$roadMapDays[3]) == 100 ? 'active' : ''; ?>">
                 <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[3],$roadMapDays[4]);  ?>
                 <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
                 <div class="roadmap__date">
                     <span class="roadmap__year">2017</span>
-                    <span class="roadmap__month">June</span>
+                    <span class="roadmap__month"><?php echo t::message('global','June'); ?></span>
                 </div>
                 <span class="roadmap__dot"></span>
-                <span class="roadmap__descr">Ethereum TestNet Demo</span>
+                <span class="roadmap__descr"><?php echo t::message('global','Ethereum TestNet Demo'); ?></span>
             </li>
             <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[3],$roadMapDays[4]) == 100 ? 'active' : ''; ?>">
                 <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[4],$roadMapDays[5]);  ?>
                 <div class="roadmap__progressPart"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
                 <div class="roadmap__date">
                     <span class="roadmap__year">2017</span>
-                    <span class="roadmap__month">July</span>
+                    <span class="roadmap__month"><?php echo t::message('global','July'); ?></span>
                 </div>
                 <span class="roadmap__dot"></span>
-                <span class="roadmap__descr">Crowdfund</span>
+                <span class="roadmap__descr"><?php echo t::message('global','Crowdfund'); ?></span>
             </li>
             <li class="roadmap__item <?php echo Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[4],$roadMapDays[5]) == 100 ? 'active' : ''; ?>">
                 <?php $percent = Common::getInstance()->getPercentBetweenDate($currentTime,$roadMapDays[5],$roadMapDays[6]);  ?>
                 <div class="roadmap__progressPart last"><div class="roadmap__progressBar" style="width: <?php echo $percent?>%; height: <?php echo $percent?>%;"></div></div>
                 <div class="roadmap__date">
                     <span class="roadmap__year">2018</span>
-                    <span class="roadmap__month">January</span>
+                    <span class="roadmap__month"><?php echo t::message('global','January'); ?></span>
                 </div>
                 <span class="roadmap__dot"></span>
-                <span class="roadmap__descr">Beta Release and Pilot</span>
+                <span class="roadmap__descr"><?php echo t::message('global','Beta Release and Pilot'); ?></span>
             </li>
         </ul>
     </div>
@@ -166,59 +166,59 @@
 
 <div id="team" class="section section__team section__inverse wow animated fadeInUp" data-wow-offset="50">
     <div class="container">
-        <h2 class="h3 section__title center">Meet Our Team</h2>
+        <h2 class="h3 section__title center"><?php echo t::message('global','Meet Our Team'); ?></h2>
         <div class="team__wrap team__block"></div>
     </div>
 </div>
 
 <div id="advisor" class="section section__advisor wow  fadeInUp animated" data-wow-offset="50">
     <div class="container">
-        <h2 class="h3 section__title center">Advisors</h2>
+        <h2 class="h3 section__title center"><?php echo t::message('global','Advisors'); ?></h2>
         <div class="team__wrap">
             <div class="team__list slick_mob">
                 <div class="team__item">
                     <div class="team__photoWrap">
                         <img src="images/advisor/peter.png" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Peter Kleissner</span>
+                    <span class="team__name"><?php echo t::message('global','Peter Kleissner'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Hacker, Founder of AV Tracker Stoned Bootkit</span>
+                        <span class="team__profession"><?php echo t::message('global','Hacker, Founder of AV Tracker Stoned Bootkit'); ?></span>
                     </div>
                 </div>
                 <div class="team__item">
                     <div class="team__photoWrap">
                         <img src="images/advisor/nick.jpg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Nick Ayton</span>
+                    <span class="team__name"><?php echo t::message('global','Nick Ayton'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Public Relations, Co-founder of The 21Million Project</span>
+                        <span class="team__profession"><?php echo t::message('global','Public Relations, Co-founder of The 21Million Project'); ?></span>
                     </div>
                 </div>
                 <div class="team__item">
                     <div class="team__photoWrap">
                         <img src="images/advisor/mitchell.png" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Mitchell Loureiro</span>
+                    <span class="team__name"><?php echo t::message('global','Mitchell Loureiro'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Marketing Strategy, VP of Marketing at Steemit</span>
+                        <span class="team__profession"><?php echo t::message('global','Marketing Strategy, VP of Marketing at Steemit'); ?></span>
                     </div>
                 </div>
                 <div class="team__item">
                     <div class="team__photoWrap">
                         <img src="images/advisor/mihaela.jpg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Dr. Mihaela Ulieru</span>
+                    <span class="team__name"><?php echo t::message('global','Dr. Mihaela Ulieru'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Technology, Global Advisor for World Economic Forum</span>
+                        <span class="team__profession"><?php echo t::message('global','Technology, Global Advisor for World Economic Forum'); ?></span>
                     </div>
                 </div>
                 <div class="team__item">
                     <div class="team__photoWrap">
                         <img src="images/advisor/alvaro_portellano.jpeg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Alvaro Portellano</span>
+                    <span class="team__name"><?php echo t::message('global','Alvaro Portellano'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Energy, Renewables and Regulatory Affairs Manager, Iberdola</span>
+                        <span class="team__profession"><?php echo t::message('global','Energy, Renewables and Regulatory Affairs Manager, Iberdola'); ?></span>
                     </div>
                 </div>
             </div>
@@ -230,7 +230,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                <h2 class="h3 section__title center">Community</h2>
+                <h2 class="h3 section__title center"><?php echo t::message('global','Community'); ?></h2>
                 <div class="soc__wrap in_bl">
                     <ul class="soc__list">
                         <li class="soc__item">
@@ -266,7 +266,7 @@
 
 <div id="media" class="section section__media wow animated fadeInUp" data-wow-offset="50">
     <div class="container">
-        <h2 class="h3 section__title center">Media</h2>
+        <h2 class="h3 section__title center"><?php echo t::message('global','Media'); ?></h2>
         <div class="row">
             <div class="slick_desktop">
                 <div class="col-sm-3">
@@ -320,20 +320,20 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                <h2 class="h3 section__title">Partnerships</h2>
+                <h2 class="h3 section__title"><?php echo t::message('global','Partnerships'); ?></h2>
                 <div class="partners__wrap">
                     <div class="partners__list slick_mob">
                         <div class="partners__item">
                             <a href="https://bravenewcoin.com/news/mybit-tackles-data-manipulation-an-emerging-art-of-war-in-cyberspace/" target="_blank" class="partners__logo">
                                 <img src="images/media/bnc.jpeg" alt="" class="partners__pic"/>
                             </a>
-                            <span class="partners__profession">Escrow</span>
+                            <span class="partners__profession"><?php echo t::message('global','Escrow'); ?></span>
                         </div>
                         <div class="partners__item">
                             <a href="http://btc.pacatum.com" target="_blank" class="partners__logo">
                                 <img src="images/media/pacatum.png" alt="" class="partners__pic"/>
                             </a>
-                            <span class="partners__profession">Technology</span>
+                            <span class="partners__profession"><?php echo t::message('global','Technology'); ?></span>
                         </div>
                     </div>
                 </div>
@@ -351,9 +351,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/garrett.jpg" alt="" class="team__photo"/>
                     </div>
-                    <span class="team__name">Garrett McDonald</span>
+                    <span class="team__name"><?php echo t::message('global','Garrett McDonald'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Blockchain Design & Marketing Strategy</span>
+                        <span class="team__profession"><?php echo t::message('global','Blockchain Design & Marketing Strategy'); ?></span>
                     </div>
                 </div>
             </div>
@@ -365,9 +365,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/thomas.jpg" alt="" class="team__photo"/>
                     </div>
-                    <span class="team__name">Thomas Pollan</span>
+                    <span class="team__name"><?php echo t::message('global','Thomas Pollan'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Business Development & Partnerships</span>
+                        <span class="team__profession"><?php echo t::message('global','Business Development & Partnerships'); ?></span>
                     </div>
                 </div>
             </div>
@@ -379,9 +379,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/ian.jpg" alt="" class="team__photo"/>
                     </div>
-                    <span class="team__name">Ian Worrall</span>
+                    <span class="team__name"><?php echo t::message('global','Ian Worrall'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Founder</span>
+                        <span class="team__profession"><?php echo t::message('global','Founder'); ?></span>
                     </div>
                 </div>
             </div>
@@ -392,9 +392,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/pedro.jpg" alt="" class="team__photo"/>
                     </div>
-                    <span class="team__name">Pedro Barros</span>
+                    <span class="team__name"><?php echo t::message('global','Pedro Barros'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Engineer</span>
+                        <span class="team__profession"><?php echo t::message('global','Engineer'); ?></span>
                     </div>
                 </div>
             </div>
@@ -406,9 +406,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/jacob.jpg" alt="" class="team__photo"/>
                     </div>
-                    <span class="team__name">Jacob DeBenedetto</span>
+                    <span class="team__name"><?php echo t::message('global','Jacob DeBenedetto'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">UI/UX</span>
+                        <span class="team__profession"><?php echo t::message('global','UI/UX'); ?></span>
                     </div>
                 </div>
             </div>
@@ -420,9 +420,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/bogdan.jpg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Bogdan Fiedur</span>
+                    <span class="team__name"><?php echo t::message('global','Bogdan Fiedur'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Solidity Dev</span>
+                        <span class="team__profession"><?php echo t::message('global','Solidity Dev'); ?></span>
                     </div>
                 </div>
             </div>
@@ -433,9 +433,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/ching_pong_su(Kenji).jpg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Ching Pong Siu (Kenji)</span>
+                    <span class="team__name"><?php echo t::message('global','Ching Pong Siu (Kenji)'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Chief Technology Officer</span>
+                        <span class="team__profession"><?php echo t::message('global','Chief Technology Officer'); ?></span>
                     </div>
                 </div>
             </div>
@@ -446,9 +446,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/maclin.jpg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Maclin Macalindong</span>
+                    <span class="team__name"><?php echo t::message('global','Maclin Macalindong'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Graphic Design</span>
+                        <span class="team__profession"><?php echo t::message('global','Graphic Design'); ?></span>
                     </div>
                 </div>
             </div>
@@ -459,9 +459,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/hua_Li.jpg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Hua Li</span>
+                    <span class="team__name"><?php echo t::message('global','Hua Li'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Chinese Community Manager</span>
+                        <span class="team__profession"><?php echo t::message('global','Chinese Community Manager'); ?></span>
                     </div>
                 </div>
             </div>
@@ -472,9 +472,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/jake_vartanian.jpg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Jake Vartanian</span>
+                    <span class="team__name"><?php echo t::message('global','Jake Vartanian'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Community Strategy</span>
+                        <span class="team__profession"><?php echo t::message('global','Community Strategy'); ?></span>
                     </div>
                 </div>
             </div>
@@ -485,9 +485,9 @@
                     <div class="team__photoWrap">
                         <img src="images/no_photo.jpg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Pedro Augusto</span>
+                    <span class="team__name"><?php echo t::message('global','Pedro Augusto'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Bounty Campaign Manager</span>
+                        <span class="team__profession"><?php echo t::message('global','Bounty Campaign Manager'); ?></span>
                     </div>
                 </div>
             </div>
@@ -498,9 +498,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/fran_stajnar.jpg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Fran Strajnar</span>
+                    <span class="team__name"><?php echo t::message('global','Fran Strajnar'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Escrow Manager</span>
+                        <span class="team__profession"><?php echo t::message('global','Escrow Manager'); ?></span>
                     </div>
                 </div>
             </div>
@@ -512,9 +512,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/kyle_dewhurst.jpg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Kyle Dewhurst</span>
+                    <span class="team__name"><?php echo t::message('global','Kyle Dewhurst'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Solidity Dev</span>
+                        <span class="team__profession"><?php echo t::message('global','Solidity Dev'); ?></span>
                     </div>
                 </div>
             </div>
@@ -525,9 +525,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/adina_pascall.jpeg" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Adina Pascall</span>
+                    <span class="team__name"><?php echo t::message('global','Adina Pascall'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">Public Relations</span>
+                        <span class="team__profession"><?php echo t::message('global','Public Relations'); ?></span>
                     </div>
                 </div>
             </div>
@@ -538,9 +538,9 @@
                     <div class="team__photoWrap">
                         <img src="images/team/jesse_duris.png" alt="" class="team__photo">
                     </div>
-                    <span class="team__name">Jesse Duris</span>
+                    <span class="team__name"><?php echo t::message('global','Jesse Duris'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession">React Dev</span>
+                        <span class="team__profession"><?php echo t::message('global','React Dev'); ?></span>
                     </div>
                 </div>
             </div>

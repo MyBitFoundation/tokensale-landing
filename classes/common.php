@@ -2,6 +2,7 @@
 
 use DrewM\MailChimp\MailChimp;
 
+require_once 'logfile.php';
 require_once 'translate.php';
 require_once 'constants.php';
 

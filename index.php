@@ -4,6 +4,8 @@
 
     require_once 'classes/common.php';
 
+
+
     if(isset($_GET['ln'])) {
         t::getInstance()->setLang($_GET['ln']);
 

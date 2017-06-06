@@ -53,32 +53,32 @@
             <a href="<?php echo Common::getInstance()->http(); ?>" class="header__logo"><img src="/images/logo_black.svg" alt=""/></a>
             <ul class="mainNav__list">
                 <li class="mainNav__item">
-                    <a href="<?php echo Common::getInstance()->http(); ?>#aboutMybit" data-scroll="aboutMybit" class="mainNav__link btn_scroll"><span class="title">About</span></a>
+                    <a href="<?php echo Common::getInstance()->http(); ?>#aboutMybit" data-scroll="aboutMybit" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','About'); ?></span></a>
                 </li>
                 <li class="mainNav__item">
-                    <a href="<?php echo Common::getInstance()->http(); ?>#team" data-scroll="team" class="mainNav__link btn_scroll"><span class="title">Team</span></a>
+                    <a href="<?php echo Common::getInstance()->http(); ?>#team" data-scroll="team" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','Team'); ?></span></a>
                 </li>
                 <li class="mainNav__item">
-                    <a href="<?php echo Common::getInstance()->http(); ?>#community" data-scroll="community" class="mainNav__link btn_scroll"><span class="title">Community</span></a>
+                    <a href="<?php echo Common::getInstance()->http(); ?>#community" data-scroll="community" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','Community'); ?></span></a>
                 </li>
                 <li class="mainNav__item">
-                    <a href="<?php echo Common::getInstance()->http(); ?>#media" data-scroll="media" class="mainNav__link btn_scroll"><span class="title">Media</span><i class="icon-arrow_dropdown"></i></a>
+                    <a href="<?php echo Common::getInstance()->http(); ?>#media" data-scroll="media" class="mainNav__link btn_scroll"><span class="title"><?php echo t::message('global','Media'); ?></span><i class="icon-arrow_dropdown"></i></a>
                     <div class="mainNav__dropdown">
                         <ul>
                             <li>
-                                <a href="<?php echo Common::getInstance()->http(); ?>#media" data-scroll="media" class="link btn_scroll">Press</a>
+                                <a href="<?php echo Common::getInstance()->http(); ?>#media" data-scroll="media" class="link btn_scroll"><?php echo t::message('global','Press'); ?></a>
                             </li>
                             <li>
-                                <a href="https://medium.com/@MyBit_Blog" class="link" target="_blank">Blog</a>
+                                <a href="https://medium.com/@MyBit_Blog" class="link" target="_blank"><?php echo t::message('global','Blog'); ?></a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li class="mainNav__item">
-                    <a href="<?php echo Common::getInstance()->http(); ?>#partnerships" class="mainNav__link btn_scroll" data-scroll="partnerships"><span class="title">Partnerships</span></a>
+                    <a href="<?php echo Common::getInstance()->http(); ?>#partnerships" class="mainNav__link btn_scroll" data-scroll="partnerships"><span class="title"><?php echo t::message('global','Partnerships'); ?></span></a>
                 </li>
                 <li class="mainNav__item">
-                    <a href="<?php echo Common::getInstance()->http(); ?>tokensale" class="mainNav__link"><span class="title">Tokensale</span></a>
+                    <a href="<?php echo Common::getInstance()->http(); ?>tokensale" class="mainNav__link"><span class="title"><?php echo t::message('global','Tokensale'); ?></span></a>
                 </li>
             </ul>
             <div class="lang__wrap">
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <a href="<?php echo $path_whitepaper; ?>" class="btn btn-shadow yellow small btn-whitepaper" target="_blank"><span class="title">Whitepaper</span></a>
+            <a href="<?php echo $path_whitepaper; ?>" class="btn btn-shadow yellow small btn-whitepaper" target="_blank"><span class="title"><?php echo t::message('global','Whitepaper'); ?></span></a>
         </div>
     </div>
 
@@ -109,8 +109,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Welcome Back!</h5>
-                    <span class="desc">Sign in with your login to continue</span>
+                    <h5 class="modal-title"><?php echo t::message('global','Welcome Back'); ?>!</h5>
+                    <span class="desc"><?php echo t::message('global','Sign in with your login to continue'); ?></span>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="icon-close"></i>
                     </button>
@@ -118,15 +118,15 @@
                 <div class="modal-body">
                     <form id="form-signIn">
                         <div class="form__row">
-                            <input type="email" name="email" class="input" placeholder="Enter email"/>
+                            <input type="email" name="email" class="input" placeholder="<?php echo t::message('global','Enter email'); ?>"/>
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="form__row">
-                            <input type="password" name="password" class="input" placeholder="Your password"/>
+                            <input type="password" name="password" class="input" placeholder="<?php echo t::message('global','Your password'); ?>"/>
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="btn__row">
-                            <a href="javascript:;" class="btn btn-shadow yellow send_login submit_event">Login</a>
+                            <a href="javascript:;" class="btn btn-shadow yellow send_login submit_event"><?php echo t::message('global','Login'); ?></a>
                         </div>
                     </form>
                 </div>
@@ -141,8 +141,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Let’s Get Started!</h5>
-                    <span class="desc">Sign in with your login to continue</span>
+                    <h5 class="modal-title"><?php echo t::message('global','Let’s Get Started'); ?>!</h5>
+                    <span class="desc"><?php echo t::message('global','Sign in with your login to continue'); ?></span>
                     <span class="statusBox"></span>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="icon-close"></i>
@@ -151,19 +151,19 @@
                 <div class="modal-body">
                     <form id="form-signUp">
                         <div class="form__row">
-                            <input type="password" name="password" class="input" placeholder="Your password"/>
+                            <input type="password" name="password" class="input" placeholder="<?php echo t::message('global','Your password'); ?>"/>
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="form__row">
-                            <input type="password" name="repeat_password" class="input" placeholder="Repeat password"/>
+                            <input type="password" name="repeat_password" class="input" placeholder="<?php echo t::message('global','Repeat password'); ?>"/>
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="form__row">
-                            <input type="text" name="address" class="input" placeholder="Ethereum address"/>
+                            <input type="text" name="address" class="input" placeholder="<?php echo t::message('global','Ethereum address'); ?>"/>
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="btn__row">
-                            <a href="javascript:;" data-text-send="Sign up" data-text-back="Back" class="btn btn-shadow yellow send_registration submit_event"></a>
+                            <a href="javascript:;" data-text-send="<?php echo t::message('global','Sign up'); ?>" data-text-back="<?php echo t::message('global','Back'); ?>" class="btn btn-shadow yellow send_registration submit_event"></a>
                         </div>
                     </form>
                 </div>
@@ -175,7 +175,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Login</h5>
+                    <h5 class="modal-title"><?php echo t::message('global','Login'); ?></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="icon-close"></i>
                     </button>
@@ -187,7 +187,7 @@
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="btn__row">
-                            <a href="javascript:;" class="btn btn-shadow yellow send_2fa submit_event">Submit</a>
+                            <a href="javascript:;" class="btn btn-shadow yellow send_2fa submit_event"><?php echo t::message('global','Submit'); ?></a>
                         </div>
                     </form>
                 </div>
@@ -198,14 +198,14 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Thank you for registration!</h5>
+                    <h5 class="modal-title"><?php echo t::message('global','Thank you for registration'); ?>!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="icon-close"></i>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="btn__row" >
-                        <a href="javascript:;" class="btn btn-inverse" data-dismiss="modal" aria-label="Close">ok</a>
+                        <a href="javascript:;" class="btn btn-inverse" data-dismiss="modal" aria-label="Close"><?php echo t::message('global','ok'); ?></a>
                     </div>
                 </div>
             </div>
@@ -262,8 +262,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Let’s Get Started!</h5>
-                    <span class="desc">Sign in with your login to continue</span>
+                    <h5 class="modal-title"><?php echo t::message('global','Let’s Get Started'); ?>!</h5>
+                    <span class="desc"><?php echo t::message('global','Sign in with your login to continue'); ?></span>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="icon-close"></i>
                     </button>
@@ -271,23 +271,23 @@
                 <div class="modal-body">
                     <form>
                         <div class="form__row">
-                            <input type="text" name="name" class="input" placeholder="Enter name"/>
+                            <input type="text" name="name" class="input" placeholder="<?php echo t::message('global','Enter name'); ?>"/>
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="form__row">
-                            <input type="email" name="email" class="input" placeholder="Enter email"/>
+                            <input type="email" name="email" class="input" placeholder="<?php echo t::message('global','Enter email'); ?>"/>
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="form__row">
-                            <input type="text" name="reference" class="input" placeholder="Please tell us what this is in reference to"/>
+                            <input type="text" name="reference" class="input" placeholder="<?php echo t::message('global','Please tell us what this is in reference to'); ?>"/>
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="form__row">
-                            <textarea name="message" class="scrollbar-outer textarea-scrollbar textarea" id="textarea-scrollbar_js"  placeholder="Please describe your message here..."></textarea>
+                            <textarea name="message" class="scrollbar-outer textarea-scrollbar textarea" id="textarea-scrollbar_js"  placeholder="<?php echo t::message('global','Please describe your message here...'); ?>"></textarea>
                             <span class="form__errorTxt"></span>
                         </div>
                         <div class="btn__row">
-                            <a href="javascript:;" class="btn btn-shadow yellow send_question submit_event">Ask Question</a>
+                            <a href="javascript:;" class="btn btn-shadow yellow send_question submit_event"><?php echo t::message('global','Ask Question'); ?></a>
                         </div>
                     </form>
                 </div>
@@ -299,14 +299,14 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Thank you! We will contact you shortly.</h5>
+                    <h5 class="modal-title"><?php echo t::message('global','Thank you! We will contact you shortly.'); ?></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="icon-close"></i>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="btn__row" >
-                        <a href="javascript:;" class="btn btn-inverse" data-dismiss="modal" aria-label="Close">ok</a>
+                        <a href="javascript:;" class="btn btn-inverse" data-dismiss="modal" aria-label="Close"><?php echo t::message('global','ok'); ?></a>
                     </div>
                 </div>
             </div>
@@ -317,11 +317,11 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Sorry, the TokenSale is unavailable to individuals from your country.</h5>
+                    <h5 class="modal-title"><?php echo t::message('global','Sorry, the TokenSale is unavailable to individuals from your country.'); ?></h5>
                 </div>
                 <div class="modal-body">
                     <div class="btn__row" >
-                        <a href="javascript:;" class="btn btn-inverse" data-dismiss="modal" aria-label="Close">Return to website</a>
+                        <a href="javascript:;" class="btn btn-inverse" data-dismiss="modal" aria-label="Close"><?php echo t::message('global','Return to website'); ?></a>
                     </div>
                 </div>
             </div>
@@ -333,7 +333,7 @@
     <div class="container wow animated fadeInUp" data-wow-offset="50">
         <div class="row">
             <div class="col-lg-4 col-md-6">
-                <h2 class="h4">Get Updates</h2>
+                <h2 class="h4"><?php echo t::message('global','Get Updates'); ?></h2>
                 <form class="form form__updates_js form__updatesFooter form_subscribe">
                     <div class="form__row "> <!--add class error-->
                         <div class="btn-success">
@@ -384,13 +384,13 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-                <h2 class="h4">Resources</h2>
+                <h2 class="h4"><?php echo t::message('global','Resources'); ?></h2>
                 <ul class="resources__list">
-                    <li class="resources__item"><a href="https://www.fluidui.com/editor/live/livePreview/cF9YZTZ1NldrdGZSNkJ1bElUVG9UUFdPZkQ5YXJOdGZsTg==" target="_blank" class="resources__link">Wireframes</a></li>
-                    <li class="resources__item"><a href="#" class="resources__link">Demo</a></li>
-                    <li class="resources__item"><a href="https://www.facebook.com/vejdiven/videos/1344609518964148/" target="_blank" class="resources__link">Presentation</a></li>
-                    <li class="resources__item"><a href="https://app.xtensio.com/folio/9q93e8z3" target="_blank" class="resources__link">One-Pager</a></li>
-                    <li class="resources__item"><a href="#" class="resources__link">Deal Sheet</a></li>
+                    <li class="resources__item"><a href="https://www.fluidui.com/editor/live/livePreview/cF9YZTZ1NldrdGZSNkJ1bElUVG9UUFdPZkQ5YXJOdGZsTg==" target="_blank" class="resources__link"><?php echo t::message('global','Wireframes'); ?></a></li>
+                    <li class="resources__item"><a href="#" class="resources__link"><?php echo t::message('global','Demo'); ?></a></li>
+                    <li class="resources__item"><a href="https://www.facebook.com/vejdiven/videos/1344609518964148/" target="_blank" class="resources__link"><?php echo t::message('global','Presentation'); ?></a></li>
+                    <li class="resources__item"><a href="https://app.xtensio.com/folio/9q93e8z3" target="_blank" class="resources__link"><?php echo t::message('global','One-Pager'); ?></a></li>
+                    <li class="resources__item"><a href="#" class="resources__link"><?php echo t::message('global','Deal Sheet'); ?></a></li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-6">
