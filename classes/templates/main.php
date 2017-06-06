@@ -332,7 +332,7 @@
 <footer class="footer">
     <div class="container wow animated fadeInUp" data-wow-offset="50">
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-5 col-md-6">
                 <h2 class="h4"><?php echo t::message('global','Get Updates'); ?></h2>
                 <form class="form form__updates_js form__updatesFooter form_subscribe">
                     <div class="form__row "> <!--add class error-->
@@ -379,6 +379,9 @@
                         </li>
                         <li class="soc__item">
                             <a href="https://medium.com/@MyBit_Blog" class="soc__link circle" target="_blank"><i class="icon-medium"></i></a>
+                        </li>
+                        <li class="soc__item">
+                            <a href="http://weixin.qq.com/r/ystywajet1xiruyj95hy" class="soc__link circle" target="_blank"><i class="icon-wechat"></i></a>
                         </li>
                     </ul>
                 </div>

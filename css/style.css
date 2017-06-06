@@ -802,13 +802,11 @@ p {
 .soc__wrap {
   margin-bottom: 47px;
 }
-.soc__list:after {
-  content: '';
-  display: block;
-  clear: both;
+.soc__list {
+  font-size: 0;
 }
 .soc__item {
-  float: left;
+  display: inline-block;
   margin-right: 11px;
 }
 .soc__link {
@@ -871,6 +869,9 @@ p {
 .soc__link.medium {
   background: #0ae370;
 }
+.soc__link.wechat {
+  background: #61b60d;
+}
 .footer {
   padding: 15px 0 60px;
   background-color: #2d2748;
@@ -925,6 +926,7 @@ p {
 .footer__download {
   text-align: right;
   margin-top: 82px;
+  margin-left: -15px;
 }
 .resources__list:after {
   content: '';

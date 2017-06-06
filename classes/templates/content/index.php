@@ -257,6 +257,9 @@
                         <li class="soc__item">
                             <a href="https://medium.com/@MyBit_Blog" class="soc__link colored medium" target="_blank"><i class="icon-medium"></i></a>
                         </li>
+                        <li class="soc__item">
+                            <a href="http://weixin.qq.com/r/ystywajet1xiruyj95hy" class="soc__link colored wechat" target="_blank"><i class="icon-wechat"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>

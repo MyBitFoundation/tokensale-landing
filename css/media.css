@@ -816,11 +816,12 @@ sub {
     padding: 18px 0 10px;
   }
   .soc__list {
-    max-width: 225px;
+    max-width: 250px;
     margin: 0 auto;
+    text-align: center;
   }
   .soc__item {
-    width: 25%;
+    width: 20%;
     margin: 0 0 19px;
     text-align: center;
   }
