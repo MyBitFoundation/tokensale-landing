@@ -59,11 +59,7 @@
         </div>
         <div class="video__wrap">
             <div class="video__box">
-                    <span class="video__play">
-                        <i class="icon-play"></i>
-                        <span class="video__title"><?php echo t::message('global','Video Coming Soon'); ?></span>
-                    </span>
-                <span class="video"></span>
+                <iframe src="https://www.youtube.com/embed/wvpnMJQkhAo" frameborder="0" allowfullscreen class="video"></iframe>
             </div>
         </div>
         <div class="row">
