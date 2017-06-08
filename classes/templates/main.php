@@ -328,6 +328,22 @@
         </div>
     </div>
 
+    <div class="modal fade" id="modal-is-us-citizen" tabindex="-1" role="dialog" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><?php echo t::message('global','Are you a US citizen?'); ?></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="btn__row" >
+                        <a href="javascript:;" class="btn btn-inverse" id="is-us-citizen-yes" ><?php echo t::message('global','Yes'); ?></a>
+                        <a href="javascript:;" class="btn btn-inverse" id="is-us-citizen-no"><?php echo t::message('global','No'); ?></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 <footer class="footer">
     <div class="container wow animated fadeInUp" data-wow-offset="50">

@@ -77,6 +77,18 @@ var Action = {
                 $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect e-mail');
         });
 
+        $('#modal-is-us-citizen').on('show.bs.modal',function() {
+            $('#is-us-citizen-yes').off('click').on('click',function() {
+                $('#modal-is-us-citizen').modal('hide');
+                $('#modal-disabled-dashboard').modal('show');
+            });
+
+            $('#is-us-citizen-no').off('click').on('click',function() {
+                $('#modal-is-us-citizen').modal('hide');
+                window.location.href = window.config.redirect;
+            });
+        });
+
         $('.btn_pre_sign_up').click(function() {
             var block = $('.pre_offer'),
                 status = true;
@@ -205,7 +217,7 @@ var Action = {
             xhrFields: { withCredentials: true },
             success: function(res) {
                 if(Action.countryCode && Action.countryCode == 'US') {
-                    $('#modal-disabled-dashboard').modal('show');
+                    $('#modal-is-us-citizen').modal('show');
                 } else {
                     window.location.href = window.config.redirect;
                 }
@@ -255,7 +267,7 @@ var Action = {
                             xhrFields: { withCredentials: true },
                             success: function(res) {
                                 if(Action.countryCode && Action.countryCode == 'US') {
-                                    $('#modal-disabled-dashboard').modal('show');
+                                    $('#modal-is-us-citizen').modal('show');
                                 } else {
                                     window.location.href = window.config.redirect;
                                 }
@@ -308,7 +320,7 @@ var Action = {
                         xhrFields: { withCredentials: true },
                         success: function(res) {
                             if(Action.countryCode && Action.countryCode == 'US') {
-                                $('#modal-disabled-dashboard').modal('show');
+                                $('#modal-is-us-citizen').modal('show');
                             } else {
                                 window.location.href = window.config.redirect;
                             }
@@ -408,7 +420,7 @@ var Action = {
 				$('.sign-in-block').hide();
 
 				if(Action.countryCode && Action.countryCode == 'US') {
-                    $('.go-to-dashboard-block').show().find('a').attr('data-toggle', 'modal').attr('data-target','#modal-disabled-dashboard');
+                    $('.go-to-dashboard-block').show().find('a').attr('data-toggle', 'modal').attr('data-target','#modal-is-us-citizen');
                 } else {
                     $('.go-to-dashboard-block').show().find('a').attr('href', window.config.redirect);
                 }
