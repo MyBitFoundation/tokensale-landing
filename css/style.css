@@ -500,6 +500,10 @@ p {
 }
 .section__aboutMybit {
   padding: 115px 0 166px;
+  -webkit-animation-fill-mode: none;
+  -moz-animation-fill-mode: none;
+  -o-animation-fill-mode: none;
+  animation-fill-mode: none;
 }
 .section__aboutMybit .desc {
   margin-top: -9px;
@@ -2064,12 +2068,6 @@ p {
 .mobile .canvas__bg,
 .tablet .canvas__bg {
   display: none;
-}
-:-webkit-full-screen-ancestor .large-header {
-  position: static;
-}
-:-webkit-full-screen-ancestor .mainNav__wrap {
-  position: static;
 }
 /* Keyframes */
 @keyframes circle1 {
