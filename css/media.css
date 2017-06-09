@@ -653,6 +653,9 @@ sub {
     left: 50%;
     margin-left: -15px;
   }
+  .section__partners {
+    padding-bottom: 70px;
+  }
   .section__notFound {
     height: auto;
     padding-top: 56px;

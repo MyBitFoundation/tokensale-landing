@@ -217,6 +217,15 @@
                         <span class="team__profession"><?php echo t::message('global','Energy, Renewables and Regulatory Affairs Manager, Iberdola'); ?></span>
                     </div>
                 </div>
+                <div class="team__item">
+                    <div class="team__photoWrap">
+                        <img src="images/advisor/lion_wang.jpg" alt="" class="team__photo">
+                    </div>
+                    <span class="team__name"><?php echo t::message('global','Lion Wang'); ?></span>
+                    <div class="team__professionWrap">
+                        <span class="team__profession"><?php echo t::message('global','Marketing'); ?></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -333,6 +342,12 @@
                                 <img src="images/media/pacatum.png" alt="" class="partners__pic"/>
                             </a>
                             <span class="partners__profession"><?php echo t::message('global','Technology'); ?></span>
+                        </div>
+                        <div class="partners__item">
+                            <a href="https://www.dahonghuo.com/" target="_blank" class="partners__logo">
+                                <img src="images/media/dahonghuo_logo.png" alt="" class="partners__pic"/>
+                            </a>
+                            <span class="partners__profession"><?php echo t::message('global','Exchange'); ?></span>
                         </div>
                     </div>
                 </div>

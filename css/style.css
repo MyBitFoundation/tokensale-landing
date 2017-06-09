@@ -1262,17 +1262,21 @@ p {
 }
 .partners__item {
   display: inline-block;
-  width: 30%;
+  width: 26%;
   text-align: center;
   padding: 28px 0 6px;
   margin: 0 3.5%;
+  vertical-align: top;
 }
 .partners__logo {
   display: block;
   padding-bottom: 26px;
+  height: 57px;
 }
 .partners__pic {
-  width: 100%;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
 }
 .partners__profession {
   display: block;
