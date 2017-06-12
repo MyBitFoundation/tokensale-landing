@@ -263,7 +263,7 @@
                             <a href="https://medium.com/@MyBit_Blog" class="soc__link colored medium" target="_blank"><i class="icon-medium"></i></a>
                         </li>
                         <li class="soc__item">
-                            <a href="http://weixin.qq.com/r/ystywajet1xiruyj95hy" class="soc__link colored wechat" target="_blank"><i class="icon-wechat"></i></a>
+                            <a href="http://weixin.qq.com/r/ystywajet1xiruyj95hy" class="soc__link colored wechat" data-toggle="modal" data-target="#modal-wechat-qr"><i class="icon-wechat"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -316,6 +316,34 @@
                     <div class="media__img">
                         <a href="https://www.facebook.com/vejdiven/videos/1344609518964148/">
                             <img src="images/media/paral.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="media__img">
+                        <a href="https://www.globalbankingandfinance.com/blockchain-bitcoin-conference-prague-participants-discussed-future-of-blockchain-and-cryptocurrencies/">
+                            <img src="images/media/finance_review.jpg" alt="Global banking and finance review">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="media__img">
+                        <a href="http://www.banklesstimes.com/2017/05/25/blockchain-bitcoin-conference-prague-a-hit/">
+                            <img src="images/media/bankless_times.png" alt="Bankless times">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="media__img">
+                        <a href="http://www.newsbtc.com/2017/05/29/blockchain-bitcoin-conference-prague-participants-discussed-future-blockchain-cryptocurrencies/">
+                            <img src="images/media/bitcoingarden.png" alt="Bitcoin Garden">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="media__img">
+                        <a href="http://www.newsbtc.com/2017/05/29/blockchain-bitcoin-conference-prague-participants-discussed-future-blockchain-cryptocurrencies/">
+                            <img src="images/media/newsbtc.png" alt="NewsBTC">
                         </a>
                     </div>
                 </div>

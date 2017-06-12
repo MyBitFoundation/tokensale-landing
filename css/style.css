@@ -1354,6 +1354,9 @@ p {
   display: block;
   margin-bottom: 16px;
 }
+.img_roundish {
+  border-radius: 6px;
+}
 .mainNav__wrap {
   position: fixed;
   z-index: 10;
@@ -2068,6 +2071,31 @@ p {
 }
 .modal-footer .hint {
   color: #838097;
+}
+.tooltip__parent {
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.tooltip__parent:hover .tooltip__child {
+  opacity: 1;
+  visibility: visible;
+}
+.tooltip__child {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 260px;
+  display: block;
+  height: 260px;
+  margin-left: -130px;
+  margin-bottom: 5px;
+  border: 1px solid #eee;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 0;
+  visibility: hidden;
 }
 .mobile .canvas__bg,
 .tablet .canvas__bg {

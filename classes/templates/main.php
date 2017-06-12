@@ -344,6 +344,23 @@
         </div>
     </div>
 
+    <div id="modal-wechat-qr" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><?php echo t::message('global','Scan to join our Wechat channel'); ?></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/wechat_qr-code.png" class="img_roundish">
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 <footer class="footer">
     <div class="container wow animated fadeInUp" data-wow-offset="50">
@@ -397,7 +414,7 @@
                             <a href="https://medium.com/@MyBit_Blog" class="soc__link circle" target="_blank"><i class="icon-medium"></i></a>
                         </li>
                         <li class="soc__item">
-                            <a href="http://weixin.qq.com/r/ystywajet1xiruyj95hy" class="soc__link circle" target="_blank"><i class="icon-wechat"></i></a>
+                            <a href="" class="soc__link circle" data-toggle="modal" data-target="#modal-wechat-qr"><i class="icon-wechat"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -412,7 +429,7 @@
                     <li class="resources__item"><a href="#" class="resources__link"><?php echo t::message('global','Deal Sheet'); ?></a></li>
                 </ul>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-6">
+            <div class="col-lg-3 col-md-12 col-sm-6">
                 <div class="footer__download">
                     <a href="<?php echo $path_whitepaper; ?>" target="_blank" class="btn btn-progress btn-download_js">
                         <span class="progress" style="transition-duration: 4s"></span>
