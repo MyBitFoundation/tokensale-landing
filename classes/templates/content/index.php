@@ -59,7 +59,7 @@
         </div>
         <div class="video__wrap">
             <div class="video__box">
-                <iframe src="https://www.youtube.com/embed/wvpnMJQkhAo" frameborder="0" allowfullscreen class="video"></iframe>
+                <iframe src="<?php echo t::message('global','video_url'); ?>" frameborder="0" allowfullscreen class="video"></iframe>
             </div>
         </div>
         <div class="row">

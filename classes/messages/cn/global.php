@@ -7,6 +7,8 @@
  */
 return array(
 
+    'video_url' => 'http://player.youku.com/embed/XMjgxNzI5NTQ4OA==',
+
     'About' => '关于',
     'Team' => '团队',
     'Community' => '社区',

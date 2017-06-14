@@ -14,8 +14,8 @@ class t {
         'en' => array(
             'title' => 'En'
         ),
-        'ch' => array(
-            'title' => 'Ch'
+        'cn' => array(
+            'title' => 'Cn'
         )
     );
 
