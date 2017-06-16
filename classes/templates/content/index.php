@@ -53,7 +53,7 @@
                     <p><?php echo t::message('global','How?'); ?></p>
                     <p><?php echo t::message('global','By commoditizing solar panel installation and other forms of renewable energy, investors and landowners can crowdfund the coming decentralized energy grid. With Mybit, investors get security on their investment, while landowners get access to investors willing to help in exchange for profit. By standardizing and automating setup, sales, and dividends, Mybit takes you one step closer to an equitable economy.'); ?></p>
                     <p><?php echo t::message('global','The Future'); ?></p>
-                    <p><?php echo t::message('global','Our 5 year goal is to be at the forefront of commoditizing the coming AI economy. Mybit will be Europe\'s platform tokenizing any automatable or machine infrastructure. And it will be owned by the crowd.'); ?></p>
+                    <p><?php echo t::message('global','Our 5 year goal is to be at the forefront of commoditizing the coming AI economy. Mybit will be the platform for tokenizing any automatable or machine infrastructure. And it will be owned by the crowd.'); ?></p>
                 </div>
             </div>
         </div>
@@ -214,7 +214,7 @@
                     </div>
                     <span class="team__name"><?php echo t::message('global','Alvaro Portellano'); ?></span>
                     <div class="team__professionWrap">
-                        <span class="team__profession"><?php echo t::message('global','Energy, Renewables and Regulatory Affairs Manager, Iberdola'); ?></span>
+                        <span class="team__profession"><?php echo t::message('global','Energy, Renewables and Regulatory Affairs Manager'); ?></span>
                     </div>
                 </div>
                 <div class="team__item">

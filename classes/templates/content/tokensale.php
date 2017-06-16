@@ -40,7 +40,131 @@
     </div>
 </div>
 
-<div id="whyBlockchain" class="section section__whyBlockchain wow animated fadeInUp" data-wow-offset="50">
+<div id="icoDetails" class="section section__details wow animated fadeInUp" data-wow-offset="50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                <h2 class="h3 section__title"><?php echo t::message('global','Pricing structure and general ICO details'); ?></h2>
+                <div class="details__wrap">
+                    <div class="details__row">
+                        <div class="details__title">
+                            <span class="details__heading"><?php echo t::message('global','TOKEN NAME'); ?>:</span>
+                        </div>
+                        <div class="details__content">
+                            <p class="details__text"><?php echo t::message('global','MyBit ($MyB)'); ?></p>
+                        </div>
+                    </div>
+                    <div class="details__row">
+                        <div class="details__title">
+                            <span class="details__heading"><?php echo t::message('global','WHAT DOES THIS TOKEN REPRESENT?'); ?></span>
+                        </div>
+                        <div class="details__content">
+                            <p class="details__text"><?php echo t::message('global','MyBit tokens are used to access certain functionalities of the platform including registering a new asset, transferring an asset, and a variety of financing features. Holders of MyBit tokens will also receive real-time revenue distributions proportionate to their stake percentage.'); ?></p>
+                        </div>
+                    </div>
+                    <div class="details__row">
+                        <div class="details__title">
+                            <span class="details__heading"><?php echo t::message('global','Use of Token'); ?></span>
+                        </div>
+                        <div class="details__content">
+                            <p class="details__text"><?php echo t::message('global','MyB can be used actively for: <br/>
+                                Investing in Energy and AI revenue generating assets : Funding & Revenue Sharing <br/>
+                                Peer to Peer trading (buying and selling) of decentralized energy <br/>
+                                Machine to machine payments <br/>
+                                Trading on Open Exchanges'); ?>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="details__row">
+                        <div class="details__title">
+                            <span class="details__heading"><?php echo t::message('global','PAYOUT STRUCTURE'); ?></span>
+                        </div>
+                        <div class="details__content">
+                            <p class="details__text"><?php echo t::message('global','A smart contract governs revenue distributions as a percentage based on individual stake divided by total MyB supply. Any incoming MyBit network fees (minus ethereum network fees) are automatically distributed to tokenholders in the next mined block.'); ?></p>
+                        </div>
+                    </div>
+                    <div class="details__row">
+                        <div class="details__title">
+                            <span class="details__heading"><?php echo t::message('global','TOTAL SUPPLY'); ?>:</span>
+                        </div>
+                        <div class="details__content">
+                            <p class="details__text"><?php echo t::message('global','Maximum of'); ?> 7,000,000 <?php echo t::message('global','tokens'); ?></p>
+                        </div>
+                    </div>
+                    <div class="details__row">
+                        <div class="details__title">
+                            <span class="details__heading">Fundraising cap:</span>
+                        </div>
+                        <div class="details__content">
+                            <p class="details__text">44,875 ETH</p>
+                        </div>
+                    </div>
+                    <div class="details__row">
+                        <div class="details__title">
+                            <span class="details__heading"><?php echo t::message('global','PRICE PER TOKEN'); ?>:</span>
+                        </div>
+                        <div class="details__content">
+                            <p class="details__text"><?php echo t::message('global','Variable, see pricing structure below'); ?></p>
+                        </div>
+                    </div>
+                    <div class="details__row">
+                        <div class="details__title">
+                            <span class="details__heading"><?php echo t::message('global','Crowdfunding Milestones'); ?>:</span>
+                        </div>
+                        <div class="details__content">
+                            <a href="javascript:;" class="btn btn-default crowdfunding__milestones__link"><span><?php echo t::message('global','Click to view'); ?></span></a>
+                        </div>
+                    </div>
+                    <div class="details__row">
+                        <div class="details__title">
+                            <span class="details__heading"><?php echo t::message('global','Escrow Release Terms'); ?>:</span>
+                        </div>
+                        <div class="details__content">
+                            <a href="javascript:;" class="btn btn-default escrow__release__terms__link"><span><?php echo t::message('global','Click to view'); ?></span></a>
+                        </div>
+                    </div>
+                    <h2 class="h3 section__title"><?php echo t::message('global','Pricing Chart'); ?></h2>
+                    <div class="chart__box">
+                        <div class="chart__title chart__title_1">
+                            <span class="value">25% <?php echo t::message('global','Discount'); ?></span>
+                            <span class="line"></span>
+                            <span class="name"><?php echo t::message('global','Week'); ?> 1</span>
+                            <span class="price">1 ETH = 133.33 MyB</span>
+                        </div>
+                        <div class="chart__title chart__title_2">
+                            <span class="value"><?php echo t::message('global','Full-Price'); ?></span>
+                            <span class="line"></span>
+                            <span class="name"><?php echo t::message('global','Week'); ?> 4</span>
+                            <span class="price">1 ETH = 100 MyB</span>
+                        </div>
+                        <div class="chart__title chart__title_3">
+                            <span class="value">15% <?php echo t::message('global','Discount'); ?></span>
+                            <span class="line"></span>
+                            <span class="name"><?php echo t::message('global','Week'); ?> 2</span>
+                            <span class="price">1 ETH = 117.64 MyB</span>
+                        </div>
+                        <div class="chart__title chart__title_4">
+                            <span class="value">10% <?php echo t::message('global','Discount'); ?></span>
+                            <span class="line"></span>
+                            <span class="name"><?php echo t::message('global','Week'); ?> 3</span>
+                            <span class="price">1 ETH = 111.11 MyB</span>
+                        </div>
+                        <div class="circle__box">
+                            <svg width="290" height="290" class="circle__wrap">
+                                <circle fill="none" cx="145" cy="145" r="125" class="circle circle_1"/>
+                                <circle fill="none" cx="145" cy="145" r="106" class="circle circle_2"/>
+                                <circle fill="none" cx="145" cy="145" r="89" class="circle circle_3"/>
+                                <circle fill="none" cx="145" cy="145" r="71" class="circle circle_4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="whyBlockchain" class="section section__whyBlockchain section__inverse wow animated fadeInUp" data-wow-offset="50">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -51,7 +175,7 @@
     </div>
 </div>
 
-<div id="crowdfund" class="section section__crowdfund section__inverse wow animated fadeInUp" data-wow-offset="50">
+<div id="crowdfund" class="section section__crowdfund wow animated fadeInUp" data-wow-offset="50">
     <div class="container">
         <h2 class="h3 section__title"><?php echo t::message('global','Why Raise via Crowdfunding?'); ?></h2>
         <p><?php echo t::message('global','We evaluated raising capital between a Blockchain crowdfunding campaign and traditional venture capital and concluded that utilizing an Ethereum ERC20 token would be the optimal fundraising method to achieve our vision with this platform.'); ?></p>
@@ -63,7 +187,7 @@
     </div>
 </div>
 
-<div id="escrow" class="section section__escrow wow animated fadeInUp" data-wow-offset="50">
+<div id="escrow" class="section section__escrow section__inverse wow animated fadeInUp" data-wow-offset="50">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
@@ -75,7 +199,7 @@
     </div>
 </div>
 
-<div id="funds" class="section section__funds section__inverse wow animated fadeInUp" data-wow-offset="50">
+<div id="funds" class="section section__funds wow animated fadeInUp" data-wow-offset="50">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -87,7 +211,7 @@
     </div>
 </div>
 
-<div id="regulatory" class="section section__regulatory wow animated fadeInUp" data-wow-offset="50">
+<div id="regulatory" class="section section__regulatory section__inverse wow animated fadeInUp" data-wow-offset="50">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -176,118 +300,6 @@
         </div>
 
 
-    </div>
-</div>
-
-<div id="icoDetails" class="section section__details section__inverse wow animated fadeInUp" data-wow-offset="50">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                <h2 class="h3 section__title"><?php echo t::message('global','Pricing structure and general ICO details'); ?></h2>
-                <div class="details__wrap">
-                    <div class="details__row">
-                        <div class="details__title">
-                            <span class="details__heading"><?php echo t::message('global','TOKEN NAME'); ?>:</span>
-                        </div>
-                        <div class="details__content">
-                            <p class="details__text"><?php echo t::message('global','MyBit ($MyB)'); ?></p>
-                        </div>
-                    </div>
-                    <div class="details__row">
-                        <div class="details__title">
-                            <span class="details__heading"><?php echo t::message('global','WHAT DOES THIS TOKEN REPRESENT?'); ?></span>
-                        </div>
-                        <div class="details__content">
-                            <p class="details__text"><?php echo t::message('global','MyBit tokens are used to access certain functionalities of the platform including registering a new asset, transferring an asset, and a variety of financing features. Holders of MyBit tokens will also receive real-time revenue distributions proportionate to their stake percentage.'); ?></p>
-                        </div>
-                    </div>
-                    <div class="details__row">
-                        <div class="details__title">
-                            <span class="details__heading"><?php echo t::message('global','Use of Token'); ?></span>
-                        </div>
-                        <div class="details__content">
-                            <p class="details__text"><?php echo t::message('global','MyB can be used actively for: <br/>
-                                Investing in Energy and AI revenue generating assets : Funding & Revenue Sharing <br/>
-                                Peer to Peer trading (buying and selling) of decentralized energy <br/>
-                                Machine to machine payments <br/>
-                                Trading on Open Exchanges'); ?>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="details__row">
-                        <div class="details__title">
-                            <span class="details__heading"><?php echo t::message('global','PAYOUT STRUCTURE'); ?></span>
-                        </div>
-                        <div class="details__content">
-                            <p class="details__text"><?php echo t::message('global','A smart contract governs revenue distributions as a percentage based on individual stake divided by total MyB supply. Any incoming MyBit network fees (minus ethereum network fees) are automatically distributed to tokenholders in the next mined block.'); ?></p>
-                        </div>
-                    </div>
-                    <div class="details__row">
-                        <div class="details__title">
-                            <span class="details__heading"><?php echo t::message('global','TOTAL SUPPLY'); ?>:</span>
-                        </div>
-                        <div class="details__content">
-                            <p class="details__text"><?php echo t::message('global','Maximum of'); ?> 7,000,000 <?php echo t::message('global','tokens'); ?></p>
-                        </div>
-                    </div>
-                    <div class="details__row">
-                        <div class="details__title">
-                            <span class="details__heading"><?php echo t::message('global','PRICE PER TOKEN'); ?>:</span>
-                        </div>
-                        <div class="details__content">
-                            <p class="details__text"><?php echo t::message('global','Variable, see pricing structure below'); ?></p>
-                        </div>
-                    </div>
-                    <div class="details__row">
-                        <div class="details__title">
-                            <span class="details__heading"><?php echo t::message('global','Crowdfunding Milestones'); ?>:</span>
-                        </div>
-                        <div class="details__content">
-                            <a href="javascript:;" class="btn btn-default crowdfunding__milestones__link"><span><?php echo t::message('global','Click to view'); ?></span></a>
-                        </div>
-                    </div>
-                    <div class="details__row">
-                        <div class="details__title">
-                            <span class="details__heading"><?php echo t::message('global','Escrow Release Terms'); ?>:</span>
-                        </div>
-                        <div class="details__content">
-                            <a href="javascript:;" class="btn btn-default escrow__release__terms__link"><span><?php echo t::message('global','Click to view'); ?></span></a>
-                        </div>
-                    </div>
-                    <h2 class="h3 section__title"><?php echo t::message('global','Pricing Chart'); ?></h2>
-                    <div class="chart__box">
-                        <div class="chart__title chart__title_1">
-                            <span class="value">25% <?php echo t::message('global','Discount'); ?></span>
-                            <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Week'); ?> 1</span>
-                        </div>
-                        <div class="chart__title chart__title_2">
-                            <span class="value"><?php echo t::message('global','Full-Price'); ?></span>
-                            <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Week'); ?> 4</span>
-                        </div>
-                        <div class="chart__title chart__title_3">
-                            <span class="value">15% <?php echo t::message('global','Discount'); ?></span>
-                            <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Week'); ?> 2</span>
-                        </div>
-                        <div class="chart__title chart__title_4">
-                            <span class="value">10% <?php echo t::message('global','Discount'); ?></span>
-                            <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Week'); ?> 3</span>
-                        </div>
-                        <div class="circle__box">
-                            <svg width="290" height="290" class="circle__wrap">
-                                <circle fill="none" cx="145" cy="145" r="125" class="circle circle_1"/>
-                                <circle fill="none" cx="145" cy="145" r="106" class="circle circle_2"/>
-                                <circle fill="none" cx="145" cy="145" r="89" class="circle circle_3"/>
-                                <circle fill="none" cx="145" cy="145" r="71" class="circle circle_4"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 

@@ -94,8 +94,16 @@ sub {
     transition: all 0.2s ease-out;
   }
   .chart__title:hover .name,
-  .chart__title:hover .value {
-    transform: scale(1.2);
+  .chart__title:hover .value,
+  .chart__title:hover .price {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  .chart__title:hover .price {
+    opacity: 1;
+    visibility: visible;
   }
   .chart__title .name {
     display: block;
@@ -103,6 +111,13 @@ sub {
     font-weight: 300;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+  }
+  .chart__title .price {
+    display: block;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+    visibility: hidden;
   }
   .chart__title .line {
     display: block;
@@ -784,12 +799,18 @@ sub {
     padding: 10px 5px;
   }
   .chart__title .name {
-    color: #fff;
+    color: #3a3665;
     font-size: 12px;
     display: block;
   }
+  .chart__title .value {
+    font-size: 15px;
+  }
   .chart__title .line {
     display: none;
+  }
+  .chart__title .price {
+    font-size: 11px;
   }
   .chart__title_1 {
     color: #a772dd;
