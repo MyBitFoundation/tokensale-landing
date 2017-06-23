@@ -95,29 +95,27 @@ sub {
   }
   .chart__title:hover .name,
   .chart__title:hover .value,
-  .chart__title:hover .price {
+  .chart__title:hover .price,
+  .chart__title:hover .remark {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
   }
-  .chart__title:hover .price {
-    opacity: 1;
-    visibility: visible;
-  }
   .chart__title .name {
     display: block;
     font-size: 15px;
     font-weight: 300;
+    text-align: left;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
   }
   .chart__title .price {
     display: block;
+    text-align: left;
+    color: rgba(14, 37, 57, 0.6);
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    opacity: 0;
-    visibility: hidden;
   }
   .chart__title .line {
     display: block;
@@ -141,9 +139,19 @@ sub {
     box-shadow: 0 0 3px 2px #fff;
     border-radius: 100%;
   }
+  .chart__title .remark {
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
+    color: #e05398;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
   .chart__title_1 {
     text-align: left;
-    left: 57px;
+    left: 40px;
     top: 3px;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
@@ -152,24 +160,29 @@ sub {
     width: 175px;
   }
   .chart__title_1 .line:before {
-    width: 50px;
+    width: 62px;
     left: 100%;
     transform: rotate(41deg);
-    top: 16px;
+    top: 20px;
     margin-left: -7px;
   }
   .chart__title_1 .line:after {
-    top: 33px;
-    right: -38px;
+    top: 42px;
+    right: -49px;
   }
   .chart__title_1:hover ~ .circle__box circle:nth-child(1) {
     stroke-width: 27px;
     stroke: #9666c6;
   }
+  .chart__title_1 .name,
+  .chart__title_1 .price,
+  .chart__title_1 .remark {
+    text-align: right;
+  }
   .chart__title_2 {
     text-align: right;
-    right: 72px;
-    top: 135px;
+    right: 35px;
+    top: 127px;
   }
   .chart__title_2 .line {
     width: 130px;
@@ -188,48 +201,6 @@ sub {
   .chart__title_2:hover ~ .circle__box circle:nth-child(2) {
     stroke-width: 26px;
     stroke: #7dc2c3;
-  }
-  .chart__title_3 {
-    text-align: left;
-    left: 51px;
-    top: 135px;
-  }
-  .chart__title_3 .line {
-    width: 242px;
-  }
-  .chart__title_3 .line:before {
-    display: none;
-  }
-  .chart__title_3 .line:after {
-    top: 0;
-    right: 0;
-  }
-  .chart__title_3:hover ~ .circle__box circle:nth-child(3) {
-    stroke-width: 24px;
-    stroke: #c94b89;
-  }
-  .chart__title_4 {
-    text-align: right;
-    right: 72px;
-    top: 3px;
-  }
-  .chart__title_4 .line {
-    width: 176px;
-  }
-  .chart__title_4 .line:before {
-    width: 95px;
-    right: 100%;
-    transform: rotate(-28deg);
-    top: 22px;
-    margin-right: -6px;
-  }
-  .chart__title_4 .line:after {
-    top: 44px;
-    left: -83px;
-  }
-  .chart__title_4:hover ~ .circle__box circle:nth-child(4) {
-    stroke-width: 26px;
-    stroke: #c6c8a2;
   }
   .chart__total {
     opacity: 0;
@@ -306,16 +277,10 @@ sub {
     padding-right: 20px;
   }
   .chart__title_1 {
-    left: 70px;
+    left: 74px;
   }
   .chart__title_2 {
-    right: 68px;
-  }
-  .chart__title_3 {
-    left: 63px;
-  }
-  .chart__title_4 {
-    right: 85px;
+    right: 50px;
   }
   .chart__total {
     margin-top: -48px;
@@ -429,16 +394,10 @@ sub {
     min-height: 320px;
   }
   .chart__title_1 {
-    left: 64px;
+    left: 25px;
   }
   .chart__title_2 {
-    right: 57px;
-  }
-  .chart__title_3 {
-    left: 35px;
-  }
-  .chart__title_4 {
-    right: 58px;
+    right: 22px;
   }
   .soc__item {
     margin-right: 9px;
@@ -794,8 +753,7 @@ sub {
     margin-bottom: 6px;
   }
   .chart__title {
-    width: 24%;
-    max-width: 115px;
+    width: 48%;
     padding: 10px 5px;
   }
   .chart__title .name {
@@ -811,6 +769,14 @@ sub {
   }
   .chart__title .price {
     font-size: 11px;
+  }
+  .chart__title .remark {
+    display: block;
+    font-weight: 500;
+    font-style: italic;
+    color: #e05398;
+    font-size: 12px;
+    margin-bottom: -4px;
   }
   .chart__title_1 {
     color: #a772dd;

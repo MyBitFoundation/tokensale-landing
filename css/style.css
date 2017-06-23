@@ -1905,20 +1905,6 @@ p {
   stroke-dashoffset: 261%;
   transform: rotate(187deg);
 }
-.chart__box circle:nth-child(3) {
-  stroke-width: 17px;
-  stroke: #e05398;
-  stroke-dasharray: 228%;
-  stroke-dashoffset: 228%;
-  transform: rotate(127deg);
-}
-.chart__box circle:nth-child(4) {
-  stroke-width: 19px;
-  stroke: #dddfb4;
-  stroke-dasharray: 194%;
-  stroke-dashoffset: 194%;
-  transform: rotate(221deg);
-}
 .visible circle:nth-child(1) {
   animation: circle1 0.8s linear;
   -webkit-animation: circle1 0.8s linear;
@@ -2140,46 +2126,6 @@ p {
   100% {
     stroke-dasharray: 261%;
     stroke-dashoffset: 155%;
-  }
-}
-@keyframes circle3 {
-  0% {
-    stroke-dasharray: 228%;
-    stroke-dashoffset: 228%;
-  }
-  100% {
-    stroke-dasharray: 228%;
-    stroke-dashoffset: 74%;
-  }
-}
-@-webkit-keyframes circle3 {
-  0% {
-    stroke-dasharray: 228%;
-    stroke-dashoffset: 228%;
-  }
-  100% {
-    stroke-dasharray: 228%;
-    stroke-dashoffset: 74%;
-  }
-}
-@keyframes circle4 {
-  0% {
-    stroke-dasharray: 194%;
-    stroke-dashoffset: 194%;
-  }
-  100% {
-    stroke-dasharray: 194%;
-    stroke-dashoffset: 152%;
-  }
-}
-@-webkit-keyframes circle4 {
-  0% {
-    stroke-dasharray: 194%;
-    stroke-dashoffset: 194%;
-  }
-  100% {
-    stroke-dasharray: 194%;
-    stroke-dashoffset: 152%;
   }
 }
 @keyframes titleOpacity {

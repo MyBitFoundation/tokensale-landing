@@ -83,7 +83,7 @@
             </ul>
             <div class="lang__wrap">
                 <div class="dropdown__wrap">
-                    <a href="javascript:;" class="dropdown__current"><?php echo t::getInstance()->getCurrentLang(); ?> <i class="icon-arrow_dropdown"></i></a>
+                    <a href="javascript:;" class="dropdown__current current_lang" data-lang="<?php echo t::getInstance()->getCurrentLang(); ?>"><?php echo t::getInstance()->getCurrentLang(); ?> <i class="icon-arrow_dropdown"></i></a>
                     <div class="dropdown__in">
                         <ul class="dropdown__list">
                             <?php foreach (t::getInstance()->languages as $key => $lang) : ?>

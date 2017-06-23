@@ -7,7 +7,7 @@
  */
 return array(
 
-    'video_url' => 'https://www.youtube.com/embed/wvpnMJQkhAo',
+    'video_url' => 'https://www.youtube.com/embed/qQYQ4JFnxOE',
 
     'About' => 'About',
     'Team' => 'Team',

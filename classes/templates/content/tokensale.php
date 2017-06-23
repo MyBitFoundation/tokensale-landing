@@ -88,7 +88,7 @@
                             <span class="details__heading"><?php echo t::message('global','TOTAL SUPPLY'); ?>:</span>
                         </div>
                         <div class="details__content">
-                            <p class="details__text"><?php echo t::message('global','Maximum of'); ?> 7,000,000 <?php echo t::message('global','tokens'); ?></p>
+                            <p class="details__text"><?php echo t::message('global','Maximum of'); ?> 5,000,000 <?php echo t::message('global','tokens'); ?></p>
                         </div>
                     </div>
                     <div class="details__row">
@@ -96,7 +96,15 @@
                             <span class="details__heading">Fundraising cap:</span>
                         </div>
                         <div class="details__content">
-                            <p class="details__text">44,875 ETH</p>
+                            <p class="details__text">26,875 ETH</p>
+                        </div>
+                    </div>
+                    <div class="details__row">
+                        <div class="details__title">
+                            <span class="details__heading">Fundraising minimum:</span>
+                        </div>
+                        <div class="details__content">
+                            <p class="details__text">4,000 ETH</p>
                         </div>
                     </div>
                     <div class="details__row">
@@ -115,46 +123,26 @@
                             <a href="javascript:;" class="btn btn-default crowdfunding__milestones__link"><span><?php echo t::message('global','Click to view'); ?></span></a>
                         </div>
                     </div>
-                    <div class="details__row">
-                        <div class="details__title">
-                            <span class="details__heading"><?php echo t::message('global','Escrow Release Terms'); ?>:</span>
-                        </div>
-                        <div class="details__content">
-                            <a href="javascript:;" class="btn btn-default escrow__release__terms__link"><span><?php echo t::message('global','Click to view'); ?></span></a>
-                        </div>
-                    </div>
-                    <h2 class="h3 section__title"><?php echo t::message('global','Pricing Chart'); ?></h2>
+                    <h2 class="h3 section__title center"><?php echo t::message('global','Pricing'); ?></h2>
                     <div class="chart__box">
                         <div class="chart__title chart__title_1">
-                            <span class="value">25% <?php echo t::message('global','Discount'); ?></span>
+                            <span class="value">1 ETH = 133 MyB</span>
                             <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Week'); ?> 1</span>
-                            <span class="price">1 ETH = 133.33 MyB</span>
+                            <span class="name"><?php echo t::message('global','Tranche'); ?> 1</span>
+                            <span class="remark">25% <?php echo t::message('global','discount'); ?></span>
+                            <span class="price">9,375 ETH</span>
                         </div>
                         <div class="chart__title chart__title_2">
-                            <span class="value"><?php echo t::message('global','Full-Price'); ?></span>
+                            <span class="value">1 ETH = 100 MyB</span>
                             <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Week'); ?> 4</span>
-                            <span class="price">1 ETH = 100 MyB</span>
-                        </div>
-                        <div class="chart__title chart__title_3">
-                            <span class="value">15% <?php echo t::message('global','Discount'); ?></span>
-                            <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Week'); ?> 2</span>
-                            <span class="price">1 ETH = 117.64 MyB</span>
-                        </div>
-                        <div class="chart__title chart__title_4">
-                            <span class="value">10% <?php echo t::message('global','Discount'); ?></span>
-                            <span class="line"></span>
-                            <span class="name"><?php echo t::message('global','Week'); ?> 3</span>
-                            <span class="price">1 ETH = 111.11 MyB</span>
+                            <span class="name"><?php echo t::message('global','Tranche'); ?> 2</span>
+                            <span class="remark"><?php echo t::message('global','Full Price'); ?></span>
+                            <span class="price">17,500 ETH</span>
                         </div>
                         <div class="circle__box">
                             <svg width="290" height="290" class="circle__wrap">
                                 <circle fill="none" cx="145" cy="145" r="125" class="circle circle_1"/>
                                 <circle fill="none" cx="145" cy="145" r="106" class="circle circle_2"/>
-                                <circle fill="none" cx="145" cy="145" r="89" class="circle circle_3"/>
-                                <circle fill="none" cx="145" cy="145" r="71" class="circle circle_4"/>
                             </svg>
                         </div>
                     </div>
@@ -193,7 +181,6 @@
             <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                 <h2 class="h3 section__title"><?php echo t::message('global','Escrow Details'); ?> </h2>
                 <p><?php echo t::message('global','All funds contributed during the tokensale period will be held in escrow (a multi-signature Ethereum wallet contract). The MyBit team has worked with Brave New Coin to devise a release schedule that enables rapid development of the platform as well as protect investor funds.'); ?></p>
-                <p><?php echo t::message('global','Full details can be found'); ?> <a href="javascript:;" class="link yellow escrow__release__terms__link"><?php echo t::message('global','here'); ?></a>.</p>
             </div>
         </div>
     </div>
