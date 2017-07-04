@@ -396,7 +396,7 @@
                             <a href="https://twitter.com/MyBit_DApp" class="soc__link circle" target="_blank"><i class="icon-twitter"></i></a>
                         </li>
                         <li class="soc__item">
-                            <a href="https://t.me/mybit_dapp" class="soc__link circle" target="_blank"><i class="icon-telegram"></i></a>
+                            <a href="https://t.me/mybitio" class="soc__link circle" target="_blank"><i class="icon-telegram"></i></a>
                         </li>
                         <li class="soc__item">
                             <a href="https://www.reddit.com/user/MyBit_DApp/" class="soc__link circle" target="_blank"><i class="icon-redit"></i></a>
@@ -422,8 +422,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <h2 class="h4"><?php echo t::message('global','Resources'); ?></h2>
                 <ul class="resources__list">
-                    <li class="resources__item"><a href="https://www.fluidui.com/editor/live/livePreview/cF9YZTZ1NldrdGZSNkJ1bElUVG9UUFdPZkQ5YXJOdGZsTg==" target="_blank" class="resources__link"><?php echo t::message('global','Wireframes'); ?></a></li>
-                    <li class="resources__item"><a href="#" class="resources__link"><?php echo t::message('global','Demo'); ?></a></li>
+                    <li class="resources__item"><a href="https://youtu.be/9-X_0DsiDJ4" target="_blank" class="resources__link"><?php echo t::message('global','Demo'); ?></a></li>
                     <li class="resources__item"><a href="https://www.facebook.com/vejdiven/videos/1344609518964148/" target="_blank" class="resources__link"><?php echo t::message('global','Presentation'); ?></a></li>
                     <li class="resources__item"><a href="https://app.xtensio.com/folio/9q93e8z3" target="_blank" class="resources__link"><?php echo t::message('global','One-Pager'); ?></a></li>
                     <li class="resources__item"><a href="#" class="resources__link"><?php echo t::message('global','Deal Sheet'); ?></a></li>

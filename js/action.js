@@ -9,6 +9,8 @@ var Action = {
 
     countryCode: null,
 
+    currentLang: null,
+
     init: function() {
         this.initEvents();
         this.checkIsLogged();
@@ -432,9 +434,7 @@ var Action = {
 $(document).ready(function() {
     Action.init();
 
-    if($('.current_lang').attr('data-lang') != 'en') {
-        config.redirect += '/'+$('.current_lang').attr('data-lang');
-    }
+    config.redirect += '/'+$('.current_lang').attr('data-lang');
 
     Common.initCountdown('7/17/2017 12:00', 'countdown',function() {
         $('.date__title').html('Crowdsale Live');

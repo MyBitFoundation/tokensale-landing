@@ -245,7 +245,7 @@
                             <a href="https://twitter.com/MyBit_DApp" class="soc__link colored twitter" target="_blank"><i class="icon-twitter"></i></a>
                         </li>
                         <li class="soc__item">
-                            <a href="https://t.me/mybit_dapp" class="soc__link colored telegram" target="_blank"><i class="icon-telegram"></i></a>
+                            <a href="https://t.me/mybitio" class="soc__link colored telegram" target="_blank"><i class="icon-telegram"></i></a>
                         </li>
                         <li class="soc__item">
                             <a href="https://www.reddit.com/user/MyBit_DApp/" class="soc__link colored redit" target="_blank"><i class="icon-redit"></i></a>

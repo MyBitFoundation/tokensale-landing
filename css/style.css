@@ -939,7 +939,8 @@ p {
 }
 .resources__item {
   float: left;
-  width: 33.33%;
+  width: 50%;
+  padding-right: 15px;
 }
 .resources__link {
   display: block;
