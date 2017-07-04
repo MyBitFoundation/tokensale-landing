@@ -9,8 +9,6 @@ var Action = {
 
     countryCode: null,
 
-    currentLang: null,
-
     init: function() {
         this.initEvents();
         this.checkIsLogged();
