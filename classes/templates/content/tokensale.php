@@ -101,14 +101,6 @@
                     </div>
                     <div class="details__row">
                         <div class="details__title">
-                            <span class="details__heading">Fundraising minimum:</span>
-                        </div>
-                        <div class="details__content">
-                            <p class="details__text">4,000 ETH</p>
-                        </div>
-                    </div>
-                    <div class="details__row">
-                        <div class="details__title">
                             <span class="details__heading"><?php echo t::message('global','PRICE PER TOKEN'); ?>:</span>
                         </div>
                         <div class="details__content">
