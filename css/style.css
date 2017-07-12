@@ -1358,6 +1358,34 @@ p {
 .img_roundish {
   border-radius: 6px;
 }
+.counter__box {
+  max-width: 780px;
+  margin: 60px auto 0;
+  text-align: center;
+}
+.counter__item {
+  width: 33.33%;
+  padding: 0 15px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+}
+.counter__ic {
+  width: 44px;
+  height: 44px;
+  line-height: 40px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #302b51;
+  margin-bottom: 10px;
+}
+.counter__value {
+  display: block;
+  font-size: 28px;
+}
+.counter__desc {
+  opacity: 0.5;
+}
 .mainNav__wrap {
   position: fixed;
   z-index: 10;
@@ -1664,7 +1692,7 @@ p {
   font-size: 12px;
   color: #ff4d54;
   left: 25px;
-  top: 50px;
+  bottom: -17px;
   padding-top: 1px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;

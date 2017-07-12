@@ -114,6 +114,10 @@ var Action = {
             $('.statusBox',this).html('');
         });
 
+        $('#modal-askQuestion').on('show.bs.modal', function (e) {
+            grecaptcha.reset();
+        });
+
         $('#modal-signUp').on('show.bs.modal',function() {
             var btn = $(this).find('.send_registration');
             btn.html(btn.attr('data-text-send'));
@@ -163,11 +167,6 @@ var Action = {
 
         if($('input[name=repeat_password]',block).val() != $('input[name=password]',block).val()) {
             $('input[name=repeat_password]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Passwords do not match');
-            status = false;
-        }
-
-        if(!$('input[name=address]',block).val()) {
-            $('input[name=address]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html('Incorrect Ethereum address');
             status = false;
         }
 
@@ -382,6 +381,7 @@ var Action = {
                 name: $('[name=name]',block).val(),
                 reference: $('[name=reference]',block).val(),
                 message: $('[name=message]',block).val(),
+                g_recaptcha_response: grecaptcha.getResponse(),
             };
 
             $.ajax({
@@ -390,11 +390,17 @@ var Action = {
                 url: 'action.php',
                 data: data,
                 success: function (response) {
+                    grecaptcha.reset();
                     if(response.result) {
                         $('#modal-askQuestion').modal('hide');
                         $('#modal-success-question').modal('show');
                     } else {
-                        $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response.errors);
+
+                        if(response.errors.email)
+                            $('input[name=email]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response.errors.email);
+
+                        if(response.errors.g_recaptcha_response)
+                            $('.recapcha_row',block).addClass('error').find('.form__errorTxt').html(response.errors.g_recaptcha_response);
                     }
                 }
             });
@@ -435,6 +441,7 @@ $(document).ready(function() {
     config.redirect += '/'+$('.current_lang').attr('data-lang');
 
     Common.initCountdown('7/17/2017 12:00', 'countdown',function() {
+
         $('.date__title').html('Crowdsale Live');
         Common.initCountdown('8/17/2017 12:00', 'countdown',function() {
             $('.date__title').html('Crowdsale has ended');

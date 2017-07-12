@@ -411,6 +411,9 @@ sub {
   .vertical__branch__right__bar {
     left: 81.6%;
   }
+  .counter__value {
+    font-size: 24px;
+  }
 }
 @media (max-width: 900px) {
   .mainNav__link {
@@ -874,6 +877,12 @@ sub {
     box-shadow: none;
     padding-top: 0;
     right: 17px;
+  }
+  .counter__item {
+    width: 100%;
+  }
+  .counter__item:not(:last-of-type) {
+    margin-bottom: 40px;
   }
   .modal-content {
     padding: 0 10px;

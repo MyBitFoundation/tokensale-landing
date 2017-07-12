@@ -38,10 +38,20 @@ switch ($_REQUEST['action']) {
         break;
 
     case 'say_in_touch':
-
         if(!isset($data['email']) || !$data['email'] || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
             $result = false;
             $errors['email'] = 'Incorrect e-mail';
+        }
+
+        if(!isset($data['g_recaptcha_response'])) {
+            $result = false;
+            $errors['g_recaptcha_response'] = 'Incorrect recaptcha';
+        } else {
+            $recapcha = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".RECAPTCHA_SECRET."&response=".$data['g_recaptcha_response']."&remoteip=".$_SERVER["REMOTE_ADDR"]), true);
+            if (!$recapcha["success"]) {
+                $result = false;
+                $errors['g_recaptcha_response'] = 'Incorrect recaptcha';
+            }
         }
 
         if($result) {
@@ -51,7 +61,13 @@ switch ($_REQUEST['action']) {
                 'r' => $resultMailChimp['r'],
                 'errors' => isset($resultMailChimp['error']) ? $resultMailChimp['error'] : '',
             );
+        } else {
+            $response = array(
+                'result' => $result,
+                'errors' => $errors,
+            );
         }
+
 
         break;
 }

@@ -40,6 +40,7 @@
             <div class="offer-box wow animated fadeInUp go-to-dashboard-block" data-wow-delay="0.3s" style="display: none;">
                 <a href="" class="btn btn-shadow yellow"><?php echo t::message('global','Go to dashboard'); ?></a>
             </div>
+
         </div>
     </div>
 </div>
