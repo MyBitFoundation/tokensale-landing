@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/style.css"/>
     <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/media.css"/>
 
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
     <script src="<?php echo Common::getInstance()->http(); ?>js/jquery-1.11.3.min.js"></script>
     <script src="<?php echo Common::getInstance()->http(); ?>js/bootstrap.min.js"></script>
     <script src="<?php echo Common::getInstance()->http(); ?>js/device.min.js"></script>
@@ -286,6 +288,12 @@
                             <textarea name="message" class="scrollbar-outer textarea-scrollbar textarea" id="textarea-scrollbar_js"  placeholder="<?php echo t::message('global','Please describe your message here...'); ?>"></textarea>
                             <span class="form__errorTxt"></span>
                         </div>
+
+                        <div class="form__row recapcha_row">
+                            <div class="g-recaptcha inline" data-sitekey="6Leg0igUAAAAACPIVZI6TWtd-HyTWArIoEjbkuvU"></div>
+                            <span class="form__errorTxt"></span>
+                        </div>
+
                         <div class="btn__row">
                             <a href="javascript:;" class="btn btn-shadow yellow send_question submit_event"><?php echo t::message('global','Ask Question'); ?></a>
                         </div>
