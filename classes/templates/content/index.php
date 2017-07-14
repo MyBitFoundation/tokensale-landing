@@ -348,6 +348,20 @@
                         </a>
                     </div>
                 </div>
+                <div class="col-sm-3">
+                    <div class="media__img">
+                        <a href="https://hacked.com/ico-analysis-mybit/ ">
+                            <img src="images/media/hacked.png" alt="NewsBTC">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="media__img">
+                        <a href="https://crushcrypto.com/analysis-of-mybit-ico/">
+                            <img src="images/media/crush-crypto.jpg" alt="NewsBTC">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -359,7 +373,7 @@
             <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                 <h2 class="h3 section__title"><?php echo t::message('global','Partnerships'); ?></h2>
                 <div class="partners__wrap">
-                    <div class="partners__list slick_mob">
+                    <div class="partners__list slick_desktop">
                         <div class="partners__item">
                             <a href="https://bravenewcoin.com/news/mybit-tackles-data-manipulation-an-emerging-art-of-war-in-cyberspace/" target="_blank" class="partners__logo">
                                 <img src="images/media/bnc.jpeg" alt="" class="partners__pic"/>
@@ -377,6 +391,18 @@
                                 <img src="images/media/dahonghuo_logo.png" alt="" class="partners__pic"/>
                             </a>
                             <span class="partners__profession"><?php echo t::message('global','Exchange'); ?></span>
+                        </div>
+                        <div class="partners__item">
+                            <a href="http://emerginginsider.com/" target="_blank" class="partners__logo">
+                                <img src="images/media/emerging_insider.png" alt="" class="partners__pic"/>
+                            </a>
+                            <span class="partners__profession"><?php echo t::message('global','Public Relations'); ?></span>
+                        </div>
+                        <div class="partners__item">
+                            <a href="http://www.mll-legal.com/home/" target="_blank" class="partners__logo">
+                                <img src="images/media/meyerlus.png" alt="" class="partners__pic"/>
+                            </a>
+                            <span class="partners__profession"><?php echo t::message('global','Legal'); ?></span>
                         </div>
                     </div>
                 </div>

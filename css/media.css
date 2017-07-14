@@ -803,6 +803,9 @@ sub {
     float: left;
     min-height: 120px;
   }
+  .partners__logo {
+    padding-bottom: 16px;
+  }
   .soc__wrap {
     margin-bottom: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
