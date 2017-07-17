@@ -20,7 +20,13 @@
             <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" ><?php echo t::message('global','The platform for tokenizing revenue streams'); ?></h1>
             <div class="date__box wow animated fadeInUp" data-wow-delay="0.2s">
                 <span class="date__title"><?php echo t::message('global','Join Tokensale'); ?></span>
-                <span id="countdown" class="date"></span>
+                <ul id="countdown" class="date countdown">
+                    <li><span class="days">00</span></li>
+                    <li><span class="days_text"></span></li>
+                    <li><span class="hours">00</span></li>
+                    <li><span class="delimiter">:</span></li>
+                    <li><span class="minutes">00</span></li>
+                </ul>
             </div>
             <div class="offer-box wow animated fadeInUp sign-in-block" data-wow-delay="0.3s">
                 <span class="title"><?php echo t::message('global','Pre-Register Today'); ?></span>

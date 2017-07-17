@@ -1385,6 +1385,13 @@ p {
 .counter__desc {
   opacity: 0.5;
 }
+.countdown li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.countdown desc {
+  display: inline-block;
+}
 .mainNav__wrap {
   position: fixed;
   z-index: 10;

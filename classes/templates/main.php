@@ -30,6 +30,7 @@
     <script src="<?php echo Common::getInstance()->http(); ?>js/wow.min.js"></script>
     <script src="<?php echo Common::getInstance()->http(); ?>js/slick.min.js"></script>
     <script src="<?php echo Common::getInstance()->http(); ?>js/jquery.scrollbar.min.js"></script>
+    <script src="<?php echo Common::getInstance()->http(); ?>js/jquery.countdown.min.js"></script>
     <script src="<?php echo Common::getInstance()->http(); ?>js/config.js"></script>
     <script src="<?php echo Common::getInstance()->http(); ?>js/common.js"></script>
     <script src="<?php echo Common::getInstance()->http(); ?>js/action.js"></script>
@@ -38,6 +39,12 @@
         <?php if($country_code) : ?>
             Action.countryCode = '<?php echo $country_code; ?>';
         <?php endif; ?>
+
+        <?php if($referral_key) : ?>
+            Action.referrer_key = '<?php echo $referral_key; ?>';
+        <?php endif; ?>
+
+
     </script>
 </head>
 <body>
