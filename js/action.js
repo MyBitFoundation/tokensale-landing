@@ -439,13 +439,9 @@ $(document).ready(function() {
     Action.init();
 
     config.redirect += '/'+$('.current_lang').attr('data-lang');
-
-    Common.initCountdown('7/17/2017 12:00', 'countdown',function() {
-
-        $('.date__title').html('Crowdsale Live');
-        Common.initCountdown('8/17/2017 12:00', 'countdown',function() {
-            $('.date__title').html('Crowdsale has ended');
-            $('#countdown').hide();
-        })
-    });
+    $('.date__title').html('Crowdsale Live');
+    Common.initCountdown('8/15/2017 12:00', 'countdown',function() {
+        $('.date__title').html('Crowdsale has ended');
+        $('#countdown').hide();
+    })
 });
