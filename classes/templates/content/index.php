@@ -21,11 +21,11 @@
             <div class="date__box wow animated fadeInUp" data-wow-delay="0.2s">
                 <span class="date__title"><?php echo t::message('global','Join Tokensale'); ?></span>
                 <ul id="countdown" class="date countdown">
-                    <li><span class="days">00</span></li>
+                    <li><span class="days"></span></li>
                     <li><span class="days_text"></span></li>
-                    <li><span class="hours">00</span></li>
-                    <li><span class="delimiter">:</span></li>
-                    <li><span class="minutes">00</span></li>
+                    <li><span class="hours"></span></li>
+                    <li><span class="hours_text"></span></li>
+                    <li><span class="minutes"></span></li>
                 </ul>
             </div>
             <div class="offer-box wow animated fadeInUp sign-in-block" data-wow-delay="0.3s">

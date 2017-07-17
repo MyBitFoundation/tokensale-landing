@@ -209,11 +209,15 @@ Common = {
     //},
 
     initCountdown: function (date,cb) {
+        var d = new Date();
+
         $('#countdown').countdown({
             date: date,
-            offset: 0,
+            offset: d.toString().split("GMT")[1].split("00 (")[0],
             day: 'Day',
-            days: 'Days'
+            days: 'Days',
+            hour: ':',
+            hours: ':',
         }, function () {
             setTimeout(function() {
                 if (cb && typeof cb == "function")
