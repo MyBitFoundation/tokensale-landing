@@ -4,6 +4,8 @@ var Action = {
     password: null,
 
     reg_email: null,
+
+    referrer_key: '',
 	
 	logged: false,
 
@@ -176,7 +178,8 @@ var Action = {
                 email: Action.reg_email,
                 password: $('input[name=password]',block).val(),
                 passwordCopy: $('input[name=repeat_password]',block).val(),
-                address: $('input[name=address]',block).val()
+                address: $('input[name=address]',block).val(),
+                referrer_key: Action.referrer_key
             };
             $.ajax({
                 type: "POST",
@@ -440,10 +443,9 @@ $(document).ready(function() {
 
     config.redirect += '/'+$('.current_lang').attr('data-lang');
 
-    Common.initCountdown('7/17/2017 12:00', 'countdown',function() {
-
+    Common.initCountdown('07/17/2017 12:00',function() {
         $('.date__title').html('Crowdsale Live');
-        Common.initCountdown('8/17/2017 12:00', 'countdown',function() {
+        Common.initCountdown('08/17/2017 12:00',function() {
             $('.date__title').html('Crowdsale has ended');
             $('#countdown').hide();
         })

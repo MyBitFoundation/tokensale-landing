@@ -17,6 +17,7 @@ Common = {
         self.slickLaptopInit();
         self.slickDesktopInit();
         self.initScrollTextarea();
+        // self.initCountdown();
 
         $(window).on({
             load: function () {
@@ -171,40 +172,54 @@ Common = {
         }
     },
 
-    initCountdown: function (dt, id, cb) {
+    //initCountdown: function (dt, id, cb) {
+    //
+    //    var end = new Date(dt);
+    //
+    //    var _second = 1000;
+    //    var _minute = _second * 60;
+    //    var _hour = _minute * 60;
+    //    var _day = _hour * 24;
+    //    var timer;
+    //
+    //    function showRemaining() {
+    //        var elem = $('#' + (id));
+    //        var now = new Date();
+    //        var distance = end - now;
+    //
+    //        if (distance < 0) {
+    //            clearInterval(timer);
+    //            if (cb && typeof cb == "function")
+    //                cb();
+    //
+    //            return;
+    //        }
+    //
+    //        var days = Math.floor(distance / _day);
+    //        var hours = Math.floor((distance % _day) / _hour);
+    //        var minutes = Math.floor((distance % _hour) / _minute);
+    //
+    //        elem.html(days ? ((String(days).length >= 2 ? days : "0" + days) + ' <span class="small">Days </span> ') : '') ;
+    //        elem.append((String(hours).length >= 2 ? hours : "0" + hours) + ' : ');
+    //        elem.append(String(minutes).length >= 2 ? minutes : "0" + minutes);
+    //    }
+    //
+    //    showRemaining();
+    //    timer = setInterval(showRemaining, 1000);
+    //},
 
-        var end = new Date(dt);
-
-        var _second = 1000;
-        var _minute = _second * 60;
-        var _hour = _minute * 60;
-        var _day = _hour * 24;
-        var timer;
-
-        function showRemaining() {
-            var elem = $('#' + (id));
-            var now = new Date();
-            var distance = end - now;
-
-            if (distance < 0) {
-                clearInterval(timer);
+    initCountdown: function (date,cb) {
+        $('#countdown').countdown({
+            date: date,
+            offset: 0,
+            day: 'Day',
+            days: 'Days'
+        }, function () {
+            setTimeout(function() {
                 if (cb && typeof cb == "function")
-                    cb();
-
-                return;
-            }
-
-            var days = Math.floor(distance / _day);
-            var hours = Math.floor((distance % _day) / _hour);
-            var minutes = Math.floor((distance % _hour) / _minute);
-
-            elem.html(days ? ((String(days).length >= 2 ? days : "0" + days) + ' <span class="small">Days </span> ') : '') ;
-            elem.append((String(hours).length >= 2 ? hours : "0" + hours) + ' : ');
-            elem.append(String(minutes).length >= 2 ? minutes : "0" + minutes);
-        }
-
-        showRemaining();
-        timer = setInterval(showRemaining, 1000);
+                   cb();
+            },1000);
+        });
     },
 
     fixPositionFooter: function () {
