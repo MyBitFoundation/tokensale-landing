@@ -4,6 +4,8 @@ var Action = {
     password: null,
 
     reg_email: null,
+
+    referrer_key: '',
 	
 	logged: false,
 
@@ -176,7 +178,8 @@ var Action = {
                 email: Action.reg_email,
                 password: $('input[name=password]',block).val(),
                 passwordCopy: $('input[name=repeat_password]',block).val(),
-                address: $('input[name=address]',block).val()
+                address: $('input[name=address]',block).val(),
+                referrer_key: Action.referrer_key
             };
             $.ajax({
                 type: "POST",

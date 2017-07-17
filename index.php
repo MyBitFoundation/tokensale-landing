@@ -4,8 +4,6 @@
 
     require_once 'classes/common.php';
 
-
-
     if(isset($_GET['ln'])) {
         t::getInstance()->setLang($_GET['ln']);
 
@@ -23,7 +21,8 @@
     } else
         $country_code = $_SESSION['country_code'];
 
-    $uri = substr($_SERVER['REQUEST_URI'], 1);
+    $uri = parse_url($_SERVER['REQUEST_URI']);
+    $uri = substr($uri['path'], 1);
 
     $list_uri = array(
         'tokensale' => array(
@@ -32,6 +31,16 @@
     );
 
     $wrapper_class = '';
+
+    $referral_key = '';
+    if(isset($_SESSION['ref']))
+        $referral_key = $_SESSION['ref'];
+
+    if(isset($_GET['ref']) && $_GET['ref']) {
+        $_SESSION['ref'] = $_GET['ref'];
+        $referral_key = $_GET['ref'];
+    }
+
     if($uri) {
         if(!isset($list_uri[$uri])) {
             header("HTTP/1.0 404 Not Found");
