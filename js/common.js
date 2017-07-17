@@ -213,7 +213,7 @@ Common = {
 
         $('#countdown').countdown({
             date: date,
-            offset: d.toString().split("GMT")[1].split("00 (")[0],
+            // offset: d.toString().split("GMT")[1].split("00 (")[0],
             day: 'Day',
             days: 'Days',
             hour: ':',
