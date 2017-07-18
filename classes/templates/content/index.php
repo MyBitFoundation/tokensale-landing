@@ -434,6 +434,12 @@
                             </a>
                             <span class="partners__profession"><?php echo t::message('global','Legal'); ?></span>
                         </div>
+                        <div class="partners__item">
+                            <a href="https://www.tokenlot.com/" target="_blank" class="partners__logo">
+                                <img src="images/media/tokenlot.png" alt="" class="partners__pic"/>
+                            </a>
+                            <span class="partners__profession"><?php echo t::message('global','Payments'); ?></span>
+                        </div>
                     </div>
                 </div>
             </div>
