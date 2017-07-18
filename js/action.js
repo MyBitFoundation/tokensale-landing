@@ -184,7 +184,7 @@ var Action = {
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: window.config.request.signup,//'action.php',
+                url: window.config.request.signup,
                 data: data,
                 xhrFields: { withCredentials: true },
                 success: function (response) {
@@ -194,17 +194,18 @@ var Action = {
                     }
                 },
                 error: function(error) {
-                    var response = error.responseJSON.message;
-                    if(/email/i.test(response)) {
-                        $(block).find('.statusBox').html(response);
+                    var response = error.responseJSON;
+                    console.log(response);
+                    if(response.email) {
+                        $(block).find('.statusBox').html(response.email[0]);
                         $(block).find('.send_registration').html($(block).find('.send_registration').attr('data-text-back'));
                     }
-                    if(/password/i.test(response)) {
-                        $('input[name=password]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response);
+                    if(response.password) {
+                        $('input[name=password]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response.password[0]);
                         $('input[name=repeat_password]',block).closest('.form__row').addClass('error');
                     }
-                    if(/address/i.test(response)) {
-                        $('input[name=address]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response);
+                    if(response.address) {
+                        $('input[name=address]',block).closest('.form__row').addClass('error').find('.form__errorTxt').html(response.address[0]);
                     }
                 }
             });
