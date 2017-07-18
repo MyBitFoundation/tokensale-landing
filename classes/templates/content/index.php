@@ -47,6 +47,30 @@
                 <a href="" class="btn btn-shadow yellow"><?php echo t::message('global','Go to dashboard'); ?></a>
             </div>
 
+            <div class="counter__box wow animated fadeInUp" data-wow-delay="0.5s">
+                <div class="counter__item">
+                    <div class="counter__ic">
+                        <img src="images/counter_1.svg" alt=""/>
+                    </div>
+                    <span class="counter__value crowdsale_amount_eth">0</span>
+                    <span class="counter__desc">Amount Raised in ETH</span>
+                </div>
+                <div class="counter__item">
+                    <div class="counter__ic">
+                        <img src="images/counter_2.svg" alt=""/>
+                    </div>
+                    <span class="counter__value crowdsale_amount_usd">$0</span>
+                    <span class="counter__desc">Amount Raised in USD</span>
+                </div>
+                <div class="counter__item">
+                    <div class="counter__ic">
+                        <img src="images/counter_3.svg" alt=""/>
+                    </div>
+                    <span class="counter__value crowdsale_count_investors">0</span>
+                    <span class="counter__desc">Number of Backers</span>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

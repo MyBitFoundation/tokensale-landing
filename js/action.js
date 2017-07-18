@@ -147,6 +147,23 @@ var Action = {
         })
     },
 
+    crowdsaleInfo: function() {
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url:  window.config.request.crowdsale_info,
+            xhrFields: { withCredentials: true },
+            success: function(res) {
+                $('.crowdsale_amount_eth').html(res.amount.toFixed(2));
+                $('.crowdsale_amount_usd').html('$'+res.amountInUsd.toFixed(2));
+                $('.crowdsale_count_investors').html(res.countInvestors);
+            },
+            error: function(error) {
+
+            }
+        })
+    },
+
     registration: function() {
         var block = $('#modal-signUp');
         if($(block).find('.send_registration').html() == $(block).find('.send_registration').attr('data-text-back')) {

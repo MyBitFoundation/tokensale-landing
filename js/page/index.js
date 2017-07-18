@@ -22,4 +22,5 @@ Index = {
 
 $(document).ready(function() {
     Index.init();
+    Action.crowdsaleInfo();
 });
