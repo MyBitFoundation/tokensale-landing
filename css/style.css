@@ -1434,7 +1434,7 @@ p {
 }
 .mainNav__link:hover,
 .mainNav__link.active {
-  color: gray;
+  text-shadow: 0.5px 0 0px #000, -0.5px 0 0px #000;
 }
 .mainNav__link .icon-arrow_dropdown {
   font-size: 6px;
