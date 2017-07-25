@@ -159,7 +159,6 @@ var Action = {
                 $('.crowdsale_count_investors').html(res.countInvestors);
             },
             error: function(error) {
-
             }
         })
     },
