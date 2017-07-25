@@ -455,9 +455,6 @@
                 <h2 class="h4"><?php echo t::message('global','Resources'); ?></h2>
                 <ul class="resources__list">
                     <li class="resources__item"><a href="https://youtu.be/0pWrhNw9HGo" target="_blank" class="resources__link"><?php echo t::message('global','Demo'); ?></a></li>
-                    <li class="resources__item"><a href="https://www.facebook.com/vejdiven/videos/1344609518964148/" target="_blank" class="resources__link"><?php echo t::message('global','Presentation'); ?></a></li>
-                    <li class="resources__item"><a href="https://app.xtensio.com/folio/9q93e8z3" target="_blank" class="resources__link"><?php echo t::message('global','One-Pager'); ?></a></li>
-                    <li class="resources__item"><a href="#" class="resources__link"><?php echo t::message('global','Deal Sheet'); ?></a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-12 col-sm-6">

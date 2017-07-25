@@ -2,7 +2,6 @@
     <div class="container">
         <h2 class="h3 center section__title"><?php echo t::message('global','Overview of Tokensale'); ?></h2>
         <p><?php echo t::message('global','The MyBit tokensale will commence on Monday July 17th, 2017 and run for 30 days or until funding limits are achieved, whichever comes first. The goal of the crowdsale is to secure funding to finalize the development of the MyBit Platform, conduct pilot studies, and bring the product to Market.'); ?></p>
-        <p><?php echo t::message('global','Full Details on the terms can be found in the'); ?> <a href="#" class="link yellow"><?php echo t::message('global','Official Deal Sheet'); ?></a></p>
         <p><?php echo t::message('global','Entities involved include'); ?>:</p>
         <div class="row tokensale__wrap">
             <div class="slick_desktop">
