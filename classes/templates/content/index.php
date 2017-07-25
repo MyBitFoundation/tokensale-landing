@@ -17,7 +17,7 @@
     <div class="section__intro">
         <div class="container">
             <img src="images/logo_full.png" alt="" class="logo wow animated fadeInUp"/>
-            <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" ><?php echo t::message('global','The platform for tokenizing revenue streams'); ?></h1>
+            <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" ><?php echo t::message('global','UNLOCKING BILLIONS IN IOT REVENUE'); ?></h1>
             <div class="date__box wow animated fadeInUp" data-wow-delay="0.2s">
                 <span class="date__title"><?php echo t::message('global','Join Tokensale'); ?></span>
                 <ul id="countdown" class="date countdown">
