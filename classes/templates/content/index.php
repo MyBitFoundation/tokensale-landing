@@ -17,7 +17,7 @@
     <div class="section__intro">
         <div class="container">
             <img src="images/logo_full.png" alt="" class="logo wow animated fadeInUp"/>
-            <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" ><?php echo t::message('global','The platform for tokenizing revenue streams'); ?></h1>
+            <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" ><?php echo t::message('global','UNLOCKING BILLIONS IN IOT REVENUE'); ?></h1>
             <div class="date__box wow animated fadeInUp" data-wow-delay="0.2s">
                 <span class="date__title"><?php echo t::message('global','Join Tokensale'); ?></span>
                 <ul id="countdown" class="date countdown">
@@ -203,6 +203,7 @@
         <h2 class="h3 section__title center"><?php echo t::message('global','Advisors'); ?></h2>
         <div class="team__wrap">
             <div class="team__list slick_mob">
+                <!--
                 <div class="team__item">
                     <div class="team__photoWrap">
                         <img src="images/advisor/peter.png" alt="" class="team__photo">
@@ -212,6 +213,7 @@
                         <span class="team__profession"><?php echo t::message('global','Hacker, Founder of AV Tracker Stoned Bootkit'); ?></span>
                     </div>
                 </div>
+                -->
                 <div class="team__item">
                     <div class="team__photoWrap">
                         <img src="images/advisor/nick.jpg" alt="" class="team__photo">
@@ -221,6 +223,7 @@
                         <span class="team__profession"><?php echo t::message('global','Public Relations, Co-founder of The 21Million Project'); ?></span>
                     </div>
                 </div>
+                <!--
                 <div class="team__item">
                     <div class="team__photoWrap">
                         <img src="images/advisor/mitchell.png" alt="" class="team__photo">
@@ -230,6 +233,7 @@
                         <span class="team__profession"><?php echo t::message('global','Marketing Strategy, VP of Marketing at Steemit'); ?></span>
                     </div>
                 </div>
+                -->
                 <div class="team__item">
                     <div class="team__photoWrap">
                         <img src="images/advisor/mihaela.jpg" alt="" class="team__photo">
@@ -624,6 +628,7 @@
                 </div>
             </div>
         </div>
+        <!--
         <div class="team__item">
             <div>
                 <div>
@@ -650,7 +655,7 @@
                 </div>
             </div>
         </div>
-
+        -->
     </div>
 </div>
 
