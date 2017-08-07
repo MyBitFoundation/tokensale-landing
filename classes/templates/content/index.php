@@ -80,11 +80,9 @@
         <div class="row">
             <div class="col-xs-12 col-md-11 col-md-offset-1 col-lg-offset-0">
                 <div class="desc">
-                    <p><strong><?php echo t::message('global','Mybit makes financing and maintaining revenue streams efficient and automatic.'); ?></strong></p>
-                    <p><?php echo t::message('global','How?'); ?></p>
-                    <p><?php echo t::message('global','By commoditizing solar panel installation and other forms of renewable energy, investors and landowners can crowdfund the coming decentralized energy grid. With Mybit, investors get security on their investment, while landowners get access to investors willing to help in exchange for profit. By standardizing and automating setup, sales, and dividends, Mybit takes you one step closer to an equitable economy.'); ?></p>
-                    <p><?php echo t::message('global','The Future'); ?></p>
-                    <p><?php echo t::message('global','Our 5 year goal is to be at the forefront of commoditizing the coming AI economy. Mybit will be the platform for tokenizing any automatable or machine infrastructure. And it will be owned by the crowd.'); ?></p>
+                    <p><strong><?php echo t::message('global','Introduction'); ?></strong></p>
+                    <p><?php echo t::message('global','What MyBit does is enable ownership of a specific IoT asset to be easily distributed among several owners (investors). With the rise of the upcoming machine economy, our vision is to have machines owned by people all over the world, rather than centralized parties maintaining ownership and the resulting revenue streams.'); ?></p>
+                    <p><?php echo t::message('global','MyBit enables the crowdfunding of revenue generating machines (IoT Assets). So anyone can buy a percentage stake in a device that generates revenue and in return receive a portion of revenue the machine produces. This inverts the financing model and revenue flow to create a more scalable and democratic model which unlocks hundreds of billions of dollars in investment opportunities previously reserved for large centralized institutions to the average person.'); ?></p>
                 </div>
             </div>
         </div>
@@ -96,9 +94,10 @@
         <div class="row">
             <div class="col-xs-12 col-md-11 col-md-offset-1 col-lg-offset-0">
                 <div class="desc">
-                    <p><strong><?php echo t::message('global','Why Decentralized Energy?'); ?></strong></p>
-                    <p><?php echo t::message('global','The explosion of Artificial Intelligence (AI) and the Internet of Things (IoT) will result in massive demand increases for energy. Traditional energy grids will not be able to scale rapidly enough to keep up with the demand. Decentralized energy grids, composed of renewable energy technologies such as solar panels that can be installed on homes and office buildings away from the traditional (centralized) energy production & storage facilities, will be a critical component of the solution to the increased energy demand.'); ?></p>
-                    <p><?php echo t::message('global','Our goal is to remove the financial barriers to entry and the friction currently present in the alternative assets investment space; thereby, enabling anyone to benefit from sustainable infrastructure regardless of their socioeconomic status or location. Aside from energy this model can be replicated across many industries including Land, Commercial Property, and AI - specifically autonomous mobiles.'); ?></p>
+                    <p><strong><?php echo t::message('global','First Market'); ?></strong></p>
+                    <p><?php echo t::message('global','We are starting with solar panels to accelerate the decentralized energy grid. Since the current energy structure is not sustainable (scalable at speed), it will require decentralized energy solutions. Traditional financing models would only enable a small fraction of the population to own / participate in the decentralized solutions.'); ?></p>
+                    <p><?php echo t::message('global','In 2008, the world relied on renewable sources for around 16% of its total primary energy supply. In 2013, renewables accounted for almost 22% of global electricity generation, and the IEA Medium-Term Renewable Energy Report of 2015 foresees that share reaching a minimum 26% increase in 2020. facilities, will be a critical component of the solution to the increased energy demand.'); ?></p>
+                    <p><?php echo t::message('global','Solar energy is the fastest growing component within renewables. Today, most solar power is produced by large scale solar farms consisting of thousands of PV solar panels. These farms are primarily owned and operated by municipalities and or large utility companies. Soon (3-5 years), the clear majority of new solar power will come from micro or nanogrids, small solar power systems sitting atop residential and commercial rooftops, owned by active "prosumers" (producers and consumers) who monetize their space to gain progressive independence from the grid and create revenue streams.'); ?></p>
                 </div>
             </div>
         </div>
