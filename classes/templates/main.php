@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>MyBit</title>
 
+    <meta name="description" content="MyBit is a peer to peer investing application which unlocks billions of dollars in IoT revenue.">
+
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -455,6 +457,8 @@
                 <h2 class="h4"><?php echo t::message('global','Resources'); ?></h2>
                 <ul class="resources__list">
                     <li class="resources__item"><a href="https://youtu.be/0pWrhNw9HGo" target="_blank" class="resources__link"><?php echo t::message('global','Demo'); ?></a></li>
+                    <li class="resources__item"><a href="https://www.youtube.com/watch?v=0SjB3G23VeU" target="_blank" class="resources__link"><?php echo t::message('global','30 Second Explanation'); ?></a></li>
+                    <li class="resources__item"><a href="https://www.youtube.com/watch?v=oplnZGuVKos&t=669s" target="_blank" class="resources__link"><?php echo t::message('global','CoinInterview'); ?></a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-12 col-sm-6">

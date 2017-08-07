@@ -592,19 +592,6 @@
             <div>
                 <div>
                     <div class="team__photoWrap">
-                        <img src="images/no_photo.jpg" alt="" class="team__photo">
-                    </div>
-                    <span class="team__name"><?php echo t::message('global','Pedro Augusto'); ?></span>
-                    <div class="team__professionWrap">
-                        <span class="team__profession"><?php echo t::message('global','Bounty Campaign Manager'); ?></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="team__item">
-            <div>
-                <div>
-                    <div class="team__photoWrap">
                         <img src="images/team/fran_stajnar.jpg" alt="" class="team__photo">
                     </div>
                     <span class="team__name"><?php echo t::message('global','Fran Strajnar'); ?></span>
