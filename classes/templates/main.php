@@ -14,28 +14,28 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/reset.css"/>
-    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/icomoon.css"/>
-    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/animate.min.css"/>
-    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/slick.css"/>
-    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/slick-theme.css"/>
-    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/jquery.scrollbar.css"/>
-    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/style.css"/>
-    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/media.css"/>
+    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/reset.css?v=<?php echo Common::getInstance()->getVersion('css'); ?>"/>
+    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/bootstrap.min.css?v=<?php echo Common::getInstance()->getVersion('css'); ?>"/>
+    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/icomoon.css?v=<?php echo Common::getInstance()->getVersion('css'); ?>"/>
+    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/animate.min.css?v=<?php echo Common::getInstance()->getVersion('css'); ?>"/>
+    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/slick.css?v=<?php echo Common::getInstance()->getVersion('css'); ?>"/>
+    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/slick-theme.css?v=<?php echo Common::getInstance()->getVersion('css'); ?>"/>
+    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/jquery.scrollbar.css?v=<?php echo Common::getInstance()->getVersion('css'); ?>"/>
+    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/style.css?v=<?php echo Common::getInstance()->getVersion('css'); ?>"/>
+    <link rel="stylesheet" href="<?php echo Common::getInstance()->http(); ?>css/media.css?v=<?php echo Common::getInstance()->getVersion('css'); ?>"/>
 
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
-    <script src="<?php echo Common::getInstance()->http(); ?>js/jquery-1.11.3.min.js"></script>
-    <script src="<?php echo Common::getInstance()->http(); ?>js/bootstrap.min.js"></script>
-    <script src="<?php echo Common::getInstance()->http(); ?>js/device.min.js"></script>
-    <script src="<?php echo Common::getInstance()->http(); ?>js/wow.min.js"></script>
-    <script src="<?php echo Common::getInstance()->http(); ?>js/slick.min.js"></script>
-    <script src="<?php echo Common::getInstance()->http(); ?>js/jquery.scrollbar.min.js"></script>
-    <script src="<?php echo Common::getInstance()->http(); ?>js/jquery.countdown.min.js"></script>
-    <script src="<?php echo Common::getInstance()->http(); ?>js/config.js"></script>
-    <script src="<?php echo Common::getInstance()->http(); ?>js/common.js"></script>
-    <script src="<?php echo Common::getInstance()->http(); ?>js/action.js"></script>
+    <script src="<?php echo Common::getInstance()->http(); ?>js/jquery-1.11.3.min.js?v=<?php echo Common::getInstance()->getVersion('js_lib'); ?>"></script>
+    <script src="<?php echo Common::getInstance()->http(); ?>js/bootstrap.min.js?v=<?php echo Common::getInstance()->getVersion('js_lib'); ?>"></script>
+    <script src="<?php echo Common::getInstance()->http(); ?>js/device.min.js?v=<?php echo Common::getInstance()->getVersion('js_lib'); ?>"></script>
+    <script src="<?php echo Common::getInstance()->http(); ?>js/wow.min.js?v=<?php echo Common::getInstance()->getVersion('js_lib'); ?>"></script>
+    <script src="<?php echo Common::getInstance()->http(); ?>js/slick.min.js?v=<?php echo Common::getInstance()->getVersion('js_lib'); ?>"></script>
+    <script src="<?php echo Common::getInstance()->http(); ?>js/jquery.scrollbar.min.js?v=<?php echo Common::getInstance()->getVersion('js_lib'); ?>"></script>
+    <script src="<?php echo Common::getInstance()->http(); ?>js/jquery.countdown.min.js?v=<?php echo Common::getInstance()->getVersion('js_lib'); ?>"></script>
+    <script src="<?php echo Common::getInstance()->http(); ?>js/config.js?v=<?php echo Common::getInstance()->getVersion('js'); ?>"></script>
+    <script src="<?php echo Common::getInstance()->http(); ?>js/common.js?v=<?php echo Common::getInstance()->getVersion('js'); ?>"></script>
+    <script src="<?php echo Common::getInstance()->http(); ?>js/action.js?v=<?php echo Common::getInstance()->getVersion('js'); ?>"></script>
 
     <script>
         <?php if($country_code) : ?>

@@ -119,6 +119,133 @@
                 <span class="title title_ready"><?php echo t::message('global','Downloaded'); ?></span>
             </a>
         </div>
+
+        <div class="section__use">
+            <h2 class="h2 section__title">Use Cases</h2>
+            <div class="use__box">
+                <div class="use__item smart" data-name="smart">
+                    <div class="use__basic">
+                        <div class="use__iconWrap">
+                            <span class="use__circles"></span>
+                            <img src="images/use_case/smart_property.svg" alt="Smart Property" class="use__icon"/>
+                        </div>
+                        <span class="use__title">Smart Property</span>
+                    </div>
+                    <div class="use__more">
+                        <a href="" class="use__close"><i class="icon-close"></i></a>
+                        <div class="use__moreIn">
+                            <p>Smart Locks can be installed on existing brick and mortar properties or be integrated into the design of new properties so govern rent/lease payment. If payment is not made, then the space is locked and only the owners who control the other keys can open it until payment is made. This enables property both commercial and residential to be crowdfunded and revenue to automatically be distributed to investors without a third-party payment processing/management company involved.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="use__item machinery" data-name="machinery">
+                    <div class="use__basic">
+                        <div class="use__iconWrap">
+                            <span class="use__circles"></span>
+                            <img src="images/use_case/automated_machinery.svg" alt="Automated Machinery" class="use__icon"/>
+                        </div>
+                        <span class="use__title">Automated Machinery <span class="use__subtitle">(Commercial)</span> </span>
+                    </div>
+                    <div class="use__more">
+                        <a href="" class="use__close"><i class="icon-close"></i></a>
+                        <div class="use__moreIn">
+                            <p>Farming machinery, construction, delivery, etc. can all leverage MyBit. It is beneficial to companies that want to upgrade machinery and infrastructure to utilize MyBit to reduce costs to enter into this market. Simultaneously, it unlocks billions of dollars in stable investment opportunities to investors.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="use__item drones" data-name="drones">
+                    <div class="use__basic">
+                        <div class="use__iconWrap">
+                            <span class="use__circles"></span>
+                            <img src="images/use_case/dron.svg" alt="Drones" class="use__icon"/>
+                        </div>
+                        <span class="use__title">Drones</span>
+                    </div>
+                    <div class="use__more">
+                        <a href="" class="use__close"><i class="icon-close"></i></a>
+                        <div class="use__moreIn">
+                            <p>Drones will have a major role in many commercial use cases, but we believe delivery and transport of goods will be one of the core areas that will come to market first. People will be able to purchase stakes in these delivery drones and upon completion of each delivery they will receive revenue sharing. As different models for monetizing drones take shape, MyBit will be flexible to integrate into any that are economical for the network.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="use__item selfDriving" data-name="selfDriving">
+                    <div class="use__basic">
+                        <div class="use__iconWrap">
+                            <span class="use__circles"></span>
+                            <img src="images/use_case/self_driving.svg" alt="Self-Driving Vehicles" class="use__icon"/>
+                        </div>
+                        <span class="use__title">Self-Driving Vehicles <span class="use__subtitle">(Consumer) </span> </span>
+                    </div>
+                    <div class="use__more">
+                        <a href="" class="use__close"><i class="icon-close"></i></a>
+                        <div class="use__moreIn">
+                            <p> Self-driving cars are going to displace a lot of jobs. We find it vital that the average person has the option to partake in the ownership and revenue sharing of these vehicles instead of centralized financing institutions controlling every aspect.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="use__item atms" data-name="atms">
+                    <div class="use__basic">
+                        <div class="use__iconWrap">
+                            <span class="use__circles"></span>
+                            <img src="images/use_case/cryptocurrency_atms.svg" alt="Cryptocurrency ATMs" class="use__icon"/>
+                        </div>
+                        <span class="use__title">Cryptocurrency ATMs</span>
+                    </div>
+                    <div class="use__more">
+                        <a href="" class="use__close"><i class="icon-close"></i></a>
+                        <div class="use__moreIn">
+                            <p>To stimulate the widespread adoption of cryptocurrencies, ease of access is a core component. By crowdfunding ATM ownership it enables exponentially more units to be installed and operational across the globe. Investors will make money off of the spread and usage fees for transacting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="use__item printers" data-name="printers">
+                    <div class="use__basic">
+                        <div class="use__iconWrap">
+                            <span class="use__circles"></span>
+                            <img src="images/use_case/3d_printers.svg" alt="3d Printers" class="use__icon"/>
+                        </div>
+                        <span class="use__title">3d Printers</span>
+                    </div>
+                    <div class="use__more">
+                        <a href="" class="use__close"><i class="icon-close"></i></a>
+                        <div class="use__moreIn">
+                            <p>We envision 3d printers to become widespread over the next decade throughout malls, shops, and other venues. Under the 3d-printing as a service model, investors can crowdfund these assets and be paid on a per usage basis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="use__item smartHomes" data-name="smartHomes">
+                    <div class="use__basic">
+                        <div class="use__iconWrap">
+                            <span class="use__circles"></span>
+                            <img src="images/use_case/smart_home.svg" alt="Smart Homes IoT Devices" class="use__icon"/>
+                        </div>
+                        <span class="use__title">Smart Homes IoT Devices <span class="use__subtitle">Machine as a Service (Business Model)</span> </span>
+                    </div>
+                    <div class="use__more">
+                        <a href="" class="use__close"><i class="icon-close"></i></a>
+                        <div class="use__moreIn">
+                            <p>This will definitely take time to implement, but we at MyBit predict a disruptive transformation into micro-economies and vast adoption of micro-payments. In this scenario, the financing model is turned upside down. Instead of purchasing a device to use limitlessly (traditional — how it is now for the most part) , devices will be free to the consumer (crowdfunded by investors), and they will pay per usage. A major barrier to entry with this is insurance and accountability for assets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="use__item energy" data-name="energy">
+                    <div class="use__basic">
+                        <div class="use__iconWrap">
+                            <span class="use__circles"></span>
+                            <img src="images/use_case/renewable.svg" alt="Renewable Energy " class="use__icon"/>
+                        </div>
+                        <span class="use__title">Renewable Energy </span>
+                    </div>
+                    <div class="use__more">
+                        <a href="" class="use__close"><i class="icon-close"></i></a>
+                        <div class="use__moreIn">
+                            <p>To accelerate adoption of the decentralized energy grid, land and homeowners can crowdfund ownership of the solar panels. Investors in return receive profit sharing from feed-in tariffs and excess energy production sold back to the grid (or p2p in the future).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <h2 class="h2 section__title"><?php echo t::message('global','Roadmap'); ?></h2>
         <ul class="roadmap__list">
             <li class="roadmap__progressBase">

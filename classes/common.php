@@ -20,6 +20,19 @@ class Common {
         return $instance;
     }
 
+    private $version = [
+        'css' => 5,
+        'js' => 3,
+        'js_lib' => 1,
+        'images' => 1
+    ];
+
+    public function getVersion($type) {
+        if(isset($this->version[$type]))
+            return $this->version[$type];
+        return 1;
+    }
+
     public function http($slash = true){
         return sprintf(
             "%s://%s".($slash ? '/' : ''),
