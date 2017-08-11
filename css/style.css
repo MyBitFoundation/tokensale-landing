@@ -1490,6 +1490,9 @@ p {
   top: 0;
   left: 110%;
 }
+.use__item.drones {
+  z-index: 1;
+}
 .use__item.drones .use__title {
   top: 84%;
 }
