@@ -1616,7 +1616,9 @@ p {
 }
 .use__icon {
   width: inherit;
+  height: inherit;
   max-width: 54%;
+  max-height: 65%;
   margin: auto;
   position: absolute;
   top: 50%;

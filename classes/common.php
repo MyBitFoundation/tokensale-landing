@@ -21,7 +21,7 @@ class Common {
     }
 
     private $version = [
-        'css' => 2,
+        'css' => 3,
         'js' => 1,
         'js_lib' => 1,
         'images' => 1
