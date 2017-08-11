@@ -2176,8 +2176,9 @@ p {
 }
 .dropdown__link {
   display: block;
-  padding: 3px 12px;
+  padding: 3px 12px 3px 17px;
   text-transform: capitalize;
+  text-align: left;
 }
 .dropdown__link:hover {
   background: rgba(60, 56, 105, 0.2);
