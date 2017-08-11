@@ -22,7 +22,7 @@ class Common {
 
     private $version = [
         'css' => 4,
-        'js' => 2,
+        'js' => 3,
         'js_lib' => 1,
         'images' => 1
     ];

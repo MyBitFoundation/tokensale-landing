@@ -39,7 +39,7 @@ Common = {
                 Common.resizeTimeout = setTimeout(function () {
                     self.slickLaptopInit();
                 }, 300);
-                if ($(window).width() < 601) {
+                if ($(window).width() < 768) {
                     $('.overlay').removeClass('.useOverlay');
                 }
             },
@@ -150,7 +150,7 @@ Common = {
                 }
             })
             .on('click', function(){
-                if ($(window).width() < 601) {
+                if ($(window).width() < 768) {
                     if ($(event.target).closest(".use__close").length) return;
                     $(this).find('.use__more').addClass('active');
                     $('.overlay').addClass('useOverlay');
