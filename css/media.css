@@ -82,6 +82,40 @@ sub {
 .uppercase {
   text-transform: uppercase;
 }
+@media (min-width: 601px) {
+  .use__item:hover .use__basic {
+    animation: thisUseItemScale 0.8s ease-out;
+    animation-delay: 0.2s;
+  }
+  .use__item:hover .use__iconWrap {
+    background: #bfbfe3;
+    transition-delay: 0.2s;
+  }
+  .use__item:hover .use__circles {
+    animation: circleBlink 0.5s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+  }
+  .use__item:hover .use__iconWrap:before {
+    animation: borderRotate 0.5s ease-out;
+    animation-delay: 0.2s;
+  }
+  .use__item:hover .use__more {
+    transition-delay: 0.3s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  .use__more {
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+  }
+}
 @media (min-width: 768px) {
   .details__content {
     display: block !important;
@@ -252,6 +286,40 @@ sub {
     background: rgba(60, 56, 105, 0.2);
   }
 }
+@media (min-width: 992px) {
+  .use__item.smart {
+    top: 16%;
+    left: 1%;
+  }
+  .use__item.machinery {
+    left: 8.5%;
+    top: 47%;
+  }
+  .use__item.drones {
+    left: 22.8%;
+    top: 26.3%;
+  }
+  .use__item.selfDriving {
+    top: 59%;
+    left: 27.2%;
+  }
+  .use__item.atms {
+    top: 0;
+    left: 44.5%;
+  }
+  .use__item.printers {
+    top: 35.9%;
+    left: 48.2%;
+  }
+  .use__item.smartHomes {
+    top: 16.5%;
+    left: 71.5%;
+  }
+  .use__item.energy {
+    top: 54.3%;
+    left: 68.5%;
+  }
+}
 @media (min-width: 1100px) {
   .mainNav__list {
     position: absolute;
@@ -292,6 +360,56 @@ sub {
     text-align: center;
     margin: 0 0 55px;
   }
+  .use__box {
+    min-height: 680px;
+  }
+  .use__item.smart .use__iconWrap {
+    width: 152px;
+    height: 152px;
+  }
+  .use__item.machinery .use__iconWrap {
+    width: 135px;
+    height: 135px;
+  }
+  .use__item.selfDriving .use__iconWrap {
+    width: 188px;
+    height: 188px;
+  }
+  .use__item.atms .use__iconWrap {
+    width: 172px;
+    height: 172px;
+  }
+  .use__item.printers .use__iconWrap {
+    width: 160px;
+    height: 160px;
+  }
+  .use__item.smartHomes .use__iconWrap {
+    width: 152px;
+    height: 152px;
+  }
+  .use__item.smartHomes .use__title {
+    line-height: 1.2;
+  }
+  .use__item.energy .use__iconWrap {
+    width: 190px;
+    height: 190px;
+  }
+  .use__iconWrap {
+    width: 176px;
+    height: 176px;
+  }
+  .use__basic {
+    font-size: 26px;
+  }
+  .use__subtitle {
+    font-size: 15px;
+  }
+  .use__more {
+    width: 530px;
+  }
+  .use__more p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 991px) {
   .h1 {
@@ -327,6 +445,9 @@ sub {
   }
   .section__infastructure {
     padding-bottom: 117px;
+  }
+  .section__use {
+    text-align: center;
   }
   .roadmap__list {
     margin: 0;
@@ -413,6 +534,131 @@ sub {
   }
   .counter__value {
     font-size: 24px;
+  }
+  .use__box {
+    width: 500px;
+    min-height: 790px;
+    display: inline-block;
+    margin-left: 9%;
+  }
+  .use__item.smart {
+    top: 64%;
+    left: 39%;
+  }
+  .use__item.smart .use__iconWrap {
+    width: 130px;
+    height: 130px;
+  }
+  .use__item.smart .use__more {
+    top: 105%;
+    left: -140%;
+  }
+  .use__item.machinery {
+    left: 13.5%;
+    top: 76%;
+  }
+  .use__item.machinery .use__iconWrap {
+    width: 115px;
+    height: 115px;
+  }
+  .use__item.machinery .use__title {
+    line-height: 1.3;
+  }
+  .use__item.machinery .use__subtitle {
+    margin-top: 2px;
+  }
+  .use__item.machinery .use__more {
+    top: 106%;
+    left: -82%;
+  }
+  .use__item.drones {
+    left: -4.2%;
+    top: 20.3%;
+  }
+  .use__item.drones .use__iconWrap {
+    width: 150px;
+    height: 150px;
+  }
+  .use__item.drones .use__more {
+    top: 105%;
+    left: 0;
+  }
+  .use__item.selfDriving {
+    top: 46%;
+    left: 1.2%;
+  }
+  .use__item.selfDriving .use__iconWrap {
+    width: 160px;
+    height: 160px;
+  }
+  .use__item.selfDriving .use__subtitle {
+    margin-top: 2px;
+  }
+  .use__item.selfDriving .use__more {
+    top: 115%;
+    left: -18%;
+  }
+  .use__item.atms {
+    top: 0;
+    left: 21.5%;
+  }
+  .use__item.atms .use__iconWrap {
+    width: 146px;
+    height: 146px;
+  }
+  .use__item.atms .use__more {
+    top: 106%;
+    left: -82%;
+  }
+  .use__item.printers {
+    top: 28.9%;
+    left: 31.2%;
+  }
+  .use__item.printers .use__iconWrap {
+    width: 136px;
+    height: 136px;
+  }
+  .use__item.printers .use__more {
+    top: 105%;
+    left: -104%;
+  }
+  .use__item.smartHomes {
+    top: 7.5%;
+    left: 60.5%;
+  }
+  .use__item.smartHomes .use__iconWrap {
+    width: 130px;
+    height: 130px;
+  }
+  .use__item.smartHomes .use__title {
+    line-height: 1.3;
+  }
+  .use__item.smartHomes .use__more {
+    right: 0;
+    top: 121%;
+  }
+  .use__item.energy {
+    top: 43.3%;
+    left: 58.5%;
+  }
+  .use__item.energy .use__iconWrap {
+    width: 160px;
+    height: 160px;
+  }
+  .use__item.energy .use__more {
+    top: 105%;
+    right: 0;
+  }
+  .use__basic {
+    font-size: 19px;
+  }
+  .use__subtitle {
+    font-size: 13px;
+  }
+  .use__more {
+    width: 500px;
+    padding: 16px 20px 10px;
+    border-width: 3px;
   }
 }
 @media (max-width: 900px) {
@@ -637,6 +883,9 @@ sub {
     height: auto;
     padding-top: 56px;
     min-height: 400px;
+  }
+  .section__use {
+    padding-bottom: 70px;
   }
   .page__tokensale {
     height: auto;
@@ -928,6 +1177,146 @@ sub {
   }
   .video__wrap {
     max-width: 100%;
+  }
+  .use__more {
+    z-index: 9;
+  }
+}
+@media (max-width: 600px) {
+  .overlay.useOverlay {
+    display: block;
+  }
+  .use__box {
+    width: 290px;
+    min-height: 700px;
+    margin: 50px auto 0 auto;
+  }
+  .use__item.smart {
+    top: 71%;
+    left: 4%;
+  }
+  .use__item.smart .use__iconWrap {
+    width: 98px;
+    height: 98px;
+  }
+  .use__item.machinery {
+    left: 49.5%;
+    top: 77%;
+  }
+  .use__item.machinery .use__iconWrap {
+    width: 86px;
+    height: 86px;
+  }
+  .use__item.machinery .use__title {
+    line-height: 1.6;
+  }
+  .use__item.drones {
+    left: -0.2%;
+    top: 20.3%;
+  }
+  .use__item.drones .use__iconWrap {
+    width: 112px;
+    height: 112px;
+  }
+  .use__item.selfDriving {
+    top: 47%;
+    left: 0.2%;
+  }
+  .use__item.selfDriving .use__iconWrap {
+    width: 120px;
+    height: 120px;
+  }
+  .use__item.atms {
+    top: 0;
+    left: 9.5%;
+  }
+  .use__item.atms .use__iconWrap {
+    width: 110px;
+    height: 110px;
+  }
+  .use__item.printers {
+    top: 33.5%;
+    left: 40.2%;
+  }
+  .use__item.printers .use__iconWrap {
+    width: 102px;
+    height: 102px;
+  }
+  .use__item.smartHomes {
+    top: 11.5%;
+    left: 55.5%;
+  }
+  .use__item.smartHomes .use__iconWrap {
+    width: 98px;
+    height: 98px;
+  }
+  .use__item.smartHomes .use__title {
+    line-height: 1.6;
+  }
+  .use__item.smartHomes .use__subtitle {
+    line-height: 1.7;
+  }
+  .use__item.energy {
+    top: 54.3%;
+    left: 49.5%;
+  }
+  .use__item.energy .use__iconWrap {
+    width: 120px;
+    height: 120px;
+  }
+  .use__basic {
+    font-size: 14px;
+  }
+  .use__title {
+    line-height: 1.5;
+    text-shadow: #ffffff 5px 0 0, #ffffff 4.90033px 0.993347px 0, #ffffff 4.60531px 1.94709px 0, #ffffff 4.12668px 2.82321px 0, #ffffff 3.48353px 3.58678px 0, #ffffff 2.70151px 4.20736px 0, #ffffff 1.81179px 4.6602px 0, #ffffff 0.849836px 4.92725px 0, #ffffff -0.145998px 4.99787px 0, #ffffff -1.13601px 4.86924px 0, #ffffff -2.08073px 4.54649px 0, #ffffff -2.94251px 4.04248px 0, #ffffff -3.68697px 3.37732px 0, #ffffff -4.28444px 2.57751px 0, #ffffff -4.71111px 1.67494px 0, #ffffff -4.94996px 0.7056px 0, #ffffff -4.99147px -0.291871px 0, #ffffff -4.83399px -1.27771px 0, #ffffff -4.48379px -2.2126px 0, #ffffff -3.95484px -3.05929px 0, #ffffff -3.26822px -3.78401px 0, #ffffff -2.4513px -4.35788px 0, #ffffff -1.53666px -4.75801px 0, #ffffff -0.560763px -4.96845px 0, #ffffff 0.437495px -4.98082px 0, #ffffff 1.41831px -4.79462px 0, #ffffff 2.34258px -4.41727px 0, #ffffff 3.17346px -3.86382px 0, #ffffff 3.87783px -3.15633px 0, #ffffff 4.4276px -2.32301px 0, #ffffff 4.80085px -1.39708px 0, #ffffff 4.98271px -0.415447px 0;
+  }
+  .use__subtitle {
+    font-size: 9px;
+  }
+  .use__circles:before {
+    width: 10px;
+    height: 10px;
+  }
+  .use__circles:after {
+    width: 6px;
+    height: 6px;
+  }
+  .use__more {
+    position: fixed;
+    width: 90vw;
+    left: 2.5% !important;
+    top: 50% !important;
+    pointer-events: all;
+    margin-top: 45px;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+  }
+  .use__more.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .use__moreIn {
+    max-height: 65vh;
+    overflow: auto;
+  }
+  .use__close {
+    display: block;
+  }
+}
+@media (max-width: 600px) and (orientation: landscape) {
+  .use__more {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    top: 60px !important;
+  }
+  .use__moreIn {
+    max-height: 50vh;
+    overflow: auto;
   }
 }
 @media (max-width: 360px) {

@@ -39,6 +39,9 @@ Common = {
                 Common.resizeTimeout = setTimeout(function () {
                     self.slickLaptopInit();
                 }, 300);
+                if ($(window).width() < 601) {
+                    $('.overlay').removeClass('.useOverlay');
+                }
             },
             scroll: function () {
                 Common.onScroll();
@@ -73,6 +76,10 @@ Common = {
             $('.lang__wrap').removeClass('visible');
             $('.header-mob').addClass('bg');
             $('html').removeClass('static');
+            if ($(window).width() < 601) {
+                $(this).removeClass('useOverlay');
+                $('.use__more').removeClass('active');
+            }
         });
 
         //description visible
@@ -129,6 +136,32 @@ Common = {
         $('.deal__sheet__link').click(function(event) {
             $('#deal__sheet').modal();
         })
+
+        $('.use__item')
+            .on('mouseenter', function(){
+                var nameElem = $(this).data('name');
+                if ($(window).width() > 991) {
+                    $(this).closest('.use__box').addClass(nameElem + 'Hover');
+                }
+            })
+            .on('mouseleave', function(){
+                if ($(window).width() > 991) {
+                    $(this).closest('.use__box').removeClass().addClass('use__box');
+                }
+            })
+            .on('click', function(){
+                if ($(window).width() < 601) {
+                    if ($(event.target).closest(".use__close").length) return;
+                    $(this).find('.use__more').addClass('active');
+                    $('.overlay').addClass('useOverlay');
+                }
+            });
+
+        $('.use__close').click(function(e) {
+            e.preventDefault();
+            $(this).closest('.use__more').removeClass('active');
+            $('.overlay').removeClass('useOverlay');
+        });
     },
 
     scrollToSectionOnClick: function (_id, cb) {
