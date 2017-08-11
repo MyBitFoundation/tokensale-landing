@@ -76,7 +76,7 @@ Common = {
             $('.lang__wrap').removeClass('visible');
             $('.header-mob').addClass('bg');
             $('html').removeClass('static');
-            if ($(window).width() < 601) {
+            if ($(window).width() < 768) {
                 $(this).removeClass('useOverlay');
                 $('.use__more').removeClass('active');
             }
