@@ -459,10 +459,4 @@ $(document).ready(function() {
     Action.init();
 
     config.redirect += '/'+$('.current_lang').attr('data-lang');
-    $('.date__title').html('Crowdsale Live');
-    Common.initCountdown('08/15/2017 12:00', 'countdown',function() {
-        $('.date__title').html('Crowdsale has ended');
-        $('#countdown').hide();
-
-    })
 });

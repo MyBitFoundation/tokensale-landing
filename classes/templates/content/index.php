@@ -19,14 +19,7 @@
             <img src="images/logo_full.png" alt="" class="logo wow animated fadeInUp"/>
             <h1 class="h1 wow animated fadeInUp" data-wow-delay="0.1s" ><?php echo t::message('global','UNLOCKING BILLIONS IN IOT REVENUE'); ?></h1>
             <div class="date__box wow animated fadeInUp" data-wow-delay="0.2s">
-                <span class="date__title"><?php echo t::message('global','Join Tokensale'); ?></span>
-                <ul id="countdown" class="date countdown">
-                    <li><span class="days"></span></li>
-                    <li><span class="days_text"></span></li>
-                    <li><span class="hours"></span></li>
-                    <li><span class="hours_text"></span></li>
-                    <li><span class="minutes"></span></li>
-                </ul>
+                <span class="date"><?php echo t::message('global','Crowdsale over'); ?></span>
             </div>
             <div class="offer-box wow animated fadeInUp sign-in-block" data-wow-delay="0.3s">
                 <span class="title"><?php echo t::message('global','Pre-Register Today'); ?></span>
